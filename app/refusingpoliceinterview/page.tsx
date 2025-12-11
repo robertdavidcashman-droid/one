@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Refusing a Police Interview – Pros & Cons | Expert Advice",
-  description: "Should you refuse a police interview? Understanding the risks of 'No Comment' vs answering questions. Why you must have a solicitor present."No Comment' vs answering questions. Why you must have a solicitor present.",
+  description: "Should you refuse a police interview? Understanding the risks of 'No Comment' vs answering questions. Why you must have a solicitor present.",
   keywords: undefined,
   alternates: {
     canonical: "https://policestationagent.com/refusingpoliceinterview",

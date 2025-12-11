@@ -3,22 +3,14 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "
-   Police Station Agent
-   | Police Station Agent",
-  description: "
-   Police Station Agent
-  ",
+  title: "Voluntary Interviews | Police Station Agent",
+  description: "Police Station Agent services and information",
   alternates: {
     canonical: "https://policestationagent.com/voluntary-interviews",
   },
   openGraph: {
-    title: "
-   Police Station Agent
-   | Police Station Agent",
-    description: "
-   Police Station Agent
-  ",
+    title: "Voluntary Interviews | Police Station Agent",
+    description: "Police Station Agent services and information",
     type: 'website',
     url: "https://policestationagent.com/voluntary-interviews",
   },
