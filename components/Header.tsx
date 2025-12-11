@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,6 +11,37 @@ export default function Header() {
   const [articlesOpen, setArticlesOpen] = useState(false);
   const [informationOpen, setInformationOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
+
+  // Timeout refs for delayed closing
+  const servicesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const aboutTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const coverageTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const articlesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const informationTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const blogTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Helper function to handle delayed close
+  const handleDelayedClose = (
+    setter: (value: boolean) => void,
+    timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>,
+    delay: number = 300
+  ) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setter(false);
+      timeoutRef.current = null;
+    }, delay);
+  };
+
+  // Helper function to cancel delayed close
+  const cancelDelayedClose = (timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  };
 
   return (
     <header className="bg-white shadow-sm border-b">
@@ -40,8 +71,11 @@ export default function Header() {
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 aria-label="Services menu"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(servicesTimeoutRef);
+                  setServicesOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setServicesOpen, servicesTimeoutRef, 300)}
               >
                 Services
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -51,8 +85,11 @@ export default function Header() {
               {servicesOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-72 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(servicesTimeoutRef);
+                    setServicesOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setServicesOpen, servicesTimeoutRef, 300)}
                 >
                   <Link href="/services" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">All Services</Link>
                   <div className="border-t border-slate-200 my-1"></div>
@@ -79,8 +116,11 @@ export default function Header() {
                 aria-expanded={aboutOpen}
                 aria-haspopup="true"
                 aria-label="About menu"
-                onMouseEnter={() => setAboutOpen(true)}
-                onMouseLeave={() => setAboutOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(aboutTimeoutRef);
+                  setAboutOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setAboutOpen, aboutTimeoutRef, 300)}
               >
                 About
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -90,8 +130,11 @@ export default function Header() {
               {aboutOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setAboutOpen(true)}
-                  onMouseLeave={() => setAboutOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(aboutTimeoutRef);
+                    setAboutOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setAboutOpen, aboutTimeoutRef, 300)}
                 >
                   <Link href="/about" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">About Us</Link>
                   <Link href="/why-use-us" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Why Use Us</Link>
@@ -108,8 +151,11 @@ export default function Header() {
                 aria-expanded={coverageOpen}
                 aria-haspopup="true"
                 aria-label="Coverage menu"
-                onMouseEnter={() => setCoverageOpen(true)}
-                onMouseLeave={() => setCoverageOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(coverageTimeoutRef);
+                  setCoverageOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setCoverageOpen, coverageTimeoutRef, 300)}
               >
                 Coverage
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -119,8 +165,11 @@ export default function Header() {
               {coverageOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setCoverageOpen(true)}
-                  onMouseLeave={() => setCoverageOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(coverageTimeoutRef);
+                    setCoverageOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setCoverageOpen, coverageTimeoutRef, 300)}
                 >
                   <Link href="/coverage" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas Covered</Link>
                   <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas We Cover</Link>
@@ -136,8 +185,11 @@ export default function Header() {
                 aria-expanded={articlesOpen}
                 aria-haspopup="true"
                 aria-label="Articles menu"
-                onMouseEnter={() => setArticlesOpen(true)}
-                onMouseLeave={() => setArticlesOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(articlesTimeoutRef);
+                  setArticlesOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setArticlesOpen, articlesTimeoutRef, 300)}
               >
                 Articles
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -147,8 +199,11 @@ export default function Header() {
               {articlesOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-72 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setArticlesOpen(true)}
-                  onMouseLeave={() => setArticlesOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(articlesTimeoutRef);
+                    setArticlesOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setArticlesOpen, articlesTimeoutRef, 300)}
                 >
                   <Link href="/blog" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">All Articles</Link>
                   <div className="border-t border-slate-200 my-1"></div>
@@ -168,8 +223,11 @@ export default function Header() {
                 aria-expanded={informationOpen}
                 aria-haspopup="true"
                 aria-label="Information menu"
-                onMouseEnter={() => setInformationOpen(true)}
-                onMouseLeave={() => setInformationOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(informationTimeoutRef);
+                  setInformationOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setInformationOpen, informationTimeoutRef, 300)}
               >
                 Information
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -179,8 +237,11 @@ export default function Header() {
               {informationOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-72 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setInformationOpen(true)}
-                  onMouseLeave={() => setInformationOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(informationTimeoutRef);
+                    setInformationOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setInformationOpen, informationTimeoutRef, 300)}
                 >
                   <Link href="/faq" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">FAQ</Link>
                   <Link href="/your-rights-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Your Rights in Custody</Link>
@@ -203,8 +264,11 @@ export default function Header() {
                 aria-expanded={blogOpen}
                 aria-haspopup="true"
                 aria-label="Blog menu"
-                onMouseEnter={() => setBlogOpen(true)}
-                onMouseLeave={() => setBlogOpen(false)}
+                onMouseEnter={() => {
+                  cancelDelayedClose(blogTimeoutRef);
+                  setBlogOpen(true);
+                }}
+                onMouseLeave={() => handleDelayedClose(setBlogOpen, blogTimeoutRef, 300)}
               >
                 Blog
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down w-4 h-4 transition-transform duration-200" aria-hidden="true">
@@ -214,8 +278,11 @@ export default function Header() {
               {blogOpen && (
                 <div 
                   className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-                  onMouseEnter={() => setBlogOpen(true)}
-                  onMouseLeave={() => setBlogOpen(false)}
+                  onMouseEnter={() => {
+                    cancelDelayedClose(blogTimeoutRef);
+                    setBlogOpen(true);
+                  }}
+                  onMouseLeave={() => handleDelayedClose(setBlogOpen, blogTimeoutRef, 300)}
                 >
                   <Link href="/blog" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">All Blog Posts</Link>
                 </div>
