@@ -1,0 +1,38 @@
+================================================================================
+                    SIMPLE 3-STEP PROCESS
+================================================================================
+
+STEP 1: Close this terminal window completely
+
+STEP 2: Open a NEW Command Prompt or PowerShell window
+        (Windows Key + R, type "cmd", press Enter)
+
+STEP 3: Run these commands one by one:
+
+   cd "C:\Users\rober\OneDrive\Desktop\web44ai"
+   node --version
+   npm install
+   node scripts/seed-data.js
+   node scripts/init-admin.js
+   npm run dev
+
+================================================================================
+OR EVEN EASIER:
+================================================================================
+
+1. Close this terminal
+
+2. Open File Explorer and go to:
+   C:\Users\rober\OneDrive\Desktop\web44ai
+
+3. Double-click: INSTALL_ALL.bat
+
+4. When it asks for admin username/password, enter them
+
+5. Double-click: START.bat
+
+That's it!
+
+================================================================================
+
+

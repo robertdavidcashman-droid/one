@@ -1,0 +1,17 @@
+Article Pages Extracted from Original Site
+===========================================
+
+From: Various saved HTML pages
+Saved: 11 Dec 2025 08:03:51 GMT
+
+ARTICLE PAGES FOUND:
+1. article-police-caution-before-interview
+   - URL: https://policestationagent.com/article-police-caution-before-interview
+   - Saved as: original-article-police-caution-before-interview.html
+
+NOTE:
+- Article pages use the route pattern: /article-{slug}
+- These are different from blog posts which use /post?slug={slug}
+- Our Next.js implementation may need to handle both /blog/{slug} and /article/{slug} routes
+
+

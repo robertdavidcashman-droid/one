@@ -1,0 +1,260 @@
+{
+  "generatedAt": "2025-12-11T11:25:36.345Z",
+  "summary": {
+    "totalPages": 58,
+    "staticPages": 58,
+    "dynamicPages": 0
+  },
+  "pages": [
+    {
+      "route": "/about\\page.tsx",
+      "file": "about\\page.tsx"
+    },
+    {
+      "route": "/accessibility\\page.tsx",
+      "file": "accessibility\\page.tsx"
+    },
+    {
+      "route": "/admin\\login\\page.tsx",
+      "file": "admin\\login\\page.tsx"
+    },
+    {
+      "route": "/admin\\page.tsx",
+      "file": "admin\\page.tsx"
+    },
+    {
+      "route": "/admin\\posts\\[id]\\edit\\page.tsx",
+      "file": "admin\\posts\\[id]\\edit\\page.tsx"
+    },
+    {
+      "route": "/admin\\posts\\new\\page.tsx",
+      "file": "admin\\posts\\new\\page.tsx"
+    },
+    {
+      "route": "/after-a-police-interview\\page.tsx",
+      "file": "after-a-police-interview\\page.tsx"
+    },
+    {
+      "route": "/after\\a\\police\\interview\\page.tsx",
+      "file": "after\\a\\police\\interview\\page.tsx"
+    },
+    {
+      "route": "/areas\\page.tsx",
+      "file": "areas\\page.tsx"
+    },
+    {
+      "route": "/arrestednow\\page.tsx",
+      "file": "arrestednow\\page.tsx"
+    },
+    {
+      "route": "/attendanceterms\\page.tsx",
+      "file": "attendanceterms\\page.tsx"
+    },
+    {
+      "route": "/blog\\[slug]\\page.tsx",
+      "file": "blog\\[slug]\\page.tsx"
+    },
+    {
+      "route": "/blog\\page.tsx",
+      "file": "blog\\page.tsx"
+    },
+    {
+      "route": "/canwehelp\\page.tsx",
+      "file": "canwehelp\\page.tsx"
+    },
+    {
+      "route": "/complaints\\page.tsx",
+      "file": "complaints\\page.tsx"
+    },
+    {
+      "route": "/contact\\page.tsx",
+      "file": "contact\\page.tsx"
+    },
+    {
+      "route": "/cookies\\page.tsx",
+      "file": "cookies\\page.tsx"
+    },
+    {
+      "route": "/courtrepresentation\\page.tsx",
+      "file": "courtrepresentation\\page.tsx"
+    },
+    {
+      "route": "/coverage\\page.tsx",
+      "file": "coverage\\page.tsx"
+    },
+    {
+      "route": "/faq\\page.tsx",
+      "file": "faq\\page.tsx"
+    },
+    {
+      "route": "/fees\\page.tsx",
+      "file": "fees\\page.tsx"
+    },
+    {
+      "route": "/for-clients\\page.tsx",
+      "file": "for-clients\\page.tsx"
+    },
+    {
+      "route": "/for-solicitors\\page.tsx",
+      "file": "for-solicitors\\page.tsx"
+    },
+    {
+      "route": "/for\\clients\\page.tsx",
+      "file": "for\\clients\\page.tsx"
+    },
+    {
+      "route": "/for\\solicitors\\page.tsx",
+      "file": "for\\solicitors\\page.tsx"
+    },
+    {
+      "route": "/freelegaladvice\\page.tsx",
+      "file": "freelegaladvice\\page.tsx"
+    },
+    {
+      "route": "/gdpr\\page.tsx",
+      "file": "gdpr\\page.tsx"
+    },
+    {
+      "route": "/join\\page.tsx",
+      "file": "join\\page.tsx"
+    },
+    {
+      "route": "/outofarea\\page.tsx",
+      "file": "outofarea\\page.tsx"
+    },
+    {
+      "route": "/page.tsx",
+      "file": "page.tsx"
+    },
+    {
+      "route": "/police-stations\\[slug]\\page.tsx",
+      "file": "police-stations\\[slug]\\page.tsx"
+    },
+    {
+      "route": "/police-stations\\page.tsx",
+      "file": "police-stations\\page.tsx"
+    },
+    {
+      "route": "/police\\stations\\page.tsx",
+      "file": "police\\stations\\page.tsx"
+    },
+    {
+      "route": "/policeinterviewhelp\\page.tsx",
+      "file": "policeinterviewhelp\\page.tsx"
+    },
+    {
+      "route": "/post\\page.tsx",
+      "file": "post\\page.tsx"
+    },
+    {
+      "route": "/privacy\\page.tsx",
+      "file": "privacy\\page.tsx"
+    },
+    {
+      "route": "/privateclientfaq\\page.tsx",
+      "file": "privateclientfaq\\page.tsx"
+    },
+    {
+      "route": "/privatecrime\\page.tsx",
+      "file": "privatecrime\\page.tsx"
+    },
+    {
+      "route": "/refusingpoliceinterview\\page.tsx",
+      "file": "refusingpoliceinterview\\page.tsx"
+    },
+    {
+      "route": "/servicerates\\page.tsx",
+      "file": "servicerates\\page.tsx"
+    },
+    {
+      "route": "/services\\[slug]\\page.tsx",
+      "file": "services\\[slug]\\page.tsx"
+    },
+    {
+      "route": "/services\\page.tsx",
+      "file": "services\\page.tsx"
+    },
+    {
+      "route": "/servicesvoluntaryinterviews\\page.tsx",
+      "file": "servicesvoluntaryinterviews\\page.tsx"
+    },
+    {
+      "route": "/terms-and-conditions\\page.tsx",
+      "file": "terms-and-conditions\\page.tsx"
+    },
+    {
+      "route": "/terms\\and\\conditions\\page.tsx",
+      "file": "terms\\and\\conditions\\page.tsx"
+    },
+    {
+      "route": "/voluntary-interviews\\page.tsx",
+      "file": "voluntary-interviews\\page.tsx"
+    },
+    {
+      "route": "/voluntary-police-interview-risks\\page.tsx",
+      "file": "voluntary-police-interview-risks\\page.tsx"
+    },
+    {
+      "route": "/voluntary\\interviews\\page.tsx",
+      "file": "voluntary\\interviews\\page.tsx"
+    },
+    {
+      "route": "/what-happens-if-ignore-police-interview\\page.tsx",
+      "file": "what-happens-if-ignore-police-interview\\page.tsx"
+    },
+    {
+      "route": "/what-is-a-criminal-solicitor\\page.tsx",
+      "file": "what-is-a-criminal-solicitor\\page.tsx"
+    },
+    {
+      "route": "/what-is-a-police-station-rep\\page.tsx",
+      "file": "what-is-a-police-station-rep\\page.tsx"
+    },
+    {
+      "route": "/what-we-do\\page.tsx",
+      "file": "what-we-do\\page.tsx"
+    },
+    {
+      "route": "/what\\is\\a\\criminal\\solicitor\\page.tsx",
+      "file": "what\\is\\a\\criminal\\solicitor\\page.tsx"
+    },
+    {
+      "route": "/what\\is\\a\\police\\station\\rep\\page.tsx",
+      "file": "what\\is\\a\\police\\station\\rep\\page.tsx"
+    },
+    {
+      "route": "/what\\we\\do\\page.tsx",
+      "file": "what\\we\\do\\page.tsx"
+    },
+    {
+      "route": "/why-use-us\\page.tsx",
+      "file": "why-use-us\\page.tsx"
+    },
+    {
+      "route": "/why\\use\\us\\page.tsx",
+      "file": "why\\use\\us\\page.tsx"
+    },
+    {
+      "route": "/your-rights-in-custody\\page.tsx",
+      "file": "your-rights-in-custody\\page.tsx"
+    }
+  ],
+  "limitations": {
+    "serverSideCode": "Backend logic, API endpoints, and database queries cannot be imported",
+    "authentication": "Admin panels and login-protected areas are excluded",
+    "formHandlers": "Contact forms require backend implementation (frontend structure preserved)",
+    "dynamicContent": "Content loaded via JavaScript after initial render may be incomplete",
+    "thirdPartyScripts": "External services (analytics, chat widgets) need separate setup",
+    "protectedContent": "Pages blocked by robots.txt or requiring authentication are excluded",
+    "images": "Images are referenced but not downloaded (need manual asset migration)"
+  },
+  "nextSteps": [
+    "Review rebuilt pages in app/ directory",
+    "Update internal links to use Next.js Link components",
+    "Download and organize images to public/ directory",
+    "Set up form submission handlers for contact forms",
+    "Configure third-party services (analytics, etc.)",
+    "Test all routes and navigation",
+    "Update sitemap.ts with all new pages"
+  ]
+}

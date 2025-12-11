@@ -1,0 +1,71 @@
+================================================================================
+                    WHAT YOU NEED TO DO RIGHT NOW
+================================================================================
+
+The installation is having issues because your current terminal session
+doesn't have Node.js in its PATH.
+
+================================================================================
+SOLUTION: RESTART YOUR TERMINAL
+================================================================================
+
+1. CLOSE this terminal/command prompt window completely
+   (The one you're using right now)
+
+2. OPEN a NEW terminal/command prompt window
+   - Press Windows Key + R
+   - Type: cmd
+   - Press Enter
+   OR
+   - Press Windows Key + X
+   - Click "Windows PowerShell" or "Terminal"
+
+3. Navigate to the project:
+   cd "C:\Users\rober\OneDrive\Desktop\web44ai"
+
+4. Verify Node.js works:
+   node --version
+   npm --version
+   
+   (Should show version numbers)
+
+5. Run the installation:
+   npm install
+
+================================================================================
+OR USE THE BATCH FILE (EASIER):
+================================================================================
+
+After opening a NEW terminal/command prompt:
+
+1. Navigate to the project folder in File Explorer:
+   C:\Users\rober\OneDrive\Desktop\web44ai
+
+2. Double-click: INSTALL_ALL.bat
+
+This will do everything automatically!
+
+================================================================================
+WHY THIS IS NEEDED:
+================================================================================
+
+When you install Node.js, it adds itself to your system PATH.
+However, terminal windows that were already open don't see the new PATH.
+
+Opening a NEW terminal window will have the updated PATH with Node.js.
+
+================================================================================
+QUICK CHECK:
+================================================================================
+
+After opening a NEW terminal, type:
+   node --version
+
+If it shows something like "v25.2.1", you're good to go!
+
+Then run:
+   npm install
+
+================================================================================
+
+

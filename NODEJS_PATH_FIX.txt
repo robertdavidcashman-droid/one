@@ -1,0 +1,58 @@
+================================================================================
+                    NODE.JS INSTALLED - PATH UPDATE NEEDED
+================================================================================
+
+Node.js is installed but not yet available in your current terminal session.
+
+================================================================================
+SOLUTION: RESTART YOUR TERMINAL/COMMAND PROMPT
+================================================================================
+
+After installing Node.js, you need to:
+
+1. CLOSE this terminal/command prompt window completely
+2. OPEN a NEW terminal/command prompt window
+3. Navigate to the project:
+   cd "C:\Users\rober\OneDrive\Desktop\web44ai"
+4. Verify Node.js:
+   node --version
+   npm --version
+
+================================================================================
+ALTERNATIVE: RESTART YOUR COMPUTER
+================================================================================
+
+If restarting the terminal doesn't work:
+1. Restart your computer
+2. Open a new terminal
+3. Navigate to the project
+4. Run the installation
+
+================================================================================
+QUICK TEST:
+================================================================================
+
+Open a NEW PowerShell or Command Prompt window and run:
+
+   node --version
+
+If it shows a version number (like v20.x.x), you're ready!
+
+Then run:
+   cd "C:\Users\rober\OneDrive\Desktop\web44ai"
+   npm install
+
+================================================================================
+OR USE THE BATCH FILES:
+================================================================================
+
+After restarting your terminal/computer:
+
+1. Double-click: CHECK_NODE.bat
+   → Should show Node.js version
+
+2. Double-click: INSTALL_ALL.bat
+   → Will install everything automatically
+
+================================================================================
+

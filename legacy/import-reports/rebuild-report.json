@@ -1,0 +1,331 @@
+{
+  "success": [
+    {
+      "route": "/about",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\about\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/accessibility",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\accessibility\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/after-a-police-interview",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\after-a-police-interview\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/areas",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\areas\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/arrestednow",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\arrestednow\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/attendanceterms",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\attendanceterms\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=can-you-get-free-legal-advice-at-the-police-station",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=criminal-law-faq-your-rights-and-legal-representation-in-kent",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=police-voluntary-interview-questions",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=the-hidden-risks-of-voluntary-police-interviews-or-informal-chats-in-uk-you-need-to-know",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=understanding-police-cautions-in-england-a-comprehensive-guide-to-their-meaning-and-consequences",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=understanding-police-cautions-in-england-and-wales-their-impact-on-employment-and-travel",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=voluntary-interviews-with-police",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=what-happens-at-a-police-station-voluntary-interview",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/post?slug=what-is-the-police-caution",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\post\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/blog",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\blog\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/canwehelp",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\canwehelp\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/complaints",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\complaints\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/contact",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\contact\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/cookies",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\cookies\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/courtrepresentation",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\courtrepresentation\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/coverage",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\coverage\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/faq",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\faq\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/fees",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\fees\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/for-clients",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\for-clients\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/for-solicitors",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\for-solicitors\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/freelegaladvice",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\freelegaladvice\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/gdpr",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\gdpr\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/join",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\join\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/outofarea",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\outofarea\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/policeinterviewhelp",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\policeinterviewhelp\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/privacy",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\privacy\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/privateclientfaq",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\privateclientfaq\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/privatecrime",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\privatecrime\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/refusingpoliceinterview",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\refusingpoliceinterview\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/servicerates",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\servicerates\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/services",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\services\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/servicesvoluntaryinterviews",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\servicesvoluntaryinterviews\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/ashford",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/bluewater",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/canterbury",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/coldharbour",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/dover",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/folkestone",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/gravesend",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/maidstone",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/margate",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/medway",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/north-kent",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/sevenoaks",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/sittingbourne",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/swanley",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/tonbridge",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/police-stations/tunbridge-wells",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\police-stations\\[slug]\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/terms-and-conditions",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\terms-and-conditions\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/voluntary-interviews",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\voluntary-interviews\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/voluntary-police-interview-risks",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\voluntary-police-interview-risks\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/what-happens-if-ignore-police-interview",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\what-happens-if-ignore-police-interview\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/what-is-a-criminal-solicitor",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\what-is-a-criminal-solicitor\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/what-is-a-police-station-rep",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\what-is-a-police-station-rep\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/what-we-do",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\what-we-do\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/why-use-us",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\why-use-us\\page.tsx",
+      "success": true
+    },
+    {
+      "route": "/your-rights-in-custody",
+      "filePath": "C:\\Users\\rober\\OneDrive\\Desktop\\web44ai\\app\\your-rights-in-custody\\page.tsx",
+      "success": true
+    }
+  ],
+  "failed": [],
+  "skipped": []
+}
