@@ -11,7 +11,8 @@
     "scrape:page": "node scripts/scrape-site.js --page",
     "scrape:list": "node scripts/scrape-site.js --list",
     "setup:cloudflare": "node scripts/setup-cloudflare-domain.js",
-    "setup:cloudflare:auto": "node scripts/setup-cloudflare-auto.js"
+    "setup:cloudflare:auto": "node scripts/setup-cloudflare-auto.js",
+    "setup:cloudflare:simple": "node scripts/setup-cloudflare-simple.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
