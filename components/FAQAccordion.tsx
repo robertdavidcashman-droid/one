@@ -52,7 +52,7 @@ export default function FAQAccordion({ sections }: FAQAccordionProps) {
               return (
                 <div
                   key={itemIndex}
-                  className="rounded-xl bg-card text-card-foreground shadow border-2 transition-all duration-300 border-slate-200 hover:border-slate-300"
+                  className="rounded-xl bg-white text-slate-900 shadow border-2 transition-all duration-300 border-slate-200 hover:border-slate-300"
                 >
                   <button
                     className="w-full text-left p-6 flex items-start justify-between gap-4"
@@ -79,7 +79,7 @@ export default function FAQAccordion({ sections }: FAQAccordionProps) {
                   </button>
                   {isOpen && (
                     <div className="px-6 pb-6">
-                      <div className="prose prose-sm max-w-none text-slate-700">
+                      <div className="prose prose-sm max-w-none text-slate-800">
                         <p className="leading-relaxed whitespace-pre-line">{item.answer}</p>
                       </div>
                     </div>

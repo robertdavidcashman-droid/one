@@ -30,7 +30,7 @@ export default function Page() {
               <p className="text-xl text-slate-600">Common questions about private criminal defence representation and requesting Robert Cashman.</p>
             </div>
             
-            <div className="rounded-xl border text-card-foreground shadow mb-8 bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-600">
+            <div className="rounded-xl border text-slate-900 shadow mb-8 bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-600">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield w-8 h-8 text-blue-600 flex-shrink-0 mt-1">
@@ -54,7 +54,7 @@ export default function Page() {
             
             <FAQAccordion />
             
-            <div className="rounded-xl border text-card-foreground shadow mb-8 bg-red-50 border-red-200">
+            <div className="rounded-xl border text-slate-900 shadow mb-8 bg-red-50 border-red-200">
               <div className="p-6">
                 <div className="flex items-start gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-triangle-alert w-6 h-6 text-red-600 flex-shrink-0 mt-1">

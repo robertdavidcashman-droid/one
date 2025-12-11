@@ -90,7 +90,7 @@ export default function FAQAccordion() {
   ];
 
   return (
-    <div className="rounded-xl border bg-card text-card-foreground shadow mb-8">
+    <div className="rounded-xl border bg-white text-slate-900 shadow mb-8">
       <div className="p-6">
         <div className="w-full space-y-0">
           {faqs.map((faq, index) => (
@@ -117,9 +117,9 @@ export default function FAQAccordion() {
                 </svg>
               </button>
               {openIndex === index && (
-                <div className="overflow-hidden pb-4 text-slate-600">
+                <div className="overflow-hidden pb-4 text-slate-800">
                   <div 
-                    className="prose prose-slate max-w-none"
+                    className="prose prose-slate max-w-none text-slate-800"
                     dangerouslySetInnerHTML={{ __html: faq.answer }}
                   />
                 </div>
