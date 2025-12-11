@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Blog | Police Station Agent",
   description: "Expert legal insights on police station representation, criminal defence procedures, and your rights in custody. Authored by Robert Cashman.",
-  keywords: undefined,
   alternates: {
     canonical: "https://policestationagent.com/blog",
   },

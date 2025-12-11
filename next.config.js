@@ -25,6 +25,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/psastations',
+        destination: '/police-stations',
+        permanent: true,
+      },
+      {
+        source: '/termsandconditions',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
+      {
         source: '/whatisapolicestationrep',
         destination: '/what-is-a-police-station-rep',
         permanent: true,
