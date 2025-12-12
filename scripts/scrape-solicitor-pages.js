@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Scrape all solicitor pages from policestationagent.com
- * Pages like: bromley-solicitor, dartford-solicitor, maidstone-solicitor, etc.
+ * Scrape solicitor location pages from policestationagent.com
+ * e.g., bromley-solicitor, dartford-solicitor, maidstone-solicitor, etc.
  */
 
 const puppeteer = require('puppeteer');
@@ -12,27 +12,27 @@ const path = require('path');
 const PSA_URL = 'https://policestationagent.com';
 const APP_DIR = path.join(__dirname, '..', 'app');
 
-// List of solicitor pages to check and scrape
+// List of solicitor location pages to check
 const SOLICITOR_PAGES = [
   'bromley-solicitor',
   'dartford-solicitor',
   'maidstone-solicitor',
-  'medway-solicitor',
   'canterbury-solicitor',
-  'folkestone-solicitor',
-  'dover-solicitor',
-  'margate-solicitor',
+  'medway-solicitor',
+  'gravesend-solicitor',
   'tonbridge-solicitor',
   'sevenoaks-solicitor',
   'tunbridge-wells-solicitor',
-  'gravesend-solicitor',
-  'bluewater-solicitor',
-  'sittingbourne-solicitor',
+  'folkestone-solicitor',
+  'dover-solicitor',
   'ashford-solicitor',
+  'margate-solicitor',
+  'sittingbourne-solicitor',
   'swanley-solicitor',
+  'bluewater-solicitor',
   'gillingham-solicitor',
-  'chatham-solicitor',
   'rochester-solicitor',
+  'chatham-solicitor',
   'ramsgate-solicitor',
   'whitstable-solicitor',
   'faversham-solicitor',
@@ -75,9 +75,8 @@ async function scrapePage(browser, route) {
     
     await page.close();
     
-    // Check if page exists (not 404)
-    if (!data.html || data.html.length < 200 || data.html.includes('404') || data.html.includes('Page Not Found')) {
-      console.error(`    ⚠️  Page not found or no content for ${route}`);
+    if (!data.html || data.html.length < 200) {
+      console.error(`    ⚠️  No content found for ${route}`);
       return null;
     }
     
@@ -158,13 +157,21 @@ export default function Page() {
 async function checkLocalPage(route) {
   const filePath = path.join(__dirname, '..', `app/${route}/page.tsx`);
   try {
-    await fs.access(filePath);
     const content = await fs.readFile(filePath, 'utf-8');
     // Check if it has actual content (not just 404)
     if (content.includes('Page Not Found') || content.includes('404')) {
       return { exists: true, hasContent: false };
     }
-    return { exists: true, hasContent: true };
+    // Check if it has meaningful content
+    const htmlMatch = content.match(/dangerouslySetInnerHTML=\{\{\s*__html:\s*(.+?)\s*\}\}/s);
+    if (htmlMatch) {
+      const htmlValue = htmlMatch[1].trim();
+      // Check if it's a template literal with content
+      if (htmlValue.length > 500 && !htmlValue.includes('404')) {
+        return { exists: true, hasContent: true };
+      }
+    }
+    return { exists: true, hasContent: false };
   } catch (error) {
     return { exists: false, hasContent: false };
   }
@@ -172,7 +179,7 @@ async function checkLocalPage(route) {
 
 async function main() {
   console.log(`\n${'═'.repeat(70)}`);
-  console.log(`  SCRAPING SOLICITOR PAGES`);
+  console.log(`  SCRAPING SOLICITOR LOCATION PAGES`);
   console.log(`${'═'.repeat(70)}\n`);
 
   const browser = await puppeteer.launch({ 
@@ -184,13 +191,17 @@ async function main() {
     let updated = 0;
     let created = 0;
     let failed = 0;
-    let notFound = 0;
+    let skipped = 0;
     
     for (const route of SOLICITOR_PAGES) {
       console.log(`\nProcessing: ${route}`);
       
       // Check local page
       const local = await checkLocalPage(route);
+      
+      if (local.exists && local.hasContent) {
+        console.log(`  ℹ️  Page exists with content, checking if update needed...`);
+      }
       
       const data = await scrapePage(browser, route);
       
@@ -209,11 +220,11 @@ async function main() {
           }
         }
       } else {
-        if (local.exists) {
+        if (local.exists && local.hasContent) {
+          skipped++;
           console.log(`  ⏭️  Skipped (no content from PSA, but local page exists)`);
         } else {
-          notFound++;
-          console.log(`  ⚠️  Page not found on PSA`);
+          failed++;
         }
       }
       
@@ -225,7 +236,7 @@ async function main() {
     console.log(`${'═'.repeat(70)}`);
     console.log(`  ✅ Created: ${created} pages`);
     console.log(`  🔄 Updated: ${updated} pages`);
-    console.log(`  ⚠️  Not Found on PSA: ${notFound} pages`);
+    console.log(`  ⏭️  Skipped: ${skipped} pages`);
     console.log(`  ❌ Failed: ${failed} pages`);
     console.log(`${'═'.repeat(70)}\n`);
     
@@ -237,4 +248,3 @@ async function main() {
 }
 
 main().catch(console.error);
-
