@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const { title, slug, content, excerpt, published, meta_title, meta_description } = await request.json();
+    const { title, slug, content, excerpt, published, meta_title, meta_description, faq_content, location } = await request.json();
 
     if (!title || !slug || !content) {
       return NextResponse.json(
@@ -35,10 +35,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Auto-generate SEO fields if not provided
+    const autoMetaTitle = meta_title || `${title} | Police Station Solicitor ${location || 'Kent'}`;
+    const autoMetaDescription = meta_description || (excerpt ? excerpt.substring(0, 155) : `${title}. Expert police station representation in ${location || 'Kent'}. Available 24/7.`);
+
     const stmt = db.prepare(`
       INSERT INTO blog_posts 
-      (title, slug, content, excerpt, published, published_at, author_id, meta_title, meta_description, updated_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+      (title, slug, content, excerpt, published, published_at, author_id, meta_title, meta_description, faq_content, location, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
     `);
 
     const publishedAt = published ? new Date().toISOString() : null;
@@ -51,8 +55,10 @@ export async function POST(request: NextRequest) {
       published ? 1 : 0,
       publishedAt,
       auth.userId,
-      meta_title || null,
-      meta_description || null
+      autoMetaTitle,
+      autoMetaDescription,
+      faq_content || null,
+      location || 'Kent'
     );
 
     return NextResponse.json({

@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   
   return {
-    title: `${station.name} Police Station - Police Station Agent`,
-    description: `Professional police station representation at ${station.name}. Available 24/7 for urgent legal assistance.${station.address ? ' Located at ' + station.address : ''}`,
+    title: `${station.name} Police Station Solicitor | Kent`,
+    description: `Expert police station representation at ${station.name} in Kent. Accredited duty solicitor available 24/7.${station.address ? ' Located at ' + station.address : ''}`,
     alternates: {
       canonical: `${siteUrl}/police-stations/${params.slug}`,
     },
@@ -53,22 +53,25 @@ export default function PoliceStationPage({ params }: PageProps) {
   const legalServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: `Police Station Representation at ${station.name}`,
-    description: `Professional police station representation services at ${station.name}. Available 24/7 for urgent legal assistance.`,
+    name: `Police Station Solicitor at ${station.name} | Kent`,
+    description: `Expert police station representation at ${station.name} in Kent. Accredited duty solicitor available 24/7 for interviews under caution.`,
     provider: {
-      '@type': 'LegalService',
+      '@type': 'Organization',
       name: 'Criminal Defence Kent',
       telephone: '03330497036',
       email: 'robertcashman@defencelegalservices.co.uk',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Kent',
+        addressRegion: 'Kent',
+        addressCountry: 'GB',
+      },
     },
     areaServed: {
-      '@type': 'PoliceStation',
-      name: station.name,
-      address: station.address ? {
-        '@type': 'PostalAddress',
-        streetAddress: station.address,
-      } : undefined,
+      '@type': 'State',
+      name: 'Kent',
     },
+    serviceType: 'Police Station Representation',
     url: `${siteUrl}/police-stations/${params.slug}`,
   };
 

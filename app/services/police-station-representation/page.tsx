@@ -6,14 +6,14 @@ import { JsonLd } from '@/components/JsonLd';
 import { Phone, Shield, MessageCircle, Mail, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Police Station Representation (Duty Solicitor) | Criminal Defence Kent",
-  description: "Immediate duty solicitor attendance for interviews under caution across Kent & Medway. Protect your rights from the outset. FREE legal advice 24/7.",
+  title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
+  description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/services/police-station-representation",
   },
   openGraph: {
-    title: "Police Station Representation (Duty Solicitor) | Criminal Defence Kent",
-    description: "Immediate duty solicitor attendance for interviews under caution across Kent & Medway. Protect your rights from the outset.",
+    title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
+    description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
     url: "https://criminaldefencekent.co.uk/services/police-station-representation",
     siteName: 'Criminal Defence Kent',
     type: 'website',
@@ -23,8 +23,26 @@ export const metadata: Metadata = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
+  "name": "Police Station Solicitor Kent | 24/7 Duty Solicitor",
+  "description": "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution.",
   "serviceType": "Police Station Representation",
-  "areaServed": ["Kent","Medway"]
+  "provider": {
+    "@type": "Organization",
+    "name": "Criminal Defence Kent",
+    "telephone": "03330497036",
+    "email": "robertcashman@defencelegalservices.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kent",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Kent"
+  },
+  "url": "https://criminaldefencekent.co.uk/services/police-station-representation"
 };
 
 export default function ServicesPoliceStationRepresentation() {
@@ -53,7 +71,7 @@ export default function ServicesPoliceStationRepresentation() {
                 <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-red-100 text-red-800 mb-4">
                   Extended Hours Available
                 </div>
-                <h1 className="text-4xl font-bold text-slate-800 mb-4">Police Station Representation</h1>
+                <h1 className="text-4xl font-bold text-slate-800 mb-4">Police Station Solicitor Kent</h1>
                 <p className="text-xl text-slate-600 max-w-3xl mx-auto">
                   Expert criminal defence solicitor providing immediate police station representation across Kent & Medway. Protect your rights from the moment of arrest.
                 </p>

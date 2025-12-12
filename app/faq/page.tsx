@@ -3,14 +3,14 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "FAQ - Frequently Asked Questions | Criminal Defence Kent",
-  description: "Comprehensive answers about police station representation in Kent. What we do and don't do, legal aid information, and how to get urgent help. Available 24/7.",
+  title: "Police Station Solicitor FAQ | Kent Legal Advice",
+  description: "Answers about police station representation in Kent. Legal aid, voluntary interviews, coverage areas, and how to get urgent help. Available 24/7.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/faq",
   },
   openGraph: {
-    title: "FAQ - Frequently Asked Questions | Criminal Defence Kent",
-    description: "Comprehensive answers about police station representation in Kent. What we do and don't do, legal aid information, and how to get urgent help. Available 24/7.",
+    title: "Police Station Solicitor FAQ | Kent Legal Advice",
+    description: "Answers about police station representation in Kent. Legal aid, voluntary interviews, coverage areas, and how to get urgent help.",
     url: "https://criminaldefencekent.co.uk/faq",
     siteName: 'Criminal Defence Kent',
     type: 'website',

@@ -81,9 +81,24 @@ export default function BlogPostPage({ params }: PageProps) {
     },
   };
 
+  // FAQPage schema if FAQ content exists
+  const faqSchema = post.faq_content ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [{
+      '@type': 'Question',
+      name: post.title,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: post.faq_content,
+      },
+    }],
+  } : null;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
       <JsonLd data={blogPostingSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Header />
       <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
         {/* Hero Section */}
@@ -140,6 +155,31 @@ export default function BlogPostPage({ params }: PageProps) {
                 className="prose prose-lg max-w-none"
               />
             </article>
+            
+            {/* FAQ Section */}
+            {post.faq_content && (
+              <div className="mt-12 pt-8 border-t border-slate-200">
+                <h2 className="text-3xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+                <div 
+                  dangerouslySetInnerHTML={{ __html: post.faq_content }} 
+                  className="prose prose-lg max-w-none"
+                />
+              </div>
+            )}
+            
+            {/* Sources Section Placeholder */}
+            <div className="mt-12 pt-8 border-t border-slate-200">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4">Sources</h3>
+              <p className="text-sm text-slate-600 mb-2">
+                This content references UK law and police procedures. For authoritative information, see:
+              </p>
+              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                <li><a href="https://www.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GOV.UK</a> - Official UK government information</li>
+                <li><a href="https://www.legislation.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Legislation.gov.uk</a> - UK legislation</li>
+                <li><a href="https://www.cps.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">CPS.gov.uk</a> - Crown Prosecution Service</li>
+                <li><a href="https://www.lawsociety.org.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Law Society</a> - Legal profession information</li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>

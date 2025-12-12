@@ -3,14 +3,14 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Criminal Defence Kent",
-  description: "",
+  title: "Voluntary Police Interview Solicitor Kent | Free Advice",
+  description: "Expert legal representation for voluntary police interviews in Kent. Free advice under Legal Aid. Never attend without a solicitor - call 0333 0497 036.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/voluntary-interviews",
   },
   openGraph: {
-    title: "Criminal Defence Kent",
-    description: "",
+    title: "Voluntary Police Interview Solicitor Kent | Free Advice",
+    description: "Expert legal representation for voluntary police interviews in Kent. Free advice under Legal Aid. Never attend without a solicitor.",
     url: "https://criminaldefencekent.co.uk/voluntary-interviews",
     siteName: 'Criminal Defence Kent',
     type: 'website',

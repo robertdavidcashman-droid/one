@@ -4,14 +4,14 @@ import { JsonLd } from '@/components/JsonLd';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Duty Solicitor Kent 24/7 | 0333 0497 036 | FREE Police Station Advice",
-  description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
+  title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
+  description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/",
   },
   openGraph: {
-    title: "Duty Solicitor Kent 24/7 | 0333 0497 036 | FREE Police Station Advice",
-    description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
+    title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
+    description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
     url: "https://criminaldefencekent.co.uk/",
     siteName: 'Criminal Defence Kent',
     type: 'website',
@@ -25,7 +25,7 @@ const organizationSchema = {
   alternateName: 'Police Station Agent',
   url: 'https://criminaldefencekent.co.uk',
   logo: 'https://criminaldefencekent.co.uk/logo.png',
-  description: 'Expert police station representation and criminal defence services across Kent. Available 24/7.',
+  description: 'Expert police station representation and criminal defence services across Kent. Accredited duty solicitor available 24/7.',
   telephone: '03330497036',
   email: 'robertcashman@defencelegalservices.co.uk',
   address: {
@@ -38,6 +38,7 @@ const organizationSchema = {
     '@type': 'State',
     name: 'Kent',
   },
+  serviceType: 'Police Station Representation',
   priceRange: 'Free under Legal Aid',
   foundingDate: '1990',
   founder: {

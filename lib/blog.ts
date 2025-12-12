@@ -13,6 +13,8 @@ export interface BlogPost {
   meta_title: string | null;
   meta_description: string | null;
   author_id: number | null;
+  faq_content: string | null;
+  location: string | null;
 }
 
 /**

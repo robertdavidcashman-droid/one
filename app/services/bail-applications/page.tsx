@@ -6,14 +6,14 @@ import { JsonLd } from '@/components/JsonLd';
 import { Phone, Scale, MessageCircle, Mail, AlertTriangle, CheckCircle, Clock, Home } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Magistrates' Court Bail Applications | Criminal Defence Kent",
-  description: "Expert bail applications at Magistrates' Court with focus on viable addresses, conditions, and alternatives to remand. Available 24/7 in Kent.",
+  title: "Bail Application Solicitor Kent | Magistrates Court",
+  description: "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand. Available 24/7.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/services/bail-applications",
   },
   openGraph: {
-    title: "Magistrates' Court Bail Applications | Criminal Defence Kent",
-    description: "Expert bail applications at Magistrates' Court with focus on viable addresses, conditions, and alternatives to remand.",
+    title: "Bail Application Solicitor Kent | Magistrates Court",
+    description: "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand.",
     url: "https://criminaldefencekent.co.uk/services/bail-applications",
     siteName: 'Criminal Defence Kent',
     type: 'website',
@@ -47,13 +47,26 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://www.criminaldefencekent.co.uk/services/bail-applications",
-  "name": "Magistrates' Court Bail Applications",
-  "description": "Expert bail applications at Magistrates' Court with focus on viable addresses, conditions, and alternatives to remand.",
+  "name": "Bail Application Solicitor Kent | Magistrates Court",
+  "description": "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand.",
   "provider": {
     "@type": "Organization",
-    "name": "Criminal Defence Kent"
+    "name": "Criminal Defence Kent",
+    "telephone": "03330497036",
+    "email": "robertcashman@defencelegalservices.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kent",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    }
   },
-  "serviceType": "Criminal Court Bail Applications"
+  "serviceType": "Criminal Court Bail Applications",
+  "areaServed": {
+    "@type": "State",
+    "name": "Kent"
+  },
+  "url": "https://criminaldefencekent.co.uk/services/bail-applications"
 };
 
 export default function ServicesBailApplications() {

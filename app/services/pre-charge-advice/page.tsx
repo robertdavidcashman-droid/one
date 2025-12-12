@@ -6,14 +6,14 @@ import { JsonLd } from '@/components/JsonLd';
 import { Phone, Scale, MessageCircle, Mail, AlertTriangle, CheckCircle, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Pre-Charge Advice & Engagement | Criminal Defence Kent",
-  description: "Strategic pre-charge representations and advice to prevent weak or premature charging decisions. Expert criminal defence in Kent.",
+  title: "Pre-Charge Advice Solicitor Kent | Prevent Charges",
+  description: "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions. Available 24/7.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/services/pre-charge-advice",
   },
   openGraph: {
-    title: "Pre-Charge Advice & Engagement | Criminal Defence Kent",
-    description: "Strategic pre-charge representations and advice to prevent weak or premature charging decisions.",
+    title: "Pre-Charge Advice Solicitor Kent | Prevent Charges",
+    description: "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions.",
     url: "https://criminaldefencekent.co.uk/services/pre-charge-advice",
     siteName: 'Criminal Defence Kent',
     type: 'website',
@@ -47,13 +47,26 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://www.criminaldefencekent.co.uk/services/pre-charge-advice",
-  "name": "Pre-Charge Advice & Engagement",
-  "description": "Strategic pre-charge representations and advice to prevent weak or premature charging decisions.",
+  "name": "Pre-Charge Advice Solicitor Kent | Prevent Charges",
+  "description": "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions.",
   "provider": {
     "@type": "Organization",
-    "name": "Criminal Defence Kent"
+    "name": "Criminal Defence Kent",
+    "telephone": "03330497036",
+    "email": "robertcashman@defencelegalservices.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kent",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    }
   },
-  "serviceType": "Pre-Charge Criminal Defence Advice"
+  "serviceType": "Pre-Charge Criminal Defence Advice",
+  "areaServed": {
+    "@type": "State",
+    "name": "Kent"
+  },
+  "url": "https://criminaldefencekent.co.uk/services/pre-charge-advice"
 };
 
 export default function ServicesPreChargeAdvice() {

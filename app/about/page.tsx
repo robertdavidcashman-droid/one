@@ -3,14 +3,14 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About Criminal Defence Kent | Expert Criminal Defence Solicitors Kent",
-  description: "Leading police station representative agency in Kent. Fully qualified criminal solicitors with 35 years experience & 6000 + cases. FREE legal aid representation. Available 24/7 for all criminal offences.",
+  title: "About Police Station Solicitor Kent | Robert Cashman",
+  description: "Expert police station representation in Kent. Accredited duty solicitor with 35 years experience. FREE legal aid available 24/7 at all Kent police stations.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/about",
   },
   openGraph: {
-    title: "About Criminal Defence Kent | Expert Criminal Defence Solicitors Kent",
-    description: "Leading police station representative agency in Kent. Fully qualified criminal solicitors with 35 years experience & 6000 + cases. FREE legal aid representation. Available 24/7 for all criminal offences.",
+    title: "About Police Station Solicitor Kent | Robert Cashman",
+    description: "Expert police station representation in Kent. Accredited duty solicitor with 35 years experience. FREE legal aid available 24/7.",
     url: "https://criminaldefencekent.co.uk/about",
     siteName: 'Criminal Defence Kent',
     type: 'website',
