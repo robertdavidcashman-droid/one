@@ -258,7 +258,7 @@ async function crawlSite(browser, baseUrl, maxDepth = 3) {
         });
 
         // Wait for JS to render
-        await page.waitForTimeout(2000);
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
         const content = await extractPageContent(page);
 
@@ -455,8 +455,8 @@ function analyzeContentParity(matches) {
     };
 
     for (const [sectionName, { source: src, target: tgt }] of Object.entries(sections)) {
-      const srcText = typeof src === 'string' ? src : JSON.stringify(src);
-      const tgtText = typeof tgt === 'string' ? tgt : JSON.stringify(tgt);
+      const srcText = typeof src === 'string' ? (src || '') : JSON.stringify(src || {});
+      const tgtText = typeof tgt === 'string' ? (tgt || '') : JSON.stringify(tgt || {});
       
       const similarity = calculateSimilarity(srcText, tgtText);
       
@@ -472,12 +472,15 @@ function analyzeContentParity(matches) {
       }
 
       if (verdict !== 'OK' || sectionName === 'ENTIRE_PAGE') {
+        const srcText = src ? (typeof src === 'string' ? src : JSON.stringify(src)) : '';
+        const tgtText = tgt ? (typeof tgt === 'string' ? tgt : JSON.stringify(tgt)) : '';
+        
         parity.push({
           sourceUrl: source.url,
           targetUrl: target.url,
           section: sectionName,
-          sourceEvidence: typeof src === 'string' ? src.substring(0, 200) : JSON.stringify(src).substring(0, 200),
-          targetEvidence: typeof tgt === 'string' ? tgt.substring(0, 200) : JSON.stringify(tgt).substring(0, 200),
+          sourceEvidence: srcText ? srcText.substring(0, 200) : 'not found',
+          targetEvidence: tgtText ? tgtText.substring(0, 200) : 'not found',
           verdict,
           action,
           notes: `Similarity: ${(similarity * 100).toFixed(1)}%`,

@@ -10,7 +10,7 @@ async function scrapePageContent(url) {
   try {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-    await page.waitForTimeout(2000);
+    await new Promise(resolve => setTimeout(resolve, 2000));
     
     const content = await page.evaluate(() => {
       // Extract main content
