@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({
