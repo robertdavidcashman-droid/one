@@ -88,7 +88,7 @@ async function findFile() {
     const files = await fs.readdir(DOWNLOADS_DIR);
     const targetFile = files.find(f => 
       f.includes('Duty Solicitor Kent') && 
-      f.includes('01732 247 427') && 
+      f.includes('0333 049 7036') && 
       f.endsWith('.html')
     );
     
@@ -194,7 +194,7 @@ async function main() {
   
   if (!filePath) {
     console.error('❌ Could not find "Duty Solicitor Kent" HTML file in Downloads');
-    console.log('   Looking for file containing: "Duty Solicitor Kent" and "01732 247 427"');
+    console.log('   Looking for file containing: "Duty Solicitor Kent" and "0333 049 7036"');
     process.exit(1);
   }
   

@@ -299,7 +299,7 @@ export default function Header() {
           
           <div className="hidden lg:flex items-center gap-3">
             <a 
-              href="tel:01732247427" 
+              href="tel:03330497036" 
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 rounded-md px-8 bg-red-600 hover:bg-red-700 text-white font-bold shadow-lg flex"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone w-5 h-5">
@@ -371,7 +371,7 @@ export default function Header() {
             
             <Link href="/contact" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium mt-2" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             <a 
-              href="tel:01732247427" 
+              href="tel:03330497036" 
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm h-10 rounded-md px-8 bg-red-600 hover:bg-red-700 text-white font-bold shadow-lg mt-4"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone w-5 h-5">

@@ -168,8 +168,8 @@ export default function Footer() {
             <address className="not-italic">
               <ul className="space-y-3">
                 <li>
-                  <a href="tel:01732247427" className="text-slate-600 hover:text-blue-600 transition-colors font-medium text-white">
-                    01732 247 427
+                  <a href="tel:03330497036" className="text-slate-600 hover:text-blue-600 transition-colors font-medium text-white">
+                    0333 049 7036
                   </a>
                 </li>
                 <li>

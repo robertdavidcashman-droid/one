@@ -65,7 +65,7 @@ function extractMetadata(html) {
   
   return {
     title: document.querySelector('title')?.textContent?.trim() || 'Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice',
-    description: document.querySelector('meta[name="description"]')?.getAttribute('content') || 'Emergency Help: Has a friend or family member been arrested in Kent? You can instruct a solicitor on their behalf. Call 01732 247 427 immediately for 24/7 FREE legal representation.',
+    description: document.querySelector('meta[name="description"]')?.getAttribute('content') || 'Emergency Help: Has a friend or family member been arrested in Kent? You can instruct a solicitor on their behalf. Call 0333 049 7036 immediately for 24/7 FREE legal representation.',
     canonical: document.querySelector('link[rel="canonical"]')?.getAttribute('href') || 'https://policestationagent.com/arrestednow',
   };
 }

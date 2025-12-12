@@ -141,7 +141,7 @@ async function processFile(filePath) {
       : 'Contact Us | Criminal Defence Kent | 24/7 Legal Advice';
     const pageDescription = metadata.description 
       ? metadata.description.replace(/Police Station Agent/gi, 'Criminal Defence Kent')
-      : 'Contact Criminal Defence Kent for 24/7 legal advice. Call 01732 247 427 for free police station representation across Kent.';
+      : 'Contact Criminal Defence Kent for 24/7 legal advice. Call 0333 049 7036 for free police station representation across Kent.';
     const canonical = `https://criminaldefencekent.co.uk/contact`;
     
     // Create new page content

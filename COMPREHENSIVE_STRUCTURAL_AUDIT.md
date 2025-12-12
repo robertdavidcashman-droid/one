@@ -340,7 +340,7 @@ This comprehensive audit verifies the complete website structure after all fixes
 
 | Button Text | Route | Location | Status |
 |-------------|-------|----------|--------|
-| Call 01732 247 427 | `tel:01732247427` | Multiple pages | ✅ VALID |
+| Call 03330497036 | `tel:03330497036` | Multiple pages | ✅ VALID |
 | Text 07535 494446 | `sms:07535494446` | Multiple pages | ✅ VALID |
 | Contact Us | `/contact` | Multiple pages | ✅ EXISTS |
 | Get Help Now | `/contact` | Homepage | ✅ EXISTS |
