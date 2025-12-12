@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="text-slate-600 mb-6 leading-relaxed text-white">
               Expert duty solicitor providing police station representation across Kent. We specialise in protecting your rights during police interviews.
             </p>
-            <div className="flex gap-4" role="list" aria-label="Social media links">
+            <div className="flex gap-4" aria-label="Social media links">
               <a 
                 href="sms:07535494446?body=I%20need%20police%20station%20representation" 
                 className="text-blue-600 hover:text-blue-700 transition-colors" 

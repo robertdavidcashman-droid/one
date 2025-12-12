@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { JsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import db from '@/lib/db';
@@ -47,9 +48,35 @@ export default function PoliceStationPage({ params }: PageProps) {
     notFound();
   }
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  
+  const legalServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: `Police Station Representation at ${station.name}`,
+    description: `Professional police station representation services at ${station.name}. Available 24/7 for urgent legal assistance.`,
+    provider: {
+      '@type': 'LegalService',
+      name: 'Criminal Defence Kent',
+      telephone: '03330497036',
+      email: 'robertcashman@defencelegalservices.co.uk',
+    },
+    areaServed: {
+      '@type': 'PoliceStation',
+      name: station.name,
+      address: station.address ? {
+        '@type': 'PostalAddress',
+        streetAddress: station.address,
+      } : undefined,
+    },
+    url: `${siteUrl}/police-stations/${params.slug}`,
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
-      <Header />
+    <>
+      <JsonLd data={legalServiceSchema} />
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
+        <Header />
       <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16">
@@ -149,5 +176,6 @@ export default function PoliceStationPage({ params }: PageProps) {
       </main>
       <Footer />
     </div>
+    </>
   );
 }
