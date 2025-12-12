@@ -1,0 +1,279 @@
+#!/usr/bin/env node
+
+/**
+ * Create proper "What We Do" page content
+ */
+
+const fs = require('fs').promises;
+const path = require('path');
+
+const APP_DIR = path.join(__dirname, '..', 'app');
+
+const WHAT_WE_DO_CONTENT = `<div class="bg-gradient-to-br from-slate-50 to-blue-50">
+<section class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-amber-400 text-slate-900 mb-6 text-sm font-bold">
+      Our Services
+    </div>
+    <h1 class="text-4xl md:text-5xl font-black mb-6">What We Do</h1>
+    <p class="text-xl text-blue-100 mb-8">Expert police station representation and criminal defence services across Kent</p>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check w-6 h-6 text-blue-600">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Police Station Representation</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          We provide expert legal representation at police stations across Kent, available 24/7. Whether you've been arrested or invited for a voluntary interview, we're here to protect your rights and provide expert legal advice.
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Available 24/7 across all Kent police stations</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Expert advice during police interviews</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Protection of your legal rights</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-green-100 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-green-600">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Voluntary Interviews</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          If the police ask you to attend a voluntary interview, you have the right to legal representation. We provide expert advice and representation for voluntary interviews, helping you understand your rights and the potential consequences.
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Pre-interview consultation and advice</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Full representation during the interview</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Post-interview guidance and support</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-purple-100 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-6 h-6 text-purple-600">
+            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Legal Aid & Private Representation</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          We provide both Legal Aid (free) and private representation services. Legal Aid is available to everyone at the police station, while private representation offers guaranteed continuity and enhanced service.
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Free Legal Aid representation available</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Private representation with guaranteed solicitor</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Transparent fixed-fee packages</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-red-100 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-red-600">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">24/7 Emergency Service</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          We understand that arrests and police interviews can happen at any time. That's why we provide round-the-clock emergency legal representation across all Kent police stations.
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Available 24 hours a day, 7 days a week</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Rapid response to police station calls</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Coverage of all Kent police stations</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 rounded-xl p-8 border border-blue-200 mb-16">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">Our Coverage</h2>
+      <p class="text-slate-600 mb-6">
+        We provide police station representation across all of Kent, including:
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div>
+          <h3 class="font-bold text-slate-900 mb-2">East Kent</h3>
+          <ul class="space-y-1 text-slate-600 text-sm">
+            <li>Canterbury</li>
+            <li>Folkestone</li>
+            <li>Dover</li>
+            <li>Margate</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 mb-2">West Kent</h3>
+          <ul class="space-y-1 text-slate-600 text-sm">
+            <li>Tonbridge</li>
+            <li>Maidstone</li>
+            <li>Sevenoaks</li>
+            <li>Tunbridge Wells</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 mb-2">North Kent</h3>
+          <ul class="space-y-1 text-slate-600 text-sm">
+            <li>Medway</li>
+            <li>Gravesend</li>
+            <li>Swanley</li>
+            <li>Bluewater</li>
+            <li>Sittingbourne</li>
+            <li>Ashford</li>
+            <li>Coldharbour</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">Need Help Now?</h2>
+      <p class="text-xl text-slate-600 mb-8">We're available 24/7 to provide expert legal representation</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:01732247427" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-white shadow h-12 rounded-md px-8 bg-red-600 hover:bg-red-700 font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Call: 01732 247 427
+        </a>
+        <a href="/contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-white shadow-sm h-12 rounded-md px-8 border-slate-300 text-slate-900 hover:bg-slate-50">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>`;
+
+async function createPage(route, content, title, description) {
+  const routePath = route === '/' ? 'app/page.tsx' : `app${route}/page.tsx`;
+  const filePath = path.join(__dirname, '..', routePath);
+  const dirPath = path.dirname(filePath);
+  
+  await fs.mkdir(dirPath, { recursive: true });
+  
+  const pageContent = `import type { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
+  alternates: {
+    canonical: ${JSON.stringify(`https://criminaldefencekent.co.uk${route}`)},
+  },
+  openGraph: {
+    title: ${JSON.stringify(title)},
+    description: ${JSON.stringify(description)},
+    url: ${JSON.stringify(`https://criminaldefencekent.co.uk${route}`)},
+    siteName: 'Criminal Defence Kent',
+    type: 'website',
+  },
+};
+
+export default function Page() {
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-white">
+        <div className="container mx-auto px-4 py-8">
+          <div className="prose prose-lg max-w-none">
+            <div dangerouslySetInnerHTML={{ __html: ${JSON.stringify(content)} }} />
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
+`;
+  
+  await fs.writeFile(filePath, pageContent, 'utf-8');
+  console.log(`✅ Created: ${routePath}`);
+}
+
+async function main() {
+  console.log('Creating "What We Do" page...\n');
+  
+  await createPage(
+    '/what-we-do',
+    WHAT_WE_DO_CONTENT,
+    'What We Do | Criminal Defence Kent | Police Station Representation',
+    'Expert police station representation and criminal defence services across Kent. Available 24/7 for arrests, voluntary interviews, and legal advice.'
+  );
+  
+  console.log('\n✅ Done!');
+}
+
+main().catch(console.error);
+
