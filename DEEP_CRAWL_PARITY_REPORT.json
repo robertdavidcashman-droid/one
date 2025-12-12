@@ -1,0 +1,914 @@
+{
+  "timestamp": "2025-12-12T19:46:26.422Z",
+  "crawlMap": {},
+  "routeMatrix": {
+    "matches": [
+      {
+        "sourceUrl": "https://policestationagent.com",
+        "sourceNormalized": "https://policestationagent.com",
+        "targetUrl": "https://criminaldefencekent.co.uk",
+        "targetNormalized": "https://criminaldefencekent.co.uk",
+        "matchType": "path",
+        "sourceTitle": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "targetTitle": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "sourceH1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+        "targetH1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/home",
+        "sourceNormalized": "https://policestationagent.com/home",
+        "targetUrl": "https://criminaldefencekent.co.uk",
+        "targetNormalized": "https://criminaldefencekent.co.uk",
+        "matchType": "semantic",
+        "sourceTitle": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "targetTitle": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "sourceH1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+        "targetH1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/contact",
+        "sourceNormalized": "https://policestationagent.com/contact",
+        "targetUrl": "https://criminaldefencekent.co.uk",
+        "targetNormalized": "https://criminaldefencekent.co.uk",
+        "matchType": "semantic",
+        "sourceTitle": "Contact Police Station Agent | 24/7 Legal Advice Kent | Call 01732 247 427",
+        "targetTitle": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "sourceH1": "Contact for Police Station Advice",
+        "targetH1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7"
+      }
+    ],
+    "missing": [
+      {
+        "sourceUrl": "https://policestationagent.com/about",
+        "sourceNormalized": "https://policestationagent.com/about",
+        "sourceTitle": "About Police Station Agent | Expert Criminal Defence Solicitors Kent",
+        "sourceH1": "Specialist Police Station Representative Agency"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/canwehelp",
+        "sourceNormalized": "https://policestationagent.com/canwehelp",
+        "sourceTitle": "Can We Help You? | Interactive Guide | Police Station Agent",
+        "sourceH1": "Can We Help You?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/outofarea",
+        "sourceNormalized": "https://policestationagent.com/outofarea",
+        "sourceTitle": "Detained Outside Kent? What To Do | Police Station Agent",
+        "sourceH1": "Detained Outside Kent?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/blog",
+        "sourceNormalized": "https://policestationagent.com/blog",
+        "sourceTitle": "Blog | Police Station Agent",
+        "sourceH1": "Legal Insights & Advice"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/services",
+        "sourceNormalized": "https://policestationagent.com/services",
+        "sourceTitle": "Police Station Representation Services Kent | Free Legal Aid | 24/7",
+        "sourceH1": "Police Station Advice & Representation"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/forsolicitors",
+        "sourceNormalized": "https://policestationagent.com/forsolicitors",
+        "sourceTitle": "Police Station Agent Cover Services for Solicitors | Kent & London",
+        "sourceH1": "Police Station Agent Services for Solicitors"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/medway-police-station",
+        "sourceNormalized": "https://policestationagent.com/medway-police-station",
+        "sourceTitle": "Medway Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Medway Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/north-kent-gravesend-police-station",
+        "sourceNormalized": "https://policestationagent.com/north-kent-gravesend-police-station",
+        "sourceTitle": "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Gravesend Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/canterbury-police-station",
+        "sourceNormalized": "https://policestationagent.com/canterbury-police-station",
+        "sourceTitle": "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Canterbury Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/folkestone-police-station",
+        "sourceNormalized": "https://policestationagent.com/folkestone-police-station",
+        "sourceTitle": "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Folkestone Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/maidstone-police-station",
+        "sourceNormalized": "https://policestationagent.com/maidstone-police-station",
+        "sourceTitle": "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice",
+        "sourceH1": "Police Station Rep for Maidstone Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/tonbridge-police-station",
+        "sourceNormalized": "https://policestationagent.com/tonbridge-police-station",
+        "sourceTitle": "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Tonbridge Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/ashford-police-station",
+        "sourceNormalized": "https://policestationagent.com/ashford-police-station",
+        "sourceTitle": "Ashford Police Station Solicitor | Robert Cashman | FREE Advice",
+        "sourceH1": "Police Station Rep for Ashford Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/dover-police-station",
+        "sourceNormalized": "https://policestationagent.com/dover-police-station",
+        "sourceTitle": "Dover Police Station Solicitor | Robert Cashman | FREE Advice",
+        "sourceH1": "Police Station Rep for Dover Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/margate-police-station",
+        "sourceNormalized": "https://policestationagent.com/margate-police-station",
+        "sourceTitle": "Margate Police Station Solicitor | Robert Cashman | FREE 24/7",
+        "sourceH1": "Police Station Rep Margate Custody – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/psastations",
+        "sourceNormalized": "https://policestationagent.com/psastations",
+        "sourceTitle": "Kent Police Station Coverage | Police Station Agent",
+        "sourceH1": "Police Station Coverage"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/christmashours",
+        "sourceNormalized": "https://policestationagent.com/christmashours",
+        "sourceTitle": "Christmas & Bank Holiday Opening Hours | Police Station Agent",
+        "sourceH1": "Here for you this Christmas"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/areas",
+        "sourceNormalized": "https://policestationagent.com/areas",
+        "sourceTitle": "Police Station Coverage Kent & Medway | Robert Cashman | Police Station Agent",
+        "sourceH1": "Police Station Coverage Across Kent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/join",
+        "sourceNormalized": "https://policestationagent.com/join",
+        "sourceTitle": "UK Criminal Defence Network – Join | Professional Network for Duty Solicitors",
+        "sourceH1": "UK Criminal Defence Network"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/refusingpoliceinterview",
+        "sourceNormalized": "https://policestationagent.com/refusingpoliceinterview",
+        "sourceTitle": "Refusing a Police Interview – Pros & Cons | Expert Advice",
+        "sourceH1": "Refusing a Police Interview: Pros & Cons"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/policeinterviewhelp",
+        "sourceNormalized": "https://policestationagent.com/policeinterviewhelp",
+        "sourceTitle": "Police Interview Help | Expert Legal Advice | Police Station Agent",
+        "sourceH1": "Police Interview Help Guide"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/what-happens-if-ignore-police-interview",
+        "sourceNormalized": "https://policestationagent.com/what-happens-if-ignore-police-interview",
+        "sourceTitle": "What Happens If I Ignore A Police Interview Invitation? | Legal Consequences",
+        "sourceH1": "What Happens If I Ignore A Police Interview Invitation?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/arrestednow",
+        "sourceNormalized": "https://policestationagent.com/arrestednow",
+        "sourceTitle": "Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice",
+        "sourceH1": "HAS SOMEONE YOU KNOW BEEN ARRESTED?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/freelegaladvice",
+        "sourceNormalized": "https://policestationagent.com/freelegaladvice",
+        "sourceTitle": "Free Legal Advice at Police Station | Legal Aid Explained",
+        "sourceH1": "Yes, It Is Free."
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/FAQ",
+        "sourceNormalized": "https://policestationagent.com/faq",
+        "sourceTitle": "FAQ - Frequently Asked Questions | Police Station Agent",
+        "sourceH1": "Everything You Need to Know"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/servicesvoluntaryinterviews",
+        "sourceNormalized": "https://policestationagent.com/servicesvoluntaryinterviews",
+        "sourceTitle": "Voluntary Police Interview Solicitor | Police Station Agent",
+        "sourceH1": "Voluntary Police Interviews"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/termsandconditions",
+        "sourceNormalized": "https://policestationagent.com/termsandconditions",
+        "sourceTitle": "Website Terms of Use | Police Station Agent",
+        "sourceH1": "Website Terms of Use"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/privacy",
+        "sourceNormalized": "https://policestationagent.com/privacy",
+        "sourceTitle": "Website Privacy Policy | Police Station Agent",
+        "sourceH1": "Privacy Policy"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/attendanceterms",
+        "sourceNormalized": "https://policestationagent.com/attendanceterms",
+        "sourceTitle": "Agency Terms of Attendance | Police Station Agent",
+        "sourceH1": "Agency Terms of Attendance"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/servicerates",
+        "sourceNormalized": "https://policestationagent.com/servicerates",
+        "sourceTitle": "Agency Service Rates & Fees | Police Station Agent",
+        "sourceH1": "Agency Fee Schedule"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/complaints",
+        "sourceNormalized": "https://policestationagent.com/complaints",
+        "sourceTitle": "Complaints Policy | Police Station Agent",
+        "sourceH1": "Complaints Policy"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/cookies",
+        "sourceNormalized": "https://policestationagent.com/cookies",
+        "sourceTitle": "Cookies Policy | Police Station Agent",
+        "sourceH1": "Cookies Policy"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/whatisapolicestationrep",
+        "sourceNormalized": "https://policestationagent.com/whatisapolicestationrep",
+        "sourceTitle": "What Is A Police Station Rep? | Police Station Agent",
+        "sourceH1": "What Is A Police Station Representative?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/what-to-expect-at-a-police-interview-in-kent",
+        "sourceNormalized": "https://policestationagent.com/what-to-expect-at-a-police-interview-in-kent",
+        "sourceTitle": "What to Expect at a Police Interview in Kent | Complete Guide 2025",
+        "sourceH1": "What to Expect at a Police Interview in Kent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/police-custody-rights",
+        "sourceNormalized": "https://policestationagent.com/police-custody-rights",
+        "sourceTitle": "Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice",
+        "sourceH1": "Your Rights in Kent Police Custody"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/voluntary-police-interview-solicitor",
+        "sourceNormalized": "https://policestationagent.com/voluntary-police-interview-solicitor",
+        "sourceTitle": "Voluntary Police Interview Solicitor Kent | FREE Legal Advice | PACE Code C",
+        "sourceH1": "Voluntary Police Interview Solicitor"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/swanley-police-station",
+        "sourceNormalized": "https://policestationagent.com/swanley-police-station",
+        "sourceTitle": "Swanley Police Station Solicitor | Robert Cashman | FREE Advice",
+        "sourceH1": "Police Station Rep for Swanley Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/coldharbour-police-station",
+        "sourceNormalized": "https://policestationagent.com/coldharbour-police-station",
+        "sourceTitle": "Coldharbour Police Station Solicitor | Robert Cashman | FREE",
+        "sourceH1": "Police Station Rep for Coldharbour Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/tunbridge-wells-police-station",
+        "sourceNormalized": "https://policestationagent.com/tunbridge-wells-police-station",
+        "sourceTitle": "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE",
+        "sourceH1": "Police Station Rep for Tunbridge Wells Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/sevenoaks-police-station",
+        "sourceNormalized": "https://policestationagent.com/sevenoaks-police-station",
+        "sourceTitle": "Sevenoaks Police Station Solicitor | Robert Cashman | FREE",
+        "sourceH1": "Police Station Rep for Sevenoaks Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/sittingbourne-police-station",
+        "sourceNormalized": "https://policestationagent.com/sittingbourne-police-station",
+        "sourceTitle": "Sittingbourne Police Station Solicitor | Robert Cashman | FREE",
+        "sourceH1": "Police Station Rep for Sittingbourne Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/bluewater-police-station",
+        "sourceNormalized": "https://policestationagent.com/bluewater-police-station",
+        "sourceTitle": "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice",
+        "sourceH1": "Police Station Rep for Bluewater Voluntary Interviews – Police Station Agent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/article-interview-under-caution",
+        "sourceNormalized": "https://policestationagent.com/article-interview-under-caution",
+        "sourceTitle": "What Happens During Interview Under Caution? | Kent Police Station Guide",
+        "sourceH1": "What Happens During Interview Under Caution?"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/article-police-caution-before-interview",
+        "sourceNormalized": "https://policestationagent.com/article-police-caution-before-interview",
+        "sourceTitle": "The Police Caution Before Interview Explained | What It Means",
+        "sourceH1": "The Police Caution Before Interview: A Comprehensive Guide"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/arrested-what-to-do",
+        "sourceNormalized": "https://policestationagent.com/arrested-what-to-do",
+        "sourceTitle": "Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights",
+        "sourceH1": "Going to be Arrested? Here's What to Do"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/police-interview-rights",
+        "sourceNormalized": "https://policestationagent.com/police-interview-rights",
+        "sourceTitle": "Police Interview Rights Kent | Your Rights During Questioning | PACE Code C",
+        "sourceH1": "Your Rights During a Police Interview in Kent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/police-station-agent-kent",
+        "sourceNormalized": "https://policestationagent.com/police-station-agent-kent",
+        "sourceTitle": "24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman",
+        "sourceH1": "24/7 Police Station Agent in Kent"
+      },
+      {
+        "sourceUrl": "https://policestationagent.com/article-rights-kent-police-station-2025",
+        "sourceNormalized": "https://policestationagent.com/article-rights-kent-police-station-2025",
+        "sourceTitle": "Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice",
+        "sourceH1": "Your Rights in a Kent Police Station"
+      }
+    ],
+    "summary": {
+      "totalSourcePages": 51,
+      "matched": 3,
+      "missing": 48,
+      "matchRate": "5.9%"
+    }
+  },
+  "parityMatrix": [
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Hero/Title",
+      "sourceEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "targetEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Meta Description",
+      "sourceEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "targetEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Body Text (first 500 chars)",
+      "sourceEvidence": "v4.4.0 — 12/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7Accredited Court &",
+      "targetEvidence": "v4.4.0 — 11/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7Accredited Court &",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "CTAs (Phone/SMS/WhatsApp/Email)",
+      "sourceEvidence": "[{\"text\":\"📞 Call Now\",\"href\":\"tel:01732 247 427\"},{\"text\":\"Emergency\",\"href\":\"tel:01732 247 427\"},{\"text\":\"Call Now01732 247 427Immediate Response\",\"href\":\"tel:01732247427\"},{\"text\":\"01732 247 427\",\"",
+      "targetEvidence": "[{\"text\":\"Emergency\",\"href\":\"tel:01732247427\"},{\"text\":\"Call Now01732 247 427Immediate Response\",\"href\":\"tel:01732247427\"},{\"text\":\"01732 247 427\",\"href\":\"tel:01732247427\"},{\"text\":\"Call 01732 247 427",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Police Station Links",
+      "sourceEvidence": "Text Message07535 494446Fast SMS Response (quickest), 16/09/2025What happens at a police station voluntary interview A voluntary police interview, also called a “caution plus 3” interview, is a formal",
+      "targetEvidence": "Text Message07535 494446Fast SMS Response (quickest), 16/09/2025What happens at a police station voluntary interview A voluntary police interview, also called a “caution plus 3” interview, is a formal",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/home",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Hero/Title",
+      "sourceEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "targetEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/home",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Meta Description",
+      "sourceEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "targetEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/home",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Body Text (first 500 chars)",
+      "sourceEvidence": "v4.4.0 — 12/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7Accredited Court &",
+      "targetEvidence": "v4.4.0 — 11/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7Accredited Court &",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/home",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "CTAs (Phone/SMS/WhatsApp/Email)",
+      "sourceEvidence": "[{\"text\":\"📞 Call Now\",\"href\":\"tel:01732 247 427\"},{\"text\":\"Emergency\",\"href\":\"tel:01732 247 427\"},{\"text\":\"Call Now01732 247 427Immediate Response\",\"href\":\"tel:01732247427\"},{\"text\":\"01732 247 427\",\"",
+      "targetEvidence": "[{\"text\":\"Emergency\",\"href\":\"tel:01732247427\"},{\"text\":\"Call Now01732 247 427Immediate Response\",\"href\":\"tel:01732247427\"},{\"text\":\"01732 247 427\",\"href\":\"tel:01732247427\"},{\"text\":\"Call 01732 247 427",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/home",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Police Station Links",
+      "sourceEvidence": "Text Message07535 494446Fast SMS Response (quickest), 16/09/2025What happens at a police station voluntary interview A voluntary police interview, also called a “caution plus 3” interview, is a formal",
+      "targetEvidence": "Text Message07535 494446Fast SMS Response (quickest), 16/09/2025What happens at a police station voluntary interview A voluntary police interview, also called a “caution plus 3” interview, is a formal",
+      "verdict": "OK",
+      "action": "NONE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/contact",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Hero/Title",
+      "sourceEvidence": "Contact for Police Station Advice",
+      "targetEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/contact",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Meta Description",
+      "sourceEvidence": "Contact Police Station Agent for FREE police station representation. Available 24/7 across Kent. Call 01732 247 427, text 07535 494446 or email for immediate legal advice.",
+      "targetEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/contact",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Body Text (first 500 chars)",
+      "sourceEvidence": "v4.4.0 — 12/12/2025v4.5.5 — 12/12/2025Contact for Police Station AdviceGet expert legal advice now. We are available during extended hours to protect your rights. Our advice at the police station is f",
+      "targetEvidence": "v4.4.0 — 11/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7Accredited Court &",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/contact",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "CTAs (Phone/SMS/WhatsApp/Email)",
+      "sourceEvidence": "[{\"text\":\"📞 Call Now\",\"href\":\"tel:01732 247 427\"},{\"text\":\"Emergency\",\"href\":\"tel:01732 247 427\"},{\"text\":\"01732 247 427\",\"href\":\"tel:01732247427\"},{\"text\":\"Call: 01732 247 427\",\"href\":\"tel:017322474",
+      "targetEvidence": "[{\"text\":\"Emergency\",\"href\":\"tel:01732247427\"},{\"text\":\"Call Now01732 247 427Immediate Response\",\"href\":\"tel:01732247427\"},{\"text\":\"01732 247 427\",\"href\":\"tel:01732247427\"},{\"text\":\"Call 01732 247 427",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/contact",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "Police Station Links",
+      "sourceEvidence": "Text Us, Police Stations, Text: 07535 494446, Find a Police Station Rep, Police Station Rep UK, UK Custody Suites",
+      "targetEvidence": "Text Message07535 494446Fast SMS Response (quickest), 16/09/2025What happens at a police station voluntary interview A voluntary police interview, also called a “caution plus 3” interview, is a formal",
+      "verdict": "PARTIAL",
+      "action": "UPDATE FROM SOURCE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/about",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: About Police Station Agent | Expert Criminal Defence Solicitors Kent\nH1: Specialist Police Station Representative Agency\nBody: v4.4.0 — 12/12/2025About Police Station AgentSpecialist Police Station Representative AgencyExpert criminal defence representation at Kent police stations, providing qualified solicitors and accredited representatives at short noticeWho We ArePolice Station Agent is a specialist agency providing qualified criminal solicitors and accredited police station representatives to assist clients during police interviews under caution across Kent.Through our professional association with Tuckers Solicito",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/canwehelp",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Can We Help You? | Interactive Guide | Police Station Agent\nH1: Can We Help You?\nBody: v4.4.0 — 12/12/2025Interactive GuideCan We Help You?Follow the flowchart below to see if our services are the right fit for your situation. Before You ProceedInstruction: We can only act if instructed by the detainee directly, or by a third party (family/friend) provided the detainee confirms they wish to instruct us upon our arrival [1].Existing Representation: We cannot obtain information from the police if the detainee has already instructed another solicitor or requested the Duty Solicitor. ",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/outofarea",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Detained Outside Kent? What To Do | Police Station Agent\nH1: Detained Outside Kent?\nBody: v4.4.0 — 12/12/2025National AssistanceDetained Outside Kent?While our primary agents are based in Kent, we can still assist you in the surrounding areas (e.g. London, Sussex). Here is what you need to do if the arrest has taken place outside of our immediate area.For Members of the PublicIf your friend or relative is detained outside KentWe Can Help If You Are Nearby.If the arrest is outside of Kent (e.g. London, Sussex, Surrey), we can still instruct Defence Legal Services to represent the deta",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/blog",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Blog | Police Station Agent\nH1: Legal Insights & Advice\nBody: v4.4.0 — 12/12/2025What is the Police Caution?# What Is the Police Caution in England and Wales? ## Introduction: Why the Police Caution Matters If you’ve been arrested or invited for a voluntary police interview in England and Wales, you may have heard the officer say: “You do not have to say anything, but it may harm your defence if you do [&hellip;] Robert CashmanUpdated: 10 Dec 2025The Hidden Risks of Voluntary Police Interviews or informal chats in the UK You Need to KnowMany people believe",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/services",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Station Representation Services Kent | Free Legal Aid | 24/7\nH1: Police Station Advice & Representation\nBody: v4.4.0 — 12/12/2025Police Station Advice & RepresentationExpert legal support during police investigations with seamless court coverage when needed. We specialise in police station representation because this is where cases are won or lost.Not sure which service you need? Try our interactive guide Legal Aid: Free RepresentationEveryone is entitled to free legal advice at the police station. This is a right, not a privilege, and is not means-tested. We can provide this service free of charge.Unde",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/forsolicitors",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Station Agent Cover Services for Solicitors | Kent & London\nH1: Police Station Agent Services for Solicitors\nBody: v4.4.0 — 12/12/2025For Legal ProfessionalsPolice Station Agent Services for SolicitorsReliable, experienced police station representation for criminal law firms across Kent and beyond.Trusted by Law Firms Across England & WalesPolice Station Agent provides professional, accredited police station representation services to solicitors' firms. Led by Robert Cashman, former director of a major criminal legal aid practice with over 35 years of experience handling 6000 + cases across every level of cr",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/medway-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Medway Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Medway Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Medway Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Medway\",\"description\":\"Police Station Agent provides duty solicitor-led police station r",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/north-kent-gravesend-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Gravesend Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"North Kent (Gravesend) Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Gravesend\",\"description\":\"Police Station Agent provides duty solicitor-l",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/canterbury-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Canterbury Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Canterbury Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Canterbury\",\"description\":\"Police Station Agent provides duty solicitor-led police s",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/folkestone-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Folkestone Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Folkestone Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Folkestone\",\"description\":\"Police Station Agent provides duty solicitor-led police s",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/maidstone-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Maidstone Police Station Solicitor | Robert Cashman | FREE Advice\nH1: Police Station Rep for Maidstone Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Maidstone Police Station (Voluntary Interviews)\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Maidstone\",\"description\":\"Police Station Agent provides duty s",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/tonbridge-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Tonbridge Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Tonbridge Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Tonbridge\",\"description\":\"Police Station Agent provides duty solicitor-led police sta",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/ashford-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Ashford Police Station Solicitor | Robert Cashman | FREE Advice\nH1: Police Station Rep for Ashford Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Ashford Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Ashford\",\"description\":\"Police Station Agent provides duty solicitor-led police station",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/dover-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Dover Police Station Solicitor | Robert Cashman | FREE Advice\nH1: Police Station Rep for Dover Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Dover Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Dover\",\"description\":\"Police Station Agent provides duty solicitor-led police station rep",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/margate-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Margate Police Station Solicitor | Robert Cashman | FREE 24/7\nH1: Police Station Rep Margate Custody – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Margate Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Margate\",\"description\":\"Police Station Agent provides duty solicitor-led police station",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/psastations",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Kent Police Station Coverage | Police Station Agent\nH1: Police Station Coverage\nBody: v4.4.0 — 12/12/2025v1.0.0 · 2025-12-12Police Station CoverageWe provide expert duty solicitor representation at all police stations and custody suites across Kent and Medway.Medway Police StationMedway24hr CustodyMedway • 24hr CustodyMain Medway custody suiteView Station Details North Kent (Gravesend) Police StationNorth Kent24hr CustodyNorth Kent • 24hr CustodyNorth Kent custody suiteView Station Details Canterbury Police StationEast Kent24hr CustodyEast Kent • 24hr CustodyEast Kent 24hr custod",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/christmashours",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Christmas & Bank Holiday Opening Hours | Police Station Agent\nH1: Here for you this Christmas\nBody: v4.4.0 — 12/12/2025 @keyframes snow { 0% { transform: translateY(-10vh) translateX(0); opacity: 1; } 100% { transform: translateY(100vh) translateX(20px); opacity: 0.3; } } .snowflake { position: absolute; color: white; font-size: 1em; opacity: 0.8; animation: snow linear infinite; z-index: 1; } .snowflake:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 0s; } .snowflake:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: 2s; } .snowflake:nth-child(3) { left: 3",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/areas",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Station Coverage Kent & Medway | Robert Cashman | Police Station Agent\nH1: Police Station Coverage Across Kent\nBody: v4.4.0 — 12/12/2025Complete Kent CoveragePolice Station Coverage Across KentRapid response to all Kent custody suites and voluntary interview stations. Expert representation from an accredited duty solicitor, available 24/7. Call: 01732 247 427 Text: 07535 49444615+Police Stations24/7Available45minAvg ResponseFREELegal AidWhere We CoverComprehensive representation across all Kent regions. Click any station for detailed information.Find Nearest StationUse your current location to find the closest",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/join",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: UK Criminal Defence Network – Join | Professional Network for Duty Solicitors\nH1: UK Criminal Defence Network\nBody: v4.4.0 — 12/12/2025Professional NetworkUK Criminal Defence NetworkA national professional network for duty solicitors, accredited police station representatives, and criminal legal aid firms. Free to join. Private and secure.📱 Fastest Way to Join – SMS VerificationTo keep the network secure and genuine, all members are verified individually.To join, text:\"JOIN + Your Firm Name\"to:07535 494446Scan QR code to open SMS on mobileSend JOIN Message NowWhy Join?Connect with criminal defence solicitors",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/refusingpoliceinterview",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Refusing a Police Interview – Pros & Cons | Expert Advice\nH1: Refusing a Police Interview: Pros & Cons\nBody: v4.4.0 — 12/12/2025Refusing a Police Interview: Pros & ConsCan you just say \"No\"? Understanding your rights and the risks.Can I Refuse to Be Interviewed?Technically, you cannot be forced to speak. However, refusing to come out of your cell or refusing to sit in the interview room can lead to \"adverse inferences\" being drawn against you later in court. Crucial DistinctionThere is a difference between refusing to attend an interview and answering \"No Comment\" during an interview. Answering Questio",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/policeinterviewhelp",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Interview Help | Expert Legal Advice | Police Station Agent\nH1: Police Interview Help Guide\nBody: v4.4.0 — 12/12/2025Police Interview Help GuideWhat you need to know BEFORE you step into the interview room. The Golden RuleYou have the right to free legal advice. Use it. The police are trained investigators. Having a solicitor does not make you look guilty; it ensures you are treated fairly and your rights are protected.Call for AdviceRead Full Guide What is a Voluntary Interview?Also known as a \"caution + 3\", this is a formal police interview but you are not under arrest.Legal advice is stil",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/what-happens-if-ignore-police-interview",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: What Happens If I Ignore A Police Interview Invitation? | Legal Consequences\nH1: What Happens If I Ignore A Police Interview Invitation?\nBody: v4.4.0 — 12/12/2025Critical Legal AdviceWhat Happens If I Ignore A Police Interview Invitation?Ignoring a voluntary police interview can have serious consequences. Here's what you need to know. Call Now: 01732 247 427 Text: 07535 494446CRITICAL: Don't Ignore Police ContactIf police have asked you to attend a voluntary interview, ignoring the invitation will NOT make the problem go away. It can make your situation significantly worse.What Can Happen If You Ignore The Invitation1. Police Can Arres",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/arrestednow",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice\nH1: HAS SOMEONE YOU KNOW BEEN ARRESTED?\nBody: v4.4.0 — 12/12/2025 Emergency ResponseHAS SOMEONE YOU KNOW BEEN ARRESTED?Why You Are Reading This (And They Aren't)When someone is arrested, their mobile phone is immediately seized by police. They cannot search for a lawyer themselves.It is up to you (family or friend) to instruct a solicitor for them.Your Right to Help (PACE Code C, Para 6.15)\"If a solicitor has been contacted by a third party (friend/relative) on the detainee's behalf... the detainee must be informed.\"Call our 24/7 Emergency ",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/freelegaladvice",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Free Legal Advice at Police Station | Legal Aid Explained\nH1: Yes, It Is Free.\nBody: v4.4.0 — 12/12/2025Yes, It Is Free.Everyone suspects, regardless of income or wealth, is entitled to free independent legal advice at the police station. No Bill To YouOur fees for police station attendance are paid directly by the Legal Aid Agency. You will never receive a bill from us for police station work. No Means TestUnlike court legal aid, police station advice is non-means tested. It doesn't matter if you are employed, unemployed, or a millionaire.Why Risk Going Without?Since it costs y",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/FAQ",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: FAQ - Frequently Asked Questions | Police Station Agent\nH1: Everything You Need to Know\nBody: v4.4.0 — 12/12/2025Frequently Asked QuestionsEverything You Need to KnowComprehensive answers about our police station representation services across Kent Emergency: 01732 247 427Contact UsWhat We DoWhat services do Police Station Agent provide?Who do you represent?What types of offences do you cover?Do you cover voluntary police interviews?What qualifications do your representatives have?Are you available 24/7?Do you cover Legal Aid and private work?Which police stations do you cover?What We Do",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/servicesvoluntaryinterviews",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Voluntary Police Interview Solicitor | Police Station Agent\nH1: Voluntary Police Interviews\nBody: v4.4.0 — 12/12/2025Your Rights MatterVoluntary Police InterviewsBeing \"invited\" for a police interview is just as serious as an arrest. Protect your rights with expert legal representation.Warning: A Voluntary Interview is Not an Informal ChatAnything you say in a voluntary interview is recorded and can be used as evidence against you. It is a formal interview under caution, and attending without a solicitor is a significant risk.Why You MUST Have a SolicitorIt's Free: Just like an interview und",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/termsandconditions",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Website Terms of Use | Police Station Agent\nH1: Website Terms of Use\nBody: Legal AgreementWebsite Terms of UseLast updated: 12 December 2025 Application of These TermsThese terms apply to your use of this website (policestationagent.com) only. If you are a solicitor firm instructing us, please refer to our Agency Terms of Attendance.1. Information About UsPolice Station Agent is a trading name of Defence Legal Services Limited (\"we\", \"us\", \"our\"). We are a limited company registered in England and Wales under company number 09900871. Our registered office is at Greenac",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/privacy",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Website Privacy Policy | Police Station Agent\nH1: Privacy Policy\nBody: v4.4.0 — 12/12/2025HomePrivacy PolicyUK GDPR CompliantPrivacy PolicyLast updated: 12 December 2025 Important Note for Agency InstructionsIf you are a solicitor firm instructing us as agents, or if we are attending a client on your behalf, please refer to our dedicated Agency Terms & Privacy Notice which governs professional agency data processing. 1. Introduction & Who We AreWelcome to the privacy policy of Defence Legal Services Limited trading as Police Station Agent (\"we\", \"us\", or \"our\").We ",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/attendanceterms",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Agency Terms of Attendance | Police Station Agent\nH1: Agency Terms of Attendance\nBody: v4.4.0 — 12/12/2025← Back to Website General TermsAgency Terms of AttendanceSpecific terms for solicitor firms instructing us as agents.Scope of These TermsThese terms constitute a binding contract between Defence Legal Services Limited (\"the Agent\") and the instructing solicitor firm (\"the Instructing Firm\"). They apply specifically to agency instructions for police station attendance. 1. Agency Relationship & Status1.1 Appointed Representative: The Instructing Firm designates the Agent (and it",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/servicerates",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Agency Service Rates & Fees | Police Station Agent\nH1: Agency Fee Schedule\nBody: v4.4.0 — 12/12/2025Agency Fee ScheduleStandard rates for Legal Aid Agency police station attendance instructions.Rates Subject to AgreementThe rates published below are our standard indicative rates for ordinary Legal Aid matters.EXCLUSIONS & SPECIAL RATES:Murder & Complex Cases: These are strictly outside the standard fee structure. Fees for murder and complex cases must be agreed individually in advance.Bank Holidays & Christmas: All attendances on Bank Holidays, Christmas Day, and New Year's ",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/complaints",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Complaints Policy | Police Station Agent\nH1: Complaints Policy\nBody: HomeComplaints PolicyComplaints PolicyComplaints PolicyLast updated: November 17, 2025Our Commitment to Service ExcellencePolice Station Agent, operated by Defence Legal Services Ltd, is committed to providing high-quality legal representation and service to all clients.We aim to:Provide expert police station representationRespond promptly to client enquiries and concernsOperate with transparency and integrityContinuously improve our services based on feedbackIf something goes wrong, we want to ",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/cookies",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Cookies Policy | Police Station Agent\nH1: Cookies Policy\nBody: v4.4.0 — 12/12/2025HomeCookies PolicyCookies PolicyCookies PolicyLast updated: November 17, 2025What Are Cookies1.1 Cookies are small text files stored on your device when you visit a website.1.2 They help websites remember your preferences, enable functionality, and understand how you use the site.1.3 Cookies can be \"session\" cookies (deleted when you close your browser) or \"persistent\" cookies (stored for a set period).How We Use CookiesEssential Cookies (Always Active)These cookies are strict",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/whatisapolicestationrep",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: What Is A Police Station Rep? | Police Station Agent\nH1: What Is A Police Station Representative?\nBody: v4.4.0 — 12/12/2025What Is A Police Station Representative?Understanding the role of police station reps in protecting your rights during police interviewsThe Role of a Police Station RepresentativeA police station representative (often called a \"police station rep\" or \"duty rep\") is a qualified legal professional who represents suspects during police interviews. They play a crucial role in the criminal justice system by ensuring that individuals' legal rights are protected during one of the mos",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/what-to-expect-at-a-police-interview-in-kent",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: What to Expect at a Police Interview in Kent | Complete Guide 2025\nH1: What to Expect at a Police Interview in Kent\nBody: v4.4.0 — 12/12/2025Kent Police ProceduresWhat to Expect at a Police Interview in KentA complete guide to police interview procedures at Maidstone, Medway, Canterbury, Tonbridge and all other Kent police stationsBefore Your Police InterviewNever attend a Kent police interview without legal advice. Whether arrested or invited voluntarily, free legal representation is available and can significantly affect the outcome of your case. Call Now: 01732 247 427Arrest vs Voluntary Interview in KentKent Po",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/police-custody-rights",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice\nH1: Your Rights in Kent Police Custody\nBody: v4.4.0 — 12/12/2025Your PACE RightsYour Rights in Kent Police CustodyThe Police and Criminal Evidence Act 1984 (PACE) and its Codes of Practice protect your fundamental rights at Kent police stations. Know your rights — they exist to protect you.Ask for Robert Cashman, Tuckers Duty Solicitor — The DSCC have our details FREE Advice: 01732 247 427 FREE Legal Advice 24/7 AvailabilityThe Legal Framework: PACE 1984The Police and Criminal Evidence Act 1984 (PACE) is the primary legislation governing p",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/voluntary-police-interview-solicitor",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Voluntary Police Interview Solicitor Kent | FREE Legal Advice | PACE Code C\nH1: Voluntary Police Interview Solicitor\nBody: v4.4.0 — 12/12/2025Invited for a \"chat\" with police? Call us BEFORE you agree to a date: 01732 247 427Voluntary Interview (\"Caution + 3\")Voluntary Police Interview SolicitorA \"voluntary\" interview is a formal interview under caution. The consequences are the same as being arrested. Never attend alone. Call 01732 247 427 Text 07535 494446 FREE Legal Aid All Kent StationsWhat is a Voluntary Interview? (PACE Code C 3.21)A voluntary interview (also known as a \"VA\" or \"Caution Plus 3\") is where a sus",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/swanley-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Swanley Police Station Solicitor | Robert Cashman | FREE Advice\nH1: Police Station Rep for Swanley Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Swanley Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Swanley\",\"description\":\"Police Station Agent provides duty solicitor-led police station",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/coldharbour-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Coldharbour Police Station Solicitor | Robert Cashman | FREE\nH1: Police Station Rep for Coldharbour Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Coldharbour Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Coldharbour\",\"description\":\"Police Station Agent provides duty solicitor-led police",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/tunbridge-wells-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE\nH1: Police Station Rep for Tunbridge Wells Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Tunbridge Wells Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Tunbridge Wells\",\"description\":\"Police Station Agent provides duty solicitor-le",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/sevenoaks-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Sevenoaks Police Station Solicitor | Robert Cashman | FREE\nH1: Police Station Rep for Sevenoaks Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sevenoaks Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Sevenoaks\",\"description\":\"Police Station Agent provides duty solicitor-led police sta",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/sittingbourne-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Sittingbourne Police Station Solicitor | Robert Cashman | FREE\nH1: Police Station Rep for Sittingbourne Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sittingbourne Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Sittingbourne\",\"description\":\"Police Station Agent provides duty solicitor-led po",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/bluewater-police-station",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Bluewater Police Station Solicitor | Robert Cashman | FREE Advice\nH1: Police Station Rep for Bluewater Voluntary Interviews – Police Station Agent\nBody: v4.4.0 — 12/12/2025{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://policestationagent.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Coverage\",\"item\":\"https://policestationagent.com/coverage\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Bluewater Police Station\"}]},{\"@type\":\"LegalService\",\"name\":\"Duty Solicitor – Bluewater\",\"description\":\"Police Station Agent provides duty solicitor-led police sta",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/article-interview-under-caution",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: What Happens During Interview Under Caution? | Kent Police Station Guide\nH1: What Happens During Interview Under Caution?\nBody: v4.4.0 — 12/12/2025Expert GuideWhat Happens During Interview Under Caution?Understanding the police interview process at Kent police stationsA police interview under caution is one of the most critical moments in any criminal investigation. What you say – or don't say – can determine whether you're charged, cautioned, or released without further action.Before the InterviewPrivate Consultation with Your SolicitorBefore any interview, you have the right to a private consultation with your solicito",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/article-police-caution-before-interview",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: The Police Caution Before Interview Explained | What It Means\nH1: The Police Caution Before Interview: A Comprehensive Guide\nBody: v4.4.0 — 12/12/2025Legal ArticleThe Police Caution Before Interview: A Comprehensive GuideUnderstanding the caution administered before police interviews under the Police and Criminal Evidence Act 1984Critical InformationThis article provides essential information about the police caution. If you have been arrested or invited for interview, contact a solicitor immediately. Legal advice at the police station is free and is your right under law.What Is The Police Caution?The police caution adminis",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/arrested-what-to-do",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights\nH1: Going to be Arrested? Here's What to Do\nBody: v4.4.0 — 12/12/2025Going to be arrested? Request a solicitor NOW. Ask for Robert Cashman, Tuckers Duty Solicitor01732 247 427URGENT HELPGoing to be Arrested? Here's What to DoStay calm. You have rights protected by the Police and Criminal Evidence Act 1984 (PACE). The most important thing is to request a FREE solicitor immediately. Don't answer questions until you have legal advice.Ask for Robert Cashman, Tuckers Duty Solicitor — The DSCC have our details CALL NOW: 01732 247 427Available 24/7 at",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/police-interview-rights",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Police Interview Rights Kent | Your Rights During Questioning | PACE Code C\nH1: Your Rights During a Police Interview in Kent\nBody: v4.4.0 — 12/12/2025Interview RightsYour Rights During a Police Interview in KentA police interview can determine the outcome of your case. PACE Code C governs interview procedure. Know your rights and never face an interview without FREE legal advice.Ask for Robert Cashman, Tuckers Duty Solicitor — The DSCC have our details FREE Advice: 020 8242 1857 FREE Legal Aid All Kent StationsYour Key Interview Rights Under PACE Code CRight to a SolicitorUnder PACE Code C, paragraph 6.8, you can have a sol",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/police-station-agent-kent",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: 24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman\nH1: 24/7 Police Station Agent in Kent\nBody: v4.4.0 — 12/12/2025Available 24/7 Across Kent24/7 Police Station Agent in KentExpert police station representation at every Kent custody suite. FREE legal advice under Legal Aid. 35 years criminal defence experience (6000 + cases). Available within 30 minutes. Call 01732 247 427 Text 07535 494446 Accredited Duty Solicitor Higher Court Advocate 35 Years + 6000 + CasesWhy Speed Matters in Kent Custody SuitesWhen you're detained at a Kent police station, time is critical. Early legal intervention c",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com/article-rights-kent-police-station-2025",
+      "targetUrl": "MISSING (no target page)",
+      "section": "ENTIRE PAGE",
+      "sourceEvidence": "Title: Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice\nH1: Your Rights in a Kent Police Station\nBody: v4.4.0 — 12/12/20252025 GuideYour Rights in a Kent Police StationComplete guide to your legal rights when detained at any Kent custody suiteIf you're detained at a Kent police station, you have fundamental rights protected by the Police and Criminal Evidence Act 1984 (PACE). Understanding these rights is crucial – and exercising them properly can significantly affect the outcome of your case.Your Fundamental Rights at Kent Police Stations1. The Right to Free Legal Advice (Section 58 PACE)This is",
+      "targetEvidence": "not found",
+      "verdict": "MISSING",
+      "action": "CREATE PAGE"
+    }
+  ],
+  "summary": {
+    "sourcePagesTotal": 64,
+    "targetPagesTotal": 1,
+    "matchedPages": 3,
+    "missingPages": 48,
+    "missingSections": 0,
+    "partialMatches": 7
+  }
+}

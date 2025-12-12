@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-12-12T19:51:53.374Z",
+  "summary": {
+    "sourcePages": 1,
+    "targetPages": 1,
+    "matched": 1,
+    "missing": 0,
+    "parityIssues": 5
+  },
+  "crawlMap": {
+    "source": [
+      {
+        "url": "https://policestationagent.com",
+        "path": "/",
+        "status": "200",
+        "title": "Police Station Agent",
+        "h1": ""
+      }
+    ],
+    "target": [
+      {
+        "url": "https://criminaldefencekent.co.uk",
+        "path": "/",
+        "status": "200",
+        "title": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+        "h1": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7"
+      }
+    ]
+  },
+  "routeMatrix": [
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "sourcePath": "/",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "targetPath": "/",
+      "matchType": "exact_path",
+      "confidence": 1
+    }
+  ],
+  "contentParityMatrix": [
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "title",
+      "sourceEvidence": "Police Station Agent",
+      "targetEvidence": "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+      "verdict": "MISSING",
+      "action": "COPY_EXACT",
+      "notes": "Similarity: 15.4%"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "metaDescription",
+      "sourceEvidence": "",
+      "targetEvidence": "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24",
+      "verdict": "MISSING",
+      "action": "COPY_EXACT",
+      "notes": "Similarity: 0.0%"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "h1",
+      "sourceEvidence": "",
+      "targetEvidence": "Kent Duty SolicitorPolice Station & Court RepresentationFREE Legal Advice 24/7",
+      "verdict": "MISSING",
+      "action": "COPY_EXACT",
+      "notes": "Similarity: 0.0%"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "bodyText",
+      "sourceEvidence": "",
+      "targetEvidence": "Police Station AgentHomeServicesAboutCoverageArticlesInformationBlogContactEmergencyv4.4.0 — 11/12/2025⚖️ Accredited Duty SolicitorHigher Court Advocate✓ CLSA Member35 Years + 6000 + CasesKent Duty So",
+      "verdict": "MISSING",
+      "action": "COPY_EXACT",
+      "notes": "Similarity: 0.0%"
+    },
+    {
+      "sourceUrl": "https://policestationagent.com",
+      "targetUrl": "https://criminaldefencekent.co.uk",
+      "section": "ctas",
+      "sourceEvidence": "{\"phone\":[],\"sms\":[],\"whatsapp\":[],\"email\":[]}",
+      "targetEvidence": "{\"phone\":[{\"href\":\"tel:01732247427\",\"text\":\"Emergency\"},{\"href\":\"tel:01732247427\",\"text\":\"Call Now01732 247 427Immediate Response\"},{\"href\":\"tel:01732247427\",\"text\":\"01732 247 427\"},{\"href\":\"tel:01732",
+      "verdict": "MISSING",
+      "action": "COPY_EXACT",
+      "notes": "Similarity: 0.0%"
+    }
+  ],
+  "topPriorityFixes": []
+}
