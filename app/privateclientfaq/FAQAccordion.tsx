@@ -7,13 +7,13 @@ export default function FAQAccordion() {
 
   const faqs = [
     {
-      question: 'How do I request Robert Cashman at the police station?',
+      question: "How do I request Robert Cashman at the police station?",
       answer: `<p>When arrested or invited for a voluntary interview, tell the custody officer or interviewing officer: <strong>"I want Robert Cashman"</strong> or <strong>"I want Tuckers Solicitors LLP - Robert Cashman"</strong>. They must contact us.</p>
 <p>You can also call us directly on <strong>01732 247 427</strong> or <strong>020 8242 1857</strong> and we will arrange representation.</p>
 <p>For private clients, you can pre-arrange representation by calling us before attending the police station. Simply tell the police when you arrive that you have already instructed Robert Cashman.</p>`
     },
     {
-      question: 'What are your fees for private representation?',
+      question: "What are your fees for private representation?",
       answer: `<p>We offer fixed-fee packages for police station representation. Our fees are transparent and agreed upfront, so you know exactly what you're paying.</p>
 <p>For a detailed quote tailored to your situation, please contact us on <strong>01732 247 427</strong> or <strong>020 8242 1857</strong>. We can discuss your case and provide a clear estimate of costs.</p>
 <p><strong>Fixed fees typically cover:</strong></p>
@@ -27,7 +27,7 @@ export default function FAQAccordion() {
 <p>All fees are agreed upfront with no hidden costs.</p>`
     },
     {
-      question: 'Why should I pay privately if police station advice is free?',
+      question: "Why should I pay privately if police station advice is free?",
       answer: `<p>While Legal Aid provides excellent free representation, private funding offers several advantages:</p>
 <ul>
 <li><strong>Guaranteed senior solicitor:</strong> You are guaranteed to be represented by Robert Cashman, a solicitor with 35+ years of experience, rather than whoever is on the duty rota</li>
@@ -39,7 +39,7 @@ export default function FAQAccordion() {
 <p>For professionals, high-profile individuals, or those facing serious allegations, private representation can provide the enhanced service and continuity that may be crucial to the outcome.</p>`
     },
     {
-      question: 'What is included in a fixed-fee police station attendance?',
+      question: "What is included in a fixed-fee police station attendance?",
       answer: `<p>Our fixed-fee police station attendance package includes:</p>
 <ul>
 <li><strong>Pre-interview consultation:</strong> Detailed discussion of your case, your rights, and the interview process</li>
@@ -52,14 +52,14 @@ export default function FAQAccordion() {
 <p>All fees are agreed upfront with no hidden costs.</p>`
     },
     {
-      question: 'Can I get Robert Cashman even if I'm not paying privately?',
+      question: "Can I get Robert Cashman even if I'm not paying privately?",
       answer: `<p>Yes, you can request Robert Cashman under Legal Aid. When you ask for legal representation at the police station, tell the custody officer: <strong>"I want Robert Cashman"</strong> or <strong>"I want Tuckers Solicitors LLP - Robert Cashman"</strong>.</p>
 <p>However, under Legal Aid, representation is subject to availability and the duty rota. While we will do our best to ensure Robert Cashman attends, we cannot guarantee it will be him on every occasion.</p>
 <p>With private funding, you are <strong>guaranteed</strong> to be represented by Robert Cashman, providing certainty and continuity.</p>
 <p>If you specifically want Robert Cashman and want to ensure he attends, private funding is the way to guarantee this.</p>`
     },
     {
-      question: 'What's the difference between your Legal Aid and private service?',
+      question: "What's the difference between your Legal Aid and private service?",
       answer: `<p>The main differences are:</p>
 <div class="space-y-4 my-4">
 <div>
