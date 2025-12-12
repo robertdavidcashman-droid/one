@@ -195,6 +195,7 @@ async function getSitemapUrls(browser, baseUrl) {
   const sitemapUrls = [
     `${baseUrl}/sitemap.xml`,
     `${baseUrl}/sitemap_index.xml`,
+    `${baseUrl}/sitemap.txt`,
   ];
   
   const urls = new Set();
@@ -202,22 +203,36 @@ async function getSitemapUrls(browser, baseUrl) {
   for (const sitemapUrl of sitemapUrls) {
     try {
       const page = await browser.newPage();
-      await page.goto(sitemapUrl, { waitUntil: 'networkidle2', timeout: 10000 });
+      await page.goto(sitemapUrl, { 
+        waitUntil: 'domcontentloaded', 
+        timeout: 15000 
+      });
+      
       const content = await page.content();
       
-      // Extract URLs from sitemap
-      const urlMatches = content.match(/<loc>(.*?)<\/loc>/g);
-      if (urlMatches) {
-        urlMatches.forEach(match => {
-          const url = match.replace(/<\/?loc>/g, '').trim();
-          if (url.startsWith(baseUrl) && shouldInclude(url)) {
+      // Extract URLs from XML sitemap
+      const xmlMatches = content.match(/<loc>(.*?)<\/loc>/gi);
+      if (xmlMatches) {
+        xmlMatches.forEach(match => {
+          const url = match.replace(/<\/?loc>/gi, '').trim();
+          if (url && url.startsWith(baseUrl) && shouldInclude(url)) {
             urls.add(normalizeUrl(url));
           }
         });
       }
+      
+      // Also check for text sitemap (one URL per line)
+      const lines = content.split('\n');
+      lines.forEach(line => {
+        const trimmed = line.trim();
+        if (trimmed && trimmed.startsWith('http') && trimmed.startsWith(baseUrl) && shouldInclude(trimmed)) {
+          urls.add(normalizeUrl(trimmed));
+        }
+      });
+      
       await page.close();
     } catch (error) {
-      // Sitemap not found or error - continue
+      // Sitemap not found or error - continue silently
     }
   }
   
@@ -233,10 +248,15 @@ async function crawlSite(browser, baseUrl, maxDepth = 3) {
   const sitemapUrls = await getSitemapUrls(browser, baseUrl);
   console.log(`  Found ${sitemapUrls.length} URLs from sitemap`);
   
+  // Limit sitemap URLs to prevent overwhelming
+  const limitedSitemapUrls = sitemapUrls.slice(0, 200);
+  
   const queue = [
     { url: baseUrl, depth: 0 },
-    ...sitemapUrls.map(url => ({ url, depth: 1 }))
+    ...limitedSitemapUrls.map(url => ({ url, depth: 1 }))
   ];
+  
+  console.log(`  Starting crawl with ${queue.length} URLs in queue`);
 
   while (queue.length > 0) {
     const { url, depth } = queue.shift();
@@ -253,12 +273,17 @@ async function crawlSite(browser, baseUrl, maxDepth = 3) {
       
       try {
         await page.goto(normalized, { 
-          waitUntil: 'networkidle2', 
+          waitUntil: 'domcontentloaded', 
           timeout: 30000 
         });
 
-        // Wait for JS to render
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Wait for JS to render and network to settle
+        try {
+          await page.waitForSelector('body', { timeout: 5000 });
+        } catch (e) {
+          // Continue even if selector wait fails
+        }
+        await new Promise(resolve => setTimeout(resolve, 3000));
 
         const content = await extractPageContent(page);
 
@@ -272,64 +297,103 @@ async function crawlSite(browser, baseUrl, maxDepth = 3) {
 
         pages.push(pageData);
 
-        // Find all links on the page
-        const links = await page.evaluate((baseUrl) => {
-          const anchors = Array.from(document.querySelectorAll('a[href]'));
-          const found = new Set();
-          
-          anchors.forEach(a => {
-            try {
-              let href = a.getAttribute('href');
-              if (!href) return;
-              
-              // Handle relative URLs
-              if (href.startsWith('/')) {
-                href = baseUrl + href;
-              } else if (!href.startsWith('http')) {
-                href = new URL(href, window.location.href).href;
+        // Find all links on the page - try multiple strategies
+        let links = [];
+        try {
+          links = await page.evaluate((baseUrl) => {
+            const anchors = Array.from(document.querySelectorAll('a[href]'));
+            const found = new Set();
+            
+            anchors.forEach(a => {
+              try {
+                let href = a.getAttribute('href');
+                if (!href || href.trim() === '' || href === '#') return;
+                
+                // Handle relative URLs
+                if (href.startsWith('/')) {
+                  href = baseUrl + href;
+                } else if (!href.startsWith('http')) {
+                  try {
+                    href = new URL(href, window.location.href).href;
+                  } catch (e) {
+                    return; // Skip invalid relative URLs
+                  }
+                }
+                
+                // Only include same-origin URLs
+                if (!href.startsWith(baseUrl)) return;
+                
+                // Remove fragments and query params for matching
+                try {
+                  const url = new URL(href);
+                  url.hash = '';
+                  url.search = '';
+                  found.add(url.href);
+                } catch (e) {
+                  // Skip invalid URLs
+                }
+              } catch (e) {
+                // Skip invalid URLs
               }
-              
-              // Only include same-origin URLs
-              if (!href.startsWith(baseUrl)) return;
-              
-              // Remove fragments and query params for matching
-              const url = new URL(href);
-              url.hash = '';
-              url.search = '';
-              found.add(url.href);
-            } catch (e) {
-              // Skip invalid URLs
-            }
-          });
-          
-          return Array.from(found);
-        }, baseUrl);
+            });
+            
+            return Array.from(found);
+          }, baseUrl);
+        } catch (error) {
+          console.error(`    Warning: Could not extract links from ${normalized}: ${error.message}`);
+          links = [];
+        }
 
-        // Add new links to queue
+        // Add new links to queue (limit to prevent queue explosion)
+        const newLinks = [];
         for (const link of links) {
           const normalizedLink = normalizeUrl(link);
           if (!visited.has(normalizedLink) && 
               normalizedLink.startsWith(baseUrl) && 
-              shouldInclude(normalizedLink)) {
+              shouldInclude(normalizedLink) &&
+              newLinks.length < 50) { // Limit links per page
+            newLinks.push(normalizedLink);
             queue.push({ url: normalizedLink, depth: depth + 1 });
           }
+        }
+        if (newLinks.length > 0) {
+          console.log(`    Found ${newLinks.length} new links to crawl`);
         }
 
         await page.close();
       } catch (error) {
-        console.error(`    Error: ${error.message}`);
-        pages.push({
-          url: normalized,
-          path: normalizePath(normalized),
-          depth,
-          status: 'error',
-          error: error.message,
-        });
+        const errorMsg = error.message || String(error);
+        console.error(`    Error loading ${normalized}: ${errorMsg.substring(0, 100)}`);
+        
+        // Still try to extract what we can
+        try {
+          const content = await extractPageContent(page);
+          pages.push({
+            url: normalized,
+            path: normalizePath(normalized),
+            depth,
+            status: 'partial',
+            error: errorMsg,
+            ...content,
+          });
+        } catch (extractError) {
+          pages.push({
+            url: normalized,
+            path: normalizePath(normalized),
+            depth,
+            status: 'error',
+            error: errorMsg,
+            title: '',
+            h1: '',
+            bodyText: '',
+            hasContent: false,
+          });
+        }
         await page.close();
       }
 
-      // Rate limiting
-      await new Promise(resolve => setTimeout(resolve, 500));
+      // Rate limiting - longer delay for better reliability
+      await new Promise(resolve => setTimeout(resolve, 1000));
     } catch (error) {
       console.error(`  Error processing ${normalized}:`, error.message);
     }
@@ -431,11 +495,12 @@ function analyzeContentParity(matches) {
     const { source, target } = match;
 
     if (!target) {
+      const bodyText = source.bodyText || '';
       parity.push({
         sourceUrl: source.url,
         targetUrl: 'MISSING',
         section: 'ENTIRE_PAGE',
-        sourceEvidence: `${source.title} | ${source.h1} | ${source.bodyText.substring(0, 200)}`,
+        sourceEvidence: `${source.title || ''} | ${source.h1 || ''} | ${bodyText.substring(0, 200)}`,
         targetEvidence: 'not found',
         verdict: 'MISSING',
         action: 'CREATE_PAGE',
