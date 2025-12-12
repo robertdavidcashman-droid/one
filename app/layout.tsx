@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { inter } from './fonts';
+import { SITE_URL } from '@/config/site';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || SITE_URL;
 
 export const metadata: Metadata = {
   title: "Police Station Agent - Expert Legal Representation",
@@ -27,8 +29,8 @@ export default function RootLayout({
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

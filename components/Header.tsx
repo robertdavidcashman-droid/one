@@ -249,13 +249,6 @@ export default function Header() {
                   <Link href="/your-rights-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Your Rights in Custody</Link>
                   <Link href="/freelegaladvice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Is Legal Advice Free?</Link>
                   <Link href="/arrestednow" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Emergency Help (Family)</Link>
-                  <div className="border-t border-slate-200 my-1"></div>
-                  <Link href="/privacy" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Privacy Policy</Link>
-                  <Link href="/cookies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Cookies Policy</Link>
-                  <Link href="/accessibility" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Accessibility</Link>
-                  <Link href="/complaints" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Complaints</Link>
-                  <Link href="/gdpr" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">GDPR</Link>
-                  <Link href="/termsandconditions" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Terms and Conditions</Link>
                 </div>
               )}
             </div>
