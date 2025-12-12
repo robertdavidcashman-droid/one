@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Ignoring a voluntary police interview invitation can lead to arrest, warrant, or prosecution. Expert advice on what to do when police ask you to attend. FREE legal help available.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/what-happens-if-ignore-police-interview",
+    canonical: "https://criminaldefencekent.co.uk/what-happens-if-ignore-police-interview",
   },
   openGraph: {
     title: "What Happens If I Ignore A Police Interview Invitation? | Legal Consequences",
     description: "Ignoring a voluntary police interview invitation can lead to arrest, warrant, or prosecution. Expert advice on what to do when police ask you to attend. FREE legal help available.",
     type: 'website',
-    url: "https://policestationagent.com/what-happens-if-ignore-police-interview",
+    url: "https://criminaldefencekent.co.uk/what-happens-if-ignore-police-interview",
   },
 };
 

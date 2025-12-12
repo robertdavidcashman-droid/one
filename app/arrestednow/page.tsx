@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Emergency Help: Has a friend or family member been arrested in Kent? You can instruct a solicitor on their behalf. Call 0333 049 7036 immediately for 24/7 FREE legal representation.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/arrestednow",
+    canonical: "https://criminaldefencekent.co.uk/arrestednow",
   },
   openGraph: {
     title: "Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice",
     description: "Emergency Help: Has a friend or family member been arrested in Kent? You can instruct a solicitor on their behalf. Call 0333 049 7036 immediately for 24/7 FREE legal representation.",
     type: 'website',
-    url: "https://policestationagent.com/arrestednow",
+    url: "https://criminaldefencekent.co.uk/arrestednow",
   },
 };
 

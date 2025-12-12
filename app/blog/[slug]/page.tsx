@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import db from '@/lib/db';
+import { getBlogPost } from '@/lib/blog';
 import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -13,12 +13,7 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const post = db.prepare('SELECT * FROM blog_posts WHERE slug = ? AND published = 1').get(params.slug) as {
-    title: string;
-    meta_title: string | null;
-    meta_description: string | null;
-    excerpt: string | null;
-  } | undefined;
+  const post = getBlogPost(params.slug);
 
   if (!post) {
     return {
@@ -26,48 +21,55 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   
   return {
     title: post.meta_title || post.title,
     description: post.meta_description || post.excerpt || undefined,
     alternates: {
-      canonical: `${siteUrl}/blog/${params.slug}`,
+      canonical: `${siteUrl}/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.meta_title || post.title,
+      description: post.meta_description || post.excerpt || undefined,
+      url: `${siteUrl}/blog/${post.slug}`,
+      siteName: 'Criminal Defence Kent',
+      type: 'article',
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
 
 export default function BlogPostPage({ params }: PageProps) {
-  const post = db.prepare('SELECT * FROM blog_posts WHERE slug = ? AND published = 1').get(params.slug) as {
-    id: number;
-    title: string;
-    slug: string;
-    content: string;
-    excerpt: string | null;
-    published_at: string | null;
-    created_at: string;
-  } | undefined;
+  const post = getBlogPost(params.slug);
 
   if (!post) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  
+  // Use updated_at if available, otherwise fall back to published_at or created_at
+  const dateModified = post.updated_at || post.published_at || post.created_at;
+  const datePublished = post.published_at || post.created_at;
   
   const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt || post.content.substring(0, 160),
-    datePublished: post.published_at || post.created_at,
-    dateModified: post.published_at || post.created_at,
+    datePublished: datePublished,
+    dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'Police Station Agent',
+      name: 'Criminal Defence Kent',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Police Station Agent',
+      name: 'Criminal Defence Kent',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`,

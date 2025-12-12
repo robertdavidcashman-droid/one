@@ -9,13 +9,13 @@ export default function FAQAccordion() {
     {
       question: "How do I request Robert Cashman at the police station?",
       answer: `<p>When arrested or invited for a voluntary interview, tell the custody officer or interviewing officer: <strong>"I want Robert Cashman"</strong> or <strong>"I want Tuckers Solicitors LLP - Robert Cashman"</strong>. They must contact us.</p>
-<p>You can also call us directly on <strong>0333 049 7036</strong> or <strong>020 8242 1857</strong> and we will arrange representation.</p>
+<p>You can also call us directly on <strong>0333 049 7036</strong> or <strong>0333 049 7036</strong> and we will arrange representation.</p>
 <p>For private clients, you can pre-arrange representation by calling us before attending the police station. Simply tell the police when you arrive that you have already instructed Robert Cashman.</p>`
     },
     {
       question: "What are your fees for private representation?",
       answer: `<p>We offer fixed-fee packages for police station representation. Our fees are transparent and agreed upfront, so you know exactly what you're paying.</p>
-<p>For a detailed quote tailored to your situation, please contact us on <strong>0333 049 7036</strong> or <strong>020 8242 1857</strong>. We can discuss your case and provide a clear estimate of costs.</p>
+<p>For a detailed quote tailored to your situation, please contact us on <strong>0333 049 7036</strong> or <strong>0333 049 7036</strong>. We can discuss your case and provide a clear estimate of costs.</p>
 <p><strong>Fixed fees typically cover:</strong></p>
 <ul>
 <li>Pre-interview consultation</li>

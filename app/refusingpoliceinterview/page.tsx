@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Should you refuse a police interview? Understanding the risks of 'No Comment' vs answering questions. Why you must have a solicitor present.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/refusingpoliceinterview",
+    canonical: "https://criminaldefencekent.co.uk/refusingpoliceinterview",
   },
   openGraph: {
     title: "Refusing a Police Interview – Pros & Cons | Expert Advice",
     description: "Should you refuse a police interview? Understanding the risks of 'No Comment' vs answering questions. Why you must have a solicitor present.",
     type: 'website',
-    url: "https://policestationagent.com/refusingpoliceinterview",
+    url: "https://criminaldefencekent.co.uk/refusingpoliceinterview",
   },
 };
 

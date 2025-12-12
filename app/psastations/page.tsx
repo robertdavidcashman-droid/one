@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Kent Police Station Coverage | Police Station Agent",
   description: "We provide expert duty solicitor representation at all major police stations and custody suites across Kent & Medway. Available 24/7.",
   alternates: {
-    canonical: "https://policestationagent.com/psastations",
+    canonical: "https://criminaldefencekent.co.uk/psastations",
   },
   openGraph: {
     title: "Kent Police Station Coverage | Police Station Agent",
     description: "We provide expert duty solicitor representation at all major police stations and custody suites across Kent & Medway. Available 24/7.",
     type: 'website',
-    url: "https://policestationagent.com/psastations",
+    url: "https://criminaldefencekent.co.uk/psastations",
   },
 };
 

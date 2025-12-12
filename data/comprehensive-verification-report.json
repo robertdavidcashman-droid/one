@@ -1,62 +1,17 @@
 {
-  "timestamp": "2025-12-12T11:46:10.164Z",
+  "timestamp": "2025-12-12T12:15:41.814Z",
   "summary": {
     "totalPages": 143,
     "navigationRoutes": 44,
-    "complete": 33,
+    "complete": 44,
     "missing": 0,
     "empty": 0,
-    "has404": 11,
+    "has404": 0,
     "navIssues": 7
   },
   "missingRoutes": [],
   "emptyRoutes": [],
-  "routes404": [
-    {
-      "route": "/what-we-do",
-      "normalized": "/what-we-do"
-    },
-    {
-      "route": "/voluntary-interviews",
-      "normalized": "/voluntary-interviews"
-    },
-    {
-      "route": "/what-is-a-criminal-solicitor",
-      "normalized": "/what-is-a-criminal-solicitor"
-    },
-    {
-      "route": "/what-is-a-police-station-rep",
-      "normalized": "/what-is-a-police-station-rep"
-    },
-    {
-      "route": "/vulnerable-adults-in-custody",
-      "normalized": "/vulnerable-adults-in-custody"
-    },
-    {
-      "route": "/preparing-for-police-interview",
-      "normalized": "/preparing-for-police-interview"
-    },
-    {
-      "route": "/importance-of-early-legal-advice",
-      "normalized": "/importance-of-early-legal-advice"
-    },
-    {
-      "route": "/arrival-times-delays",
-      "normalized": "/arrival-times-delays"
-    },
-    {
-      "route": "/booking-in-procedure-in-kent",
-      "normalized": "/booking-in-procedure-in-kent"
-    },
-    {
-      "route": "/what-to-do-if-a-loved-one-is-arrested",
-      "normalized": "/what-to-do-if-a-loved-one-is-arrested"
-    },
-    {
-      "route": "/after-a-police-interview",
-      "normalized": "/after-a-police-interview"
-    }
-  ],
+  "routes404": [],
   "navIssues": [
     "Missing main menu item: Services",
     "Missing main menu item: About",

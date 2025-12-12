@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Client Testimonials | Police Station Agent",
   description: "Read real testimonials from clients we've helped across Kent. Trusted police station representation and criminal defence services.",
   alternates: {
-    canonical: "https://policestationagent.com/testimonials",
+    canonical: "https://criminaldefencekent.co.uk/testimonials",
   },
   openGraph: {
     title: "Client Testimonials | Police Station Agent",
     description: "Read real testimonials from clients we've helped across Kent.",
     type: 'website',
-    url: "https://policestationagent.com/testimonials",
+    url: "https://criminaldefencekent.co.uk/testimonials",
   },
 };
 

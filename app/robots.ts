@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/admin/'],
       },
     ],
-    sitemap: 'https://policestationagent.com/sitemap.xml',
+    sitemap: 'https://criminaldefencekent.co.uk/sitemap.xml',
   };
 }
 

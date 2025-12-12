@@ -30,19 +30,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
   
-  // Preserve original blog identity - use policestationagent.com for canonical
-  // This allows future domain aliasing
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  
   return {
     title: post.metaTitle || post.title,
     description: post.metaDescription || post.description,
     alternates: {
-      canonical: `https://policestationagent.com/blog/${post.slug}`,
+      canonical: `${siteUrl}/criminaldefencekent/blog/${post.slug}`,
     },
     openGraph: {
       title: post.metaTitle || post.title,
       description: post.metaDescription || post.description,
-      url: `https://policestationagent.com/blog/${post.slug}`,
-      siteName: 'Police Station Agent',
+      url: `${siteUrl}/criminaldefencekent/blog/${post.slug}`,
+      siteName: 'Criminal Defence Kent',
       type: 'article',
     },
   };

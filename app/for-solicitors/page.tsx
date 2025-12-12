@@ -3,17 +3,17 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "\n   Police Station Agent\n  ",
-  description: "",
-  keywords: undefined,
+  title: "Services for Solicitors | Police Station Agent Kent",
+  description: "Professional agency services for criminal solicitor firms in Kent and surrounding areas. Expert police station representation you can trust.",
   alternates: {
-    canonical: "https://policestationagent.com/for-solicitors",
+    canonical: "https://criminaldefencekent.co.uk/for-solicitors",
   },
   openGraph: {
-    title: "\n   Police Station Agent\n  ",
-    description: "",
+    title: "Services for Solicitors | Police Station Agent Kent",
+    description: "Professional agency services for criminal solicitor firms in Kent and surrounding areas. Expert police station representation you can trust.",
     type: 'website',
-    url: "https://policestationagent.com/for-solicitors",
+    url: "https://criminaldefencekent.co.uk/for-solicitors",
+    siteName: 'Criminal Defence Kent',
   },
 };
 

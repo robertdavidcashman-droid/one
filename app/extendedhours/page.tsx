@@ -3,16 +3,17 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Police Station Agent",
-  description: "",
+  title: "Extended Hours Police Station Representation | Criminal Defence Kent",
+  description: "Professional legal representation available when others aren't - evenings, weekends, and bank holidays. Available 24/7 across Kent.",
   alternates: {
-    canonical: "https://policestationagent.com/extendedhours",
+    canonical: "https://criminaldefencekent.co.uk/extendedhours",
   },
   openGraph: {
-    title: "Police Station Agent",
-    description: "",
+    title: "Extended Hours Police Station Representation | Criminal Defence Kent",
+    description: "Professional legal representation available when others aren't - evenings, weekends, and bank holidays. Available 24/7 across Kent.",
     type: 'website',
-    url: "https://policestationagent.com/extendedhours",
+    url: "https://criminaldefencekent.co.uk/extendedhours",
+    siteName: 'Criminal Defence Kent',
   },
 };
 

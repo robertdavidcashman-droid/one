@@ -3,13 +3,13 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+  title: "Duty Solicitor Kent 24/7 | 0333 049 7036 | FREE Police Station Advice",
   description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/",
   },
   openGraph: {
-    title: "Duty Solicitor Kent 24/7 | 01732 247 427 | FREE Police Station Advice",
+    title: "Duty Solicitor Kent 24/7 | 0333 049 7036 | FREE Police Station Advice",
     description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
     url: "https://criminaldefencekent.co.uk/",
     siteName: 'Criminal Defence Kent',

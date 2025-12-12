@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Expert legal representation at suspect interviews across Kent. Free legal aid available. Contact us 24/7 for immediate assistance.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/ServicesForClients",
+    canonical: "https://criminaldefencekent.co.uk/ServicesForClients",
   },
   openGraph: {
     title: "\n   Police Station Agent\n  ",
     description: "",
     type: 'website',
-    url: "https://policestationagent.com/for-clients",
+    url: "https://criminaldefencekent.co.uk/for-clients",
   },
 };
 

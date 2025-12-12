@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice",
   description: "Know your rights in Kent police custody under PACE 1984. FREE legal advice at Maidstone, Medway, Canterbury, Folkestone. Section 58 right to a solicitor. Call 0333 049 7036.",
   alternates: {
-    canonical: "https://policestationagent.com/police-custody-rights",
+    canonical: "https://criminaldefencekent.co.uk/police-custody-rights",
   },
   openGraph: {
     title: "Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice",
     description: "Know your rights in Kent police custody under PACE 1984. FREE legal advice at Maidstone, Medway, Canterbury, Folkestone. Section 58 right to a solicitor. Call 0333 049 7036.",
     type: 'website',
-    url: "https://policestationagent.com/police-custody-rights",
+    url: "https://criminaldefencekent.co.uk/police-custody-rights",
   },
 };
 

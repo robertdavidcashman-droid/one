@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "What To Do If a Loved One Is Arrested in Kent | Family Guide",
   description: "Practical advice when a family member or friend is arrested in Kent. How to help, arranging legal representation, your rights. Call 0333 049 7036 for immediate help.",
   alternates: {
-    canonical: "https://policestationagent.com/article-loved-one-arrested-kent",
+    canonical: "https://criminaldefencekent.co.uk/article-loved-one-arrested-kent",
   },
   openGraph: {
     title: "What To Do If a Loved One Is Arrested in Kent | Family Guide",
     description: "Practical advice when a family member or friend is arrested in Kent. How to help, arranging legal representation, your rights. Call 0333 049 7036 for immediate help.",
     type: 'website',
-    url: "https://policestationagent.com/article-loved-one-arrested-kent",
+    url: "https://criminaldefencekent.co.uk/article-loved-one-arrested-kent",
   },
 };
 

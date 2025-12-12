@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "What to Expect at a Police Interview in Kent | Complete Guide 2025",
   description: "Complete guide to police interviews in Kent. Learn what happens at Maidstone, Medway, Canterbury & other Kent stations. Free legal advice available 24/7.",
   alternates: {
-    canonical: "https://policestationagent.com/what-to-expect-at-a-police-interview-in-kent",
+    canonical: "https://criminaldefencekent.co.uk/what-to-expect-at-a-police-interview-in-kent",
   },
   openGraph: {
     title: "What to Expect at a Police Interview in Kent | Complete Guide 2025",
     description: "Complete guide to police interviews in Kent. Learn what happens at Maidstone, Medway, Canterbury & other Kent stations. Free legal advice available 24/7.",
     type: 'website',
-    url: "https://policestationagent.com/what-to-expect-at-a-police-interview-in-kent",
+    url: "https://criminaldefencekent.co.uk/what-to-expect-at-a-police-interview-in-kent",
   },
 };
 

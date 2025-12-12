@@ -4,13 +4,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights",
-  description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available 24/7. Call 01732 247 427.",
+  description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available 24/7. Call 0333 049 7036.",
   alternates: {
     canonical: "https://criminaldefencekent.co.uk/kent-police-stations",
   },
   openGraph: {
     title: "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights",
-    description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available 24/7. Call 01732 247 427.",
+    description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available 24/7. Call 0333 049 7036.",
     url: "https://criminaldefencekent.co.uk/kent-police-stations",
     siteName: 'Criminal Defence Kent',
     type: 'website',
