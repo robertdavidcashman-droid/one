@@ -107,7 +107,7 @@ export default function Page() {
                 We provide 24/7 police station representation across Kent. When you request our services, we will attend as quickly as possible. In most cases, we can provide telephone advice immediately while travelling to the station.
               </p>
               <p className="mb-4">
-                <strong>Call us on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 049 7036</a></strong> for immediate advice and representation.
+                <strong>Call us on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 0497 036</a></strong> for immediate advice and representation.
               </p>
             </section>
 

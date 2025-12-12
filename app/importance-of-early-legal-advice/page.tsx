@@ -112,7 +112,7 @@ export default function Page() {
                 If you are dealing with the police, whether you have been arrested or invited for a voluntary interview, get expert legal advice immediately. We provide free 24/7 legal advice and representation.
               </p>
               <p className="mb-4">
-                <strong>Call us immediately on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 049 7036</a></strong> for free legal advice. The earlier you call, the better we can protect your interests.
+                <strong>Call us immediately on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 0497 036</a></strong> for free legal advice. The earlier you call, the better we can protect your interests.
               </p>
             </section>
 

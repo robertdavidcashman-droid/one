@@ -72,7 +72,7 @@ export default function ServicesBailApplications() {
                   <a href="tel:03330497036" className="flex-1 bg-white text-blue-800 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
                     Call Now
                   </a>
-                  <a href="https://wa.me/447732247427" target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-center py-2 rounded text-sm font-bold">
+                  <a href="https://wa.me/4475330497036" target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-center py-2 rounded text-sm font-bold">
                     WhatsApp
                   </a>
                 </div>
@@ -229,9 +229,9 @@ export default function ServicesBailApplications() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="tel:03330497036" className="inline-flex items-center justify-center gap-2 bg-white text-red-600 hover:bg-slate-100 font-bold px-8 py-3 rounded-md">
-                      <Phone className="w-5 h-5" /> Call: 0333 049 7036
+                      <Phone className="w-5 h-5" /> Call: 0333 0497 036
                     </a>
-                    <a href="https://wa.me/447732247427?text=I need urgent bail application help" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">
+                    <a href="https://wa.me/4475330497036?text=I need urgent bail application help" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">
                       <MessageCircle className="w-5 h-5" /> WhatsApp
                     </a>
                     <a href="mailto:robertcashman@defencelegalservices.co.uk" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">

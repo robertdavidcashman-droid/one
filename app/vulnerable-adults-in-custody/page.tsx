@@ -108,7 +108,7 @@ export default function Page() {
                 If you or someone you know is a vulnerable adult in police custody, it is essential to have expert legal representation. We specialise in representing vulnerable adults and ensuring their rights are fully protected.
               </p>
               <p className="mb-4">
-                <strong>Call us 24/7 on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 049 7036</a></strong> for free legal advice and representation.
+                <strong>Call us 24/7 on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 0497 036</a></strong> for free legal advice and representation.
               </p>
             </section>
 

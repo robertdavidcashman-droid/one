@@ -169,7 +169,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a href="tel:03330497036" className="text-slate-600 hover:text-blue-600 transition-colors font-medium text-white">
-                    0333 049 7036
+                    0333 0497 036
                   </a>
                 </li>
                 <li>
@@ -188,6 +188,34 @@ export default function Footer() {
               </ul>
             </address>
             <div className="mt-6">
+              <h3 className="font-bold text-slate-900 mb-2 text-sm text-white">Useful Links</h3>
+              <ul className="space-y-2 text-sm mb-6">
+                <li>
+                  <Link href="/blog" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Blog & Articles
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Frequently Asked Questions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/police-stations" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Police Stations
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/coverage" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Areas Covered
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    About Us
+                  </Link>
+                </li>
+              </ul>
               <h3 className="font-bold text-slate-900 mb-2 text-sm text-white">Legal</h3>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -198,6 +226,21 @@ export default function Footer() {
                 <li>
                   <Link href="/privacy" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
                     Website Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cookies" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Cookies Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/gdpr" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    GDPR Compliance
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/accessibility" className="text-slate-600 hover:text-blue-600 transition-colors text-white">
+                    Accessibility Statement
                   </Link>
                 </li>
                 <li>
