@@ -1,115 +1,183 @@
+#!/usr/bin/env node
+
+/**
+ * Scrape missing article pages from policestationagent.com
+ */
+
+const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
-const { JSDOM } = require('jsdom');
-const puppeteer = require('puppeteer');
 
-const BASE_URL = 'https://policestationagent.com';
+const PSA_URL = 'https://policestationagent.com';
 const APP_DIR = path.join(__dirname, '..', 'app');
 
-async function scrapePage(urlPath) {
-    const fullUrl = `${BASE_URL}${urlPath}`;
-    console.log(`📥 Scraping: ${fullUrl}...`);
+// Articles from the dropdown menu
+const ARTICLE_PAGES = [
+  'vulnerable-adults-in-custody',
+  'preparing-for-police-interview',
+  'importance-of-early-legal-advice',
+  'arrival-times-delays',
+  'booking-in-procedure-in-kent',
+  'what-to-do-if-a-loved-one-is-arrested',
+];
+
+async function scrapePage(browser, route) {
+  const url = `${PSA_URL}/${route}`;
+  const page = await browser.newPage();
+  
+  try {
+    console.log(`  📥 Scraping: ${route}`);
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
+    await new Promise(r => setTimeout(r, 2000));
     
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
+    const data = await page.evaluate(() => {
+      const title = document.title || '';
+      const metaDesc = document.querySelector('meta[name="description"]');
+      const description = metaDesc ? metaDesc.getAttribute('content') || '' : '';
+      const h1 = document.querySelector('h1')?.textContent || '';
+      
+      // Get main content
+      const main = document.querySelector('main') || 
+                   document.querySelector('article') ||
+                   document.querySelector('#content') ||
+                   document.querySelector('.content') ||
+                   document.body;
+      
+      let html = '';
+      if (main) {
+        const clone = main.cloneNode(true);
+        clone.querySelectorAll('script, style, noscript, nav, header, footer, .header, .footer, .nav').forEach(el => el.remove());
+        html = clone.innerHTML;
+      }
+      
+      return { title, description, h1, html };
+    });
     
-    try {
-        await page.goto(fullUrl, { waitUntil: 'networkidle0', timeout: 60000 });
-        const htmlContent = await page.content();
-        await browser.close();
-
-        const dom = new JSDOM(htmlContent);
-        const document = dom.window.document;
-
-        // Extract main content from the main element
-        const mainContentElement = document.querySelector('main');
-        let extractedHtml = mainContentElement ? mainContentElement.innerHTML : '';
-
-        if (!extractedHtml || extractedHtml.includes('404') || extractedHtml.includes('not found') || extractedHtml.trim().length < 100) {
-            console.warn(`⚠️ Scraped content for ${urlPath} appears to be 404 or empty.`);
-            return null;
-        }
-
-        // Clean up script tags and comments
-        extractedHtml = extractedHtml.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-        extractedHtml = extractedHtml.replace(/<!--[\s\S]*?-->/g, '');
-
-        return extractedHtml;
-
-    } catch (error) {
-        console.error(`Error scraping ${fullUrl}:`, error.message);
-        await browser.close();
-        return null;
+    await page.close();
+    
+    if (!data.html || data.html.length < 200) {
+      console.error(`    ⚠️  No content found for ${route}`);
+      return null;
     }
+    
+    return data;
+  } catch (error) {
+    await page.close();
+    console.error(`    ❌ Error: ${error.message}`);
+    return null;
+  }
 }
 
-async function updatePage(route, htmlContent, title, description) {
-    const pageDirPath = path.join(APP_DIR, route);
-    const pageFilePath = path.join(pageDirPath, 'page.tsx');
-    const pageName = route.split('/').pop() || 'index';
-    const componentName = pageName.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
-
-    const pageContent = `import Header from '@/components/Header';
+async function createPage(route, data) {
+  const routePath = `app/${route}/page.tsx`;
+  const filePath = path.join(__dirname, '..', routePath);
+  const dirPath = path.dirname(filePath);
+  
+  try {
+    await fs.mkdir(dirPath, { recursive: true });
+    
+    // Clean content
+    let html = data.html || '';
+    html = html.replace(/policestationagent\.com/gi, 'criminaldefencekent.co.uk');
+    html = html.replace(/Police Station Agent/gi, 'Criminal Defence Kent');
+    html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+    html = html.replace(/<!--[\s\S]*?-->/g, '');
+    
+    const title = (data.title || data.h1 || 'Criminal Defence Kent')
+      .replace(/Police Station Agent/gi, 'Criminal Defence Kent');
+    const description = (data.description || '')
+      .replace(/Police Station Agent/gi, 'Criminal Defence Kent');
+    const canonical = `https://criminaldefencekent.co.uk/${route}`;
+    
+    const pageContent = `import type { Metadata } from 'next';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "${title}",
-  description: "${description}",
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
   alternates: {
-    canonical: "${BASE_URL}${route}",
+    canonical: ${JSON.stringify(canonical)},
   },
   openGraph: {
-    title: "${title}",
-    description: "${description}",
-    type: 'article',
-    url: "${BASE_URL}${route}",
+    title: ${JSON.stringify(title)},
+    description: ${JSON.stringify(description)},
+    url: ${JSON.stringify(canonical)},
+    siteName: 'Criminal Defence Kent',
+    type: 'website',
   },
 };
 
-export default function ${componentName}Page() {
+export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
+    <>
       <Header />
-      <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
-        <div className="bg-slate-50 min-h-screen">
-          <div 
-            className="prose prose-lg max-w-6xl mx-auto px-4 py-16"
-            dangerouslySetInnerHTML={{ __html: \`${htmlContent.replace(/`/g, '\\`').replace(/\${/g, '\\${')}\` }}
-          />
+      <main className="min-h-screen bg-white">
+        <div className="container mx-auto px-4 py-8">
+          <div className="prose prose-lg max-w-none">
+            <div dangerouslySetInnerHTML={{ __html: ${JSON.stringify(html)} }} />
+          </div>
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 `;
-
-    await fs.mkdir(pageDirPath, { recursive: true });
-    await fs.writeFile(pageFilePath, pageContent.trim(), 'utf8');
-    console.log(`✅ Updated: ${route}`);
+    
+    await fs.writeFile(filePath, pageContent, 'utf-8');
+    console.log(`    ✅ Created: ${routePath}`);
+    return true;
+  } catch (error) {
+    console.error(`    ❌ Error creating ${filePath}: ${error.message}`);
+    return false;
+  }
 }
 
 async function main() {
-    console.log('🔍 Scraping article pages...\n');
+  console.log(`\n${'═'.repeat(70)}`);
+  console.log(`  SCRAPING ARTICLE PAGES`);
+  console.log(`${'═'.repeat(70)}\n`);
 
-    // Scrape Police Caution Before Interview article
-    const cautionArticleContent = await scrapePage('/article-police-caution-before-interview');
-    if (cautionArticleContent) {
-        await updatePage(
-            'article-police-caution-before-interview',
-            cautionArticleContent,
-            'The Police Caution Before Interview | Police Station Agent',
-            'Understanding the police caution and what it means for your rights during a police interview. Expert legal guidance from Police Station Agent.'
-        );
-    } else {
-        console.error('❌ Failed to scrape /article-police-caution-before-interview');
+  const browser = await puppeteer.launch({ 
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  try {
+    let created = 0;
+    let failed = 0;
+    
+    for (const route of ARTICLE_PAGES) {
+      console.log(`\nProcessing: ${route}`);
+      
+      const data = await scrapePage(browser, route);
+      
+      if (data) {
+        if (await createPage(route, data)) {
+          created++;
+        } else {
+          failed++;
+        }
+      } else {
+        failed++;
+      }
+      
+      await new Promise(r => setTimeout(r, 1000)); // Rate limiting
     }
-
-    console.log('\n✅ Scraping complete!');
+    
+    console.log(`\n${'═'.repeat(70)}`);
+    console.log(`  RESULTS`);
+    console.log(`${'═'.repeat(70)}`);
+    console.log(`  ✅ Created: ${created} pages`);
+    console.log(`  ❌ Failed: ${failed} pages`);
+    console.log(`${'═'.repeat(70)}\n`);
+    
+  } catch (error) {
+    console.error(`\n❌ Fatal error: ${error.message}`);
+  } finally {
+    await browser.close();
+  }
 }
 
 main().catch(console.error);
-
-
-
