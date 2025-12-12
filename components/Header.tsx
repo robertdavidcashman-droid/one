@@ -172,9 +172,9 @@ export default function Header() {
                   onMouseLeave={() => handleDelayedClose(setCoverageOpen, coverageTimeoutRef, 300)}
                 >
                   <Link href="/coverage" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas Covered</Link>
-                  <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas We Cover</Link>
                   <Link href="/police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Police Stations</Link>
-                  <Link href="/outofarea" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Out of Area</Link>
+                  <Link href="/kent-police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Kent Police Stations</Link>
+                  <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas</Link>
                 </div>
               )}
             </div>
@@ -207,12 +207,14 @@ export default function Header() {
                 >
                   <Link href="/blog" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">All Articles</Link>
                   <div className="border-t border-slate-200 my-1"></div>
+                  <Link href="/vulnerable-adults-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Vulnerable Adults in Custody</Link>
+                  <Link href="/preparing-for-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Preparing for Police Interview</Link>
+                  <Link href="/importance-of-early-legal-advice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Importance of Early Legal Advice</Link>
+                  <Link href="/arrival-times-delays" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Arrival Times & Delays</Link>
+                  <Link href="/booking-in-procedure-in-kent" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Booking In Procedure in Kent</Link>
+                  <Link href="/what-to-do-if-a-loved-one-is-arrested" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What to do if a Loved One is Arrested</Link>
                   <Link href="/voluntary-interviews" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Voluntary Interviews</Link>
-                  <Link href="/voluntary-police-interview-risks" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Voluntary Interview Risks</Link>
                   <Link href="/after-a-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">After a Police Interview</Link>
-                  <Link href="/what-happens-if-ignore-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Ignoring Police Interview</Link>
-                  <Link href="/refusingpoliceinterview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Refusing Interview</Link>
-                  <Link href="/policeinterviewhelp" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Interview Help</Link>
                 </div>
               )}
             </div>
@@ -253,7 +255,7 @@ export default function Header() {
                   <Link href="/accessibility" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Accessibility</Link>
                   <Link href="/complaints" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Complaints</Link>
                   <Link href="/gdpr" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">GDPR</Link>
-                  <Link href="/terms-and-conditions" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Terms & Conditions</Link>
+                  <Link href="/termsandconditions" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Terms and Conditions</Link>
                 </div>
               )}
             </div>

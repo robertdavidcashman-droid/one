@@ -1,0 +1,15 @@
+{
+  "mainMenu": [
+    {
+      "text": "Home",
+      "href": "/home"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "dropdowns": {
+    "Menu": []
+  }
+}
