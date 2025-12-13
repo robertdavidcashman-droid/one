@@ -1,6 +1,18 @@
 import { MetadataRoute } from 'next';
-import db from '@/lib/db';
 import { SITE_DOMAIN } from '@/config/site';
+
+// Lazy import to avoid build-time database initialization issues on Vercel
+function getDb() {
+  try {
+    // Only import db at runtime, not at module load time
+    if (process.env.NEXT_PHASE === 'phase-production-build') {
+      return null;
+    }
+    return require('@/lib/db').default;
+  } catch (error) {
+    return null;
+  }
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE_DOMAIN}`;
@@ -349,17 +361,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Police stations (with error handling for build time)
   let stationPages: MetadataRoute.Sitemap = [];
   try {
-    const stations = db.prepare('SELECT slug, updated_at FROM police_stations').all() as Array<{
-      slug: string;
-      updated_at: string | null;
-    }>;
-    
-    stationPages = stations.map((station) => ({
-      url: `${baseUrl}/police-stations/${station.slug}`,
-      lastModified: station.updated_at ? new Date(station.updated_at) : new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }));
+    const db = getDb();
+    if (db) {
+      const stations = db.prepare('SELECT slug, updated_at FROM police_stations').all() as Array<{
+        slug: string;
+        updated_at: string | null;
+      }>;
+      
+      stationPages = stations.map((station) => ({
+        url: `${baseUrl}/police-stations/${station.slug}`,
+        lastModified: station.updated_at ? new Date(station.updated_at) : new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      }));
+    }
   } catch (error) {
     // Database not available during build - skip dynamic pages
     console.warn('Skipping dynamic police stations in sitemap (build time)');
@@ -368,17 +383,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Services (with error handling for build time)
   let servicePages: MetadataRoute.Sitemap = [];
   try {
-    const services = db.prepare('SELECT slug, updated_at FROM services').all() as Array<{
-      slug: string;
-      updated_at: string | null;
-    }>;
-    
-    servicePages = services.map((service) => ({
-      url: `${baseUrl}/services/${service.slug}`,
-      lastModified: service.updated_at ? new Date(service.updated_at) : new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }));
+    const db = getDb();
+    if (db) {
+      const services = db.prepare('SELECT slug, updated_at FROM services').all() as Array<{
+        slug: string;
+        updated_at: string | null;
+      }>;
+      
+      servicePages = services.map((service) => ({
+        url: `${baseUrl}/services/${service.slug}`,
+        lastModified: service.updated_at ? new Date(service.updated_at) : new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      }));
+    }
   } catch (error) {
     // Database not available during build - skip dynamic pages
     console.warn('Skipping dynamic services in sitemap (build time)');
@@ -387,26 +405,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts (with error handling for build time)
   let blogPages: MetadataRoute.Sitemap = [];
   try {
-    const posts = db.prepare(`
-      SELECT slug, published_at, updated_at 
-      FROM blog_posts 
-      WHERE published = 1
-    `).all() as Array<{
-      slug: string;
-      published_at: string | null;
-      updated_at: string | null;
-    }>;
-    
-    blogPages = posts.map((post) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.updated_at 
-        ? new Date(post.updated_at) 
-        : post.published_at 
-          ? new Date(post.published_at) 
-          : new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    }));
+    const db = getDb();
+    if (db) {
+      const posts = db.prepare(`
+        SELECT slug, published_at, updated_at 
+        FROM blog_posts 
+        WHERE published = 1
+      `).all() as Array<{
+        slug: string;
+        published_at: string | null;
+        updated_at: string | null;
+      }>;
+      
+      blogPages = posts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: post.updated_at 
+          ? new Date(post.updated_at) 
+          : post.published_at 
+            ? new Date(post.published_at) 
+            : new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+      }));
+    }
   } catch (error) {
     // Database not available during build - skip dynamic pages
     console.warn('Skipping dynamic blog posts in sitemap (build time)');
