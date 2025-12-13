@@ -1,0 +1,280 @@
+{
+  "timestamp": "2025-12-13T14:38:10.365Z",
+  "expectedPages": 151,
+  "productionDomains": [
+    "policestationagent.com",
+    "policestationagent.net",
+    "policestationagent.org",
+    "criminaldefencekent.co.uk",
+    "policestationrepkent.co.uk"
+  ],
+  "results": {
+    "confirmed": [
+      {
+        "url": "https://policestationagent.com/",
+        "domain": "policestationagent.com",
+        "path": "/",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.com/about",
+        "domain": "policestationagent.com",
+        "path": "/about",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.com/services",
+        "domain": "policestationagent.com",
+        "path": "/services",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.com/blog",
+        "domain": "policestationagent.com",
+        "path": "/blog",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.com/contact",
+        "domain": "policestationagent.com",
+        "path": "/contact",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.com/police-stations",
+        "domain": "policestationagent.com",
+        "path": "/police-stations",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/",
+        "domain": "policestationagent.org",
+        "path": "/",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/about",
+        "domain": "policestationagent.org",
+        "path": "/about",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/services",
+        "domain": "policestationagent.org",
+        "path": "/services",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/blog",
+        "domain": "policestationagent.org",
+        "path": "/blog",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/contact",
+        "domain": "policestationagent.org",
+        "path": "/contact",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.org/police-stations",
+        "domain": "policestationagent.org",
+        "path": "/police-stations",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/about",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/about",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/services",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/services",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/blog",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/blog",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/contact",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/contact",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://criminaldefencekent.co.uk/police-stations",
+        "domain": "criminaldefencekent.co.uk",
+        "path": "/police-stations",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/about",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/about",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/services",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/services",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/blog",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/blog",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/contact",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/contact",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationrepkent.co.uk/police-stations",
+        "domain": "policestationrepkent.co.uk",
+        "path": "/police-stations",
+        "status": 200,
+        "canonical": null,
+        "location": null
+      }
+    ],
+    "missing": [
+      {
+        "url": "https://policestationagent.net/",
+        "domain": "policestationagent.net",
+        "path": "/",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.net/about",
+        "domain": "policestationagent.net",
+        "path": "/about",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.net/services",
+        "domain": "policestationagent.net",
+        "path": "/services",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.net/blog",
+        "domain": "policestationagent.net",
+        "path": "/blog",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.net/contact",
+        "domain": "policestationagent.net",
+        "path": "/contact",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      },
+      {
+        "url": "https://policestationagent.net/police-stations",
+        "domain": "policestationagent.net",
+        "path": "/police-stations",
+        "status": 403,
+        "canonical": null,
+        "location": null
+      }
+    ],
+    "wrongDomain": [],
+    "sitemaps": {
+      "policestationagent.com": {
+        "status": 200,
+        "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://criminaldefencekent.co.uk</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/about</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coverage</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/contact</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privacy</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/terms-and-conditions</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-solicitors</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-clients</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/testimonials</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-interviews</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/faq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/why-use-us</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-we-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-police-station-rep</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-criminal-solicitor</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/after-a-police-interview</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/complaints</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/accessibility</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/cookies</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gdpr</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/police-stations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/bail-applications</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/pre-charge-advice</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/police-station-representation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/blog</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/fees</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/join</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/courtrepresentation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canwehelp</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/outofarea</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privatecrime</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privateclientfaq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/your-rights-in-custody</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-police-interview-risks</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/areas</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/christmashours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/hours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/psastations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/arrested-what-to-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/medway-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/north-kent-gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canterbury-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/folkestone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/maidstone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tonbridge-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/ashford-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/dover-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/margate-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sevenoaks-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tunbridge-wells-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/swanley-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/bluewater-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sittingbourne-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coldharbour-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n</urlset>\n"
+      },
+      "policestationagent.net": {
+        "status": 403,
+        "content": "403 Forbidden!"
+      },
+      "policestationagent.org": {
+        "status": 200,
+        "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://criminaldefencekent.co.uk</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/about</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coverage</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/contact</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privacy</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/terms-and-conditions</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-solicitors</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-clients</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/testimonials</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-interviews</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/faq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/why-use-us</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-we-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-police-station-rep</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-criminal-solicitor</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/after-a-police-interview</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/complaints</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/accessibility</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/cookies</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gdpr</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/police-stations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/bail-applications</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/pre-charge-advice</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/police-station-representation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/blog</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/fees</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/join</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/courtrepresentation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canwehelp</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/outofarea</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privatecrime</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privateclientfaq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/your-rights-in-custody</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-police-interview-risks</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/areas</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/christmashours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/hours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/psastations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/arrested-what-to-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/medway-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/north-kent-gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canterbury-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/folkestone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/maidstone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tonbridge-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/ashford-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/dover-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/margate-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sevenoaks-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tunbridge-wells-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/swanley-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/bluewater-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sittingbourne-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coldharbour-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n</urlset>\n"
+      },
+      "criminaldefencekent.co.uk": {
+        "status": 200,
+        "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://criminaldefencekent.co.uk</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/about</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coverage</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/contact</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privacy</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/terms-and-conditions</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-solicitors</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-clients</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/testimonials</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-interviews</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/faq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/why-use-us</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-we-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-police-station-rep</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-criminal-solicitor</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/after-a-police-interview</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/complaints</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/accessibility</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/cookies</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gdpr</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/police-stations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/bail-applications</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/pre-charge-advice</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/police-station-representation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/blog</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/fees</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/join</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/courtrepresentation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canwehelp</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/outofarea</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privatecrime</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privateclientfaq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/your-rights-in-custody</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-police-interview-risks</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/areas</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/christmashours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/hours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/psastations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/arrested-what-to-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/medway-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/north-kent-gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canterbury-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/folkestone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/maidstone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tonbridge-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/ashford-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/dover-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/margate-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sevenoaks-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tunbridge-wells-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/swanley-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/bluewater-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sittingbourne-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coldharbour-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n</urlset>\n"
+      },
+      "policestationrepkent.co.uk": {
+        "status": 200,
+        "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://criminaldefencekent.co.uk</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/about</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coverage</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/contact</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privacy</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/terms-and-conditions</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-solicitors</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/for-clients</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/testimonials</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-interviews</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/faq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/why-use-us</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-we-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-police-station-rep</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/what-is-a-criminal-solicitor</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/after-a-police-interview</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/complaints</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/accessibility</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/cookies</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gdpr</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/police-stations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/bail-applications</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/pre-charge-advice</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/services/police-station-representation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/blog</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>daily</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/fees</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/join</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/courtrepresentation</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canwehelp</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/outofarea</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privatecrime</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/privateclientfaq</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/your-rights-in-custody</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/voluntary-police-interview-risks</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/areas</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/christmashours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/hours</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/psastations</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/arrested-what-to-do</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/medway-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/north-kent-gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/canterbury-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/folkestone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/maidstone-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tonbridge-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/ashford-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/dover-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/margate-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sevenoaks-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/tunbridge-wells-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/swanley-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/bluewater-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/sittingbourne-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/gravesend-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://criminaldefencekent.co.uk/coldharbour-police-station</loc>\n<lastmod>2025-12-13T13:42:22.645Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n</urlset>\n"
+      }
+    }
+  }
+}

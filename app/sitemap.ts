@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import db from '@/lib/db';
+import { SITE_DOMAIN } from '@/config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE_DOMAIN}`;
   
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
