@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "",
   keywords: undefined,
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/your-rights-in-custody",
+    canonical: "https://policestationagent.com/your-rights-in-custody",
   },
   openGraph: {
     title: "\n   Police Station Agent\n  ",
     description: "",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/your-rights-in-custody",
+    url: "https://policestationagent.com/your-rights-in-custody",
   },
 };
 

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Police interview at Canterbury Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, Whitstable & Herne Bay covered. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/canterbury-police-station",
+    canonical: "https://policestationagent.com/canterbury-police-station",
   },
   openGraph: {
     title: "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Police interview at Canterbury Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, Whitstable & Herne Bay covered. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/canterbury-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/canterbury-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

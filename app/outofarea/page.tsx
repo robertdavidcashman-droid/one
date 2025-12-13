@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Guidance for members of the public and solicitor firms when a detainee is held at a police station outside of Kent. Coverage available for stations within 60 mins of Maidstone.",
   keywords: undefined,
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/outofarea",
+    canonical: "https://policestationagent.com/outofarea",
   },
   openGraph: {
     title: "Detained Outside Kent? What To Do | Police Station Agent",
     description: "Guidance for members of the public and solicitor firms when a detainee is held at a police station outside of Kent. Coverage available for stations within 60 mins of Maidstone.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/outofarea",
+    url: "https://policestationagent.com/outofarea",
   },
 };
 

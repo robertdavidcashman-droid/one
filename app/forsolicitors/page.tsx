@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Police Station Agent Cover Services for Solicitors | Kent & London",
   description: "Professional police station agent services for criminal law firms. Reliable representation by experienced duty solicitor Robert Cashman. Extended hours coverage across Kent. Competitive rates.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/forsolicitors",
+    canonical: "https://policestationagent.com/forsolicitors",
   },
   openGraph: {
     title: "Police Station Agent Cover Services for Solicitors | Kent & London",
     description: "Professional police station agent services for criminal law firms. Reliable representation by experienced duty solicitor Robert Cashman. Extended hours coverage across Kent. Competitive rates.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/forsolicitors",
+    url: "https://policestationagent.com/forsolicitors",
   },
 };
 

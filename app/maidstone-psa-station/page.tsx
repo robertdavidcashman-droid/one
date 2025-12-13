@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice",
   description: "Voluntary police interview in Maidstone? Call Robert Cashman - Duty Solicitor. FREE legal advice even for voluntary attendance. 30+ years experience. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/maidstone-psa-station",
+    canonical: "https://policestationagent.com/maidstone-psa-station",
   },
   openGraph: {
     title: "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice",
     description: "Voluntary police interview in Maidstone? Call Robert Cashman - Duty Solicitor. FREE legal advice even for voluntary attendance. 30+ years experience. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/maidstone-psa-station",
+    url: "https://policestationagent.com/maidstone-psa-station",
   },
 };
 

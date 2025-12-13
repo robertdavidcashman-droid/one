@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Police interview at North Kent (Gravesend) Custody? Call Robert Cashman - Duty Solicitor. FREE legal advice, Dartford area covered. 12 min response. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/north-kent-gravesend-psa-station",
+    canonical: "https://policestationagent.com/north-kent-gravesend-psa-station",
   },
   openGraph: {
     title: "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Police interview at North Kent (Gravesend) Custody? Call Robert Cashman - Duty Solicitor. FREE legal advice, Dartford area covered. 12 min response. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/north-kent-gravesend-psa-station",
+    url: "https://policestationagent.com/north-kent-gravesend-psa-station",
   },
 };
 

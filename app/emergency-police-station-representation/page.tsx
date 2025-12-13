@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Emergency Police Station Representation Kent | 24/7 FREE Legal Advice | PACE s.58",
   description: "Emergency 24/7 police station representation across Kent. FREE legal advice under Section 58 PACE 1984. Medway, Canterbury, Folkestone, Gravesend. Ask for Robert Cashman, Tuckers Duty Solicitor. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/emergency-police-station-representation",
+    canonical: "https://policestationagent.com/emergency-police-station-representation",
   },
   openGraph: {
     title: "Emergency Police Station Representation Kent | 24/7 FREE Legal Advice | PACE s.58",
     description: "Emergency 24/7 police station representation across Kent. FREE legal advice under Section 58 PACE 1984. Medway, Canterbury, Folkestone, Gravesend. Ask for Robert Cashman, Tuckers Duty Solicitor. Call 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/emergency-police-station-representation",
+    url: "https://policestationagent.com/emergency-police-station-representation",
   },
 };
 

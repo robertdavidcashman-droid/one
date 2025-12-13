@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Website Terms of Use | Criminal Defence Kent",
   description: "Legally binding terms of use for the Criminal Defence Kent website. Please read carefully.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/termsandconditions",
+    canonical: "https://policestationagent.com/termsandconditions",
   },
   openGraph: {
     title: "Website Terms of Use | Criminal Defence Kent",
     description: "Legally binding terms of use for the Criminal Defence Kent website. Please read carefully.",
-    url: "https://criminaldefencekent.co.uk/termsandconditions",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/termsandconditions",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

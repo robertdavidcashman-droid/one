@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Margate Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Arrested in Margate or Thanet? Call Robert Cashman - Duty Solicitor. FREE legal advice at Margate 24/7 Custody Suite. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/margate-psa-station",
+    canonical: "https://policestationagent.com/margate-psa-station",
   },
   openGraph: {
     title: "Margate Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Arrested in Margate or Thanet? Call Robert Cashman - Duty Solicitor. FREE legal advice at Margate 24/7 Custody Suite. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/margate-psa-station",
+    url: "https://policestationagent.com/margate-psa-station",
   },
 };
 

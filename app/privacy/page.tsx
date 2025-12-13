@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Website Privacy Policy | Criminal Defence Kent",
   description: "Comprehensive Privacy Policy. How Defence Legal Services Ltd collects, uses, and protects your data in compliance with UK GDPR.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/privacy",
+    canonical: "https://policestationagent.com/privacy",
   },
   openGraph: {
     title: "Website Privacy Policy | Criminal Defence Kent",
     description: "Comprehensive Privacy Policy. How Defence Legal Services Ltd collects, uses, and protects your data in compliance with UK GDPR.",
-    url: "https://criminaldefencekent.co.uk/privacy",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/privacy",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

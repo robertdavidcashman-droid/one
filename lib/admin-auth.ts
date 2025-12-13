@@ -56,3 +56,13 @@ export function isJWTSecretConfigured(): boolean {
          process.env.JWT_SECRET !== 'your-secret-key-change-in-production';
 }
 
+
+
+
+
+
+
+
+
+
+

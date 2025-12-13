@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE",
   description: "Voluntary police interview in Tunbridge Wells? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary attendance. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/tunbridge-wells-psa-station",
+    canonical: "https://policestationagent.com/tunbridge-wells-psa-station",
   },
   openGraph: {
     title: "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE",
     description: "Voluntary police interview in Tunbridge Wells? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary attendance. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/tunbridge-wells-psa-station",
+    url: "https://policestationagent.com/tunbridge-wells-psa-station",
   },
 };
 

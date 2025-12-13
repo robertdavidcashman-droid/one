@@ -89,3 +89,13 @@ Unauthenticated users are automatically redirected to `/admin/login`.
 - Check that `JWT_SECRET` is properly configured
 - Verify cookie settings (should be HTTP-only, secure in production)
 
+
+
+
+
+
+
+
+
+
+

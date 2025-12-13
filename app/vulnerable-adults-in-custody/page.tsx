@@ -3,16 +3,16 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vulnerable Adults in Custody | Special Protections | Criminal Defence Kent',
+  title: 'Vulnerable Adults in Custody | Special Protections | Police Station Agent',
   description: 'Special protections for vulnerable adults in police custody. Learn about appropriate adults, mental health assessments, and your rights under PACE Code C.',
   alternates: {
-    canonical: 'https://criminaldefencekent.co.uk/vulnerable-adults-in-custody',
+    canonical: 'https://policestationagent.com/vulnerable-adults-in-custody',
   },
   openGraph: {
-    title: 'Vulnerable Adults in Custody | Special Protections | Criminal Defence Kent',
+    title: 'Vulnerable Adults in Custody | Special Protections | Police Station Agent',
     description: 'Special protections for vulnerable adults in police custody. Learn about appropriate adults, mental health assessments, and your rights under PACE Code C.',
-    url: 'https://criminaldefencekent.co.uk/vulnerable-adults-in-custody',
-    siteName: 'Criminal Defence Kent',
+    url: 'https://policestationagent.com/vulnerable-adults-in-custody',
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -3,16 +3,16 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Preparing for Police Interview | Expert Guide | Criminal Defence Kent',
+  title: 'Preparing for Police Interview | Expert Guide | Police Station Agent',
   description: 'How to prepare for a police interview. Expert advice on your rights, what to expect, and why legal representation is essential. Free 24/7 advice available.',
   alternates: {
-    canonical: 'https://criminaldefencekent.co.uk/preparing-for-police-interview',
+    canonical: 'https://policestationagent.com/preparing-for-police-interview',
   },
   openGraph: {
-    title: 'Preparing for Police Interview | Expert Guide | Criminal Defence Kent',
+    title: 'Preparing for Police Interview | Expert Guide | Police Station Agent',
     description: 'How to prepare for a police interview. Expert advice on your rights, what to expect, and why legal representation is essential.',
-    url: 'https://criminaldefencekent.co.uk/preparing-for-police-interview',
-    siteName: 'Criminal Defence Kent',
+    url: 'https://policestationagent.com/preparing-for-police-interview',
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

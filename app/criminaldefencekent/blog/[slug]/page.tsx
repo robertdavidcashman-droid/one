@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
   
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
   return {
     title: post.metaTitle || post.title,
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.metaTitle || post.title,
       description: post.metaDescription || post.description,
       url: `${siteUrl}/criminaldefencekent/blog/${post.slug}`,
-      siteName: 'Criminal Defence Kent',
+      siteName: 'Police Station Agent',
       type: 'article',
     },
   };

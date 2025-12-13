@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Police Station Interviews in Kent: Your Rights and What to Expect",
     description: "Complete guide to police station interviews in Kent. Understand your rights under PACE 1984, what happens during interview, and why legal advice is essential.",
     url: `https://${SITE_DOMAIN}/police-station-interviews-kent-rights`,
-    siteName: 'Criminal Defence Kent',
+    siteName: 'Police Station Agent',
     type: 'article',
   },
 };
@@ -418,4 +418,14 @@ export default function Page() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
 

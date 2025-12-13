@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Contact Criminal Defence Kent | 24/7 Legal Advice Kent | Call 0333 0497 036",
   description: "Contact Criminal Defence Kent for FREE police station representation. Available 24/7 across Kent. Call 0333 0497 036, text 07535 494446 or email for immediate legal advice.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/contact",
+    canonical: "https://policestationagent.com/contact",
   },
   openGraph: {
     title: "Contact Criminal Defence Kent | 24/7 Legal Advice Kent | Call 0333 0497 036",
     description: "Contact Criminal Defence Kent for FREE police station representation. Available 24/7 across Kent. Call 0333 0497 036, text 07535 494446 or email for immediate legal advice.",
-    url: "https://criminaldefencekent.co.uk/contact",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/contact",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

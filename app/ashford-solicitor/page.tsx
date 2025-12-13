@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent",
   description: "",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/ashford-solicitor",
+    canonical: "https://policestationagent.com/ashford-solicitor",
   },
   openGraph: {
     title: "Criminal Defence Kent",
     description: "",
-    url: "https://criminaldefencekent.co.uk/ashford-solicitor",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/ashford-solicitor",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

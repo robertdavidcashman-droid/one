@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: 'Arrival Times & Delays | Police Station Representation | Criminal Defence Kent',
   description: 'Expected arrival times for police station representation in Kent. Understanding delays and your rights when waiting for a solicitor.',
   alternates: {
-    canonical: 'https://criminaldefencekent.co.uk/arrival-times-delays',
+    canonical: 'https://policestationagent.com/arrival-times-delays',
   },
   openGraph: {
     title: 'Arrival Times & Delays | Police Station Representation | Criminal Defence Kent',
     description: 'Expected arrival times for police station representation in Kent. Understanding delays and your rights when waiting for a solicitor.',
-    url: 'https://criminaldefencekent.co.uk/arrival-times-delays',
-    siteName: 'Criminal Defence Kent',
+    url: 'https://policestationagent.com/arrival-times-delays',
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

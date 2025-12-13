@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Why Use Us As Your Police Station Agent In Kent? | Criminal Defence Kent",
   description: "Expert police station representation in Kent. 35+ years experience, available 24/7, free Legal Aid, and complete Kent coverage. Professional association with Tuckers Solicitors LLP.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/why-use-us",
+    canonical: "https://policestationagent.com/why-use-us",
   },
   openGraph: {
     title: "Why Use Us As Your Police Station Agent In Kent? | Criminal Defence Kent",
     description: "Expert police station representation in Kent. 35+ years experience, available 24/7, free Legal Aid, and complete Kent coverage. Professional association with Tuckers Solicitors LLP.",
-    url: "https://criminaldefencekent.co.uk/why-use-us",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/why-use-us",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Sittingbourne | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Sittingbourne. FREE legal advice at Sittingbourne Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-sittingbourne",
+    canonical: "https://policestationagent.com/police-station-agent-sittingbourne",
   },
   openGraph: {
     title: "Criminal Defence Kent in Sittingbourne | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Sittingbourne. FREE legal advice at Sittingbourne Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-sittingbourne",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-sittingbourne",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

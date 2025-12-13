@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Use our simple interactive guide to see if Police Station Agent is the right service for your legal representation needs in Kent and beyond.",
   keywords: undefined,
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/canwehelp",
+    canonical: "https://policestationagent.com/canwehelp",
   },
   openGraph: {
     title: "Can We Help You? | Interactive Guide | Police Station Agent",
     description: "Use our simple interactive guide to see if Police Station Agent is the right service for your legal representation needs in Kent and beyond.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/canwehelp",
+    url: "https://policestationagent.com/canwehelp",
   },
 };
 

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Canterbury | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Canterbury. FREE legal advice at Canterbury Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-canterbury",
+    canonical: "https://policestationagent.com/police-station-agent-canterbury",
   },
   openGraph: {
     title: "Criminal Defence Kent in Canterbury | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Canterbury. FREE legal advice at Canterbury Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-canterbury",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-canterbury",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Tonbridge | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Tonbridge. FREE legal advice at Tonbridge Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-tonbridge",
+    canonical: "https://policestationagent.com/police-station-agent-tonbridge",
   },
   openGraph: {
     title: "Criminal Defence Kent in Tonbridge | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Tonbridge. FREE legal advice at Tonbridge Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-tonbridge",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-tonbridge",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

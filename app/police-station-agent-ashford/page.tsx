@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Ashford | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Ashford. FREE legal advice at Ashford Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-ashford",
+    canonical: "https://policestationagent.com/police-station-agent-ashford",
   },
   openGraph: {
     title: "Criminal Defence Kent in Ashford | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Ashford. FREE legal advice at Ashford Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-ashford",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-ashford",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

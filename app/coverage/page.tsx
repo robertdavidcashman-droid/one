@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent",
   description: "We cover all Kent custody suites and major voluntary interview stations with duty solicitor-led representation.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/coverage",
+    canonical: "https://policestationagent.com/coverage",
   },
   openGraph: {
     title: "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent",
     description: "We cover all Kent custody suites and major voluntary interview stations with duty solicitor-led representation.",
-    url: "https://criminaldefencekent.co.uk/coverage",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/coverage",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

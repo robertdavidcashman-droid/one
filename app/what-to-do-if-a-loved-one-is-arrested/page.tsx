@@ -1,18 +1,19 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { SITE_DOMAIN } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'What to Do If a Loved One is Arrested | Family Guide | Criminal Defence Kent',
   description: 'Practical guide for families when a loved one is arrested in Kent. Learn what to do, your rights, and how to get immediate legal representation.',
   alternates: {
-    canonical: 'https://criminaldefencekent.co.uk/what-to-do-if-a-loved-one-is-arrested',
+    canonical: `https://${SITE_DOMAIN}/what-to-do-if-a-loved-one-is-arrested`,
   },
   openGraph: {
     title: 'What to Do If a Loved One is Arrested | Family Guide | Criminal Defence Kent',
     description: 'Practical guide for families when a loved one is arrested in Kent. Learn what to do and how to get immediate legal representation.',
-    url: 'https://criminaldefencekent.co.uk/what-to-do-if-a-loved-one-is-arrested',
-    siteName: 'Criminal Defence Kent',
+    url: 'https://policestationagent.com/what-to-do-if-a-loved-one-is-arrested',
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

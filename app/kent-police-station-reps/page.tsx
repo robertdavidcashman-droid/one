@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Police Station Representatives in Kent | 24/7 FREE Legal Advice",
   description: "Expert police station representatives covering all Kent custody suites. FREE legal advice at Maidstone, Medway, Tonbridge, Gravesend, Sevenoaks & Swanley. Available 24/7. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/kent-police-station-reps",
+    canonical: "https://policestationagent.com/kent-police-station-reps",
   },
   openGraph: {
     title: "Police Station Representatives in Kent | 24/7 FREE Legal Advice",
     description: "Expert police station representatives covering all Kent custody suites. FREE legal advice at Maidstone, Medway, Tonbridge, Gravesend, Sevenoaks & Swanley. Available 24/7. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/kent-police-station-reps",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/kent-police-station-reps",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

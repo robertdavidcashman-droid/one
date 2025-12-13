@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Private Client FAQ | Criminal Defence Kent",
   description: "Common questions about private criminal defence representation, requesting Robert Cashman at police stations, and our fee structure.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/privateclientfaq",
+    canonical: "https://policestationagent.com/privateclientfaq",
   },
   openGraph: {
     title: "Private Client FAQ | Criminal Defence Kent",
     description: "Common questions about private criminal defence representation, requesting Robert Cashman at police stations, and our fee structure.",
-    url: "https://criminaldefencekent.co.uk/privateclientfaq",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/privateclientfaq",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

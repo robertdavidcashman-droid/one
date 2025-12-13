@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: "Services for Solicitors | Police Station Agent Kent",
   description: "Professional agency services for criminal solicitor firms in Kent and surrounding areas. Expert police station representation you can trust.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/for-solicitors",
+    canonical: "https://policestationagent.com/for-solicitors",
   },
   openGraph: {
     title: "Services for Solicitors | Police Station Agent Kent",
     description: "Professional agency services for criminal solicitor firms in Kent and surrounding areas. Expert police station representation you can trust.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/for-solicitors",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/for-solicitors",
+    siteName: 'Police Station Agent',
   },
 };
 

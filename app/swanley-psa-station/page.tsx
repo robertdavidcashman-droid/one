@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Swanley Police Station Solicitor | Robert Cashman | FREE Advice",
   description: "Voluntary police interview in Swanley? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. North West Kent covered. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/swanley-psa-station",
+    canonical: "https://policestationagent.com/swanley-psa-station",
   },
   openGraph: {
     title: "Swanley Police Station Solicitor | Robert Cashman | FREE Advice",
     description: "Voluntary police interview in Swanley? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. North West Kent covered. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/swanley-psa-station",
+    url: "https://policestationagent.com/swanley-psa-station",
   },
 };
 

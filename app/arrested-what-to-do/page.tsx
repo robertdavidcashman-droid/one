@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights",
   description: "Just been arrested in Kent? Know your PACE 1984 rights. Request a FREE solicitor immediately. Don't answer questions without legal advice. Call 01732 247427 - Ask for Robert Cashman, Tuckers Duty Solicitor.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/arrested-what-to-do",
+    canonical: "https://policestationagent.com/arrested-what-to-do",
   },
   openGraph: {
     title: "Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights",
     description: "Just been arrested in Kent? Know your PACE 1984 rights. Request a FREE solicitor immediately. Don't answer questions without legal advice. Call 01732 247427 - Ask for Robert Cashman, Tuckers Duty Solicitor.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/arrested-what-to-do",
+    url: "https://policestationagent.com/arrested-what-to-do",
   },
 };
 

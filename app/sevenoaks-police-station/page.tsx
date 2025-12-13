@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Sevenoaks Police Station Solicitor | Robert Cashman | FREE",
   description: "Voluntary police interview in Sevenoaks? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary attendance. 30+ years experience. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/sevenoaks-police-station",
+    canonical: "https://policestationagent.com/sevenoaks-police-station",
   },
   openGraph: {
     title: "Sevenoaks Police Station Solicitor | Robert Cashman | FREE",
     description: "Voluntary police interview in Sevenoaks? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary attendance. 30+ years experience. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/sevenoaks-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/sevenoaks-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

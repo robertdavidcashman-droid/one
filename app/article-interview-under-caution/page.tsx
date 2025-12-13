@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "What Happens During Interview Under Caution? | Kent Police Station Guide",
   description: "Expert guide to police interviews under caution in Kent. What to expect, your rights, how to prepare. FREE legal advice available. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/article-interview-under-caution",
+    canonical: "https://policestationagent.com/article-interview-under-caution",
   },
   openGraph: {
     title: "What Happens During Interview Under Caution? | Kent Police Station Guide",
     description: "Expert guide to police interviews under caution in Kent. What to expect, your rights, how to prepare. FREE legal advice available. Call 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/article-interview-under-caution",
+    url: "https://policestationagent.com/article-interview-under-caution",
   },
 };
 

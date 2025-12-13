@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "What Is A Police Station Rep? | Criminal Defence Kent",
   description: "Learn about police station representatives and their crucial role in protecting your rights during police interviews in Kent.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/what-is-a-police-station-rep",
+    canonical: "https://policestationagent.com/what-is-a-police-station-rep",
   },
   openGraph: {
     title: "What Is A Police Station Rep? | Criminal Defence Kent",
     description: "Learn about police station representatives and their crucial role in protecting your rights during police interviews in Kent.",
-    url: "https://criminaldefencekent.co.uk/what-is-a-police-station-rep",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/what-is-a-police-station-rep",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

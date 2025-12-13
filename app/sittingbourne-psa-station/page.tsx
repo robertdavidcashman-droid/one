@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Sittingbourne Police Station Solicitor | Robert Cashman | FREE",
   description: "Voluntary police interview in Sittingbourne or Swale? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/sittingbourne-psa-station",
+    canonical: "https://policestationagent.com/sittingbourne-psa-station",
   },
   openGraph: {
     title: "Sittingbourne Police Station Solicitor | Robert Cashman | FREE",
     description: "Voluntary police interview in Sittingbourne or Swale? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/sittingbourne-psa-station",
+    url: "https://policestationagent.com/sittingbourne-psa-station",
   },
 };
 

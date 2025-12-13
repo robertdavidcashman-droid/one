@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "GDPR Compliance | Criminal Defence Kent",
   description: "How we comply with UK GDPR and protect your data rights. ICO Registration Number: ZA198500",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/gdpr",
+    canonical: "https://policestationagent.com/gdpr",
   },
   openGraph: {
     title: "GDPR Compliance | Criminal Defence Kent",
     description: "How we comply with UK GDPR and protect your data rights. ICO Registration Number: ZA198500",
-    url: "https://criminaldefencekent.co.uk/gdpr",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/gdpr",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

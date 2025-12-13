@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Folkestone | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Folkestone. FREE legal advice at Folkestone Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-folkestone",
+    canonical: "https://policestationagent.com/police-station-agent-folkestone",
   },
   openGraph: {
     title: "Criminal Defence Kent in Folkestone | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Folkestone. FREE legal advice at Folkestone Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-folkestone",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-folkestone",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Police interview at Folkestone Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, South Kent covered. 30+ years experience. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/folkestone-police-station",
+    canonical: "https://policestationagent.com/folkestone-police-station",
   },
   openGraph: {
     title: "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Police interview at Folkestone Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, South Kent covered. 30+ years experience. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/folkestone-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/folkestone-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

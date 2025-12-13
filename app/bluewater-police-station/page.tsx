@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice",
   description: "Police interview at Bluewater Shopping Centre? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. Greenhithe area. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/bluewater-police-station",
+    canonical: "https://policestationagent.com/bluewater-police-station",
   },
   openGraph: {
     title: "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice",
     description: "Police interview at Bluewater Shopping Centre? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. Greenhithe area. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/bluewater-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/bluewater-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

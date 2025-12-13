@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Police interview at Tonbridge Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, West Malling & Tunbridge Wells. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/tonbridge-police-station",
+    canonical: "https://policestationagent.com/tonbridge-police-station",
   },
   openGraph: {
     title: "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Police interview at Tonbridge Custody Suite? Call Robert Cashman - Duty Solicitor. FREE legal advice, West Malling & Tunbridge Wells. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/tonbridge-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/tonbridge-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

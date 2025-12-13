@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Check Case Status | Police Station Agent | Criminal Defence Kent",
   description: "Check your case status online or contact us directly for updates on your police station representation.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/case-status",
+    canonical: "https://policestationagent.com/case-status",
   },
   openGraph: {
     title: "Check Case Status | Police Station Agent | Criminal Defence Kent",
     description: "Check your case status online or contact us directly for updates on your police station representation.",
-    url: "https://criminaldefencekent.co.uk/case-status",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/case-status",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

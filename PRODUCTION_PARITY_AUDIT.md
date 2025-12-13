@@ -94,3 +94,13 @@ Generated: 2025-12-12
 - Clarify that system uses username/password, not Google OAuth
 - Update README if needed
 
+
+
+
+
+
+
+
+
+
+

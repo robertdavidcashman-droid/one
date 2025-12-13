@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Gravesend | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Gravesend. FREE legal advice at North Kent Police Station (Gravesend). 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-gravesend",
+    canonical: "https://policestationagent.com/police-station-agent-gravesend",
   },
   openGraph: {
     title: "Criminal Defence Kent in Gravesend | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Gravesend. FREE legal advice at North Kent Police Station (Gravesend). 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-gravesend",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-gravesend",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

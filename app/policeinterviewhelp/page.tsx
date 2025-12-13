@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Facing a police interview? Get expert help before you answer any questions. We explain your rights, the caution, and provide free representation.",
   keywords: undefined,
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/policeinterviewhelp",
+    canonical: "https://policestationagent.com/policeinterviewhelp",
   },
   openGraph: {
     title: "Police Interview Help | Expert Legal Advice | Police Station Agent",
     description: "Facing a police interview? Get expert help before you answer any questions. We explain your rights, the caution, and provide free representation.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/policeinterviewhelp",
+    url: "https://policestationagent.com/policeinterviewhelp",
   },
 };
 

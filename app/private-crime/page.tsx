@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Police Station Agent | Criminal Defence Kent",
   description: "v4.4.0 — 12/12/2025Enhanced ServicePrivate Client Criminal DefenceDirector-level representation with personal attention, proactive defence strategy, and continu",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/private-crime",
+    canonical: "https://policestationagent.com/private-crime",
   },
   openGraph: {
     title: "Police Station Agent | Criminal Defence Kent",
     description: "v4.4.0 — 12/12/2025Enhanced ServicePrivate Client Criminal DefenceDirector-level representation with personal attention, proactive defence strategy, and continu",
-    url: "https://criminaldefencekent.co.uk/private-crime",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/private-crime",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Medway Police Station Solicitor | Robert Cashman | FREE 24/7",
   description: "Police interview at Medway Custody Suite, Gillingham? Call Robert Cashman - Duty Solicitor. FREE legal advice under PACE. 30+ years experience. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/medway-police-station",
+    canonical: "https://policestationagent.com/medway-police-station",
   },
   openGraph: {
     title: "Medway Police Station Solicitor | Robert Cashman | FREE 24/7",
     description: "Police interview at Medway Custody Suite, Gillingham? Call Robert Cashman - Duty Solicitor. FREE legal advice under PACE. 30+ years experience. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/medway-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/medway-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

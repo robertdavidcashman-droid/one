@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman",
   description: "Expert police station agent covering all Kent custody suites. FREE legal advice 24/7. 35 years experience. Medway, Maidstone, Gravesend, Canterbury, Tonbridge, Folkestone. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-kent",
+    canonical: "https://policestationagent.com/police-station-agent-kent",
   },
   openGraph: {
     title: "24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman",
     description: "Expert police station agent covering all Kent custody suites. FREE legal advice 24/7. 35 years experience. Medway, Maidstone, Gravesend, Canterbury, Tonbridge, Folkestone. Call 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/police-station-agent-kent",
+    url: "https://policestationagent.com/police-station-agent-kent",
   },
 };
 

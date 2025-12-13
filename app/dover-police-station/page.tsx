@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Dover Police Station Solicitor | Robert Cashman | FREE Advice",
   description: "Police interview in Dover? Port or customs matter? Call Robert Cashman - Duty Solicitor. FREE legal advice, immigration arrests covered. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/dover-police-station",
+    canonical: "https://policestationagent.com/dover-police-station",
   },
   openGraph: {
     title: "Dover Police Station Solicitor | Robert Cashman | FREE Advice",
     description: "Police interview in Dover? Port or customs matter? Call Robert Cashman - Duty Solicitor. FREE legal advice, immigration arrests covered. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/dover-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/dover-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

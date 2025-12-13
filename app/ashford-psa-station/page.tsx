@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Ashford Police Station Solicitor | Robert Cashman | FREE Advice",
   description: "Voluntary police interview in Ashford? Call Robert Cashman - Duty Solicitor. FREE legal advice even for voluntary attendance. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/ashford-psa-station",
+    canonical: "https://policestationagent.com/ashford-psa-station",
   },
   openGraph: {
     title: "Ashford Police Station Solicitor | Robert Cashman | FREE Advice",
     description: "Voluntary police interview in Ashford? Call Robert Cashman - Duty Solicitor. FREE legal advice even for voluntary attendance. 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/ashford-psa-station",
+    url: "https://policestationagent.com/ashford-psa-station",
   },
 };
 

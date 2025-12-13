@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Maidstone | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Maidstone. FREE legal advice at Maidstone Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-maidstone",
+    canonical: "https://policestationagent.com/police-station-agent-maidstone",
   },
   openGraph: {
     title: "Criminal Defence Kent in Maidstone | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Maidstone. FREE legal advice at Maidstone Police Station. 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-maidstone",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-maidstone",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

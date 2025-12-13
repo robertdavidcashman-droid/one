@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Criminal Defence Kent in Dartford | FREE 24/7 Legal Advice | Kent",
   description: "Expert police station representation in Dartford. FREE legal advice at North Kent Police Station (Gravesend). 24/7 availability, 30-minute response. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-dartford",
+    canonical: "https://policestationagent.com/police-station-agent-dartford",
   },
   openGraph: {
     title: "Criminal Defence Kent in Dartford | FREE 24/7 Legal Advice | Kent",
     description: "Expert police station representation in Dartford. FREE legal advice at North Kent Police Station (Gravesend). 24/7 availability, 30-minute response. Call 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-dartford",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/police-station-agent-dartford",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

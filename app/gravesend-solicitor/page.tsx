@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Gravesend Police Station Solicitor | DA12 | FREE Legal Aid | Call 01732 247427",
   description: "Arrested in Gravesend or Dartford? Police station solicitor 12 minutes from North Kent custody suite (DA12). FREE 24/7 legal representation - call now.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/gravesend-solicitor",
+    canonical: "https://policestationagent.com/gravesend-solicitor",
   },
   openGraph: {
     title: "Gravesend Police Station Solicitor | DA12 | FREE Legal Aid | Call 01732 247427",
     description: "Arrested in Gravesend or Dartford? Police station solicitor 12 minutes from North Kent custody suite (DA12). FREE 24/7 legal representation - call now.",
-    url: "https://criminaldefencekent.co.uk/gravesend-solicitor",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/gravesend-solicitor",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

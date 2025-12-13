@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Join the UK Criminal Defence Network for duty solicitors, accredited police station reps, and criminal legal aid firms. SMS verification required.",
   keywords: undefined,
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/join",
+    canonical: "https://policestationagent.com/join",
   },
   openGraph: {
     title: "UK Criminal Defence Network – Join | Professional Network for Duty Solicitors",
     description: "Join the UK Criminal Defence Network for duty solicitors, accredited police station reps, and criminal legal aid firms. SMS verification required.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/join",
+    url: "https://policestationagent.com/join",
   },
 };
 

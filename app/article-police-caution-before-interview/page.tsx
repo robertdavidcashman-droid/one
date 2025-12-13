@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "The Police Caution Before Interview | Police Station Agent",
   description: "Understanding the police caution and what it means for your rights during a police interview. Expert legal guidance from Police Station Agent.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.ukarticle-police-caution-before-interview",
+    canonical: "https://policestationagent.comarticle-police-caution-before-interview",
   },
   openGraph: {
     title: "The Police Caution Before Interview | Police Station Agent",
     description: "Understanding the police caution and what it means for your rights during a police interview. Expert legal guidance from Police Station Agent.",
     type: 'article',
-    url: "https://criminaldefencekent.co.ukarticle-police-caution-before-interview",
+    url: "https://policestationagent.comarticle-police-caution-before-interview",
   },
 };
 

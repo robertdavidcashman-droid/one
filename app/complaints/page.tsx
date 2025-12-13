@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Complaints Policy | Criminal Defence Kent",
   description: "Our complaints policy and procedure. We are committed to resolving any concerns fairly and promptly.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/complaints",
+    canonical: "https://policestationagent.com/complaints",
   },
   openGraph: {
     title: "Complaints Policy | Criminal Defence Kent",
     description: "Our complaints policy and procedure. We are committed to resolving any concerns fairly and promptly.",
-    url: "https://criminaldefencekent.co.uk/complaints",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/complaints",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

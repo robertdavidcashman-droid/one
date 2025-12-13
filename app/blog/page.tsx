@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Blog | Criminal Defence Kent",
   description: "Expert legal insights on police station representation, criminal defence procedures, and your rights in custody. Authored by Robert Cashman.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/blog",
+    canonical: "https://policestationagent.com/blog",
   },
   openGraph: {
     title: "Blog | Criminal Defence Kent",
     description: "Expert legal insights on police station representation, criminal defence procedures, and your rights in custody. Authored by Robert Cashman.",
-    url: "https://criminaldefencekent.co.uk/blog",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/blog",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

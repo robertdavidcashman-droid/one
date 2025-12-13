@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Cookies Policy | Criminal Defence Kent",
   description: "Learn how Criminal Defence Kent uses cookies to improve your experience and protect your privacy.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/cookies",
+    canonical: "https://policestationagent.com/cookies",
   },
   openGraph: {
     title: "Cookies Policy | Criminal Defence Kent",
     description: "Learn how Criminal Defence Kent uses cookies to improve your experience and protect your privacy.",
-    url: "https://criminaldefencekent.co.uk/cookies",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/cookies",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice",
   description: "Complete 2025 guide to your legal rights at Kent police stations. PACE rights, free legal advice, detention limits explained by accredited duty solicitor. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/article-rights-kent-police-station-2025",
+    canonical: "https://policestationagent.com/article-rights-kent-police-station-2025",
   },
   openGraph: {
     title: "Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice",
     description: "Complete 2025 guide to your legal rights at Kent police stations. PACE rights, free legal advice, detention limits explained by accredited duty solicitor. Call 01732 247427.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/article-rights-kent-police-station-2025",
+    url: "https://policestationagent.com/article-rights-kent-police-station-2025",
   },
 };
 

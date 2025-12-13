@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Police Station Agent | Criminal Defence Kent",
   description: "v4.4.0 — 12/12/2025Court AdvocacySeamless Court Representation Through Professional PartnershipWhile my specialism is expert police station representation, I en",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/court-representation",
+    canonical: "https://policestationagent.com/court-representation",
   },
   openGraph: {
     title: "Police Station Agent | Criminal Defence Kent",
     description: "v4.4.0 — 12/12/2025Court AdvocacySeamless Court Representation Through Professional PartnershipWhile my specialism is expert police station representation, I en",
-    url: "https://criminaldefencekent.co.uk/court-representation",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/court-representation",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

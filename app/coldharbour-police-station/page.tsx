@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Coldharbour Police Station Solicitor | Robert Cashman | FREE",
   description: "Voluntary police interview in Coldharbour or Northfleet? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/coldharbour-police-station",
+    canonical: "https://policestationagent.com/coldharbour-police-station",
   },
   openGraph: {
     title: "Coldharbour Police Station Solicitor | Robert Cashman | FREE",
     description: "Voluntary police interview in Coldharbour or Northfleet? Call Robert Cashman - Duty Solicitor. FREE legal advice for voluntary interviews. 01732 247427.",
-    url: "https://criminaldefencekent.co.uk/coldharbour-police-station",
-    siteName: 'Criminal Defence Kent',
+    url: "https://policestationagent.com/coldharbour-police-station",
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };

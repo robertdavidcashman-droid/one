@@ -138,6 +138,7 @@ export default function Header() {
                 >
                   <Link href="/about" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">About Us</Link>
                   <Link href="/why-use-us" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Why Use Us</Link>
+                  <Link href="/accreditedpolicerep" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Accredited Police Rep</Link>
                   <Link href="/testimonials" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Client Testimonials</Link>
                   <Link href="/what-is-a-criminal-solicitor" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What is a Criminal Solicitor</Link>
                   <Link href="/what-is-a-police-station-rep" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What is a Police Station Rep</Link>
@@ -174,6 +175,8 @@ export default function Header() {
                   <Link href="/coverage" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas Covered</Link>
                   <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas We Cover</Link>
                   <Link href="/police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Police Stations</Link>
+                  <Link href="/kent-police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Kent Police Stations Guide</Link>
+                  <Link href="/kent-police-station-reps" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Kent Police Station Reps</Link>
                   <Link href="/outofarea" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Out of Area</Link>
                 </div>
               )}
@@ -211,6 +214,8 @@ export default function Header() {
                   <Link href="/voluntary-police-interview-risks" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Voluntary Interview Risks</Link>
                   <Link href="/after-a-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">After a Police Interview</Link>
                   <Link href="/what-happens-if-ignore-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Ignoring Police Interview</Link>
+                  <Link href="/preparing-for-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Preparing for Interview</Link>
+                  <Link href="/what-to-expect-at-a-police-interview-in-kent" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What to Expect</Link>
                   <Link href="/refusingpoliceinterview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Refusing Interview</Link>
                   <Link href="/policeinterviewhelp" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Interview Help</Link>
                 </div>
@@ -245,6 +250,12 @@ export default function Header() {
                 >
                   <Link href="/faq" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">FAQ</Link>
                   <Link href="/your-rights-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Your Rights in Custody</Link>
+                  <Link href="/police-custody-rights" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Police Custody Rights</Link>
+                  <Link href="/police-interview-rights" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Police Interview Rights</Link>
+                  <Link href="/preparing-for-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Preparing for Interview</Link>
+                  <Link href="/what-to-expect-at-a-police-interview-in-kent" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What to Expect</Link>
+                  <Link href="/importance-of-early-legal-advice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Early Legal Advice</Link>
+                  <Link href="/vulnerable-adults-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Vulnerable Adults</Link>
                   <Link href="/freelegaladvice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Is Legal Advice Free?</Link>
                   <Link href="/arrestednow" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Emergency Help (Family)</Link>
                   <div className="border-t border-slate-200 my-1"></div>
@@ -339,12 +350,14 @@ export default function Header() {
             <Link href="/for-solicitors" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>For Solicitors</Link>
             <Link href="/for-clients" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>For Clients</Link>
             <Link href="/voluntary-interviews" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Voluntary Interviews</Link>
+            <Link href="/emergency-police-station-representation" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Emergency Representation</Link>
             <Link href="/fees" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Legal Aid & Fees</Link>
             <Link href="/privatecrime" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Private Client</Link>
             
             <div className="px-4 py-2 text-slate-500 text-sm font-semibold mt-2">About</div>
             <Link href="/about" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
             <Link href="/why-use-us" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Why Use Us</Link>
+            <Link href="/accreditedpolicerep" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Accredited Police Rep</Link>
             <Link href="/testimonials" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Client Testimonials</Link>
             <Link href="/what-is-a-criminal-solicitor" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>What is a Criminal Solicitor</Link>
             <Link href="/what-is-a-police-station-rep" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>What is a Police Station Rep</Link>
@@ -352,6 +365,8 @@ export default function Header() {
             <div className="px-4 py-2 text-slate-500 text-sm font-semibold mt-2">Coverage</div>
             <Link href="/coverage" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Areas Covered</Link>
             <Link href="/police-stations" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Police Stations</Link>
+            <Link href="/kent-police-stations" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Kent Police Stations Guide</Link>
+            <Link href="/kent-police-station-reps" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Kent Police Station Reps</Link>
             <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Areas We Cover</Link>
             <Link href="/outofarea" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Out of Area</Link>
             
@@ -360,9 +375,16 @@ export default function Header() {
             <Link href="/after-a-police-interview" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>After a Police Interview</Link>
             <Link href="/voluntary-police-interview-risks" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Voluntary Interview Risks</Link>
             <Link href="/your-rights-in-custody" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Your Rights in Custody</Link>
+            <Link href="/police-custody-rights" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Police Custody Rights</Link>
+            <Link href="/police-interview-rights" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Police Interview Rights</Link>
+            <Link href="/preparing-for-police-interview" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Preparing for Interview</Link>
+            <Link href="/what-to-expect-at-a-police-interview-in-kent" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>What to Expect</Link>
+            <Link href="/importance-of-early-legal-advice" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Early Legal Advice</Link>
+            <Link href="/vulnerable-adults-in-custody" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Vulnerable Adults</Link>
             <Link href="/policeinterviewhelp" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Interview Help</Link>
             <Link href="/refusingpoliceinterview" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Refusing Interview</Link>
             <Link href="/arrestednow" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Emergency Help</Link>
+            <Link href="/emergency-police-station-representation" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>Emergency Representation</Link>
             
             <div className="px-4 py-2 text-slate-500 text-sm font-semibold mt-2">Information</div>
             <Link href="/faq" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium pl-8" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
