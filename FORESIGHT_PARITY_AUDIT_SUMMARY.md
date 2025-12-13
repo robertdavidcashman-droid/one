@@ -30,13 +30,13 @@
 **File**: `app/sitemap.ts`  
 **Issue**: Default `baseUrl` used legacy domain `criminaldefencekent.co.uk`  
 **Fix Applied**: ✅ Updated to use `SITE_DOMAIN` from config (`policestationagent.com`)  
-**Status**: Committed and pushed
+**Status**: Fixed in commit `ff90576` (committed and pushed)
 
 ### Issue 3: Homepage Canonical URL (FIXED)
 **File**: `app/page.tsx`  
 **Issue**: Canonical URL hardcoded to `criminaldefencekent.co.uk`  
 **Fix Applied**: ✅ Updated to use `SITE_DOMAIN` from config  
-**Status**: Committed and pushed
+**Status**: Fixed in commit `ca93061` (committed and pushed)
 
 ---
 
@@ -134,7 +134,7 @@ All accessible pages are on correct production domains. No pages found on previe
 
 ## SUCCESS CRITERIA STATUS
 
-- ⚠️ **100% of expected pages accounted for**: 4/5 domains working (80%)
+- ❌ **80% of expected pages accounted for**: 4/5 domains working (80%)
 - ✅ **All live pages on production domains only**: Confirmed (where accessible)
 - ⚠️ **Zero unknown or unexplained discrepancies**: 1 domain needs investigation
 
@@ -142,13 +142,16 @@ All accessible pages are on correct production domains. No pages found on previe
 
 ## FILES CHANGED
 
-1. ✅ `app/sitemap.ts` - Fixed default domain to use `SITE_DOMAIN`
-2. ✅ `app/page.tsx` - Fixed canonical URL to use `SITE_DOMAIN`
-3. ✅ `FORESIGHT_PARITY_AUDIT_FINAL_REPORT.md` - Comprehensive audit report
-4. ✅ `FORESIGHT_PARITY_AUDIT_REPORT.json` - Detailed JSON audit data
-5. ✅ `scripts/foresight-parity-audit.js` - Audit script
+**Note**: Code fixes to `app/sitemap.ts` and `app/page.tsx` were committed in earlier commits (`ff90576` and `ca93061` respectively), not in the commit that created this summary document.
 
-**All fixes committed and pushed**: ✅ YES
+1. ✅ `app/sitemap.ts` - Fixed default domain to use `SITE_DOMAIN` (commit `ff90576`)
+2. ✅ `app/page.tsx` - Fixed canonical URL to use `SITE_DOMAIN` (commit `ca93061`)
+3. ✅ `FORESIGHT_PARITY_AUDIT_FINAL_REPORT.md` - Comprehensive audit report (commit `ff90576`)
+4. ✅ `FORESIGHT_PARITY_AUDIT_REPORT.json` - Detailed JSON audit data (commit `ff90576`)
+5. ✅ `scripts/foresight-parity-audit.js` - Audit script (commit `ff90576`)
+6. ✅ `FORESIGHT_PARITY_AUDIT_SUMMARY.md` - This summary document (commit `e6408a0`)
+
+**All fixes committed and pushed**: ✅ YES (in respective commits)
 
 ---
 
