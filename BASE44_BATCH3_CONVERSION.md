@@ -30,3 +30,5 @@ All pages exist but use hardcoded HTML from scrapes. Need to convert Base44 Reac
 - Domain: `policestationagent.com` → `criminaldefencekent.co.uk`
 - `SeoHead` component → Next.js `metadata` export
 
+
+

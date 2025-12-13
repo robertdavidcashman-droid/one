@@ -191,3 +191,5 @@ All blog posts should be accessible via `/blog/[slug]` where slug matches the bl
 - Location-based solicitor pages follow the pattern `/location-solicitor`
 - All pages should have proper metadata, canonical URLs, and SEO optimization
 
+
+

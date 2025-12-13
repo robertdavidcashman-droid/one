@@ -64,17 +64,9 @@ function initDatabase() {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT UNIQUE NOT NULL,
         password_hash TEXT NOT NULL,
-        email TEXT UNIQUE,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
       )
     `);
-    
-    // Add email column if it doesn't exist (for existing databases)
-    try {
-      db.exec(`ALTER TABLE users ADD COLUMN email TEXT UNIQUE`);
-    } catch (e: any) {
-      // Column already exists, ignore
-    }
 
     // Blog posts table
     db.exec(`
@@ -91,23 +83,9 @@ function initDatabase() {
         updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
         meta_title TEXT,
         meta_description TEXT,
-        faq_content TEXT,
-        location TEXT DEFAULT 'Kent',
         FOREIGN KEY (author_id) REFERENCES users(id)
       )
     `);
-    
-    // Add new columns if they don't exist (for existing databases)
-    try {
-      db.exec(`ALTER TABLE blog_posts ADD COLUMN faq_content TEXT`);
-    } catch (e: any) {
-      // Column already exists, ignore
-    }
-    try {
-      db.exec(`ALTER TABLE blog_posts ADD COLUMN location TEXT DEFAULT 'Kent'`);
-    } catch (e: any) {
-      // Column already exists, ignore
-    }
 
     // Police stations table
     db.exec(`

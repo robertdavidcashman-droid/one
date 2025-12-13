@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from './fonts';
 import { SITE_URL } from '@/config/site';
-import { Providers } from './providers';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || SITE_URL;
 
@@ -20,11 +19,6 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
 };
 
 export default function RootLayout({
@@ -32,13 +26,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || SITE_URL;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   
   return (
     <html lang="en" className={inter.variable}>
-      <body className={inter.className}>
-        <Providers>{children}</Providers>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

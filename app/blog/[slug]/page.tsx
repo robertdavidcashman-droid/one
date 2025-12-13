@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getBlogPost } from '@/lib/blog';
+import db from '@/lib/db';
 import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -13,7 +13,12 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const post = getBlogPost(params.slug);
+  const post = db.prepare('SELECT * FROM blog_posts WHERE slug = ? AND published = 1').get(params.slug) as {
+    title: string;
+    meta_title: string | null;
+    meta_description: string | null;
+    excerpt: string | null;
+  } | undefined;
 
   if (!post) {
     return {
@@ -27,24 +32,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: post.meta_title || post.title,
     description: post.meta_description || post.excerpt || undefined,
     alternates: {
-      canonical: `${siteUrl}/blog/${post.slug}`,
-    },
-    openGraph: {
-      title: post.meta_title || post.title,
-      description: post.meta_description || post.excerpt || undefined,
-      url: `${siteUrl}/blog/${post.slug}`,
-      siteName: 'Criminal Defence Kent',
-      type: 'article',
-    },
-    robots: {
-      index: true,
-      follow: true,
+      canonical: `${siteUrl}/blog/${params.slug}`,
     },
   };
 }
 
 export default function BlogPostPage({ params }: PageProps) {
-  const post = getBlogPost(params.slug);
+  const post = db.prepare('SELECT * FROM blog_posts WHERE slug = ? AND published = 1').get(params.slug) as {
+    id: number;
+    title: string;
+    slug: string;
+    content: string;
+    excerpt: string | null;
+    published_at: string | null;
+    created_at: string;
+  } | undefined;
 
   if (!post) {
     notFound();
@@ -52,24 +54,20 @@ export default function BlogPostPage({ params }: PageProps) {
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
-  // Use updated_at if available, otherwise fall back to published_at or created_at
-  const dateModified = post.updated_at || post.published_at || post.created_at;
-  const datePublished = post.published_at || post.created_at;
-  
   const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt || post.content.substring(0, 160),
-    datePublished: datePublished,
-    dateModified: dateModified,
+    datePublished: post.published_at || post.created_at,
+    dateModified: post.published_at || post.created_at,
     author: {
       '@type': 'Organization',
-      name: 'Criminal Defence Kent',
+      name: 'Police Station Agent',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Criminal Defence Kent',
+      name: 'Police Station Agent',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`,
@@ -81,24 +79,9 @@ export default function BlogPostPage({ params }: PageProps) {
     },
   };
 
-  // FAQPage schema if FAQ content exists
-  const faqSchema = post.faq_content ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [{
-      '@type': 'Question',
-      name: post.title,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: post.faq_content,
-      },
-    }],
-  } : null;
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
       <JsonLd data={blogPostingSchema} />
-      {faqSchema && <JsonLd data={faqSchema} />}
       <Header />
       <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
         {/* Hero Section */}
@@ -155,31 +138,6 @@ export default function BlogPostPage({ params }: PageProps) {
                 className="prose prose-lg max-w-none"
               />
             </article>
-            
-            {/* FAQ Section */}
-            {post.faq_content && (
-              <div className="mt-12 pt-8 border-t border-slate-200">
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
-                <div 
-                  dangerouslySetInnerHTML={{ __html: post.faq_content }} 
-                  className="prose prose-lg max-w-none"
-                />
-              </div>
-            )}
-            
-            {/* Sources Section Placeholder */}
-            <div className="mt-12 pt-8 border-t border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900 mb-4">Sources</h3>
-              <p className="text-sm text-slate-600 mb-2">
-                This content references UK law and police procedures. For authoritative information, see:
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                <li><a href="https://www.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GOV.UK</a> - Official UK government information</li>
-                <li><a href="https://www.legislation.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Legislation.gov.uk</a> - UK legislation</li>
-                <li><a href="https://www.cps.gov.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">CPS.gov.uk</a> - Crown Prosecution Service</li>
-                <li><a href="https://www.lawsociety.org.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Law Society</a> - Legal profession information</li>
-              </ul>
-            </div>
           </div>
         </section>
       </main>

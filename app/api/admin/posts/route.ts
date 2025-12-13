@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import db from '@/lib/db';
-import { verifyAdminSession, getOrCreateUserFromSession } from '@/lib/auth-helpers';
+import { verifyAuth } from '@/lib/middleware';
 
 export async function GET(request: NextRequest) {
-  const session = await verifyAdminSession();
+  const auth = await verifyAuth(request);
   
-  if (!session) {
+  if (!auth) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -19,24 +19,14 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  const session = await verifyAdminSession();
+  const auth = await verifyAuth(request);
   
-  if (!session) {
+  if (!auth) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  // Get or create user from session
-  const authorId = await getOrCreateUserFromSession();
-  
-  if (!authorId) {
-    return NextResponse.json(
-      { error: 'Failed to get user ID from session' },
-      { status: 500 }
-    );
-  }
-
   try {
-    const { title, slug, content, excerpt, published, meta_title, meta_description, faq_content, location } = await request.json();
+    const { title, slug, content, excerpt, published, meta_title, meta_description } = await request.json();
 
     if (!title || !slug || !content) {
       return NextResponse.json(
@@ -45,14 +35,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Auto-generate SEO fields if not provided
-    const autoMetaTitle = meta_title || `${title} | Police Station Solicitor ${location || 'Kent'}`;
-    const autoMetaDescription = meta_description || (excerpt ? excerpt.substring(0, 155) : `${title}. Expert police station representation in ${location || 'Kent'}. Available 24/7.`);
-
     const stmt = db.prepare(`
       INSERT INTO blog_posts 
-      (title, slug, content, excerpt, published, published_at, author_id, meta_title, meta_description, faq_content, location, updated_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+      (title, slug, content, excerpt, published, published_at, author_id, meta_title, meta_description, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
     `);
 
     const publishedAt = published ? new Date().toISOString() : null;
@@ -64,11 +50,9 @@ export async function POST(request: NextRequest) {
       excerpt || null,
       published ? 1 : 0,
       publishedAt,
-      authorId, // Use actual user ID from NextAuth session
-      autoMetaTitle,
-      autoMetaDescription,
-      faq_content || null,
-      location || 'Kent'
+      auth.userId,
+      meta_title || null,
+      meta_description || null
     );
 
     return NextResponse.json({

@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { JsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import db from '@/lib/db';
@@ -27,8 +26,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
   return {
-    title: `${station.name} Police Station Solicitor | Kent`,
-    description: `Expert police station representation at ${station.name} in Kent. Accredited duty solicitor available 24/7.${station.address ? ' Located at ' + station.address : ''}`,
+    title: `${station.name} Police Station - Police Station Agent`,
+    description: `Professional police station representation at ${station.name}. Available 24/7 for urgent legal assistance.${station.address ? ' Located at ' + station.address : ''}`,
     alternates: {
       canonical: `${siteUrl}/police-stations/${params.slug}`,
     },
@@ -48,38 +47,9 @@ export default function PoliceStationPage({ params }: PageProps) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
-  
-  const legalServiceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LegalService',
-    name: `Police Station Solicitor at ${station.name} | Kent`,
-    description: `Expert police station representation at ${station.name} in Kent. Accredited duty solicitor available 24/7 for interviews under caution.`,
-    provider: {
-      '@type': 'Organization',
-      name: 'Criminal Defence Kent',
-      telephone: '01732247427',
-      email: 'robertcashman@defencelegalservices.co.uk',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Kent',
-        addressRegion: 'Kent',
-        addressCountry: 'GB',
-      },
-    },
-    areaServed: {
-      '@type': 'AdministrativeArea',
-      name: 'Kent',
-    },
-    serviceType: 'Police Station Representation',
-    url: `${siteUrl}/police-stations/${params.slug}`,
-  };
-
   return (
-    <>
-      <JsonLd data={legalServiceSchema} />
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
-        <Header />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
+      <Header />
       <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16">
@@ -179,6 +149,5 @@ export default function PoliceStationPage({ params }: PageProps) {
       </main>
       <Footer />
     </div>
-    </>
   );
 }

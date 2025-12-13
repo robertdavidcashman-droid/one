@@ -1,8 +1,3 @@
-/**
- * Central site configuration
- * All domain references should use these constants
- * CANONICAL DOMAIN: policestationagent.com
- */
 export const SITE_DOMAIN = "policestationagent.com";
 export const SITE_URL = `https://${SITE_DOMAIN}`;
 
@@ -12,4 +7,3 @@ export const LEGACY_DOMAINS = [
   "www.criminaldefencekent.co.uk",
   "www.policestationagent.com",
 ];
-

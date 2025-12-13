@@ -49,3 +49,5 @@ Object.keys(pagesToConvert).forEach(key => {
 
 console.log('\n✅ Conversion plan ready. Use the Base44 exported code to create proper Next.js components.');
 
+
+

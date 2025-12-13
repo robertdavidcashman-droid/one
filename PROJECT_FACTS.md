@@ -30,3 +30,5 @@
 5. Optimize client components
 6. Add Lighthouse CI automation
 
+
+

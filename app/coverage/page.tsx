@@ -3,15 +3,15 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Police Station Representation Across Kent | Coverage Areas",
-  description: "Comprehensive police station representation across all Kent custody suites and voluntary interview stations. Expert duty solicitor coverage 24/7. Contact us if your station is not listed.",
+  title: "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent",
+  description: "We cover all Kent custody suites and major voluntary interview stations with duty solicitor-led representation.",
   alternates: {
-    canonical: "https://policestationagent.com/coverage",
+    canonical: "https://criminaldefencekent.co.uk/coverage",
   },
   openGraph: {
-    title: "Police Station Representation Across Kent | Coverage Areas",
-    description: "Comprehensive police station representation across all Kent custody suites and voluntary interview stations. Expert duty solicitor coverage 24/7.",
-    url: "https://policestationagent.com/coverage",
+    title: "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent",
+    description: "We cover all Kent custody suites and major voluntary interview stations with duty solicitor-led representation.",
+    url: "https://criminaldefencekent.co.uk/coverage",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

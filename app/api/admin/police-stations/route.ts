@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import db from '@/lib/db';
-import { verifyAdminSession } from '@/lib/auth-helpers';
+import { verifyAuth } from '@/lib/middleware';
 
 export async function GET(request: NextRequest) {
-  const session = await verifyAdminSession();
+  const auth = await verifyAuth(request);
   
-  if (!session) {
+  if (!auth) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -14,9 +14,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  const session = await verifyAdminSession();
+  const auth = await verifyAuth(request);
   
-  if (!session) {
+  if (!auth) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

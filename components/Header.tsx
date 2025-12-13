@@ -172,9 +172,9 @@ export default function Header() {
                   onMouseLeave={() => handleDelayedClose(setCoverageOpen, coverageTimeoutRef, 300)}
                 >
                   <Link href="/coverage" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas Covered</Link>
+                  <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas We Cover</Link>
                   <Link href="/police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Police Stations</Link>
-                  <Link href="/kent-police-stations" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Kent Police Stations</Link>
-                  <Link href="/areas" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Areas</Link>
+                  <Link href="/outofarea" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Out of Area</Link>
                 </div>
               )}
             </div>
@@ -207,14 +207,12 @@ export default function Header() {
                 >
                   <Link href="/blog" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600 font-semibold">All Articles</Link>
                   <div className="border-t border-slate-200 my-1"></div>
-                  <Link href="/vulnerable-adults-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Vulnerable Adults in Custody</Link>
-                  <Link href="/preparing-for-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Preparing for Police Interview</Link>
-                  <Link href="/importance-of-early-legal-advice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Importance of Early Legal Advice</Link>
-                  <Link href="/arrival-times-delays" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Arrival Times & Delays</Link>
-                  <Link href="/booking-in-procedure-in-kent" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Booking In Procedure in Kent</Link>
-                  <Link href="/what-to-do-if-a-loved-one-is-arrested" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">What to do if a Loved One is Arrested</Link>
                   <Link href="/voluntary-interviews" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Voluntary Interviews</Link>
+                  <Link href="/voluntary-police-interview-risks" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Voluntary Interview Risks</Link>
                   <Link href="/after-a-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">After a Police Interview</Link>
+                  <Link href="/what-happens-if-ignore-police-interview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Ignoring Police Interview</Link>
+                  <Link href="/refusingpoliceinterview" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Refusing Interview</Link>
+                  <Link href="/policeinterviewhelp" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Interview Help</Link>
                 </div>
               )}
             </div>
@@ -249,6 +247,13 @@ export default function Header() {
                   <Link href="/your-rights-in-custody" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Your Rights in Custody</Link>
                   <Link href="/freelegaladvice" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Is Legal Advice Free?</Link>
                   <Link href="/arrestednow" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Emergency Help (Family)</Link>
+                  <div className="border-t border-slate-200 my-1"></div>
+                  <Link href="/privacy" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Privacy Policy</Link>
+                  <Link href="/cookies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Cookies Policy</Link>
+                  <Link href="/accessibility" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Accessibility</Link>
+                  <Link href="/complaints" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Complaints</Link>
+                  <Link href="/gdpr" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">GDPR</Link>
+                  <Link href="/terms-and-conditions" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-blue-600">Terms & Conditions</Link>
                 </div>
               )}
             </div>
@@ -306,13 +311,11 @@ export default function Header() {
           
           <div className="lg:hidden flex items-center gap-2">
             <button
-              className="p-2 text-slate-700 hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 rounded"
+              className="p-2 text-slate-700 hover:text-blue-600"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={mobileMenuOpen}
-              aria-controls="mobile-menu"
+              aria-label="Toggle menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {mobileMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -326,7 +329,7 @@ export default function Header() {
       
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div id="mobile-menu" className="lg:hidden border-t border-slate-200 bg-white" role="navigation" aria-label="Mobile navigation">
+        <div className="lg:hidden border-t border-slate-200 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-2">
             <Link href="/" className="block px-4 py-2 text-slate-700 hover:text-blue-600 font-medium" onClick={() => setMobileMenuOpen(false)}>Home</Link>
             

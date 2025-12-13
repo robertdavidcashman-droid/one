@@ -404,3 +404,5 @@ function calculateSimilarity(str1, str2) {
 
 main().catch(console.error);
 
+
+
