@@ -1,18 +1,19 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { SITE_DOMAIN } from '@/config/site';
 
 export const metadata: Metadata = {
   title: "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice",
   description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/",
+    canonical: `https://${SITE_DOMAIN}/`,
   },
   openGraph: {
     title: "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice",
     description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 6000 + cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available 24/7.",
-    url: "https://criminaldefencekent.co.uk/",
-    siteName: 'Criminal Defence Kent',
+    url: `https://${SITE_DOMAIN}/`,
+    siteName: 'Police Station Agent',
     type: 'website',
   },
 };
