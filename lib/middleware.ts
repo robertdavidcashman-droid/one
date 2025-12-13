@@ -1,6 +1,13 @@
 import { NextRequest } from 'next/server';
 import { jwtVerify } from 'jose';
 
+// Validate JWT_SECRET at module load time
+if (!process.env.JWT_SECRET || process.env.JWT_SECRET === 'your-secret-key-change-in-production') {
+  if (process.env.NODE_ENV === 'production') {
+    console.error('CRITICAL: JWT_SECRET is not set or is using default value. Authentication will fail.');
+  }
+}
+
 const secret = new TextEncoder().encode(
   process.env.JWT_SECRET || 'your-secret-key-change-in-production'
 );
