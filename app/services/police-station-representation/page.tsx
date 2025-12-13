@@ -39,7 +39,7 @@ const schemaData = {
     }
   },
   "areaServed": {
-    "@type": "State",
+    "@type": "AdministrativeArea",
     "name": "Kent"
   },
   "url": "https://policestationagent.com/services/police-station-representation"

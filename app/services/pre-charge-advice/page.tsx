@@ -63,7 +63,7 @@ const schemaData = {
   },
   "serviceType": "Pre-Charge Criminal Defence Advice",
   "areaServed": {
-    "@type": "State",
+    "@type": "AdministrativeArea",
     "name": "Kent"
   },
   "url": "https://policestationagent.com/services/pre-charge-advice"

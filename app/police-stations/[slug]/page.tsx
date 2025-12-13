@@ -68,7 +68,7 @@ export default function PoliceStationPage({ params }: PageProps) {
       },
     },
     areaServed: {
-      '@type': 'State',
+      '@type': 'AdministrativeArea',
       name: 'Kent',
     },
     serviceType: 'Police Station Representation',

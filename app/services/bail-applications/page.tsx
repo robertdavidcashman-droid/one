@@ -63,7 +63,7 @@ const schemaData = {
   },
   "serviceType": "Criminal Court Bail Applications",
   "areaServed": {
-    "@type": "State",
+    "@type": "AdministrativeArea",
     "name": "Kent"
   },
   "url": "https://policestationagent.com/services/bail-applications"

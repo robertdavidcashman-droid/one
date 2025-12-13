@@ -35,7 +35,7 @@ const organizationSchema = {
     addressCountry: 'GB',
   },
   areaServed: {
-    '@type': 'State',
+    '@type': 'AdministrativeArea',
     name: 'Kent',
   },
   serviceType: 'Police Station Representation',

@@ -32,7 +32,7 @@ const contactSchema = {
     "addressCountry": "GB"
   },
   "areaServed": {
-    "@type": "State",
+    "@type": "AdministrativeArea",
     "name": "Kent"
   },
   "url": "https://policestationagent.com/contact",
