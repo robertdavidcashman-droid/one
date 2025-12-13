@@ -1,0 +1,3060 @@
+{
+  "pages": [
+    {
+      "route": "app\\page.tsx",
+      "file": "app\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice"
+    },
+    {
+      "route": "app\\your-rights-in-custody\\page.tsx",
+      "file": "app\\your-rights-in-custody\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "\\n   Police Station Agent\\n  "
+    },
+    {
+      "route": "app\\whatisapolicestationrep\\page.tsx",
+      "file": "app\\whatisapolicestationrep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Is A Police Station Rep? | Police Station Agent"
+    },
+    {
+      "route": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+      "file": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What to Expect at a Police Interview in Kent | Complete Guide 2025"
+    },
+    {
+      "route": "app\\why-use-us\\page.tsx",
+      "file": "app\\why-use-us\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Why Use Us As Your Police Station Agent In Kent? | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\whitstable-solicitor\\page.tsx",
+      "file": "app\\whitstable-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+      "file": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What to Do If a Loved One is Arrested | Family Guide | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-we-do\\page.tsx",
+      "file": "app\\what-we-do\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\what-is-a-police-station-rep\\page.tsx",
+      "file": "app\\what-is-a-police-station-rep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Is A Police Station Rep? | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-is-a-criminal-solicitor\\page.tsx",
+      "file": "app\\what-is-a-criminal-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+      "file": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Happens If I Ignore A Police Interview Invitation? | Legal Consequences"
+    },
+    {
+      "route": "app\\voluntaryinterviews\\page.tsx",
+      "file": "app\\voluntaryinterviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\voluntary-police-interview-risks\\page.tsx",
+      "file": "app\\voluntary-police-interview-risks\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\vulnerable-adults-in-custody\\page.tsx",
+      "file": "app\\vulnerable-adults-in-custody\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Vulnerable Adults in Custody | Special Protections | Police Station Agent"
+    },
+    {
+      "route": "app\\tunbridge-wells-solicitor\\page.tsx",
+      "file": "app\\tunbridge-wells-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\voluntary-interviews\\page.tsx",
+      "file": "app\\voluntary-interviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Voluntary Police Interviews Kent | FREE Legal Advice 24/7"
+    },
+    {
+      "route": "app\\tunbridge-wells-police-station\\page.tsx",
+      "file": "app\\tunbridge-wells-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\tunbridge-wells-psa-station\\page.tsx",
+      "file": "app\\tunbridge-wells-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\tonbridge-police-station\\page.tsx",
+      "file": "app\\tonbridge-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\tonbridge-solicitor\\page.tsx",
+      "file": "app\\tonbridge-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\tonbridge-psa-station\\page.tsx",
+      "file": "app\\tonbridge-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\termsandconditions\\page.tsx",
+      "file": "app\\termsandconditions\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Website Terms of Use | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\testimonials\\page.tsx",
+      "file": "app\\testimonials\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Client Testimonials | Police Station Agent"
+    },
+    {
+      "route": "app\\swanley-psa-station\\page.tsx",
+      "file": "app\\swanley-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Swanley Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\swanley-solicitor\\page.tsx",
+      "file": "app\\swanley-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\terms-and-conditions\\page.tsx",
+      "file": "app\\terms-and-conditions\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\sittingbourne-solicitor\\page.tsx",
+      "file": "app\\sittingbourne-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\sevenoaks-solicitor\\page.tsx",
+      "file": "app\\sevenoaks-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\swanley-police-station\\page.tsx",
+      "file": "app\\swanley-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Swanley Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\sevenoaks-psa-station\\page.tsx",
+      "file": "app\\sevenoaks-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sevenoaks Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sittingbourne-psa-station\\page.tsx",
+      "file": "app\\sittingbourne-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sittingbourne Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sittingbourne-police-station\\page.tsx",
+      "file": "app\\sittingbourne-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sittingbourne Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\servicesvoluntaryinterviews\\page.tsx",
+      "file": "app\\servicesvoluntaryinterviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Voluntary Police Interview Solicitor | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\sevenoaks-police-station\\page.tsx",
+      "file": "app\\sevenoaks-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sevenoaks Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sandwich-solicitor\\page.tsx",
+      "file": "app\\sandwich-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\servicerates\\page.tsx",
+      "file": "app\\servicerates\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Agency Service Rates & Fees | Police Station Agent"
+    },
+    {
+      "route": "app\\repcover\\page.tsx",
+      "file": "app\\repcover\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\services\\page.tsx",
+      "file": "app\\services\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representation Services Kent | Free Legal Aid | 24/7"
+    },
+    {
+      "route": "app\\ramsgate-solicitor\\page.tsx",
+      "file": "app\\ramsgate-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\rochester-solicitor\\page.tsx",
+      "file": "app\\rochester-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\psastations\\page.tsx",
+      "file": "app\\psastations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Police Station Agent"
+    },
+    {
+      "route": "app\\refusingpoliceinterview\\page.tsx",
+      "file": "app\\refusingpoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Refusing a Police Interview – Pros & Cons | Expert Advice"
+    },
+    {
+      "route": "app\\privateclientfaq\\page.tsx",
+      "file": "app\\privateclientfaq\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Private Client FAQ | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\private-crime\\page.tsx",
+      "file": "app\\private-crime\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\privatecrime\\page.tsx",
+      "file": "app\\privatecrime\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\privacy\\page.tsx",
+      "file": "app\\privacy\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Website Privacy Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\post\\page.tsx",
+      "file": "app\\post\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": false,
+      "hasCanonical": false,
+      "hasTitle": false,
+      "hasDescription": false,
+      "title": "No title"
+    },
+    {
+      "route": "app\\policestationreps\\page.tsx",
+      "file": "app\\policestationreps\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\preparing-for-police-interview\\page.tsx",
+      "file": "app\\preparing-for-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Preparing for Police Interview | Expert Guide | Police Station Agent"
+    },
+    {
+      "route": "app\\policeinterviewhelp\\page.tsx",
+      "file": "app\\policeinterviewhelp\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Interview Help | Expert Legal Advice | Police Station Agent"
+    },
+    {
+      "route": "app\\police-stations\\page.tsx",
+      "file": "app\\police-stations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Police Station Agent"
+    },
+    {
+      "route": "app\\police-station-interviews-kent-rights\\page.tsx",
+      "file": "app\\police-station-interviews-kent-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Interviews in Kent: Your Rights and What to Expect | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\police-station-agent-sittingbourne\\page.tsx",
+      "file": "app\\police-station-agent-sittingbourne\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Sittingbourne | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-medway\\page.tsx",
+      "file": "app\\police-station-agent-medway\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Medway | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-maidstone\\page.tsx",
+      "file": "app\\police-station-agent-maidstone\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Maidstone | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-kent\\page.tsx",
+      "file": "app\\police-station-agent-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman"
+    },
+    {
+      "route": "app\\police-station-agent-tonbridge\\page.tsx",
+      "file": "app\\police-station-agent-tonbridge\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Tonbridge | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-gravesend\\page.tsx",
+      "file": "app\\police-station-agent-gravesend\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Gravesend | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-sevenoaks\\page.tsx",
+      "file": "app\\police-station-agent-sevenoaks\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Sevenoaks | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-dartford\\page.tsx",
+      "file": "app\\police-station-agent-dartford\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Dartford | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-ashford\\page.tsx",
+      "file": "app\\police-station-agent-ashford\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Ashford | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-folkestone\\page.tsx",
+      "file": "app\\police-station-agent-folkestone\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Folkestone | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-canterbury\\page.tsx",
+      "file": "app\\police-station-agent-canterbury\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Canterbury | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-interview-rights\\page.tsx",
+      "file": "app\\police-interview-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Interview Rights Kent | Your Rights During Questioning | PACE Code C"
+    },
+    {
+      "route": "app\\out-of-area\\page.tsx",
+      "file": "app\\out-of-area\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Detained Outside Kent? What To Do | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\police-custody-rights\\page.tsx",
+      "file": "app\\police-custody-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice"
+    },
+    {
+      "route": "app\\outofarea\\page.tsx",
+      "file": "app\\outofarea\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Detained Outside Kent? What To Do | Police Station Agent"
+    },
+    {
+      "route": "app\\north-kent-gravesend-psa-station\\page.tsx",
+      "file": "app\\north-kent-gravesend-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\north-kent-gravesend-police-station\\page.tsx",
+      "file": "app\\north-kent-gravesend-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+      "file": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\medway-solicitor\\page.tsx",
+      "file": "app\\medway-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Gillingham ME7 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\medway-psa-station\\page.tsx",
+      "file": "app\\medway-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\margate-psa-station\\page.tsx",
+      "file": "app\\margate-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Margate Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\medway-police-station\\page.tsx",
+      "file": "app\\medway-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\margate-solicitor\\page.tsx",
+      "file": "app\\margate-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\maidstone-police-station\\page.tsx",
+      "file": "app\\maidstone-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\maidstone-solicitor\\page.tsx",
+      "file": "app\\maidstone-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | ME15 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\maidstone-psa-station\\page.tsx",
+      "file": "app\\maidstone-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\kent-police-station-reps\\page.tsx",
+      "file": "app\\kent-police-station-reps\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representatives in Kent | 24/7 FREE Legal Advice"
+    },
+    {
+      "route": "app\\importance-of-early-legal-advice\\page.tsx",
+      "file": "app\\importance-of-early-legal-advice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Importance of Early Legal Advice | Why You Need a Solicitor Immediately"
+    },
+    {
+      "route": "app\\kent-police-stations\\page.tsx",
+      "file": "app\\kent-police-stations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights"
+    },
+    {
+      "route": "app\\hours\\page.tsx",
+      "file": "app\\hours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\join\\page.tsx",
+      "file": "app\\join\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "UK Criminal Defence Network – Join | Professional Network for Duty Solicitors"
+    },
+    {
+      "route": "app\\herne-bay-solicitor\\page.tsx",
+      "file": "app\\herne-bay-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gravesend-solicitor\\page.tsx",
+      "file": "app\\gravesend-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | DA12 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\home\\page.tsx",
+      "file": "app\\home\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice"
+    },
+    {
+      "route": "app\\guided-assistant\\page.tsx",
+      "file": "app\\guided-assistant\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gravesend-police-station\\page.tsx",
+      "file": "app\\gravesend-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\g-d-p-r\\page.tsx",
+      "file": "app\\g-d-p-r\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "GDPR Compliance | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gillingham-solicitor\\page.tsx",
+      "file": "app\\gillingham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\freelegaladvice\\page.tsx",
+      "file": "app\\freelegaladvice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Free Legal Advice at Police Station | Legal Aid Explained"
+    },
+    {
+      "route": "app\\gdpr\\page.tsx",
+      "file": "app\\gdpr\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "GDPR Compliance | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\for-solicitors\\page.tsx",
+      "file": "app\\for-solicitors\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Services for Solicitors | Police Station Agent Kent"
+    },
+    {
+      "route": "app\\folkestone-solicitor\\page.tsx",
+      "file": "app\\folkestone-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\forsolicitors\\page.tsx",
+      "file": "app\\forsolicitors\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent Cover Services for Solicitors | Kent & London"
+    },
+    {
+      "route": "app\\for-clients\\page.tsx",
+      "file": "app\\for-clients\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Services for Clients | Police Station Agent"
+    },
+    {
+      "route": "app\\folkestone-psa-station\\page.tsx",
+      "file": "app\\folkestone-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\faversham-solicitor\\page.tsx",
+      "file": "app\\faversham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\fees\\page.tsx",
+      "file": "app\\fees\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\faq\\page.tsx",
+      "file": "app\\faq\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "FAQ - Frequently Asked Questions | Police Station Agent"
+    },
+    {
+      "route": "app\\extendedhours\\page.tsx",
+      "file": "app\\extendedhours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Extended Hours Police Station Representation | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\emergency-police-station-representation\\page.tsx",
+      "file": "app\\emergency-police-station-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Emergency Police Station Representation Kent | 24/7 FREE Legal Advice | PACE s.58"
+    },
+    {
+      "route": "app\\f-a-q\\page.tsx",
+      "file": "app\\f-a-q\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "FAQ - Frequently Asked Questions | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\dover-psa-station\\page.tsx",
+      "file": "app\\dover-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Dover Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\dover-police-station\\page.tsx",
+      "file": "app\\dover-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Dover Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\deal-solicitor\\page.tsx",
+      "file": "app\\deal-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\folkestone-police-station\\page.tsx",
+      "file": "app\\folkestone-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\dartford-solicitor\\page.tsx",
+      "file": "app\\dartford-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\coverage\\page.tsx",
+      "file": "app\\coverage\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent"
+    },
+    {
+      "route": "app\\courtrepresentation\\page.tsx",
+      "file": "app\\courtrepresentation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\court-representation\\page.tsx",
+      "file": "app\\court-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\cookies\\page.tsx",
+      "file": "app\\cookies\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Cookies Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\dover-solicitor\\page.tsx",
+      "file": "app\\dover-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\margate-police-station\\page.tsx",
+      "file": "app\\margate-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Margate Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\complaints\\page.tsx",
+      "file": "app\\complaints\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Complaints Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\contact\\page.tsx",
+      "file": "app\\contact\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Contact Criminal Defence Kent | 24/7 Legal Advice Kent | Call 0333 0497 036"
+    },
+    {
+      "route": "app\\coldharbour-police-station\\page.tsx",
+      "file": "app\\coldharbour-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Coldharbour Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\christmashours\\page.tsx",
+      "file": "app\\christmashours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Christmas & Bank Holiday Opening Hours | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\chatham-solicitor\\page.tsx",
+      "file": "app\\chatham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\case-status\\page.tsx",
+      "file": "app\\case-status\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Check Case Status | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\canwehelp\\page.tsx",
+      "file": "app\\canwehelp\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Can We Help You? | Interactive Guide | Police Station Agent"
+    },
+    {
+      "route": "app\\canterbury-solicitor\\page.tsx",
+      "file": "app\\canterbury-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | CT1 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\canterbury-psa-station\\page.tsx",
+      "file": "app\\canterbury-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\can-we-help\\page.tsx",
+      "file": "app\\can-we-help\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Can We Help You? | Interactive Guide | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\bromley-solicitor\\page.tsx",
+      "file": "app\\bromley-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\canterbury-police-station\\page.tsx",
+      "file": "app\\canterbury-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\booking-in-procedure-in-kent\\page.tsx",
+      "file": "app\\booking-in-procedure-in-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Booking In Procedure in Kent | What Happens at the Police Station"
+    },
+    {
+      "route": "app\\bluewater-psa-station\\page.tsx",
+      "file": "app\\bluewater-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\bluewater-solicitor\\page.tsx",
+      "file": "app\\bluewater-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\bluewater-police-station\\page.tsx",
+      "file": "app\\bluewater-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\blog\\page.tsx",
+      "file": "app\\blog\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Blog | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\attendanceterms\\page.tsx",
+      "file": "app\\attendanceterms\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Agency Terms of Attendance | Police Station Agent"
+    },
+    {
+      "route": "app\\ashford-solicitor\\page.tsx",
+      "file": "app\\ashford-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\ashford-psa-station\\page.tsx",
+      "file": "app\\ashford-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Ashford Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\ashford-police-station\\page.tsx",
+      "file": "app\\ashford-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Ashford Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\article-rights-kent-police-station-2025\\page.tsx",
+      "file": "app\\article-rights-kent-police-station-2025\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice"
+    },
+    {
+      "route": "app\\article-police-caution-before-interview\\page.tsx",
+      "file": "app\\article-police-caution-before-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "The Police Caution Before Interview | Police Station Agent"
+    },
+    {
+      "route": "app\\article-interview-under-caution\\page.tsx",
+      "file": "app\\article-interview-under-caution\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Happens During Interview Under Caution? | Kent Police Station Guide"
+    },
+    {
+      "route": "app\\article-loved-one-arrested-kent\\page.tsx",
+      "file": "app\\article-loved-one-arrested-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What To Do If a Loved One Is Arrested in Kent | Family Guide"
+    },
+    {
+      "route": "app\\arrival-times-delays\\page.tsx",
+      "file": "app\\arrival-times-delays\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Arrival Times & Delays | Police Station Representation | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\arrested-what-to-do\\page.tsx",
+      "file": "app\\arrested-what-to-do\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights"
+    },
+    {
+      "route": "app\\arrestednow\\page.tsx",
+      "file": "app\\arrestednow\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice"
+    },
+    {
+      "route": "app\\areas\\page.tsx",
+      "file": "app\\areas\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Coverage Kent & Medway | Robert Cashman | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\after-a-police-interview\\page.tsx",
+      "file": "app\\after-a-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\accreditedpolicerep\\page.tsx",
+      "file": "app\\accreditedpolicerep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\accessibility\\page.tsx",
+      "file": "app\\accessibility\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Accessibility Statement | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\afterapoliceinterview\\page.tsx",
+      "file": "app\\afterapoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\about\\page.tsx",
+      "file": "app\\about\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "About Police Station Agent | Robert Cashman | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\services\\police-station-representation\\page.tsx",
+      "file": "app\\services\\police-station-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representation Kent | FREE Legal Advice 24/7"
+    },
+    {
+      "route": "app\\services\\pre-charge-advice\\page.tsx",
+      "file": "app\\services\\pre-charge-advice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Pre-Charge Advice Kent | Expert Legal Consultation | Police Station Agent"
+    },
+    {
+      "route": "app\\services\\bail-applications\\page.tsx",
+      "file": "app\\services\\bail-applications\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bail Applications Kent | Expert Legal Representation | Police Station Agent"
+    },
+    {
+      "route": "app\\criminaldefencekent\\blog\\page.tsx",
+      "file": "app\\criminaldefencekent\\blog\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Blog | Police Station Agent"
+    }
+  ],
+  "inNavigation": 0,
+  "missingMetadata": [
+    {
+      "route": "app\\post\\page.tsx",
+      "file": "app\\post\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": false,
+      "hasCanonical": false,
+      "hasTitle": false,
+      "hasDescription": false,
+      "title": "No title"
+    }
+  ],
+  "orphaned": [
+    {
+      "route": "app\\page.tsx",
+      "file": "app\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice"
+    },
+    {
+      "route": "app\\your-rights-in-custody\\page.tsx",
+      "file": "app\\your-rights-in-custody\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "\\n   Police Station Agent\\n  "
+    },
+    {
+      "route": "app\\whatisapolicestationrep\\page.tsx",
+      "file": "app\\whatisapolicestationrep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Is A Police Station Rep? | Police Station Agent"
+    },
+    {
+      "route": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+      "file": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What to Expect at a Police Interview in Kent | Complete Guide 2025"
+    },
+    {
+      "route": "app\\why-use-us\\page.tsx",
+      "file": "app\\why-use-us\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Why Use Us As Your Police Station Agent In Kent? | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\whitstable-solicitor\\page.tsx",
+      "file": "app\\whitstable-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+      "file": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What to Do If a Loved One is Arrested | Family Guide | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-we-do\\page.tsx",
+      "file": "app\\what-we-do\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\what-is-a-police-station-rep\\page.tsx",
+      "file": "app\\what-is-a-police-station-rep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Is A Police Station Rep? | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-is-a-criminal-solicitor\\page.tsx",
+      "file": "app\\what-is-a-criminal-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+      "file": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Happens If I Ignore A Police Interview Invitation? | Legal Consequences"
+    },
+    {
+      "route": "app\\voluntaryinterviews\\page.tsx",
+      "file": "app\\voluntaryinterviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\voluntary-police-interview-risks\\page.tsx",
+      "file": "app\\voluntary-police-interview-risks\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\vulnerable-adults-in-custody\\page.tsx",
+      "file": "app\\vulnerable-adults-in-custody\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Vulnerable Adults in Custody | Special Protections | Police Station Agent"
+    },
+    {
+      "route": "app\\tunbridge-wells-solicitor\\page.tsx",
+      "file": "app\\tunbridge-wells-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\voluntary-interviews\\page.tsx",
+      "file": "app\\voluntary-interviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Voluntary Police Interviews Kent | FREE Legal Advice 24/7"
+    },
+    {
+      "route": "app\\tunbridge-wells-police-station\\page.tsx",
+      "file": "app\\tunbridge-wells-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\tunbridge-wells-psa-station\\page.tsx",
+      "file": "app\\tunbridge-wells-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tunbridge Wells Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\tonbridge-police-station\\page.tsx",
+      "file": "app\\tonbridge-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\tonbridge-solicitor\\page.tsx",
+      "file": "app\\tonbridge-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\tonbridge-psa-station\\page.tsx",
+      "file": "app\\tonbridge-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Tonbridge Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\termsandconditions\\page.tsx",
+      "file": "app\\termsandconditions\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Website Terms of Use | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\testimonials\\page.tsx",
+      "file": "app\\testimonials\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Client Testimonials | Police Station Agent"
+    },
+    {
+      "route": "app\\swanley-psa-station\\page.tsx",
+      "file": "app\\swanley-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Swanley Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\swanley-solicitor\\page.tsx",
+      "file": "app\\swanley-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\terms-and-conditions\\page.tsx",
+      "file": "app\\terms-and-conditions\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\sittingbourne-solicitor\\page.tsx",
+      "file": "app\\sittingbourne-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\sevenoaks-solicitor\\page.tsx",
+      "file": "app\\sevenoaks-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\swanley-police-station\\page.tsx",
+      "file": "app\\swanley-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Swanley Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\sevenoaks-psa-station\\page.tsx",
+      "file": "app\\sevenoaks-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sevenoaks Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sittingbourne-psa-station\\page.tsx",
+      "file": "app\\sittingbourne-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sittingbourne Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sittingbourne-police-station\\page.tsx",
+      "file": "app\\sittingbourne-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sittingbourne Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\servicesvoluntaryinterviews\\page.tsx",
+      "file": "app\\servicesvoluntaryinterviews\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Voluntary Police Interview Solicitor | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\sevenoaks-police-station\\page.tsx",
+      "file": "app\\sevenoaks-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Sevenoaks Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\sandwich-solicitor\\page.tsx",
+      "file": "app\\sandwich-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\servicerates\\page.tsx",
+      "file": "app\\servicerates\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Agency Service Rates & Fees | Police Station Agent"
+    },
+    {
+      "route": "app\\repcover\\page.tsx",
+      "file": "app\\repcover\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\services\\page.tsx",
+      "file": "app\\services\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representation Services Kent | Free Legal Aid | 24/7"
+    },
+    {
+      "route": "app\\ramsgate-solicitor\\page.tsx",
+      "file": "app\\ramsgate-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\rochester-solicitor\\page.tsx",
+      "file": "app\\rochester-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\psastations\\page.tsx",
+      "file": "app\\psastations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Police Station Agent"
+    },
+    {
+      "route": "app\\refusingpoliceinterview\\page.tsx",
+      "file": "app\\refusingpoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Refusing a Police Interview – Pros & Cons | Expert Advice"
+    },
+    {
+      "route": "app\\privateclientfaq\\page.tsx",
+      "file": "app\\privateclientfaq\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Private Client FAQ | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\private-crime\\page.tsx",
+      "file": "app\\private-crime\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\privatecrime\\page.tsx",
+      "file": "app\\privatecrime\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\privacy\\page.tsx",
+      "file": "app\\privacy\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Website Privacy Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\post\\page.tsx",
+      "file": "app\\post\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": false,
+      "hasCanonical": false,
+      "hasTitle": false,
+      "hasDescription": false,
+      "title": "No title"
+    },
+    {
+      "route": "app\\policestationreps\\page.tsx",
+      "file": "app\\policestationreps\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\preparing-for-police-interview\\page.tsx",
+      "file": "app\\preparing-for-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Preparing for Police Interview | Expert Guide | Police Station Agent"
+    },
+    {
+      "route": "app\\policeinterviewhelp\\page.tsx",
+      "file": "app\\policeinterviewhelp\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Interview Help | Expert Legal Advice | Police Station Agent"
+    },
+    {
+      "route": "app\\police-stations\\page.tsx",
+      "file": "app\\police-stations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Police Station Agent"
+    },
+    {
+      "route": "app\\police-station-interviews-kent-rights\\page.tsx",
+      "file": "app\\police-station-interviews-kent-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Interviews in Kent: Your Rights and What to Expect | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\police-station-agent-sittingbourne\\page.tsx",
+      "file": "app\\police-station-agent-sittingbourne\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Sittingbourne | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-medway\\page.tsx",
+      "file": "app\\police-station-agent-medway\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Medway | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-maidstone\\page.tsx",
+      "file": "app\\police-station-agent-maidstone\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Maidstone | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-kent\\page.tsx",
+      "file": "app\\police-station-agent-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "24/7 Police Station Agent in Kent | Free Legal Advice | Robert Cashman"
+    },
+    {
+      "route": "app\\police-station-agent-tonbridge\\page.tsx",
+      "file": "app\\police-station-agent-tonbridge\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Tonbridge | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-gravesend\\page.tsx",
+      "file": "app\\police-station-agent-gravesend\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Gravesend | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-sevenoaks\\page.tsx",
+      "file": "app\\police-station-agent-sevenoaks\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Sevenoaks | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-dartford\\page.tsx",
+      "file": "app\\police-station-agent-dartford\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Dartford | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-ashford\\page.tsx",
+      "file": "app\\police-station-agent-ashford\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Ashford | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-folkestone\\page.tsx",
+      "file": "app\\police-station-agent-folkestone\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Folkestone | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-station-agent-canterbury\\page.tsx",
+      "file": "app\\police-station-agent-canterbury\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent in Canterbury | FREE 24/7 Legal Advice | Kent"
+    },
+    {
+      "route": "app\\police-interview-rights\\page.tsx",
+      "file": "app\\police-interview-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Interview Rights Kent | Your Rights During Questioning | PACE Code C"
+    },
+    {
+      "route": "app\\out-of-area\\page.tsx",
+      "file": "app\\out-of-area\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Detained Outside Kent? What To Do | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\police-custody-rights\\page.tsx",
+      "file": "app\\police-custody-rights\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Custody Rights Kent | Your PACE 1984 Rights Explained | FREE Legal Advice"
+    },
+    {
+      "route": "app\\outofarea\\page.tsx",
+      "file": "app\\outofarea\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Detained Outside Kent? What To Do | Police Station Agent"
+    },
+    {
+      "route": "app\\north-kent-gravesend-psa-station\\page.tsx",
+      "file": "app\\north-kent-gravesend-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\north-kent-gravesend-police-station\\page.tsx",
+      "file": "app\\north-kent-gravesend-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+      "file": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\medway-solicitor\\page.tsx",
+      "file": "app\\medway-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Gillingham ME7 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\medway-psa-station\\page.tsx",
+      "file": "app\\medway-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\margate-psa-station\\page.tsx",
+      "file": "app\\margate-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Margate Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\medway-police-station\\page.tsx",
+      "file": "app\\medway-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Medway Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\margate-solicitor\\page.tsx",
+      "file": "app\\margate-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\maidstone-police-station\\page.tsx",
+      "file": "app\\maidstone-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\maidstone-solicitor\\page.tsx",
+      "file": "app\\maidstone-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | ME15 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\maidstone-psa-station\\page.tsx",
+      "file": "app\\maidstone-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Maidstone Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\kent-police-station-reps\\page.tsx",
+      "file": "app\\kent-police-station-reps\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representatives in Kent | 24/7 FREE Legal Advice"
+    },
+    {
+      "route": "app\\importance-of-early-legal-advice\\page.tsx",
+      "file": "app\\importance-of-early-legal-advice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Importance of Early Legal Advice | Why You Need a Solicitor Immediately"
+    },
+    {
+      "route": "app\\kent-police-stations\\page.tsx",
+      "file": "app\\kent-police-stations\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights"
+    },
+    {
+      "route": "app\\hours\\page.tsx",
+      "file": "app\\hours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\join\\page.tsx",
+      "file": "app\\join\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "UK Criminal Defence Network – Join | Professional Network for Duty Solicitors"
+    },
+    {
+      "route": "app\\herne-bay-solicitor\\page.tsx",
+      "file": "app\\herne-bay-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gravesend-solicitor\\page.tsx",
+      "file": "app\\gravesend-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Gravesend Police Station Solicitor | DA12 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\home\\page.tsx",
+      "file": "app\\home\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Duty Solicitor Kent 24/7 | 01732 247427 | FREE Police Station Advice"
+    },
+    {
+      "route": "app\\guided-assistant\\page.tsx",
+      "file": "app\\guided-assistant\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gravesend-police-station\\page.tsx",
+      "file": "app\\gravesend-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\g-d-p-r\\page.tsx",
+      "file": "app\\g-d-p-r\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "GDPR Compliance | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\gillingham-solicitor\\page.tsx",
+      "file": "app\\gillingham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\freelegaladvice\\page.tsx",
+      "file": "app\\freelegaladvice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Free Legal Advice at Police Station | Legal Aid Explained"
+    },
+    {
+      "route": "app\\gdpr\\page.tsx",
+      "file": "app\\gdpr\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "GDPR Compliance | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\for-solicitors\\page.tsx",
+      "file": "app\\for-solicitors\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Services for Solicitors | Police Station Agent Kent"
+    },
+    {
+      "route": "app\\folkestone-solicitor\\page.tsx",
+      "file": "app\\folkestone-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\forsolicitors\\page.tsx",
+      "file": "app\\forsolicitors\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent Cover Services for Solicitors | Kent & London"
+    },
+    {
+      "route": "app\\for-clients\\page.tsx",
+      "file": "app\\for-clients\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Services for Clients | Police Station Agent"
+    },
+    {
+      "route": "app\\folkestone-psa-station\\page.tsx",
+      "file": "app\\folkestone-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\faversham-solicitor\\page.tsx",
+      "file": "app\\faversham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\fees\\page.tsx",
+      "file": "app\\fees\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\faq\\page.tsx",
+      "file": "app\\faq\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "FAQ - Frequently Asked Questions | Police Station Agent"
+    },
+    {
+      "route": "app\\extendedhours\\page.tsx",
+      "file": "app\\extendedhours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Extended Hours Police Station Representation | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\emergency-police-station-representation\\page.tsx",
+      "file": "app\\emergency-police-station-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Emergency Police Station Representation Kent | 24/7 FREE Legal Advice | PACE s.58"
+    },
+    {
+      "route": "app\\f-a-q\\page.tsx",
+      "file": "app\\f-a-q\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "FAQ - Frequently Asked Questions | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\dover-psa-station\\page.tsx",
+      "file": "app\\dover-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Dover Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\dover-police-station\\page.tsx",
+      "file": "app\\dover-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Dover Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\deal-solicitor\\page.tsx",
+      "file": "app\\deal-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\folkestone-police-station\\page.tsx",
+      "file": "app\\folkestone-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Folkestone Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\dartford-solicitor\\page.tsx",
+      "file": "app\\dartford-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\coverage\\page.tsx",
+      "file": "app\\coverage\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Kent Police Station Coverage | Duty Solicitor – Criminal Defence Kent"
+    },
+    {
+      "route": "app\\courtrepresentation\\page.tsx",
+      "file": "app\\courtrepresentation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\court-representation\\page.tsx",
+      "file": "app\\court-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\cookies\\page.tsx",
+      "file": "app\\cookies\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Cookies Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\dover-solicitor\\page.tsx",
+      "file": "app\\dover-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\margate-police-station\\page.tsx",
+      "file": "app\\margate-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Margate Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\complaints\\page.tsx",
+      "file": "app\\complaints\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Complaints Policy | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\contact\\page.tsx",
+      "file": "app\\contact\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Contact Criminal Defence Kent | 24/7 Legal Advice Kent | Call 0333 0497 036"
+    },
+    {
+      "route": "app\\coldharbour-police-station\\page.tsx",
+      "file": "app\\coldharbour-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Coldharbour Police Station Solicitor | Robert Cashman | FREE"
+    },
+    {
+      "route": "app\\christmashours\\page.tsx",
+      "file": "app\\christmashours\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Christmas & Bank Holiday Opening Hours | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\chatham-solicitor\\page.tsx",
+      "file": "app\\chatham-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\case-status\\page.tsx",
+      "file": "app\\case-status\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Check Case Status | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\canwehelp\\page.tsx",
+      "file": "app\\canwehelp\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Can We Help You? | Interactive Guide | Police Station Agent"
+    },
+    {
+      "route": "app\\canterbury-solicitor\\page.tsx",
+      "file": "app\\canterbury-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | CT1 | FREE Legal Aid | Call 01732 247427"
+    },
+    {
+      "route": "app\\canterbury-psa-station\\page.tsx",
+      "file": "app\\canterbury-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\can-we-help\\page.tsx",
+      "file": "app\\can-we-help\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Can We Help You? | Interactive Guide | Police Station Agent | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\bromley-solicitor\\page.tsx",
+      "file": "app\\bromley-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\canterbury-police-station\\page.tsx",
+      "file": "app\\canterbury-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Canterbury Police Station Solicitor | Robert Cashman | FREE 24/7"
+    },
+    {
+      "route": "app\\booking-in-procedure-in-kent\\page.tsx",
+      "file": "app\\booking-in-procedure-in-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Booking In Procedure in Kent | What Happens at the Police Station"
+    },
+    {
+      "route": "app\\bluewater-psa-station\\page.tsx",
+      "file": "app\\bluewater-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\bluewater-solicitor\\page.tsx",
+      "file": "app\\bluewater-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\bluewater-police-station\\page.tsx",
+      "file": "app\\bluewater-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bluewater Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\blog\\page.tsx",
+      "file": "app\\blog\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Blog | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\attendanceterms\\page.tsx",
+      "file": "app\\attendanceterms\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Agency Terms of Attendance | Police Station Agent"
+    },
+    {
+      "route": "app\\ashford-solicitor\\page.tsx",
+      "file": "app\\ashford-solicitor\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\ashford-psa-station\\page.tsx",
+      "file": "app\\ashford-psa-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Ashford Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\ashford-police-station\\page.tsx",
+      "file": "app\\ashford-police-station\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Ashford Police Station Solicitor | Robert Cashman | FREE Advice"
+    },
+    {
+      "route": "app\\article-rights-kent-police-station-2025\\page.tsx",
+      "file": "app\\article-rights-kent-police-station-2025\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Your Rights in a Kent Police Station (2025 Guide) | Expert Legal Advice"
+    },
+    {
+      "route": "app\\article-police-caution-before-interview\\page.tsx",
+      "file": "app\\article-police-caution-before-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "The Police Caution Before Interview | Police Station Agent"
+    },
+    {
+      "route": "app\\article-interview-under-caution\\page.tsx",
+      "file": "app\\article-interview-under-caution\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What Happens During Interview Under Caution? | Kent Police Station Guide"
+    },
+    {
+      "route": "app\\article-loved-one-arrested-kent\\page.tsx",
+      "file": "app\\article-loved-one-arrested-kent\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "What To Do If a Loved One Is Arrested in Kent | Family Guide"
+    },
+    {
+      "route": "app\\arrival-times-delays\\page.tsx",
+      "file": "app\\arrival-times-delays\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Arrival Times & Delays | Police Station Representation | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\arrested-what-to-do\\page.tsx",
+      "file": "app\\arrested-what-to-do\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Arrested in Kent? What to Do | FREE Immediate Legal Advice | PACE Rights"
+    },
+    {
+      "route": "app\\arrestednow\\page.tsx",
+      "file": "app\\arrestednow\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Urgent Police Station Help | Has Someone Been Arrested? | 24/7 Free Advice"
+    },
+    {
+      "route": "app\\areas\\page.tsx",
+      "file": "app\\areas\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Coverage Kent & Medway | Robert Cashman | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\after-a-police-interview\\page.tsx",
+      "file": "app\\after-a-police-interview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Criminal Defence Kent"
+    },
+    {
+      "route": "app\\accreditedpolicerep\\page.tsx",
+      "file": "app\\accreditedpolicerep\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\accessibility\\page.tsx",
+      "file": "app\\accessibility\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Accessibility Statement | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\afterapoliceinterview\\page.tsx",
+      "file": "app\\afterapoliceinterview\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Agent"
+    },
+    {
+      "route": "app\\about\\page.tsx",
+      "file": "app\\about\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "About Police Station Agent | Robert Cashman | Criminal Defence Kent"
+    },
+    {
+      "route": "app\\services\\police-station-representation\\page.tsx",
+      "file": "app\\services\\police-station-representation\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Police Station Representation Kent | FREE Legal Advice 24/7"
+    },
+    {
+      "route": "app\\services\\pre-charge-advice\\page.tsx",
+      "file": "app\\services\\pre-charge-advice\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Pre-Charge Advice Kent | Expert Legal Consultation | Police Station Agent"
+    },
+    {
+      "route": "app\\services\\bail-applications\\page.tsx",
+      "file": "app\\services\\bail-applications\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Bail Applications Kent | Expert Legal Representation | Police Station Agent"
+    },
+    {
+      "route": "app\\criminaldefencekent\\blog\\page.tsx",
+      "file": "app\\criminaldefencekent\\blog\\page.tsx",
+      "inNavigation": false,
+      "hasMetadata": true,
+      "hasCanonical": true,
+      "hasTitle": true,
+      "hasDescription": true,
+      "title": "Blog | Police Station Agent"
+    }
+  ],
+  "issues": []
+}

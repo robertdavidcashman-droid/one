@@ -1,365 +1,148 @@
+#!/usr/bin/env node
+
 /**
- * Comprehensive Page Audit & Scraper
- * 
- * 1. Extracts all linked pages from Header, Footer, and internal links
- * 2. Checks which pages exist vs which are referenced
- * 3. Identifies missing pages
- * 4. Scrapes missing pages from live site
- * 5. Rebuilds them as Next.js pages
+ * Comprehensive page audit - generates final report
  */
 
-const fs = require('fs').promises;
+const fs = require('fs');
 const path = require('path');
-const { JSDOM } = require('jsdom');
-const https = require('https');
-const http = require('http');
+const { glob } = require('glob');
 
-const BASE_URL = 'https://policestationagent.com';
-const APP_DIR = path.join(__dirname, '..', 'app');
-const SCRAPED_DIR = path.join(__dirname, '..', 'legacy', 'scraped');
-const REPORT_DIR = path.join(__dirname, '..', 'legacy', 'import-reports');
+async function getAllPages() {
+  const pageFiles = await glob('app/**/page.tsx', {
+    ignore: ['**/node_modules/**', '**/.next/**', '**/admin/**'],
+  });
 
-// Routes that exist in the app directory
-async function getExistingRoutes() {
-  const routes = new Set(['/']); // Homepage always exists
-  
-  async function scanDirectory(dir, baseRoute = '') {
-    try {
-      const entries = await fs.readdir(dir, { withFileTypes: true });
-      
-      for (const entry of entries) {
-        const fullPath = path.join(dir, entry.name);
-        const route = baseRoute + '/' + entry.name.replace(/\.tsx?$/, '').replace(/\[slug\]/, ':slug');
-        
-        if (entry.isDirectory()) {
-          // Check if it has a page.tsx
-          const pagePath = path.join(fullPath, 'page.tsx');
-          try {
-            await fs.access(pagePath);
-            routes.add(route);
-          } catch {
-            // No page.tsx, but directory exists
-          }
-          await scanDirectory(fullPath, route);
-        } else if (entry.name === 'page.tsx' || entry.name === 'page.ts') {
-          routes.add(baseRoute || '/');
-        }
-      }
-    } catch (error) {
-      // Directory doesn't exist or can't be read
-    }
-  }
-  
-  await scanDirectory(APP_DIR);
-  return routes;
+  return pageFiles.map(file => {
+    let route = file
+      .replace(/^app\//, '/')
+      .replace(/\/page\.tsx$/, '');
+    
+    if (route === '') route = '/';
+    
+    return {
+      file,
+      route,
+      isDynamic: route.includes('[') || route.includes('*'),
+    };
+  });
 }
 
-// Extract all links from Header and Footer components
-async function extractLinksFromComponents() {
+async function checkPageContent(file) {
+  try {
+    const content = fs.readFileSync(file, 'utf8');
+    const hasMetadata = /export\s+(const|async\s+function)\s+metadata/.test(content);
+    const hasTitle = /title:/.test(content);
+    const hasDescription = /description:/.test(content);
+    const hasCanonical = /canonical:/.test(content);
+    const hasOpenGraph = /openGraph:/.test(content);
+    const hasDefaultExport = /export\s+default\s+function/.test(content);
+    const hasHeader = /Header/.test(content);
+    const hasFooter = /Footer/.test(content);
+    
+    // Extract title if available
+    const titleMatch = content.match(/title:\s*["']([^"']+)["']/);
+    const title = titleMatch ? titleMatch[1] : null;
+    
+    return {
+      hasMetadata,
+      hasTitle,
+      hasDescription,
+      hasCanonical,
+      hasOpenGraph,
+      hasDefaultExport,
+      hasHeader,
+      hasFooter,
+      title,
+    };
+  } catch (error) {
+    return null;
+  }
+}
+
+async function getNavigationLinks() {
+  const headerContent = fs.readFileSync('components/Header.tsx', 'utf8');
+  const footerContent = fs.readFileSync('components/Footer.tsx', 'utf8');
+  
   const links = new Set();
   
-  // Read Header
-  const headerPath = path.join(__dirname, '..', 'components', 'Header.tsx');
-  const headerContent = await fs.readFile(headerPath, 'utf8');
+  // Extract href attributes
+  const hrefRegex = /href=["']([^"']+)["']/g;
   
-  // Extract href="/..." patterns
-  const headerMatches = headerContent.matchAll(/href=["']\/([^"']+)["']/g);
-  for (const match of headerMatches) {
-    const route = '/' + match[1];
-    if (!route.includes('http') && !route.includes('mailto') && !route.includes('tel') && !route.includes('sms')) {
-      links.add(route);
+  let match;
+  while ((match = hrefRegex.exec(headerContent)) !== null) {
+    if (match[1].startsWith('/') && !match[1].startsWith('//') && !match[1].includes('#')) {
+      links.add(match[1]);
     }
   }
   
-  // Read Footer
-  const footerPath = path.join(__dirname, '..', 'components', 'Footer.tsx');
-  const footerContent = await fs.readFile(footerPath, 'utf8');
-  
-  const footerMatches = footerContent.matchAll(/href=["']\/([^"']+)["']/g);
-  for (const match of footerMatches) {
-    const route = '/' + match[1];
-    if (!route.includes('http') && !route.includes('mailto') && !route.includes('tel') && !route.includes('sms')) {
-      links.add(route);
+  while ((match = hrefRegex.exec(footerContent)) !== null) {
+    if (match[1].startsWith('/') && !match[1].startsWith('//') && !match[1].includes('#')) {
+      links.add(match[1]);
     }
   }
-  
-  // Scan all app pages for internal links
-  async function scanPagesForLinks(dir) {
-    try {
-      const entries = await fs.readdir(dir, { withFileTypes: true });
-      
-      for (const entry of entries) {
-        const fullPath = path.join(dir, entry.name);
-        
-        if (entry.isDirectory()) {
-          await scanPagesForLinks(fullPath);
-        } else if (entry.name === 'page.tsx' || entry.name === 'page.ts') {
-          try {
-            const content = await fs.readFile(fullPath, 'utf8');
-            const matches = content.matchAll(/href=["']\/([^"']+)["']/g);
-            for (const match of matches) {
-              const route = '/' + match[1];
-              if (!route.includes('http') && !route.includes('mailto') && !route.includes('tel') && !route.includes('sms') && !route.includes('post?slug')) {
-                links.add(route);
-              }
-            }
-          } catch (error) {
-            // Can't read file
-          }
-        }
-      }
-    } catch (error) {
-      // Directory doesn't exist
-    }
-  }
-  
-  await scanPagesForLinks(APP_DIR);
   
   return links;
 }
 
-// Convert route to URL path
-function routeToUrl(route) {
-  // Remove leading slash if present
-  route = route.replace(/^\//, '');
-  
-  // Handle dynamic routes
-  if (route.includes(':slug')) {
-    return null; // Skip dynamic routes for now
-  }
-  
-  // Convert kebab-case to original format for URL
-  // Most routes should work as-is, but some might need conversion
-  return route;
-}
-
-// Fetch page from live site
-function fetchPage(url) {
-  return new Promise((resolve, reject) => {
-    const fullUrl = url.startsWith('http') ? url : `${BASE_URL}${url.startsWith('/') ? url : '/' + url}`;
-    
-    https.get(fullUrl, (res) => {
-      let data = '';
-      
-      res.on('data', (chunk) => {
-        data += chunk;
-      });
-      
-      res.on('end', () => {
-        if (res.statusCode === 200) {
-          resolve(data);
-        } else {
-          reject(new Error(`HTTP ${res.statusCode} for ${fullUrl}`));
-        }
-      });
-    }).on('error', (error) => {
-      reject(error);
-    });
-  });
-}
-
-// Extract main content from HTML
-function extractMainContent(html) {
-  const dom = new JSDOM(html);
-  const document = dom.window.document;
-  
-  // Try to find main content
-  const main = document.querySelector('main') || document.querySelector('#root > main') || document.querySelector('body');
-  
-  if (main) {
-    return main.innerHTML;
-  }
-  
-  return html;
-}
-
-// Generate Next.js page from scraped content
-async function generatePage(route, content, title) {
-  const routePath = route.replace(/^\//, '').replace(/\//g, path.sep);
-  const pageDir = path.join(APP_DIR, routePath);
-  const pageFile = path.join(pageDir, 'page.tsx');
-  
-  // Ensure directory exists
-  await fs.mkdir(pageDir, { recursive: true });
-  
-  // Generate page content
-  const pageContent = `import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "${title || route.replace(/^\//, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} | Police Station Agent",
-  description: "${title || 'Police Station Agent'}",
-  alternates: {
-    canonical: "https://policestationagent.com${route}",
-  },
-  openGraph: {
-    title: "${title || route.replace(/^\//, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} | Police Station Agent",
-    description: "${title || 'Police Station Agent'}",
-    type: 'website',
-    url: "https://policestationagent.com${route}",
-  },
-};
-
-export default function Page() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 flex flex-col">
-      <Header />
-      <main className="flex-grow relative" id="main-content" role="main" aria-live="polite">
-        <div className="bg-slate-50 min-h-screen">
-          <div 
-            className="prose prose-lg max-w-6xl mx-auto px-4 py-16"
-            dangerouslySetInnerHTML={{ __html: \`${content.replace(/`/g, '\\`').replace(/\${/g, '\\${')}\` }}
-          />
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
-`;
-  
-  await fs.writeFile(pageFile, pageContent, 'utf8');
-  console.log(`✅ Created: ${route} -> ${pageFile}`);
-}
-
-// Main audit function
 async function main() {
-  console.log('🔍 Starting comprehensive page audit...\n');
+  console.log('🔍 Comprehensive Page Audit\n');
   
-  // Get all existing routes
-  const existingRoutes = await getExistingRoutes();
-  console.log(`📁 Found ${existingRoutes.size} existing routes`);
+  const allPages = await getAllPages();
+  const navLinks = await getNavigationLinks();
   
-  // Get all linked routes
-  const linkedRoutes = await extractLinksFromComponents();
-  console.log(`🔗 Found ${linkedRoutes.size} linked routes\n`);
+  const results = {
+    pages: [],
+    inNavigation: 0,
+    missingMetadata: [],
+    orphaned: [],
+    issues: [],
+  };
   
-  // Find missing routes
-  const missingRoutes = [];
-  const routesWithContent = [];
-  const routesNeedingContent = [];
-  
-  for (const route of linkedRoutes) {
-    // Normalize route (remove query params, handle dynamic routes)
-    const normalizedRoute = route.split('?')[0].split('#')[0];
+  for (const page of allPages) {
+    if (page.isDynamic) continue; // Skip dynamic routes
     
-    // Check if route exists
-    const routeExists = existingRoutes.has(normalizedRoute) || 
-                       existingRoutes.has(normalizedRoute + '/') ||
-                       normalizedRoute === '/' ||
-                       normalizedRoute.includes(':slug') ||
-                       normalizedRoute.includes('[slug]');
+    const content = await checkPageContent(page.file);
+    const inNav = navLinks.has(page.route);
     
-    if (!routeExists) {
-      missingRoutes.push(normalizedRoute);
-    } else {
-      // Check if page has real content or is just placeholder
-      const routePath = normalizedRoute.replace(/^\//, '').replace(/\//g, path.sep);
-      const pageFile = path.join(APP_DIR, routePath, 'page.tsx');
-      
-      try {
-        const content = await fs.readFile(pageFile, 'utf8');
-        // Check if it's placeholder content (contains "404" or very short)
-        if (content.includes('404') || content.length < 500) {
-          routesNeedingContent.push(normalizedRoute);
-        } else {
-          routesWithContent.push(normalizedRoute);
-        }
-      } catch {
-        // File doesn't exist or can't be read
-        missingRoutes.push(normalizedRoute);
-      }
+    if (inNav) results.inNavigation++;
+    
+    const pageInfo = {
+      route: page.route,
+      file: page.file,
+      inNavigation: inNav,
+      hasMetadata: content?.hasMetadata || false,
+      hasCanonical: content?.hasCanonical || false,
+      hasTitle: content?.hasTitle || false,
+      hasDescription: content?.hasDescription || false,
+      title: content?.title || 'No title',
+    };
+    
+    results.pages.push(pageInfo);
+    
+    if (!content?.hasMetadata || !content?.hasCanonical) {
+      results.missingMetadata.push(pageInfo);
+    }
+    
+    if (!inNav && content?.hasDefaultExport) {
+      results.orphaned.push(pageInfo);
     }
   }
   
   // Generate report
-  console.log('\n📊 AUDIT RESULTS:\n');
-  console.log(`✅ Routes with content: ${routesWithContent.length}`);
-  console.log(`⚠️  Routes needing content: ${routesNeedingContent.length}`);
-  console.log(`❌ Missing routes: ${missingRoutes.length}\n`);
+  console.log('📊 AUDIT RESULTS:\n');
+  console.log(`Total Pages: ${results.pages.length}`);
+  console.log(`In Navigation: ${results.inNavigation}`);
+  console.log(`Missing Metadata: ${results.missingMetadata.length}`);
+  console.log(`Orphaned Pages: ${results.orphaned.length}\n`);
   
-  if (routesNeedingContent.length > 0) {
-    console.log('⚠️  Routes needing content:');
-    routesNeedingContent.forEach(route => console.log(`   - ${route}`));
-    console.log('');
-  }
-  
-  if (missingRoutes.length > 0) {
-    console.log('❌ Missing routes:');
-    missingRoutes.forEach(route => console.log(`   - ${route}`));
-    console.log('');
-  }
-  
-  // Save report
-  await fs.mkdir(REPORT_DIR, { recursive: true });
-  const report = {
-    timestamp: new Date().toISOString(),
-    existingRoutes: Array.from(existingRoutes),
-    linkedRoutes: Array.from(linkedRoutes),
-    routesWithContent,
-    routesNeedingContent,
-    missingRoutes,
-  };
-  
-  await fs.writeFile(
-    path.join(REPORT_DIR, 'comprehensive-audit.json'),
-    JSON.stringify(report, null, 2),
-    'utf8'
+  // Write detailed JSON
+  fs.writeFileSync(
+    'comprehensive-audit-results.json',
+    JSON.stringify(results, null, 2)
   );
   
-  // Scrape missing pages
-  const pagesToScrape = [...missingRoutes, ...routesNeedingContent];
-  
-  if (pagesToScrape.length > 0) {
-    console.log(`\n🌐 Scraping ${pagesToScrape.length} pages from live site...\n`);
-    
-    await fs.mkdir(SCRAPED_DIR, { recursive: true });
-    
-    for (const route of pagesToScrape) {
-      try {
-        const url = routeToUrl(route);
-        if (!url) {
-          console.log(`⏭️  Skipping dynamic route: ${route}`);
-          continue;
-        }
-        
-        console.log(`📥 Scraping: ${route}...`);
-        const html = await fetchPage(route);
-        const content = extractMainContent(html);
-        
-        // Extract title
-        const dom = new JSDOM(html);
-        const title = dom.window.document.querySelector('title')?.textContent || 
-                     dom.window.document.querySelector('h1')?.textContent || 
-                     route.replace(/^\//, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        
-        // Save scraped HTML
-        const filename = route.replace(/^\//, '').replace(/\//g, '-') || 'home';
-        await fs.writeFile(
-          path.join(SCRAPED_DIR, `${filename}.html`),
-          html,
-          'utf8'
-        );
-        
-        // Generate Next.js page
-        await generatePage(route, content, title);
-        
-        console.log(`✅ Scraped and created: ${route}\n`);
-        
-        // Small delay to avoid overwhelming the server
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      } catch (error) {
-        console.error(`❌ Error scraping ${route}:`, error.message);
-      }
-    }
-  }
-  
-  console.log('\n✅ Audit complete!');
-  console.log(`📄 Report saved to: ${path.join(REPORT_DIR, 'comprehensive-audit.json')}`);
+  console.log('✅ Detailed results saved to comprehensive-audit-results.json');
 }
 
 main().catch(console.error);
-
-
-

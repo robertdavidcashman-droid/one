@@ -5,8 +5,13 @@ import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PostDetail from '@/components/PostDetail';
+import type { Metadata } from 'next';
+import { SITE_DOMAIN } from '@/config/site';
 
 export const dynamic = 'force-dynamic';
+
+// Note: Metadata for dynamic pages with search params is handled client-side
+// This page uses search params so metadata is set in PostDetail component
 
 function PostContent() {
   const searchParams = useSearchParams();

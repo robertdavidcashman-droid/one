@@ -1,0 +1,876 @@
+{
+  "results": {
+    "inSitemap": [],
+    "inNavigation": [],
+    "orphaned": [
+      {
+        "file": "app\\page.tsx",
+        "route": "app\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\your-rights-in-custody\\page.tsx",
+        "route": "app\\your-rights-in-custody\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\whitstable-solicitor\\page.tsx",
+        "route": "app\\whitstable-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-we-do\\page.tsx",
+        "route": "app\\what-we-do\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\why-use-us\\page.tsx",
+        "route": "app\\why-use-us\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+        "route": "app\\what-to-expect-at-a-police-interview-in-kent\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+        "route": "app\\what-to-do-if-a-loved-one-is-arrested\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\whatisapolicestationrep\\page.tsx",
+        "route": "app\\whatisapolicestationrep\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-is-a-police-station-rep\\page.tsx",
+        "route": "app\\what-is-a-police-station-rep\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+        "route": "app\\what-happens-if-ignore-police-interview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\vulnerable-adults-in-custody\\page.tsx",
+        "route": "app\\vulnerable-adults-in-custody\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\what-is-a-criminal-solicitor\\page.tsx",
+        "route": "app\\what-is-a-criminal-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\voluntary-police-interview-risks\\page.tsx",
+        "route": "app\\voluntary-police-interview-risks\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\voluntaryinterviews\\page.tsx",
+        "route": "app\\voluntaryinterviews\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tunbridge-wells-solicitor\\page.tsx",
+        "route": "app\\tunbridge-wells-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\voluntary-interviews\\page.tsx",
+        "route": "app\\voluntary-interviews\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tunbridge-wells-psa-station\\page.tsx",
+        "route": "app\\tunbridge-wells-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tunbridge-wells-police-station\\page.tsx",
+        "route": "app\\tunbridge-wells-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tonbridge-solicitor\\page.tsx",
+        "route": "app\\tonbridge-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tonbridge-psa-station\\page.tsx",
+        "route": "app\\tonbridge-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\testimonials\\page.tsx",
+        "route": "app\\testimonials\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\tonbridge-police-station\\page.tsx",
+        "route": "app\\tonbridge-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\terms-and-conditions\\page.tsx",
+        "route": "app\\terms-and-conditions\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\termsandconditions\\page.tsx",
+        "route": "app\\termsandconditions\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\swanley-solicitor\\page.tsx",
+        "route": "app\\swanley-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sittingbourne-solicitor\\page.tsx",
+        "route": "app\\sittingbourne-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\swanley-police-station\\page.tsx",
+        "route": "app\\swanley-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sittingbourne-psa-station\\page.tsx",
+        "route": "app\\sittingbourne-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\swanley-psa-station\\page.tsx",
+        "route": "app\\swanley-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sittingbourne-police-station\\page.tsx",
+        "route": "app\\sittingbourne-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sevenoaks-solicitor\\page.tsx",
+        "route": "app\\sevenoaks-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\servicesvoluntaryinterviews\\page.tsx",
+        "route": "app\\servicesvoluntaryinterviews\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sevenoaks-psa-station\\page.tsx",
+        "route": "app\\sevenoaks-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sevenoaks-police-station\\page.tsx",
+        "route": "app\\sevenoaks-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\servicerates\\page.tsx",
+        "route": "app\\servicerates\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\services\\page.tsx",
+        "route": "app\\services\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\repcover\\page.tsx",
+        "route": "app\\repcover\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\sandwich-solicitor\\page.tsx",
+        "route": "app\\sandwich-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\rochester-solicitor\\page.tsx",
+        "route": "app\\rochester-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\ramsgate-solicitor\\page.tsx",
+        "route": "app\\ramsgate-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\refusingpoliceinterview\\page.tsx",
+        "route": "app\\refusingpoliceinterview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\psastations\\page.tsx",
+        "route": "app\\psastations\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\privateclientfaq\\page.tsx",
+        "route": "app\\privateclientfaq\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\privatecrime\\page.tsx",
+        "route": "app\\privatecrime\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\privacy\\page.tsx",
+        "route": "app\\privacy\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\private-crime\\page.tsx",
+        "route": "app\\private-crime\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\policestationreps\\page.tsx",
+        "route": "app\\policestationreps\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\post\\page.tsx",
+        "route": "app\\post\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\policeinterviewhelp\\page.tsx",
+        "route": "app\\policeinterviewhelp\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-tonbridge\\page.tsx",
+        "route": "app\\police-station-agent-tonbridge\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\preparing-for-police-interview\\page.tsx",
+        "route": "app\\preparing-for-police-interview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-sittingbourne\\page.tsx",
+        "route": "app\\police-station-agent-sittingbourne\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-medway\\page.tsx",
+        "route": "app\\police-station-agent-medway\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-stations\\page.tsx",
+        "route": "app\\police-stations\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-interviews-kent-rights\\page.tsx",
+        "route": "app\\police-station-interviews-kent-rights\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-sevenoaks\\page.tsx",
+        "route": "app\\police-station-agent-sevenoaks\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-maidstone\\page.tsx",
+        "route": "app\\police-station-agent-maidstone\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-kent\\page.tsx",
+        "route": "app\\police-station-agent-kent\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-gravesend\\page.tsx",
+        "route": "app\\police-station-agent-gravesend\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-folkestone\\page.tsx",
+        "route": "app\\police-station-agent-folkestone\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-dartford\\page.tsx",
+        "route": "app\\police-station-agent-dartford\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-canterbury\\page.tsx",
+        "route": "app\\police-station-agent-canterbury\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-station-agent-ashford\\page.tsx",
+        "route": "app\\police-station-agent-ashford\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-interview-rights\\page.tsx",
+        "route": "app\\police-interview-rights\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\outofarea\\page.tsx",
+        "route": "app\\outofarea\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\police-custody-rights\\page.tsx",
+        "route": "app\\police-custody-rights\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\out-of-area\\page.tsx",
+        "route": "app\\out-of-area\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\north-kent-gravesend-psa-station\\page.tsx",
+        "route": "app\\north-kent-gravesend-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\north-kent-gravesend-police-station\\page.tsx",
+        "route": "app\\north-kent-gravesend-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+        "route": "app\\nofurtheractionafterpoliceinterview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\medway-solicitor\\page.tsx",
+        "route": "app\\medway-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\medway-psa-station\\page.tsx",
+        "route": "app\\medway-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\medway-police-station\\page.tsx",
+        "route": "app\\medway-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\margate-solicitor\\page.tsx",
+        "route": "app\\margate-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\margate-psa-station\\page.tsx",
+        "route": "app\\margate-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\margate-police-station\\page.tsx",
+        "route": "app\\margate-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\maidstone-solicitor\\page.tsx",
+        "route": "app\\maidstone-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\maidstone-psa-station\\page.tsx",
+        "route": "app\\maidstone-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\maidstone-police-station\\page.tsx",
+        "route": "app\\maidstone-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\kent-police-stations\\page.tsx",
+        "route": "app\\kent-police-stations\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\join\\page.tsx",
+        "route": "app\\join\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\kent-police-station-reps\\page.tsx",
+        "route": "app\\kent-police-station-reps\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\importance-of-early-legal-advice\\page.tsx",
+        "route": "app\\importance-of-early-legal-advice\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\hours\\page.tsx",
+        "route": "app\\hours\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\home\\page.tsx",
+        "route": "app\\home\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\herne-bay-solicitor\\page.tsx",
+        "route": "app\\herne-bay-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\guided-assistant\\page.tsx",
+        "route": "app\\guided-assistant\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\gravesend-solicitor\\page.tsx",
+        "route": "app\\gravesend-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\gravesend-police-station\\page.tsx",
+        "route": "app\\gravesend-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\gdpr\\page.tsx",
+        "route": "app\\gdpr\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\gillingham-solicitor\\page.tsx",
+        "route": "app\\gillingham-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\g-d-p-r\\page.tsx",
+        "route": "app\\g-d-p-r\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\freelegaladvice\\page.tsx",
+        "route": "app\\freelegaladvice\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\forsolicitors\\page.tsx",
+        "route": "app\\forsolicitors\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\for-solicitors\\page.tsx",
+        "route": "app\\for-solicitors\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\for-clients\\page.tsx",
+        "route": "app\\for-clients\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\folkestone-solicitor\\page.tsx",
+        "route": "app\\folkestone-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\folkestone-police-station\\page.tsx",
+        "route": "app\\folkestone-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\folkestone-psa-station\\page.tsx",
+        "route": "app\\folkestone-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\faversham-solicitor\\page.tsx",
+        "route": "app\\faversham-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\fees\\page.tsx",
+        "route": "app\\fees\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\f-a-q\\page.tsx",
+        "route": "app\\f-a-q\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\faq\\page.tsx",
+        "route": "app\\faq\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\emergency-police-station-representation\\page.tsx",
+        "route": "app\\emergency-police-station-representation\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\extendedhours\\page.tsx",
+        "route": "app\\extendedhours\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\dover-solicitor\\page.tsx",
+        "route": "app\\dover-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\dover-psa-station\\page.tsx",
+        "route": "app\\dover-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\dover-police-station\\page.tsx",
+        "route": "app\\dover-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\deal-solicitor\\page.tsx",
+        "route": "app\\deal-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\dartford-solicitor\\page.tsx",
+        "route": "app\\dartford-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\coverage\\page.tsx",
+        "route": "app\\coverage\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\courtrepresentation\\page.tsx",
+        "route": "app\\courtrepresentation\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\cookies\\page.tsx",
+        "route": "app\\cookies\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\court-representation\\page.tsx",
+        "route": "app\\court-representation\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\contact\\page.tsx",
+        "route": "app\\contact\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\complaints\\page.tsx",
+        "route": "app\\complaints\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\coldharbour-police-station\\page.tsx",
+        "route": "app\\coldharbour-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\christmashours\\page.tsx",
+        "route": "app\\christmashours\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\chatham-solicitor\\page.tsx",
+        "route": "app\\chatham-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\case-status\\page.tsx",
+        "route": "app\\case-status\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\canwehelp\\page.tsx",
+        "route": "app\\canwehelp\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\canterbury-solicitor\\page.tsx",
+        "route": "app\\canterbury-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\canterbury-psa-station\\page.tsx",
+        "route": "app\\canterbury-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\can-we-help\\page.tsx",
+        "route": "app\\can-we-help\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\canterbury-police-station\\page.tsx",
+        "route": "app\\canterbury-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\booking-in-procedure-in-kent\\page.tsx",
+        "route": "app\\booking-in-procedure-in-kent\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\bromley-solicitor\\page.tsx",
+        "route": "app\\bromley-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\bluewater-solicitor\\page.tsx",
+        "route": "app\\bluewater-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\bluewater-psa-station\\page.tsx",
+        "route": "app\\bluewater-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\bluewater-police-station\\page.tsx",
+        "route": "app\\bluewater-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\attendanceterms\\page.tsx",
+        "route": "app\\attendanceterms\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\ashford-solicitor\\page.tsx",
+        "route": "app\\ashford-solicitor\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\article-rights-kent-police-station-2025\\page.tsx",
+        "route": "app\\article-rights-kent-police-station-2025\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\article-police-caution-before-interview\\page.tsx",
+        "route": "app\\article-police-caution-before-interview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\blog\\page.tsx",
+        "route": "app\\blog\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\article-loved-one-arrested-kent\\page.tsx",
+        "route": "app\\article-loved-one-arrested-kent\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\ashford-police-station\\page.tsx",
+        "route": "app\\ashford-police-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\arrival-times-delays\\page.tsx",
+        "route": "app\\arrival-times-delays\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\ashford-psa-station\\page.tsx",
+        "route": "app\\ashford-psa-station\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\article-interview-under-caution\\page.tsx",
+        "route": "app\\article-interview-under-caution\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\arrested-what-to-do\\page.tsx",
+        "route": "app\\arrested-what-to-do\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\arrestednow\\page.tsx",
+        "route": "app\\arrestednow\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\areas\\page.tsx",
+        "route": "app\\areas\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\afterapoliceinterview\\page.tsx",
+        "route": "app\\afterapoliceinterview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\after-a-police-interview\\page.tsx",
+        "route": "app\\after-a-police-interview\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\admin\\page.tsx",
+        "route": "app\\admin\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\accreditedpolicerep\\page.tsx",
+        "route": "app\\accreditedpolicerep\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\accessibility\\page.tsx",
+        "route": "app\\accessibility\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\about\\page.tsx",
+        "route": "app\\about\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\services\\bail-applications\\page.tsx",
+        "route": "app\\services\\bail-applications\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\services\\police-station-representation\\page.tsx",
+        "route": "app\\services\\police-station-representation\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\services\\pre-charge-advice\\page.tsx",
+        "route": "app\\services\\pre-charge-advice\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\criminaldefencekent\\blog\\page.tsx",
+        "route": "app\\criminaldefencekent\\blog\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\admin\\login\\page.tsx",
+        "route": "app\\admin\\login\\page.tsx",
+        "isDynamic": false
+      },
+      {
+        "file": "app\\admin\\posts\\new\\page.tsx",
+        "route": "app\\admin\\posts\\new\\page.tsx",
+        "isDynamic": false
+      }
+    ],
+    "missingMetadata": [
+      {
+        "file": "app\\voluntary-interviews\\page.tsx",
+        "route": "app\\voluntary-interviews\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\post\\page.tsx",
+        "route": "app\\post\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\services\\bail-applications\\page.tsx",
+        "route": "app\\services\\bail-applications\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\services\\police-station-representation\\page.tsx",
+        "route": "app\\services\\police-station-representation\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\services\\pre-charge-advice\\page.tsx",
+        "route": "app\\services\\pre-charge-advice\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\admin\\login\\page.tsx",
+        "route": "app\\admin\\login\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": false,
+          "hasDescription": false,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      },
+      {
+        "file": "app\\admin\\posts\\new\\page.tsx",
+        "route": "app\\admin\\posts\\new\\page.tsx",
+        "isDynamic": false,
+        "metadata": {
+          "hasMetadata": false,
+          "hasTitle": true,
+          "hasDescription": true,
+          "hasCanonical": false,
+          "hasOpenGraph": false
+        }
+      }
+    ],
+    "missingCanonical": []
+  },
+  "stats": {
+    "total": 160,
+    "inSitemap": 0,
+    "inNav": 0,
+    "orphaned": 155
+  }
+}
