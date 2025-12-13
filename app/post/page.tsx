@@ -1,33 +1,27 @@
-'use client';
-
-import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import PostDetail from '@/components/PostDetail';
+import PostContent from './PostContent';
 import type { Metadata } from 'next';
 import { SITE_DOMAIN } from '@/config/site';
 
+// This directive now works because the page is a server component
 export const dynamic = 'force-dynamic';
 
-// Note: Metadata for dynamic pages with search params is handled client-side
-// This page uses search params so metadata is set in PostDetail component
-
-function PostContent() {
-  const searchParams = useSearchParams();
-  const slug = searchParams.get('slug');
-
-  if (!slug) {
-    return (
-      <div className="max-w-4xl mx-auto p-8">
-        <h1 className="text-3xl font-bold mb-4">Blog Post</h1>
-        <p>Please provide a post slug in the URL.</p>
-      </div>
-    );
-  }
-
-  return <PostDetail slug={slug} />;
-}
+export const metadata: Metadata = {
+  title: "Blog Post | Police Station Agent",
+  description: "Read our latest articles on police station representation, legal rights, and criminal defence in Kent.",
+  alternates: {
+    canonical: `https://${SITE_DOMAIN}/post`,
+  },
+  openGraph: {
+    title: "Blog Post | Police Station Agent",
+    description: "Read our latest articles on police station representation, legal rights, and criminal defence in Kent.",
+    url: `https://${SITE_DOMAIN}/post`,
+    siteName: 'Police Station Agent',
+    type: 'website',
+  },
+};
 
 export default function PostPage() {
   return (
