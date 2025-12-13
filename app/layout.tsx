@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from './fonts';
 import { SITE_URL } from '@/config/site';
+import SpeedInsightsComponent from '@/components/SpeedInsights';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || SITE_URL;
 
@@ -35,7 +36,10 @@ export default function RootLayout({
   
   return (
     <html lang="en" className={inter.variable}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <SpeedInsightsComponent />
+      </body>
     </html>
   );
 }
