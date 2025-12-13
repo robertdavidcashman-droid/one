@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Pre-Charge Advice Solicitor Kent | Prevent Charges",
   description: "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions. Available 24/7.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/services/pre-charge-advice",
+    canonical: "https://policestationagent.com/services/pre-charge-advice",
   },
   openGraph: {
     title: "Pre-Charge Advice Solicitor Kent | Prevent Charges",
     description: "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions.",
-    url: "https://criminaldefencekent.co.uk/services/pre-charge-advice",
+    url: "https://policestationagent.com/services/pre-charge-advice",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },
@@ -46,13 +46,13 @@ const services = [
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "@id": "https://www.criminaldefencekent.co.uk/services/pre-charge-advice",
+  "@id": "https://policestationagent.com/services/pre-charge-advice",
   "name": "Pre-Charge Advice Solicitor Kent | Prevent Charges",
   "description": "Strategic pre-charge representations to prevent weak prosecutions in Kent. Expert advice before charging decisions.",
   "provider": {
     "@type": "Organization",
     "name": "Criminal Defence Kent",
-    "telephone": "03330497036",
+    "telephone": "01732247427",
     "email": "robertcashman@defencelegalservices.co.uk",
     "address": {
       "@type": "PostalAddress",
@@ -66,7 +66,7 @@ const schemaData = {
     "@type": "State",
     "name": "Kent"
   },
-  "url": "https://criminaldefencekent.co.uk/services/pre-charge-advice"
+  "url": "https://policestationagent.com/services/pre-charge-advice"
 };
 
 export default function ServicesPreChargeAdvice() {
@@ -82,7 +82,7 @@ export default function ServicesPreChargeAdvice() {
               {/* Sticky Mobile CTA */}
               <div className="fixed bottom-0 left-0 right-0 z-50 bg-blue-800 text-white p-3 md:hidden">
                 <div className="flex gap-2">
-                  <a href="tel:03330497036" className="flex-1 bg-white text-blue-800 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
+                  <a href="tel:01732247427" className="flex-1 bg-white text-blue-800 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
                     Call Now
                   </a>
                   <a href="https://wa.me/447490126251" target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-center py-2 rounded text-sm font-bold">
@@ -174,8 +174,8 @@ export default function ServicesPreChargeAdvice() {
                     Early intervention can make all the difference. Contact us to discuss strategic pre-charge representations.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="tel:03330497036" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold px-8 py-3 rounded-md">
-                      <Phone className="w-5 h-5" /> Call: 0333 0497 036
+                    <a href="tel:01732247427" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold px-8 py-3 rounded-md">
+                      <Phone className="w-5 h-5" /> Call: 01732 247427
                     </a>
                     <a href="https://wa.me/447490126251?text=I need pre-charge advice" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border border-green-400 text-green-400 hover:bg-green-400 hover:text-blue-900 px-8 py-3 rounded-md font-bold">
                       <MessageCircle className="w-5 h-5" /> WhatsApp

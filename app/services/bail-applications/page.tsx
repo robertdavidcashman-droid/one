@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Bail Application Solicitor Kent | Magistrates Court",
   description: "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand. Available 24/7.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/services/bail-applications",
+    canonical: "https://policestationagent.com/services/bail-applications",
   },
   openGraph: {
     title: "Bail Application Solicitor Kent | Magistrates Court",
     description: "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand.",
-    url: "https://criminaldefencekent.co.uk/services/bail-applications",
+    url: "https://policestationagent.com/services/bail-applications",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },
@@ -46,13 +46,13 @@ const bailServices = [
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "@id": "https://www.criminaldefencekent.co.uk/services/bail-applications",
+  "@id": "https://policestationagent.com/services/bail-applications",
   "name": "Bail Application Solicitor Kent | Magistrates Court",
   "description": "Expert bail applications at Kent Magistrates' Courts. Help with viable addresses, conditions, and alternatives to remand.",
   "provider": {
     "@type": "Organization",
     "name": "Criminal Defence Kent",
-    "telephone": "03330497036",
+    "telephone": "01732247427",
     "email": "robertcashman@defencelegalservices.co.uk",
     "address": {
       "@type": "PostalAddress",
@@ -66,7 +66,7 @@ const schemaData = {
     "@type": "State",
     "name": "Kent"
   },
-  "url": "https://criminaldefencekent.co.uk/services/bail-applications"
+  "url": "https://policestationagent.com/services/bail-applications"
 };
 
 export default function ServicesBailApplications() {
@@ -82,10 +82,10 @@ export default function ServicesBailApplications() {
               {/* Sticky Mobile CTA */}
               <div className="fixed bottom-0 left-0 right-0 z-50 bg-blue-800 text-white p-3 md:hidden">
                 <div className="flex gap-2">
-                  <a href="tel:03330497036" className="flex-1 bg-white text-blue-800 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
+                  <a href="tel:01732247427" className="flex-1 bg-white text-blue-800 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
                     Call Now
                   </a>
-                  <a href="https://wa.me/4475330497036" target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-center py-2 rounded text-sm font-bold">
+                  <a href="https://wa.me/447732247427" target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-center py-2 rounded text-sm font-bold">
                     WhatsApp
                   </a>
                 </div>
@@ -241,10 +241,10 @@ export default function ServicesBailApplications() {
                     Time is critical for bail applications. Contact us immediately if you or someone you know has been charged and refused bail.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="tel:03330497036" className="inline-flex items-center justify-center gap-2 bg-white text-red-600 hover:bg-slate-100 font-bold px-8 py-3 rounded-md">
-                      <Phone className="w-5 h-5" /> Call: 0333 0497 036
+                    <a href="tel:01732247427" className="inline-flex items-center justify-center gap-2 bg-white text-red-600 hover:bg-slate-100 font-bold px-8 py-3 rounded-md">
+                      <Phone className="w-5 h-5" /> Call: 01732 247427
                     </a>
-                    <a href="https://wa.me/4475330497036?text=I need urgent bail application help" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">
+                    <a href="https://wa.me/447732247427?text=I need urgent bail application help" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">
                       <MessageCircle className="w-5 h-5" /> WhatsApp
                     </a>
                     <a href="mailto:robertcashman@defencelegalservices.co.uk" className="inline-flex items-center justify-center gap-2 border border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-md font-bold">

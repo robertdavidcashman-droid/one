@@ -5,20 +5,20 @@
 
 export const CONTACT = {
   // Phone number - Display format (with spaces for readability)
-  // Format: 0333 0497 036 (spaces after 0333 and 0497)
-  phoneDisplay: '0333 0497 036',
+  // Format: 01732 247427 (spaces after 01732)
+  phoneDisplay: '01732 247427',
   
   // Phone number - Tel link format (no spaces)
-  phoneTel: 'tel:03330497036',
+  phoneTel: 'tel:01732247427',
   
   // Phone number - Raw format (no spaces, no tel:)
-  phoneRaw: '03330497036',
+  phoneRaw: '01732247427',
   
   // Phone number - International format for WhatsApp
-  phoneInternational: '4475330497036',
+  phoneInternational: '447732247427',
   
   // WhatsApp link (full URL)
-  whatsapp: 'https://wa.me/4475330497036',
+  whatsapp: 'https://wa.me/447732247427',
   
   // SMS link
   sms: 'sms:07535494446',

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Blog | Police Station Solicitor Kent | Legal Insights",
   description: "Expert legal insights on police station representation, criminal defence procedures, and your rights in custody in Kent. Authored by Robert Cashman.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/blog",
+    canonical: "https://policestationagent.com/blog",
   },
   openGraph: {
     title: "Blog | Police Station Solicitor Kent | Legal Insights",
     description: "Expert legal insights on police station representation, criminal defence procedures, and your rights in custody in Kent.",
-    url: "https://criminaldefencekent.co.uk/blog",
+    url: "https://policestationagent.com/blog",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },
@@ -23,6 +23,21 @@ function extractFirstImage(html: string): string | null {
   if (!html) return null;
   const match = html.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i);
   return match ? match[1] : null;
+}
+
+function generateExcerpt(content: string, maxLength: number = 150): string {
+  if (!content) return '';
+  
+  // Remove HTML tags and normalize whitespace
+  const text = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  
+  // If text is shorter than maxLength, return it as-is without ellipsis
+  if (text.length <= maxLength) {
+    return text;
+  }
+  
+  // Truncate and add ellipsis only when text was actually truncated
+  return text.substring(0, maxLength).replace(/\s+\S*$/, '') + '...';
 }
 
 export default function BlogPage() {
@@ -49,7 +64,7 @@ export default function BlogPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map((post) => {
                   const featuredImage = extractFirstImage(post.content);
-                  const excerpt = post.excerpt || post.content.replace(/<[^>]*>/g, ' ').substring(0, 150) + '...';
+                  const excerpt = post.excerpt || generateExcerpt(post.content, 150);
                   
                   return (
                     <article key={post.id} className="group flex flex-col h-full bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100">

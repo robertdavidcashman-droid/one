@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
   return {
     title: post.meta_title || post.title,
@@ -50,7 +50,7 @@ export default function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
   // Use updated_at if available, otherwise fall back to published_at or created_at
   const dateModified = post.updated_at || post.published_at || post.created_at;

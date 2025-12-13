@@ -126,7 +126,7 @@ export default function Page() {
                 If a loved one has been arrested, call us immediately. We provide free 24/7 legal advice and representation at all Kent police stations. You can instruct us on their behalf.
               </p>
               <p className="mb-4">
-                <strong>Call us now on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 0497 036</a></strong> for immediate assistance.
+                <strong>Call us now on <a href="tel:01732247427" className="text-blue-600 hover:text-blue-800 font-semibold">01732 247427</a></strong> for immediate assistance.
               </p>
             </section>
 

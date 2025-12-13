@@ -112,7 +112,7 @@ export default function Page() {
                 If you have been asked to attend a police interview, whether voluntary or under arrest, it is essential to have expert legal representation. We provide free 24/7 legal advice and representation.
               </p>
               <p className="mb-4">
-                <strong>Call us immediately on <a href="tel:03330497036" className="text-blue-600 hover:text-blue-800 font-semibold">0333 0497 036</a></strong> to arrange representation before your interview.
+                <strong>Call us immediately on <a href="tel:01732247427" className="text-blue-600 hover:text-blue-800 font-semibold">01732 247427</a></strong> to arrange representation before your interview.
               </p>
             </section>
 

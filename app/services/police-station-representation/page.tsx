@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
   description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/services/police-station-representation",
+    canonical: "https://policestationagent.com/services/police-station-representation",
   },
   openGraph: {
     title: "Police Station Solicitor Kent | 24/7 Duty Solicitor",
     description: "Expert police station representation across Kent. Accredited duty solicitor available 24/7 for interviews under caution. FREE legal advice at all Kent police stations.",
-    url: "https://criminaldefencekent.co.uk/services/police-station-representation",
+    url: "https://policestationagent.com/services/police-station-representation",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },
@@ -29,7 +29,7 @@ const schemaData = {
   "provider": {
     "@type": "Organization",
     "name": "Criminal Defence Kent",
-    "telephone": "03330497036",
+    "telephone": "01732247427",
     "email": "robertcashman@defencelegalservices.co.uk",
     "address": {
       "@type": "PostalAddress",
@@ -42,7 +42,7 @@ const schemaData = {
     "@type": "State",
     "name": "Kent"
   },
-  "url": "https://criminaldefencekent.co.uk/services/police-station-representation"
+  "url": "https://policestationagent.com/services/police-station-representation"
 };
 
 export default function ServicesPoliceStationRepresentation() {
@@ -58,7 +58,7 @@ export default function ServicesPoliceStationRepresentation() {
               {/* Sticky Mobile CTA */}
               <div className="fixed bottom-0 left-0 right-0 z-50 bg-red-600 text-white p-3 md:hidden">
                 <div className="flex gap-2">
-                  <a href="tel:03330497036" className="flex-1 bg-white text-red-600 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
+                  <a href="tel:01732247427" className="flex-1 bg-white text-red-600 hover:bg-slate-100 text-center py-2 rounded text-sm font-bold">
                     Call Now
                   </a>
                   <a href="sms:07535494446?body=I need police station representation" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded text-sm font-bold">
@@ -86,10 +86,10 @@ export default function ServicesPoliceStationRepresentation() {
                       <h3 className="font-bold text-red-800 mb-2">Going to be arrested? Call Immediately</h3>
                       <p className="text-red-700 mb-4">Time is critical. The sooner we know, the better we can protect your interests and manage your case strategy.</p>
                       <div className="flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03330497036" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-md">
-                          <Phone className="w-5 h-5" /> Call Now: 0333 0497 036
+                        <a href="tel:01732247427" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-md">
+                          <Phone className="w-5 h-5" /> Call Now: 01732 247427
                         </a>
-                        <a href="https://wa.me/4475330497036?text=I need police station representation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-md">
+                        <a href="https://wa.me/447732247427?text=I need police station representation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-md">
                           <MessageCircle className="w-5 h-5" /> WhatsApp
                         </a>
                       </div>
@@ -107,7 +107,7 @@ export default function ServicesPoliceStationRepresentation() {
                       <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                       <div>
                         <h4 className="font-semibold mb-2">You Call Us</h4>
-                        <p className="text-slate-600">Call 0333 0497 036 or ask the custody officer to contact Robert Cashman of Tuckers Solicitors LLP. We respond immediately.</p>
+                        <p className="text-slate-600">Call 01732 247427 or ask the custody officer to contact Robert Cashman of Tuckers Solicitors LLP. We respond immediately.</p>
                       </div>
                     </div>
                     
@@ -259,8 +259,8 @@ export default function ServicesPoliceStationRepresentation() {
                     Don't face police questioning alone. Expert legal advice is your right and our speciality.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
-                    <a href="tel:03330497036" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 font-bold px-8 py-3 rounded-md">
-                      <Phone className="w-5 h-5" /> Call: 0333 0497 036
+                    <a href="tel:01732247427" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 font-bold px-8 py-3 rounded-md">
+                      <Phone className="w-5 h-5" /> Call: 01732 247427
                     </a>
                     <a href="sms:07535494446?body=I need police station representation" className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3 rounded-md">
                       <MessageCircle className="w-5 h-5" /> Text: 07535 494446

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import db from '@/lib/db';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
   
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

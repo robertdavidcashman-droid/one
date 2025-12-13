@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAuth } from '@/lib/middleware';
+import { verifyAdminSession } from '@/lib/auth-helpers';
 
 // Safe content enhancer - improves content without destructive changes
 export async function POST(request: NextRequest) {
-  const auth = await verifyAuth(request);
+  const session = await verifyAdminSession();
   
-  if (!auth) {
+  if (!session) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

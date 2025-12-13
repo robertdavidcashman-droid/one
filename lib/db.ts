@@ -64,9 +64,17 @@ function initDatabase() {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT UNIQUE NOT NULL,
         password_hash TEXT NOT NULL,
+        email TEXT UNIQUE,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
       )
     `);
+    
+    // Add email column if it doesn't exist (for existing databases)
+    try {
+      db.exec(`ALTER TABLE users ADD COLUMN email TEXT UNIQUE`);
+    } catch (e: any) {
+      // Column already exists, ignore
+    }
 
     // Blog posts table
     db.exec(`

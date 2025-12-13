@@ -1,14 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAuth } from '@/lib/middleware';
+import { verifyAdminSession, getOrCreateUserFromSession } from '@/lib/auth-helpers';
 import db from '@/lib/db';
 import { parseStringPromise } from 'xml2js';
 
 // WordPress import functionality
 export async function POST(request: NextRequest) {
-  const auth = await verifyAuth(request);
+  const session = await verifyAdminSession();
   
-  if (!auth) {
+  if (!session) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  // Get or create user from session
+  const authorId = await getOrCreateUserFromSession();
+  
+  if (!authorId) {
+    return NextResponse.json(
+      { error: 'Failed to get user ID from session' },
+      { status: 500 }
+    );
   }
 
   try {
@@ -64,7 +74,7 @@ export async function POST(request: NextRequest) {
           content,
           published ? 1 : 0,
           publishedAt,
-          auth.userId,
+          authorId, // Use actual user ID from NextAuth session
           pubDate ? new Date(pubDate).toISOString() : new Date().toISOString()
         );
 
