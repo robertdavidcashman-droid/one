@@ -7,7 +7,7 @@ import { FAQPage } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: "Police Station Rep Services Kent | FREE 24/7 | Accredited Duty Solicitor",
-  description: "Expert police station rep service across Kent. FREE legal advice 24/7 at all Kent custody suites. Accredited duty solicitor Robert Cashman. Not a call centre - direct solicitor access. Call 01732 247427.",
+  description: "Expert police station rep service across Kent. FREE legal advice 24/7 at all Kent custody suites. Accredited duty solicitor Robert Cashman. Call 01732 247427.",
   alternates: {
     canonical: `https://${SITE_DOMAIN}/services/police-station-representation`,
   },
