@@ -11,9 +11,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12 text-sm">
           <div className="md:col-span-2 lg:col-span-1">
-            <h3 className="font-bold text-slate-900 mb-4 text-lg text-white">Police Station Agent</h3>
-            <p className="text-slate-600 mb-6 leading-relaxed text-white">
-              Kent's leading police station rep service. Accredited duty solicitor providing FREE 24/7 representation at all Kent custody suites. Not a call centre - direct access to qualified solicitor.
+            <h3 className="mb-4 text-lg font-bold text-white">Police Station Agent</h3>
+            <p className="mb-6 leading-relaxed text-slate-200">
+              Kent&apos;s leading police station rep service. Accredited duty solicitor providing FREE 24/7 representation at all Kent custody suites.
             </p>
             <div className="mt-4 p-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
               <p className="text-xs text-amber-200 font-semibold mb-1">Serving All Kent Towns:</p>
