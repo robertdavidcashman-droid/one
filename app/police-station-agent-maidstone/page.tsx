@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { SITE_URL } from '@/config/site';
 
 export const metadata: Metadata = {
   title: "Police Station Duty Solicitor Maidstone | Duty Solicitor Representation Kent | FREE Legal Advice",
   description: "Police Station Duty Solicitor Maidstone - Expert police station representation by qualified solicitor at Maidstone Police Station. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-maidstone",
+    canonical: `${SITE_URL}/police-station-agent-maidstone`,
   },
   openGraph: {
     title: "Police Station Duty Solicitor Maidstone | Duty Solicitor Representation Kent",
     description: "Police Station Duty Solicitor Maidstone - Expert representation by qualified solicitor at Maidstone Police Station. Accredited Duty Solicitor & Higher Court Advocate. FREE legal advice under Legal Aid.",
-    url: "https://criminaldefencekent.co.uk/police-station-agent-maidstone",
+    url: `${SITE_URL}/police-station-agent-maidstone`,
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

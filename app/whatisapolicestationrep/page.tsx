@@ -1,18 +1,19 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/config/site';
 
 export const metadata: Metadata = {
   title: "What Is A Police Station Duty Solicitor? | Duty Solicitor Representation Kent",
   description: "What is a police station duty solicitor? Learn about duty solicitors and their crucial role in protecting your rights during police interviews in Kent. Accredited Duty Solicitor representation at all Kent custody suites.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/whatisapolicestationrep",
+    canonical: `${SITE_URL}/whatisapolicestationrep`,
   },
   openGraph: {
     title: "What Is A Police Station Duty Solicitor? | Duty Solicitor Representation Kent",
     description: "What is a police station duty solicitor? Learn about duty solicitors and their crucial role in protecting your rights during police interviews in Kent. Accredited Duty Solicitor representation at all Kent custody suites.",
     type: 'website',
-    url: "https://criminaldefencekent.co.uk/whatisapolicestationrep",
+    url: `${SITE_URL}/whatisapolicestationrep`,
   },
 };
 

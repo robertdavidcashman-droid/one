@@ -1,17 +1,18 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Duty Solicitor Arrival Times Kent | Police Station Representation Solicitor | Expected Times',
   description: 'Expected arrival times for duty solicitor representation at Kent police stations. Understanding delays and your rights under PACE 1984 when waiting for a solicitor. Accredited Duty Solicitor Kent.',
   alternates: {
-    canonical: 'https://criminaldefencekent.co.uk/arrival-times-delays',
+    canonical: `${SITE_URL}/arrival-times-delays`,
   },
   openGraph: {
     title: 'Duty Solicitor Arrival Times Kent | Police Station Representation Solicitor',
     description: 'Expected arrival times for duty solicitor representation at Kent police stations. Understanding delays and your rights under PACE 1984 when waiting for a solicitor.',
-    url: 'https://criminaldefencekent.co.uk/arrival-times-delays',
+    url: `${SITE_URL}/arrival-times-delays`,
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

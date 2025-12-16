@@ -1,41 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyUser } from '@/lib/auth';
 import { SignJWT } from 'jose';
-import bcrypt from 'bcryptjs';
 
-const secret = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'your-secret-key-change-in-production'
-);
-
-// Hardcoded admin user as fallback (for initial setup or if database unavailable)
-const HARDCODED_ADMIN = {
-  username: 'admin',
-  password: 'Secure123!',
-  id: 999,
-};
-
-async function verifyCredentials(username: string, password: string): Promise<{ id: number; username: string } | null> {
-  // First, try database lookup
-  try {
-    const user = await verifyUser(username, password);
-    if (user) {
-      return { id: user.id, username: user.username };
-    }
-  } catch (error) {
-    // Database might not be available (e.g., during build or serverless cold start)
-    console.warn('Database auth failed, trying hardcoded admin:', error);
-  }
-
-  // Fallback to hardcoded admin
-  if (username === HARDCODED_ADMIN.username && password === HARDCODED_ADMIN.password) {
-    return { id: HARDCODED_ADMIN.id, username: HARDCODED_ADMIN.username };
-  }
-
-  return null;
-}
+const jwtSecret = process.env.JWT_SECRET;
+const secret = new TextEncoder().encode(jwtSecret || 'dev-only-secret');
 
 export async function POST(request: NextRequest) {
   try {
+    if (!jwtSecret && process.env.NODE_ENV === 'production') {
+      return NextResponse.json(
+        { error: 'Server misconfigured (JWT_SECRET missing)' },
+        { status: 500 }
+      );
+    }
+
     const { username, password } = await request.json();
 
     if (!username || !password) {
@@ -45,7 +23,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const user = await verifyCredentials(username, password);
+    let user: { id: number; username: string } | null = null;
+    try {
+      const dbUser = await verifyUser(username, password);
+      user = dbUser ? { id: dbUser.id, username: dbUser.username } : null;
+    } catch (error) {
+      console.error('Database auth failed:', error);
+      return NextResponse.json(
+        { error: 'Authentication temporarily unavailable' },
+        { status: 503 }
+      );
+    }
 
     if (!user) {
       return NextResponse.json(
