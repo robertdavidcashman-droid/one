@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { SITE_URL } from '@/config/site';
 
 export const metadata: Metadata = {
   title: "Police Station Duty Solicitor Gravesend | Duty Solicitor Representation Kent | FREE Legal Advice",
   description: "Police Station Duty Solicitor Gravesend - Expert police station representation by qualified solicitor. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/police-station-agent-gravesend",
+    canonical: `${SITE_URL}/police-station-agent-gravesend`,
   },
   openGraph: {
     title: "Police Station Duty Solicitor Gravesend | Duty Solicitor Representation Kent | FREE Legal Advice",
     description: "Police Station Duty Solicitor Gravesend - Expert police station representation by qualified solicitor. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Call 01732 247427.",
-    url: "https://policestationagent.com/police-station-agent-gravesend",
+    url: `${SITE_URL}/police-station-agent-gravesend`,
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

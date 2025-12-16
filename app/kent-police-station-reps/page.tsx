@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { SITE_URL } from '@/config/site';
 
 export const metadata: Metadata = {
   title: "Police Station Duty Solicitor Kent | Duty Solicitor Representation Kent | FREE Legal Advice",
   description: "Police Station Duty Solicitor Kent - Expert police station representation by qualified solicitor covering all Kent custody suites. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Maidstone, Medway, Tonbridge, Gravesend. Call 01732 247427.",
   alternates: {
-    canonical: "https://criminaldefencekent.co.uk/kent-police-station-reps",
+    canonical: `${SITE_URL}/kent-police-station-reps`,
   },
   openGraph: {
     title: "Police Station Duty Solicitor Kent | Duty Solicitor Representation Kent",
     description: "Police Station Duty Solicitor Kent - Expert representation by qualified solicitor covering all Kent custody suites. Accredited Duty Solicitor & Higher Court Advocate. FREE legal advice under Legal Aid.",
-    url: "https://criminaldefencekent.co.uk/kent-police-station-reps",
+    url: `${SITE_URL}/kent-police-station-reps`,
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },
