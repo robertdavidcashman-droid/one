@@ -35,7 +35,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const recipientEmail = 'robertdavidcashman@gmail.com';
+    const isCustodyIntake = option === 'custody-intake';
+
+    // Route urgent custody enquiries to the designated recipient (can be overridden via env var)
+    const recipientEmail = isCustodyIntake
+      ? (process.env.CUSTODY_ENQUIRY_RECIPIENT_EMAIL || 'robertcashman@defencelegalservices.co.uk')
+      : 'robertdavidcashman@gmail.com';
+
+    // Enforce required subject line for custody enquiries
+    const finalSubject = isCustodyIntake ? 'URGENT – Police Station Custody Enquiry' : subject;
     
     // Get email configuration from environment variables
     const smtpHost = process.env.SMTP_HOST;
@@ -57,7 +65,7 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             from: 'Police Station Agent <noreply@policestationagent.com>',
             to: [recipientEmail],
-            subject: subject,
+            subject: finalSubject,
             text: emailBody,
             reply_to: 'noreply@policestationagent.com',
           }),
@@ -87,7 +95,7 @@ export async function POST(request: NextRequest) {
               to: [{ email: recipientEmail }],
             }],
             from: { email: 'noreply@policestationagent.com', name: 'Police Station Agent' },
-            subject: subject,
+            subject: finalSubject,
             content: [{
               type: 'text/plain',
               value: emailBody,
@@ -112,7 +120,7 @@ export async function POST(request: NextRequest) {
         // This is a fallback that logs the email
         console.log('[Chatbot Email] SMTP configured but not implemented. Email details:');
         console.log('To:', recipientEmail);
-        console.log('Subject:', subject);
+        console.log('Subject:', finalSubject);
         console.log('Body:', emailBody);
         
         // In a real implementation, you would use nodemailer here
@@ -130,7 +138,7 @@ export async function POST(request: NextRequest) {
     // Fallback: Log the email (for development/testing)
     console.log('\n=== CHATBOT EMAIL (No email service configured) ===');
     console.log('To:', recipientEmail);
-    console.log('Subject:', subject);
+    console.log('Subject:', finalSubject);
     console.log('Body:', emailBody);
     console.log('Option:', option);
     console.log('==================================================\n');

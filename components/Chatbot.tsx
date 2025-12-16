@@ -23,6 +23,72 @@ interface ChatMessage {
   timestamp: Date;
 }
 
+type ChatMode = 'general' | 'custody_intake';
+
+interface CustodyIntakeData {
+  detaineeFullName: string;
+  detaineeDateOfBirth: string;
+  policeStation: string;
+  arrestingForce: string;
+  allegedOffences: string;
+  custodyReferenceNumber: string;
+  timeOfArrest: string;
+  interviewStatus: string;
+  urgencyAssessment: string; // free text; used to determine urgency flag
+  callerName: string;
+  callerRelationship: string;
+  contactPhoneNumber: string;
+}
+
+type CustodyFieldKey = keyof CustodyIntakeData;
+
+const emptyCustodyIntakeData = (): CustodyIntakeData => ({
+  detaineeFullName: '',
+  detaineeDateOfBirth: '',
+  policeStation: '',
+  arrestingForce: '',
+  allegedOffences: '',
+  custodyReferenceNumber: '',
+  timeOfArrest: '',
+  interviewStatus: '',
+  urgencyAssessment: '',
+  callerName: '',
+  callerRelationship: '',
+  contactPhoneNumber: '',
+});
+
+const CUSTODY_INTENT_TRIGGERS = [
+  // Core required phrases
+  'someone is in custody',
+  'in custody',
+  'arrested',
+  'police station rep',
+  'police station representation',
+  'needs a solicitor',
+  // Common variants
+  'custody suite',
+  'detained',
+  'held at',
+  'booked in',
+  'interview under caution',
+  'duty solicitor',
+  'custody reference',
+];
+
+const isCustodyIntent = (message: string): boolean => {
+  const m = message.toLowerCase();
+  return CUSTODY_INTENT_TRIGGERS.some((p) => m.includes(p));
+};
+
+const looksImminent = (message: string): boolean => {
+  const m = message.toLowerCase();
+  return (
+    m.includes('interview') && (m.includes('now') || m.includes('starting') || m.includes('in progress') || m.includes('imminent') || m.includes('soon')) ||
+    m.includes('charge') && (m.includes('imminent') || m.includes('soon') || m.includes('decision') || m.includes('charging') || m.includes('about to')) ||
+    m.includes('within') && (m.includes('hour') || m.includes('minutes'))
+  );
+};
+
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
@@ -30,14 +96,197 @@ export default function Chatbot() {
     {
       id: '1',
       type: 'bot',
-      content: 'Hello! I\'m here to help. How can I assist you today?',
+      content:
+        'Custody Intake Assistant.\n\nIf someone is under arrest, in police custody, or due to be interviewed at a police station, I can take the essential details for a qualified duty solicitor to contact you.\n\nAvailability: 9am to late.\nFor urgent matters, telephone 01732 247427.',
       timestamp: new Date(),
     },
   ]);
   const [showOptions, setShowOptions] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [chatMode, setChatMode] = useState<ChatMode>('general');
+  const [custodyStepIndex, setCustodyStepIndex] = useState(0);
+  const [custodyData, setCustodyData] = useState<CustodyIntakeData>(emptyCustodyIntakeData());
+  const [custodyUrgentEmailSent, setCustodyUrgentEmailSent] = useState(false);
+  const [custodyFinalEmailSent, setCustodyFinalEmailSent] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const addBotMessage = (content: string) => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: (Date.now() + Math.floor(Math.random() * 1000)).toString(),
+        type: 'bot',
+        content,
+        timestamp: new Date(),
+      },
+    ]);
+  };
+
+  const addUserMessage = (content: string) => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: Date.now().toString(),
+        type: 'user',
+        content,
+        timestamp: new Date(),
+      },
+    ]);
+  };
+
+  const buildCustodyEmailBody = (data: CustodyIntakeData): { subject: string; body: string; urgent: boolean } => {
+    const urgent = looksImminent(data.interviewStatus || '') || looksImminent(data.urgencyAssessment || '');
+
+    const subject = 'URGENT – Police Station Custody Enquiry';
+    const body = `
+POLICE STATION CUSTODY ENQUIRY
+=============================
+
+URGENCY FLAG
+------------
+Urgent: ${urgent ? 'YES – interview/charging decision may be imminent' : 'No specific imminence stated'}
+Urgency details: ${data.urgencyAssessment || 'Not provided'}
+Interview status: ${data.interviewStatus || 'Not provided'}
+
+DETAINEE DETAILS
+----------------
+Full name: ${data.detaineeFullName || 'Not provided'}
+Date of birth: ${data.detaineeDateOfBirth || 'Not provided'}
+Custody reference number: ${data.custodyReferenceNumber || 'Not provided'}
+Time of arrest: ${data.timeOfArrest || 'Not provided'}
+
+POLICE DETAILS
+--------------
+Police station / custody suite: ${data.policeStation || 'Not provided'}
+Arresting force: ${data.arrestingForce || 'Not provided'}
+Alleged offence(s): ${data.allegedOffences || 'Not provided'}
+
+CALLER DETAILS
+--------------
+Caller name: ${data.callerName || 'Not provided'}
+Relationship to detainee: ${data.callerRelationship || 'Not provided'}
+Contact phone number: ${data.contactPhoneNumber || 'Not provided'}
+
+NOTES
+-----
+- Information collected via website custody intake assistant.
+- Services are provided by a qualified duty solicitor.
+- Availability is 9am to late.
+
+Timestamp: ${new Date().toISOString()}
+    `.trim();
+
+    return { subject, body, urgent };
+  };
+
+  const sendCustodyEmail = async (data: CustodyIntakeData, stage: 'urgent' | 'final') => {
+    const urgentNow = looksImminent(data.interviewStatus || '') || looksImminent(data.urgencyAssessment || '');
+    if (stage === 'urgent' && custodyUrgentEmailSent) return;
+    if (stage === 'final' && custodyFinalEmailSent) return;
+
+    const email = buildCustodyEmailBody(data);
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/chatbot/email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          subject: email.subject,
+          body: email.body,
+          option: 'custody-intake',
+        }),
+      });
+      if (response.ok) {
+        if (stage === 'urgent') setCustodyUrgentEmailSent(true);
+        if (stage === 'final') setCustodyFinalEmailSent(true);
+        addBotMessage(
+          stage === 'urgent'
+            ? 'Urgent custody notification forwarded. Telephone 01732 247427 immediately if an interview or charging decision is imminent (availability: 9am to late).'
+            : 'Custody enquiry forwarded to a qualified duty solicitor. If an interview or charging decision is imminent, telephone 01732 247427 (availability: 9am to late).'
+        );
+      } else {
+        addBotMessage('Your details have been recorded. Please telephone 01732 247427 to ensure urgent escalation.');
+      }
+    } catch (error) {
+      console.error('Error sending custody email:', error);
+      addBotMessage('Please telephone 01732 247427. We could not automatically forward your custody enquiry.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const custodySteps: Array<{ key: CustodyFieldKey; question: string; guidance?: string }> = [
+    {
+      key: 'detaineeFullName',
+      question: 'Detainee full name (as held by police).',
+    },
+    {
+      key: 'detaineeDateOfBirth',
+      question: 'Detainee date of birth (DD/MM/YYYY).',
+      guidance: 'If unknown, state “unknown”.',
+    },
+    {
+      key: 'policeStation',
+      question: 'Which police station / custody suite is the detainee at?',
+    },
+    {
+      key: 'timeOfArrest',
+      question: 'Time of arrest (approximate is acceptable).',
+    },
+    {
+      key: 'interviewStatus',
+      question: 'Interview status (not started / scheduled / in progress / completed / unknown).',
+    },
+    {
+      key: 'urgencyAssessment',
+      question: 'Is an interview or charging decision imminent? If yes, state how soon.',
+      guidance: 'Example: “Interview starting within 30 minutes” or “Charging decision expected shortly”.',
+    },
+    {
+      key: 'callerName',
+      question: 'Caller full name.',
+    },
+    {
+      key: 'callerRelationship',
+      question: 'Relationship to the detainee (e.g., self / partner / parent / friend).',
+    },
+    {
+      key: 'contactPhoneNumber',
+      question: 'Best contact phone number for immediate call-back.',
+    },
+    {
+      key: 'arrestingForce',
+      question: 'Arresting force (e.g., Kent Police, Met Police).',
+      guidance: 'If unknown, state “unknown”.',
+    },
+    {
+      key: 'allegedOffences',
+      question: 'Alleged offence(s) as stated by police (brief).',
+    },
+    {
+      key: 'custodyReferenceNumber',
+      question: 'Custody reference number (if available).',
+      guidance: 'If not available, state “not provided”.',
+    },
+  ];
+
+  const startCustodyIntake = (source: 'detected' | 'option') => {
+    setChatMode('custody_intake');
+    setCustodyStepIndex(0);
+    setCustodyData(emptyCustodyIntakeData());
+    setCustodyUrgentEmailSent(false);
+    setCustodyFinalEmailSent(false);
+    setShowOptions(false);
+
+    addBotMessage(
+      source === 'detected'
+        ? 'Custody intake initiated based on your message.\n\nI will ask a series of legally relevant questions to take details for a qualified duty solicitor. I cannot provide case-specific legal advice.'
+        : 'Custody intake initiated.\n\nI will ask a series of legally relevant questions to take details for a qualified duty solicitor. I cannot provide case-specific legal advice.'
+    );
+    addBotMessage('If an interview or charging decision is imminent, telephone 01732 247427 immediately (availability: 9am to late).');
+    addBotMessage(`${custodySteps[0].question}${custodySteps[0].guidance ? `\n${custodySteps[0].guidance}` : ''}`);
+  };
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
@@ -59,17 +308,17 @@ export default function Chatbot() {
     
     // PACE 1984 Rights
     if (lowerMessage.includes('right') || lowerMessage.includes('entitle') || lowerMessage.includes('pace')) {
-      return 'Under PACE 1984, you have an absolute right to free legal advice at the police station. This is not means-tested. You can request a solicitor at any time, even if you\'ve already started an interview. Having a solicitor does not imply guilt - it protects your rights. Call 01732 247427 for immediate representation.';
+      return 'Under PACE 1984, you have a right to free legal advice at the police station. You may request a solicitor at any stage, including during interview. A qualified duty solicitor can advise you on your rights and procedure. For urgent representation arrangements, telephone 01732 247427 (availability: 9am to late).';
     }
     
     // Free legal advice
     if (lowerMessage.includes('free') || lowerMessage.includes('cost') || lowerMessage.includes('charge') || lowerMessage.includes('price')) {
-      return 'Legal advice at the police station is completely FREE under Legal Aid. This is a statutory right under PACE 1984 and is not means-tested. Everyone arrested or invited for a voluntary interview is entitled to free legal representation. No payment required.';
+      return 'Legal advice at the police station is free and is not means-tested. This applies whether a person has been arrested or is attending a voluntary interview. A qualified duty solicitor can advise and represent you. For urgent arrangements, telephone 01732 247427 (availability: 9am to late).';
     }
     
     // Need a solicitor
     if (lowerMessage.includes('need solicitor') || lowerMessage.includes('do i need') || lowerMessage.includes('should i get')) {
-      return 'Yes, you should always have a solicitor present during police interviews. Even if you\'re innocent, a solicitor protects your rights, ensures proper procedures are followed, and helps prevent self-incrimination. Legal advice is free and does not imply guilt. Call 01732 247427 now.';
+      return 'You are entitled to request a solicitor for police interview and custody procedures. A qualified duty solicitor can advise you on your rights and ensure proper procedure is followed. If this is a custody matter, I can take details for call-back, or you may telephone 01732 247427 (availability: 9am to late).';
     }
     
     // Rights at police station
@@ -89,7 +338,7 @@ export default function Chatbot() {
     
     // Duty solicitor
     if (lowerMessage.includes('duty solicitor') || lowerMessage.includes('duty scheme')) {
-      return 'The duty solicitor scheme provides free legal advice at police stations. You can request a duty solicitor or your own solicitor. Both are free under Legal Aid. We are accredited duty solicitors covering all Kent police stations. Call 01732 247427 and ask for Robert Cashman.';
+      return 'The duty solicitor scheme provides legal advice at the police station. You may request a duty solicitor or your own solicitor. Services are provided by a qualified duty solicitor. For attendance arrangements, telephone 01732 247427 (availability: 9am to late).';
     }
     
     // Representation doesn't imply guilt
@@ -99,7 +348,7 @@ export default function Chatbot() {
     
     // How to get representation
     if (lowerMessage.includes('how do i get') || lowerMessage.includes('how to get') || lowerMessage.includes('get representation') || lowerMessage.includes('get help now')) {
-      return 'To get representation right now: 1) If you\'re at a police station, tell the custody sergeant you want a solicitor and ask for Robert Cashman, 2) Call us on 01732 247427 immediately, 3) We aim to attend within 45 minutes. Legal advice is free. Available 24/7.';
+      return 'To arrange representation: (1) Tell the custody sergeant you require legal advice and request a duty solicitor, (2) Telephone 01732 247427 to arrange attendance and call-back, (3) If an interview or charging decision is imminent, state this clearly. Availability: 9am to late.';
     }
     
     // What happens at interview
@@ -109,7 +358,7 @@ export default function Chatbot() {
     
     // Availability
     if (lowerMessage.includes('available') || lowerMessage.includes('hours') || lowerMessage.includes('when')) {
-      return 'We are available 24 hours a day, 7 days a week, including weekends and bank holidays. Simply call 01732 247427 and we will arrange for a representative to attend the police station. We aim to attend within 45 minutes.';
+      return 'Availability is 9am to late. For urgent police station matters, telephone 01732 247427 and provide the detainee name, police station, and interview status.';
     }
     
     // Kent coverage
@@ -119,21 +368,21 @@ export default function Chatbot() {
     
     // Response time
     if (lowerMessage.includes('time') || lowerMessage.includes('how long') || lowerMessage.includes('quick')) {
-      return 'We aim to attend any Kent police station within 45 minutes. Our representatives are on call 24/7 to provide rapid response. For urgent matters, call 01732 247427 immediately.';
+      return 'For custody enquiries, response depends on location and current commitments. If interview or charging decision is imminent, telephone 01732 247427 and state the urgency. Availability: 9am to late.';
     }
     
     // Arrested
     if (lowerMessage.includes('arrested') || lowerMessage.includes('in custody') || lowerMessage.includes('detained')) {
-      return 'If you\'ve been arrested, you\'ll be taken to a custody suite. It\'s vital you ask for a solicitor immediately. Tell the custody sergeant you want legal advice and ask for Robert Cashman. Call 01732 247427 and we will arrange urgent attendance to protect your rights. Legal advice is free.';
+      return 'If a person has been arrested, they will be taken to a custody suite. They should request legal advice immediately and ask the custody sergeant to arrange a duty solicitor. If an interview or charging decision is imminent, telephone 01732 247427 and state the urgency (availability: 9am to late).';
     }
     
     // Contact form prompt
     if (lowerMessage.includes('form') || lowerMessage.includes('submit') || lowerMessage.includes('request')) {
-      return 'To request police station representation, please complete our contact form at /contact or call 01732 247427 immediately. The form collects essential details so we can attend quickly. Legal advice is free and available 24/7.';
+      return 'To request police station representation, you may complete the contact form at /contact. For urgent custody matters, telephone 01732 247427 (availability: 9am to late).';
     }
     
     // Default helpful response
-    return 'I can help with questions about police station representation, your rights under PACE 1984, free legal advice, and voluntary interviews. For urgent help, call 01732 247427 immediately. For detailed requests, please complete our contact form at /contact. Legal advice is free and available 24/7.';
+    return 'I can assist with police station representation enquiries, high-level information about rights under PACE 1984, and voluntary interview procedure. If someone is in custody or an interview is pending, I can take details for a qualified duty solicitor to contact you. Availability: 9am to late. Telephone 01732 247427 for urgent matters.';
   };
 
   const handleQuickOption = async (option: string) => {
@@ -145,20 +394,14 @@ export default function Chatbot() {
     let emailBody = '';
 
     if (option === 'police-station') {
-      userMessage = 'I Need Police Station Representation - I\'m in custody, arrested, or have an upcoming police interview';
-      botResponse = 'Thank you for contacting us. We understand this is urgent. Please complete our contact form at /contact to provide essential details, or call 01732 247427 immediately for immediate assistance. We are available 24/7 to provide expert legal representation at any Kent police station. Legal advice is free under Legal Aid.';
-      emailSubject = 'New Enquiry: Police Station Representation Request';
-      emailBody = `A visitor has requested police station representation.\n\nDetails:\n- Service: Police Station Representation\n- Status: In custody, arrested, or has upcoming police interview\n- Urgency: High\n\nPlease contact them as soon as possible.\n\nContact: 01732 247427\n\nThis is an automated notification from the website chatbot.\n\nUser should complete contact form at /contact for full details.`;
-      
-      // Suggest contact form
-      setTimeout(() => {
-        setMessages(prev => [...prev, {
-          id: (Date.now() + 3).toString(),
-          type: 'bot',
-          content: 'To request representation, please visit /contact to complete our contact form. This helps us gather essential details like which police station, date/time, and your contact information. Or call 01732 247427 now for immediate help.',
-          timestamp: new Date(),
-        }]);
-      }, 1500);
+      userMessage = 'Police station custody enquiry (representation required).';
+      botResponse = 'Understood. I will begin a structured custody intake now to capture the essential details for a qualified duty solicitor. If an interview or charging decision is imminent, telephone 01732 247427 immediately (availability: 9am to late).';
+
+      // Add user + bot messages immediately, then start custody intake flow.
+      addUserMessage(userMessage);
+      addBotMessage(botResponse);
+      startCustodyIntake('option');
+      return;
     } else if (option === 'law-firm') {
       userMessage = 'I\'m a Criminal Law Firm - I need police station agent cover for my clients';
       botResponse = 'Thank you for your interest in our agent cover services. We provide reliable police station representation for law firms across the country. Please complete our contact form at /contact or call 01732 247427 to discuss your requirements and competitive rates.';
@@ -167,20 +410,10 @@ export default function Chatbot() {
     }
 
     // Add user message
-    setMessages(prev => [...prev, {
-      id: Date.now().toString(),
-      type: 'user',
-      content: userMessage,
-      timestamp: new Date(),
-    }]);
+    addUserMessage(userMessage);
 
     // Add bot response
-    setMessages(prev => [...prev, {
-      id: (Date.now() + 1).toString(),
-      type: 'bot',
-      content: botResponse,
-      timestamp: new Date(),
-    }]);
+    addBotMessage(botResponse);
 
     // Send email
     setIsSubmitting(true);
@@ -228,27 +461,47 @@ export default function Chatbot() {
   const handleSendMessage = async (message: string) => {
     if (!message.trim() || isSubmitting) return;
 
-    // Add user message
-    const userMsg: ChatMessage = {
-      id: Date.now().toString(),
-      type: 'user',
-      content: message,
-      timestamp: new Date(),
-    };
-    setMessages(prev => [...prev, userMsg]);
+    addUserMessage(message);
+
+    // Custody intake mode: store answer and ask next question
+    if (chatMode === 'custody_intake') {
+      const currentStep = custodySteps[custodyStepIndex];
+      const answer = message.trim();
+      const nextData: CustodyIntakeData = { ...custodyData, [currentStep.key]: answer };
+      setCustodyData(nextData);
+
+      const nextIndex = custodyStepIndex + 1;
+      setCustodyStepIndex(nextIndex);
+
+      const urgentNow = looksImminent(nextData.interviewStatus || '') || looksImminent(nextData.urgencyAssessment || '');
+      if (urgentNow && !custodyUrgentEmailSent) {
+        void sendCustodyEmail(nextData, 'urgent');
+      }
+
+      if (nextIndex >= custodySteps.length) {
+        if (!custodyFinalEmailSent) {
+          void sendCustodyEmail(nextData, 'final');
+        }
+        addBotMessage(
+          'Thank you. If you have any additional information (e.g., custody reference number, expected interview time), you may provide it now.\n\nIf an interview or charging decision is imminent, telephone 01732 247427 immediately (availability: 9am to late).'
+        );
+        return;
+      }
+
+      const nextStep = custodySteps[nextIndex];
+      addBotMessage(`${nextStep.question}${nextStep.guidance ? `\n${nextStep.guidance}` : ''}`);
+      return;
+    }
+
+    // Detect custody intent and switch to structured intake flow
+    if (isCustodyIntent(message)) {
+      startCustodyIntake('detected');
+      return;
+    }
 
     // Get intelligent response
     const response = getResponse(message);
     
-    // Check if user needs representation (prompt for contact form)
-    const lowerMessage = message.toLowerCase();
-    const needsRepresentation = lowerMessage.includes('need') || 
-                                lowerMessage.includes('help') || 
-                                lowerMessage.includes('arrested') || 
-                                lowerMessage.includes('interview') ||
-                                lowerMessage.includes('voluntary') ||
-                                lowerMessage.includes('custody');
-
     // Add bot response
     setTimeout(() => {
       const botMsg: ChatMessage = {
@@ -258,18 +511,6 @@ export default function Chatbot() {
         timestamp: new Date(),
       };
       setMessages(prev => [...prev, botMsg]);
-      
-      // If user needs representation, suggest contact form
-      if (needsRepresentation && !lowerMessage.includes('form')) {
-        setTimeout(() => {
-          setMessages(prev => [...prev, {
-            id: (Date.now() + 2).toString(),
-            type: 'bot',
-            content: 'Would you like to complete our contact form to request representation? This helps us gather essential details quickly. You can access it at /contact or I can guide you through it.',
-            timestamp: new Date(),
-          }]);
-        }, 1000);
-      }
     }, 500);
   };
 
@@ -324,10 +565,16 @@ export default function Chatbot() {
                   setIsOpen(false);
                   setIsMinimized(false);
                   setShowOptions(true);
+                  setChatMode('general');
+                  setCustodyStepIndex(0);
+                  setCustodyData(emptyCustodyIntakeData());
+                  setCustodyUrgentEmailSent(false);
+                  setCustodyFinalEmailSent(false);
                   setMessages([{
                     id: '1',
                     type: 'bot',
-                    content: 'Hello! I\'m here to help. How can I assist you today?',
+                    content:
+                      'Custody Intake Assistant.\n\nIf someone is under arrest, in police custody, or due to be interviewed at a police station, I can take the essential details for a qualified duty solicitor to contact you.\n\nAvailability: 9am to late.\nFor urgent matters, telephone 01732 247427.',
                     timestamp: new Date(),
                   }]);
                 }}
@@ -402,36 +649,34 @@ export default function Chatbot() {
               )}
 
               {/* Input */}
-              {!showOptions && (
-                <div className="p-4 bg-white border-t border-slate-200">
-                  <div className="flex gap-2">
-                    <input
-                      ref={inputRef}
-                      type="text"
-                      placeholder="Type your question..."
-                      className="flex-1 px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                      onKeyPress={handleKeyPress}
-                      disabled={isSubmitting}
-                    />
-                    <button
-                      onClick={() => {
-                        if (inputRef.current?.value.trim()) {
-                          handleSendMessage(inputRef.current.value);
-                          inputRef.current.value = '';
-                        }
-                      }}
-                      disabled={isSubmitting}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                      aria-label="Send message"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="m22 2-7 20-4-9-9-4Z"></path>
-                        <path d="M22 2 11 13"></path>
-                      </svg>
-                    </button>
-                  </div>
+              <div className="p-4 bg-white border-t border-slate-200">
+                <div className="flex gap-2">
+                  <input
+                    ref={inputRef}
+                    type="text"
+                    placeholder={chatMode === 'custody_intake' ? 'Type your answer...' : 'Type your question...'}
+                    className="flex-1 px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                    onKeyPress={handleKeyPress}
+                    disabled={isSubmitting}
+                  />
+                  <button
+                    onClick={() => {
+                      if (inputRef.current?.value.trim()) {
+                        handleSendMessage(inputRef.current.value);
+                        inputRef.current.value = '';
+                      }
+                    }}
+                    disabled={isSubmitting}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    aria-label="Send message"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m22 2-7 20-4-9-9-4Z"></path>
+                      <path d="M22 2 11 13"></path>
+                    </svg>
+                  </button>
                 </div>
-              )}
+              </div>
             </>
           )}
         </div>
