@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, ChangeEvent } from 'react';
-import { signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 interface BlogPreview {
   title: string;
@@ -44,6 +44,7 @@ const CATEGORIES = [
 ];
 
 export default function BlogGeneratorClient() {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     topic: '',
     primaryKeyword: '',
@@ -255,7 +256,15 @@ export default function BlogGeneratorClient() {
             </p>
           </div>
           <button
-            onClick={() => signOut({ callbackUrl: '/' })}
+            onClick={async () => {
+              try {
+                await fetch('/api/admin/logout', { method: 'POST' });
+                router.push('/admin/login');
+              } catch (err) {
+                console.error('Logout failed:', err);
+                router.push('/admin/login');
+              }
+            }}
             className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
           >
             Sign Out
