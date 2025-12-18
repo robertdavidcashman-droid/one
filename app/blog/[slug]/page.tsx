@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `${siteUrl}/blog/${post.slug}`,
       siteName: 'Police Station Agent',
       type: 'article',
-      images: post.image ? [{ 
+      images: post.image && !post.image.startsWith('data:') ? [{ 
         url: post.image,
         width: 1200,
         height: 630,
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: displayTitle,
       description: displayDescription,
-      images: post.image ? [post.image] : [`${siteUrl}/og-image.jpg`],
+      images: post.image && !post.image.startsWith('data:') ? [post.image] : [`${siteUrl}/og-image.jpg`],
     },
   };
 }

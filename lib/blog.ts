@@ -285,6 +285,19 @@ export function cleanWixImageUrl(url: string): string {
 let dbInstance: Database.Database | null = null;
 
 /**
+ * Test-only helper to clear the cached DB handle.
+ * (Vitest runs tests in a single process, so we need a way to swap BLOG_DB_PATH.)
+ */
+export function __resetBlogDbForTests() {
+  try {
+    (dbInstance as any)?.close?.();
+  } catch {
+    // ignore
+  }
+  dbInstance = null;
+}
+
+/**
  * Get or create the database connection.
  * Handles serverless environments (Vercel) by copying to /tmp if needed.
  */
@@ -298,7 +311,7 @@ function getDb(): Database.Database {
     return dbInstance;
   }
 
-  const sourceDbPath = path.join(process.cwd(), 'data', 'web44ai.db');
+  const sourceDbPath = process.env.BLOG_DB_PATH || path.join(process.cwd(), 'data', 'web44ai.db');
   let dbPath = sourceDbPath;
 
   // Serverless environment handling
@@ -371,6 +384,7 @@ export function getPublishedBlogPosts(): BlogPostSummary[] {
         slug,
         content,
         excerpt,
+        image,
         published_at,
         created_at
       FROM blog_posts 
@@ -383,6 +397,7 @@ export function getPublishedBlogPosts(): BlogPostSummary[] {
       slug: string;
       content: string;
       excerpt: string | null;
+      image: string | null;
       published_at: string | null;
       created_at: string;
     }>;
@@ -406,7 +421,8 @@ export function getPublishedBlogPosts(): BlogPostSummary[] {
         excerpt,
         published_at: post.published_at,
         created_at: post.created_at,
-        image: extractFirstImage(post.content),
+        // Prefer explicitly stored featured image; fallback to first <img> in content.
+        image: normalizeImageUrl(post.image || '') || extractFirstImage(post.content),
       };
     });
 
@@ -477,7 +493,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
     return {
       ...post,
       slug: deriveSlugIfNeeded(post.slug, post.title),
-      image: extractFirstImage(post.content),
+      // Prefer explicitly stored featured image; fallback to first <img> in content.
+      image: normalizeImageUrl(post.image || '') || extractFirstImage(post.content),
     };
   } catch (error) {
     console.error('[blog.ts] Error in getPostBySlug:', error);
@@ -548,7 +565,7 @@ export function backfillSlugs(): BackfillResult {
 
   try {
     // Need write access for backfill
-    const sourceDbPath = path.join(process.cwd(), 'data', 'web44ai.db');
+    const sourceDbPath = process.env.BLOG_DB_PATH || path.join(process.cwd(), 'data', 'web44ai.db');
     const db = new Database(sourceDbPath, { readonly: false });
 
     const posts = db.prepare(`
