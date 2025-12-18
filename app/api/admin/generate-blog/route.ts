@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminSession } from '@/lib/admin-auth';
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
+import { z } from 'zod';
+import { getOrCreateCorrelationId, logJson } from '@/lib/observability';
+import { createBlogGenerationRun, updateBlogGenerationRun } from '@/lib/blogGenerationRuns';
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
@@ -17,27 +20,171 @@ function generateSlug(text: string): string {
     .substring(0, 60);
 }
 
+const GenerateBlogRequestSchema = z.object({
+  topic: z.string().min(3),
+  primaryKeyword: z.string().min(2),
+  secondaryKeywords: z.string().optional().default(''),
+  location: z.string().optional().default('Kent'),
+  category: z.string().optional().default('police-station-advice'),
+  seoLength: z.enum(['short', 'optimal', 'long']).optional().default('optimal'),
+  includeFAQ: z.boolean().optional().default(true),
+  includeInternalLinks: z.boolean().optional().default(true),
+  imageSource: z.enum(['ai', 'upload', 'url']).optional().default('url'),
+  imageUrls: z.array(z.string()).optional().default([]),
+  featuredImageIndex: z.number().int().nonnegative().optional().default(0),
+  includeInContentImages: z.boolean().optional().default(false),
+});
+
+const MetaJsonSchema = z.object({
+  metaTitle: z.string().min(1),
+  metaDescription: z.string().min(1),
+  excerpt: z.string().min(1),
+});
+
+const FaqJsonSchema = z.object({
+  faqs: z
+    .array(
+      z.object({
+        question: z.string().min(5),
+        answer: z.string().min(5),
+      })
+    )
+    .max(8),
+});
+
+function isServerlessRuntime(): boolean {
+  return !!(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+}
+
+async function fetchWithTimeout(
+  url: string,
+  init: RequestInit,
+  timeoutMs: number
+): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchWithRetry(
+  url: string,
+  init: RequestInit,
+  opts: { timeoutMs: number; maxAttempts: number; correlationId: string; stage: string }
+): Promise<Response> {
+  let lastErr: unknown;
+
+  for (let attempt = 1; attempt <= opts.maxAttempts; attempt++) {
+    const started = Date.now();
+    try {
+      const res = await fetchWithTimeout(url, init, opts.timeoutMs);
+      const durationMs = Date.now() - started;
+
+      if (res.ok) return res;
+
+      // Retry on transient classes: 429, 5xx
+      if (res.status === 429 || (res.status >= 500 && res.status <= 599)) {
+        const backoffMs = Math.min(2000 * attempt, 8000);
+        logJson('warn', {
+          stage: 'failed',
+          correlationId: opts.correlationId,
+          success: false,
+          durationMs,
+          attempt,
+          httpStatus: res.status,
+          note: `Retrying after ${backoffMs}ms`,
+          retryStage: opts.stage,
+        });
+        await sleep(backoffMs);
+        continue;
+      }
+
+      return res;
+    } catch (err) {
+      lastErr = err;
+      const backoffMs = Math.min(2000 * attempt, 8000);
+      logJson('warn', {
+        stage: 'failed',
+        correlationId: opts.correlationId,
+        success: false,
+        attempt,
+        errorMessage: err instanceof Error ? err.message : String(err),
+        note: `Retrying after ${backoffMs}ms`,
+        retryStage: opts.stage,
+      });
+      await sleep(backoffMs);
+    }
+  }
+
+  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr || 'Fetch failed'));
+}
+
+function extractJsonObject(raw: string): string {
+  const start = raw.indexOf('{');
+  const end = raw.lastIndexOf('}');
+  if (start >= 0 && end > start) return raw.slice(start, end + 1);
+  return raw;
+}
+
+function repairJson(raw: string): string {
+  // Minimal, deterministic “repair” without new dependencies:
+  // - strip any non-JSON prefix/suffix
+  // - replace smart quotes
+  // - remove trailing commas
+  let s = extractJsonObject(raw.trim());
+  s = s
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/,\s*([}\]])/g, '$1');
+  return s;
+}
+
+function safeJsonParse<T>(raw: string): T {
+  try {
+    return JSON.parse(raw) as T;
+  } catch {
+    const repaired = repairJson(raw);
+    return JSON.parse(repaired) as T;
+  }
+}
+
 /**
  * Call OpenAI API for content generation
  */
-async function callOpenAI(messages: Array<{ role: string; content: string }>, maxTokens: number = 2000): Promise<string> {
+async function callOpenAI(args: {
+  messages: Array<{ role: string; content: string }>;
+  maxTokens?: number;
+  correlationId: string;
+  stage: string;
+}): Promise<string> {
   if (!OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY not configured');
   }
 
-  const response = await fetch('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${OPENAI_API_KEY}`,
+  const response = await fetchWithRetry(
+    'https://api.openai.com/v1/chat/completions',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o',
+        messages: args.messages,
+        max_tokens: args.maxTokens ?? 2000,
+        temperature: 0.7,
+      }),
     },
-    body: JSON.stringify({
-      model: 'gpt-4o',
-      messages,
-      max_tokens: maxTokens,
-      temperature: 0.7,
-    }),
-  });
+    { timeoutMs: 30000, maxAttempts: 3, correlationId: args.correlationId, stage: args.stage }
+  );
 
   if (!response.ok) {
     const error = await response.json();
@@ -51,7 +198,7 @@ async function callOpenAI(messages: Array<{ role: string; content: string }>, ma
 /**
  * Generate SEO-optimized blog content using AI
  */
-async function generateAIContent(formData: any): Promise<{
+async function generateAIContent(formData: any, correlationId: string): Promise<{
   title: string;
   content: string;
   excerpt: string;
@@ -142,74 +289,117 @@ Do NOT include <h1> (title will be added separately).
 Do NOT include any preamble or explanation, just the HTML content.`;
 
   // Generate main content
-  const content = await callOpenAI([
-    { role: 'system', content: 'You are a professional legal content writer for UK criminal defence. Write in British English. Be authoritative, helpful, and SEO-optimized.' },
-    { role: 'user', content: contentPrompt },
-  ], 3000);
+  const content = await callOpenAI({
+    correlationId,
+    stage: 'generate_blog_content',
+    messages: [
+      { role: 'system', content: 'You are a professional legal content writer for UK criminal defence. Write in British English. Be authoritative, helpful, and SEO-optimized.' },
+      { role: 'user', content: contentPrompt },
+    ],
+    maxTokens: 3000,
+  });
 
-  // Generate SEO meta elements
+  // Generate SEO meta elements (STRICT JSON contract)
   const metaPrompt = `For this blog post about "${topic}" targeting "${primaryKeyword}" in ${location}:
 
-Generate:
-1. SEO Title (max 60 characters, include primary keyword)
-2. Meta Description (max 155 characters, compelling and includes primary keyword)
-3. Excerpt (2-3 sentences summarizing the article)
+Return VALID JSON ONLY with this exact shape:
+{
+  "metaTitle": "string (<= 60 chars, include primary keyword)",
+  "metaDescription": "string (<= 155 chars, include primary keyword)",
+  "excerpt": "string (2-3 sentences)"
+}
 
-Format your response EXACTLY like this:
-TITLE: [your title here]
-META: [your meta description here]
-EXCERPT: [your excerpt here]`;
+Do not include markdown. Do not wrap in \`\`\`. Do not include any extra keys.`;
 
-  const metaResponse = await callOpenAI([
-    { role: 'system', content: 'You are an SEO specialist. Be concise and follow character limits exactly.' },
-    { role: 'user', content: metaPrompt },
-  ], 500);
+  const metaResponseRaw = await callOpenAI({
+    correlationId,
+    stage: 'generate_meta',
+    messages: [
+      { role: 'system', content: 'You are an SEO specialist. Be concise and follow character limits exactly.' },
+      { role: 'user', content: metaPrompt },
+    ],
+    maxTokens: 500,
+  });
 
-  // Parse meta response
-  const titleMatch = metaResponse.match(/TITLE:\s*(.+?)(?:\n|$)/i);
-  const metaMatch = metaResponse.match(/META:\s*(.+?)(?:\n|$)/i);
-  const excerptMatch = metaResponse.match(/EXCERPT:\s*(.+?)(?:\n|$)/i);
+  // Parse/validate meta response (one repair attempt)
+  let metaJson: unknown;
+  try {
+    metaJson = safeJsonParse(metaResponseRaw);
+  } catch {
+    metaJson = safeJsonParse(extractJsonObject(metaResponseRaw));
+  }
+  let metaParsed = MetaJsonSchema.safeParse(metaJson);
+  if (!metaParsed.success) {
+    const repairPrompt = `Your previous response did not validate. Return VALID JSON ONLY with keys metaTitle, metaDescription, excerpt.\n\nPrevious response:\n${metaResponseRaw}`;
+    const repairedRaw = await callOpenAI({
+      correlationId,
+      stage: 'generate_meta_repair',
+      messages: [
+        { role: 'system', content: 'You output strict JSON only.' },
+        { role: 'user', content: repairPrompt },
+      ],
+      maxTokens: 500,
+    });
+    metaParsed = MetaJsonSchema.safeParse(safeJsonParse(repairedRaw));
+  }
 
-  const metaTitle = titleMatch?.[1]?.trim().substring(0, 60) || `${topic} | ${location} Duty Solicitor`;
-  const metaDescription = metaMatch?.[1]?.trim().substring(0, 155) || `Expert guidance on ${topic.toLowerCase()} from qualified Duty Solicitor in ${location}. PACE-compliant police station representation.`;
-  const excerpt = excerptMatch?.[1]?.trim() || metaDescription;
+  const metaTitle = (metaParsed.success ? metaParsed.data.metaTitle : `${topic} | ${location} Duty Solicitor`).trim().substring(0, 60);
+  const metaDescription = (metaParsed.success ? metaParsed.data.metaDescription : `Expert guidance on ${topic.toLowerCase()} from qualified Duty Solicitor in ${location}. PACE-compliant police station representation.`).trim().substring(0, 155);
+  const excerpt = (metaParsed.success ? metaParsed.data.excerpt : metaDescription).trim();
 
   // Generate FAQs if requested
   let faqs: Array<{ question: string; answer: string }> = [];
   if (includeFAQ) {
-    const faqPrompt = `Generate 4-5 FAQ questions and answers about "${topic}" for someone in ${location} who might be searching for "${primaryKeyword}".
+    const faqPrompt = `Generate 4-5 FAQs about "${topic}" for someone in ${location} searching for "${primaryKeyword}".
 
-Each FAQ should:
-- Address a real concern someone might have about this topic
-- Be specific to "${topic}" (not generic police advice)
-- Reference UK law (PACE 1984) where relevant
-- Be helpful and informative
+Return VALID JSON ONLY with this exact shape:
+{
+  "faqs": [
+    { "question": "string", "answer": "string (2-3 sentences)" }
+  ]
+}
 
-Format your response EXACTLY like this (use this exact format for each FAQ):
-Q: [Question here]
-A: [Answer here - 2-3 sentences]
+Rules:
+- Make them specific to "${topic}" (not generic).
+- Mention PACE 1984 where relevant.
+- No markdown, no code fences, no extra keys.`;
 
-Q: [Question here]
-A: [Answer here - 2-3 sentences]
+    const faqResponseRaw = await callOpenAI({
+      correlationId,
+      stage: 'generate_faqs',
+      messages: [
+        { role: 'system', content: 'You are a legal FAQ writer. Create clear, helpful FAQs about UK criminal law and police procedures.' },
+        { role: 'user', content: faqPrompt },
+      ],
+      maxTokens: 1500,
+    });
 
-(continue for all FAQs)`;
+    let faqJson: unknown;
+    try {
+      faqJson = safeJsonParse(faqResponseRaw);
+    } catch {
+      faqJson = safeJsonParse(extractJsonObject(faqResponseRaw));
+    }
+    let faqParsed = FaqJsonSchema.safeParse(faqJson);
+    if (!faqParsed.success) {
+      const repairPrompt = `Your previous response did not validate. Return VALID JSON ONLY with key faqs (array of {question, answer}).\n\nPrevious response:\n${faqResponseRaw}`;
+      const repairedRaw = await callOpenAI({
+        correlationId,
+        stage: 'generate_faqs_repair',
+        messages: [
+          { role: 'system', content: 'You output strict JSON only.' },
+          { role: 'user', content: repairPrompt },
+        ],
+        maxTokens: 1500,
+      });
+      faqParsed = FaqJsonSchema.safeParse(safeJsonParse(repairedRaw));
+    }
 
-    const faqResponse = await callOpenAI([
-      { role: 'system', content: 'You are a legal FAQ writer. Create clear, helpful FAQs about UK criminal law and police procedures.' },
-      { role: 'user', content: faqPrompt },
-    ], 1500);
-
-    // Parse FAQs
-    const faqPairs = faqResponse.split(/Q:\s*/i).filter(Boolean);
-    for (const pair of faqPairs) {
-      const parts = pair.split(/A:\s*/i);
-      if (parts.length >= 2) {
-        const question = parts[0].trim().replace(/\??\s*$/, '?');
-        const answer = parts[1].trim().split(/\n\nQ:/i)[0].trim();
-        if (question && answer && question.length > 10) {
-          faqs.push({ question, answer });
-        }
-      }
+    if (faqParsed.success) {
+      faqs = faqParsed.data.faqs.map(f => ({
+        question: f.question.trim().replace(/\??\s*$/, '?'),
+        answer: f.answer.trim(),
+      }));
     }
   }
 
@@ -545,19 +735,138 @@ async function handleUploadedImages(files: File[], slug: string): Promise<string
 }
 
 /**
+ * Generate an AI image (DALL·E) and persist it.
+ *
+ * Important: in serverless (e.g. Vercel) the filesystem is not durable, so this
+ * will return null with an actionable error message.
+ */
+async function generateAiFeaturedImage(args: {
+  topic: string;
+  primaryKeyword: string;
+  location: string;
+  slug: string;
+  correlationId: string;
+}): Promise<{ url: string | null; error?: string }> {
+  if (!OPENAI_API_KEY) {
+    return { url: null, error: 'OPENAI_API_KEY not configured' };
+  }
+
+  const persistAsDataUrl = isServerlessRuntime();
+
+  const prompt = [
+    'Photorealistic editorial photograph.',
+    'UK legal / police station theme, neutral and professional.',
+    'No text, no logos, no watermarks, no identifiable faces.',
+    `Concept: ${args.topic}.`,
+    `SEO context: ${args.primaryKeyword}, ${args.location}.`,
+    'Lighting: soft natural light. Composition: wide hero image.',
+  ].join(' ');
+
+  const callImages = async (model: string) =>
+    fetchWithRetry(
+      'https://api.openai.com/v1/images/generations',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${OPENAI_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model,
+          prompt,
+          size: '1024x1024',
+          response_format: 'b64_json',
+        }),
+      },
+      { timeoutMs: 60000, maxAttempts: 3, correlationId: args.correlationId, stage: `generate_ai_image_${model}` }
+    );
+
+  let res = await callImages('gpt-image-1');
+
+  if (!res.ok) {
+    let errMsg = `HTTP ${res.status}`;
+    try {
+      const err = await res.json();
+      errMsg = err.error?.message || errMsg;
+    } catch {
+      // ignore
+    }
+
+    // Fallback for accounts that only have DALL·E 3 available.
+    if (/model|gpt-image-1/i.test(errMsg)) {
+      res = await callImages('dall-e-3');
+      if (!res.ok) {
+        try {
+          const err2 = await res.json();
+          errMsg = err2.error?.message || errMsg;
+        } catch {
+          // ignore
+        }
+      } else {
+        errMsg = '';
+      }
+    }
+
+    if (!res.ok) return { url: null, error: `OpenAI image API error: ${errMsg}` };
+  }
+
+  const json = (await res.json()) as any;
+  const b64: string | undefined = json?.data?.[0]?.b64_json;
+  const remoteUrl: string | undefined = json?.data?.[0]?.url;
+
+  // If we didn't get base64 back, we can't persist it reliably.
+  if (!b64) {
+    return {
+      url: null,
+      error: remoteUrl
+        ? 'OpenAI returned a temporary URL instead of image bytes; cannot persist without downloading.'
+        : 'OpenAI response did not contain image bytes.',
+    };
+  }
+
+  // Serverless fallback: return a data URL (no filesystem persistence required).
+  // Note: this will not work for social previews (OpenGraph), but it will render in-page.
+  if (persistAsDataUrl) {
+    return { url: `data:image/png;base64,${b64}` };
+  }
+
+  const uploadDir = path.join(process.cwd(), 'public', 'blog-images');
+  await mkdir(uploadDir, { recursive: true });
+
+  const filename = `${args.slug}-ai-1.png`;
+  const filePath = path.join(uploadDir, filename);
+  await writeFile(filePath, Buffer.from(b64, 'base64'));
+
+  return { url: `/blog-images/${filename}` };
+}
+
+/**
  * POST handler for blog generation
  */
 export async function POST(request: NextRequest) {
+  const correlationId = getOrCreateCorrelationId(
+    request.headers.get('x-correlation-id') || request.headers.get('x-request-id')
+  );
+
   try {
+    const startedAt = Date.now();
+    logJson('info', { stage: 'received', correlationId });
+
     // Verify admin session
     const session = await getAdminSession();
 
     if (!session) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+      logJson('warn', { stage: 'failed', correlationId, success: false, errorCode: 'UNAUTHORIZED' });
+      return NextResponse.json(
+        { error: 'Unauthorized', correlationId },
+        { status: 401, headers: { 'x-correlation-id': correlationId } }
+      );
     }
 
     let formData: any;
     let uploadedImageUrls: string[] = [];
+    let aiImageUrl: string | null = null;
+    let aiImageError: string | undefined;
 
     // Handle request format
     const contentType = request.headers.get('content-type') || '';
@@ -568,7 +877,11 @@ export async function POST(request: NextRequest) {
       if (typeof jsonData === 'string') {
         formData = JSON.parse(jsonData);
       } else {
-        return NextResponse.json({ error: 'Invalid form data' }, { status: 400 });
+        logJson('warn', { stage: 'failed', correlationId, success: false, errorCode: 'INVALID_FORM_DATA' });
+        return NextResponse.json(
+          { error: 'Invalid form data', correlationId },
+          { status: 400, headers: { 'x-correlation-id': correlationId } }
+        );
       }
       
       const files = multipartData.getAll('uploadedImages') as File[];
@@ -580,6 +893,47 @@ export async function POST(request: NextRequest) {
       formData = await request.json();
     }
 
+    // Validate & normalize request
+    logJson('info', { stage: 'validating_request', correlationId });
+    const parsed = GenerateBlogRequestSchema.safeParse(formData);
+    if (!parsed.success) {
+      logJson('warn', {
+        stage: 'failed',
+        correlationId,
+        success: false,
+        errorCode: 'INVALID_REQUEST',
+        errorMessage: parsed.error.message,
+      });
+      return NextResponse.json(
+        { error: 'Invalid request', details: parsed.error.flatten(), correlationId },
+        { status: 400, headers: { 'x-correlation-id': correlationId } }
+      );
+    }
+    formData = parsed.data;
+
+    // Create observability record (best-effort; do not block generation)
+    try {
+      createBlogGenerationRun({
+        correlationId,
+        status: 'queued',
+        stage: 'received',
+        requestJson: {
+          ...formData,
+          // Do not store raw image URLs in logs/runs if not necessary
+          imageUrlsCount: Array.isArray(formData.imageUrls) ? formData.imageUrls.length : 0,
+          imageUrls: undefined,
+        },
+      });
+    } catch (e) {
+      logJson('warn', {
+        stage: 'failed',
+        correlationId,
+        success: false,
+        errorCode: 'RUN_RECORD_CREATE_FAILED',
+        errorMessage: e instanceof Error ? e.message : String(e),
+      });
+    }
+
     // Generate content - use AI if available, fallback otherwise
     let generatedContent;
     let usingAI = false;
@@ -588,7 +942,11 @@ export async function POST(request: NextRequest) {
     if (OPENAI_API_KEY) {
       aiStatus = `OPENAI_API_KEY detected (${OPENAI_API_KEY.substring(0, 8)}...). `;
       try {
-        generatedContent = await generateAIContent(formData);
+        try {
+          updateBlogGenerationRun({ correlationId, status: 'generating_text', stage: 'generating_text' });
+        } catch {}
+        logJson('info', { stage: 'generating_text', correlationId });
+        generatedContent = await generateAIContent(formData, correlationId);
         usingAI = true;
         aiStatus += 'AI generation succeeded.';
       } catch (aiError) {
@@ -596,6 +954,15 @@ export async function POST(request: NextRequest) {
         aiStatus += `AI generation failed: ${message}. Using template content.`;
         console.error('AI generation failed, using fallback:', aiError);
         generatedContent = generateFallbackContent(formData);
+        try {
+          updateBlogGenerationRun({
+            correlationId,
+            status: 'failed',
+            stage: 'generating_text',
+            errorCode: 'TEXT_GENERATION_FAILED',
+            errorMessage: message,
+          });
+        } catch {}
       }
     } else {
       aiStatus = 'OPENAI_API_KEY not found; using template content.';
@@ -609,9 +976,38 @@ export async function POST(request: NextRequest) {
     // Append mandatory advert block
     const contentWithAdvert = content + generateAdvertBlock();
 
+    // Handle AI image generation (optional)
+    if (formData.imageSource === 'ai') {
+      try {
+        try {
+          updateBlogGenerationRun({ correlationId, status: 'generating_images', stage: 'generating_images' });
+        } catch {}
+        logJson('info', { stage: 'generating_images', correlationId });
+        const img = await generateAiFeaturedImage({
+          topic: formData.topic,
+          primaryKeyword: formData.primaryKeyword,
+          location: formData.location,
+          slug,
+          correlationId,
+        });
+        aiImageUrl = img.url;
+        aiImageError = img.error;
+        if (aiImageUrl) {
+          aiStatus += ' AI image generation succeeded.';
+        } else if (aiImageError) {
+          aiStatus += ` AI image generation failed: ${aiImageError}`;
+        }
+      } catch (e) {
+        const msg = e instanceof Error ? e.message : String(e);
+        aiImageError = msg;
+        aiStatus += ` AI image generation failed: ${msg}`;
+      }
+    }
+
     // Handle images
     const allImageUrls = [
       ...uploadedImageUrls,
+      ...(aiImageUrl ? [aiImageUrl] : []),
       ...(formData.imageUrls || []).filter((url: string) => url && url.trim()),
     ];
 
@@ -619,6 +1015,14 @@ export async function POST(request: NextRequest) {
     if (allImageUrls.length > 0) {
       const featuredIndex = formData.featuredImageIndex ?? 0;
       featuredImage = allImageUrls[featuredIndex] || allImageUrls[0] || null;
+    }
+
+    // Optionally embed featured image into HTML content so the public blog index
+    // (which historically extracted images from content) can display it.
+    let finalContent = contentWithAdvert;
+    if (formData.includeInContentImages && featuredImage) {
+      finalContent =
+        `<p><img src="${featuredImage}" alt="${metaTitle || title}" /></p>` + finalContent;
     }
 
     // Generate comprehensive schema
@@ -633,10 +1037,10 @@ export async function POST(request: NextRequest) {
       formData.location
     );
 
-    return NextResponse.json({
+    const responseBody = {
       title,
       slug,
-      content: contentWithAdvert,
+      content: finalContent,
       excerpt,
       metaTitle,
       metaDescription,
@@ -646,12 +1050,50 @@ export async function POST(request: NextRequest) {
       imageUrls: allImageUrls,
       generatedWithAI: usingAI,
       aiStatus,
+      aiImageGenerated: !!aiImageUrl,
+      aiImageError: aiImageError || null,
+      correlationId,
+    };
+
+    try {
+      updateBlogGenerationRun({
+        correlationId,
+        status: 'saving',
+        stage: 'assembling_preview',
+        resultJson: {
+          slug,
+          generatedWithAI: usingAI,
+          aiImageGenerated: !!aiImageUrl,
+          image: featuredImage,
+        },
+      });
+    } catch {}
+
+    logJson('info', {
+      stage: 'done',
+      correlationId,
+      success: true,
+      durationMs: Date.now() - startedAt,
+      usingAI,
+      aiImageGenerated: !!aiImageUrl,
+    });
+    return NextResponse.json(responseBody, {
+      headers: { 'x-correlation-id': correlationId },
     });
   } catch (error) {
     console.error('Blog generation error:', error);
+    try {
+      updateBlogGenerationRun({
+        correlationId,
+        status: 'failed',
+        stage: 'failed',
+        errorCode: 'UNHANDLED',
+        errorMessage: error instanceof Error ? error.message : String(error),
+      });
+    } catch {}
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Failed to generate blog post' },
-      { status: 500 }
+      { error: error instanceof Error ? error.message : 'Failed to generate blog post', correlationId },
+      { status: 500, headers: { 'x-correlation-id': correlationId } }
     );
   }
 }

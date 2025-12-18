@@ -15,7 +15,7 @@ function getDatabase(): Database.Database {
   }
 
   if (!db) {
-    const sourceDbPath = path.join(process.cwd(), 'data', 'web44ai.db');
+    const sourceDbPath = process.env.BLOG_DB_PATH || path.join(process.cwd(), 'data', 'web44ai.db');
     
     // On Vercel serverless, the file system is read-only except for /tmp
     // SQLite requires write access for journaling even for read operations
@@ -140,6 +140,28 @@ function initDatabase() {
     } catch (e) {
       // Column already exists, ignore
     }
+
+    // Blog generation runs (observability / debugging / retries)
+    db.exec(`
+      CREATE TABLE IF NOT EXISTS blog_generation_runs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        correlation_id TEXT UNIQUE NOT NULL,
+        status TEXT NOT NULL, -- queued | generating_text | generating_images | saving | published | failed
+        stage TEXT, -- current stage name
+        request_json TEXT, -- input payload (redacted where needed)
+        result_json TEXT, -- output payload (preview, urls, etc)
+        error_code TEXT,
+        error_message TEXT,
+        retry_count INTEGER DEFAULT 0,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
+
+    db.exec(`
+      CREATE INDEX IF NOT EXISTS idx_blog_generation_runs_correlation
+      ON blog_generation_runs(correlation_id)
+    `);
 
     // Police stations table
     db.exec(`

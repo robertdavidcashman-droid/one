@@ -16,7 +16,9 @@ interface BlogPreview {
   imageUrls: string[];
   generatedWithAI?: boolean;
   aiImageGenerated?: boolean;
+  aiImageError?: string | null;
   aiStatus?: string;
+  correlationId?: string;
 }
 
 interface FormData {
@@ -226,6 +228,7 @@ export default function BlogGeneratorClient() {
           meta_description: preview.metaDescription,
           image: preview.image,
           schema: preview.schema,
+          correlationId: preview.correlationId || null,
         }),
       });
 
@@ -576,6 +579,16 @@ export default function BlogGeneratorClient() {
                       : 'bg-yellow-50 text-yellow-800 border border-yellow-200'
                   }`}>
                     <strong>🔍 Status:</strong> {preview.aiStatus}
+                    {preview.aiImageError && (
+                      <div className="mt-2">
+                        <strong>Image error:</strong> {preview.aiImageError}
+                      </div>
+                    )}
+                    {preview.correlationId && (
+                      <div className="mt-2 text-xs opacity-80">
+                        <strong>Correlation ID:</strong> {preview.correlationId}
+                      </div>
+                    )}
                   </div>
                 )}
 

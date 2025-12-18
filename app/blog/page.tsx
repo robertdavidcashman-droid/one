@@ -100,14 +100,25 @@ export default function BlogPage() {
                         className="block overflow-hidden relative aspect-[16/9] bg-gradient-to-br from-slate-100 to-slate-200 w-full"
                       >
                         {post.image ? (
-                          <Image
-                            src={post.image}
-                            alt={post.title || 'Blog post image'}
-                            fill
-                            loading="lazy"
-                            className="object-cover transform group-hover:scale-105 transition-transform duration-500 blog-card-image"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          />
+                          post.image.startsWith('data:') ? (
+                            // Next/Image doesn't reliably support large data URLs across configs.
+                            // Use a plain <img> for data URL images.
+                            <img
+                              src={post.image}
+                              alt={post.title || 'Blog post image'}
+                              className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 blog-card-image"
+                              loading="lazy"
+                            />
+                          ) : (
+                            <Image
+                              src={post.image}
+                              alt={post.title || 'Blog post image'}
+                              fill
+                              loading="lazy"
+                              className="object-cover transform group-hover:scale-105 transition-transform duration-500 blog-card-image"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                          )
                         ) : (
                           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 via-slate-100 to-slate-200">
                             <svg

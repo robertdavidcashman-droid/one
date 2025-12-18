@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import db from '@/lib/db';
 import { getAdminSession } from '@/lib/admin-auth';
+import { updateBlogGenerationRun } from '@/lib/blogGenerationRuns';
 
 export async function GET(request: NextRequest) {
   const session = await getAdminSession();
@@ -26,7 +27,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const { title, slug, content, excerpt, published, meta_title, meta_description, image, schema } = await request.json();
+    const { title, slug, content, excerpt, published, meta_title, meta_description, image, schema, correlationId } = await request.json();
 
     if (!title || !slug || !content) {
       return NextResponse.json(
@@ -59,6 +60,20 @@ export async function POST(request: NextRequest) {
     );
 
     const postId = Number(result.lastInsertRowid);
+
+    // Best-effort: mark the generation run as published (if this post was created from the generator UI).
+    if (correlationId && typeof correlationId === 'string') {
+      try {
+        updateBlogGenerationRun({
+          correlationId,
+          status: 'published',
+          stage: 'published',
+          resultJson: { postId, slug },
+        });
+      } catch {
+        // ignore
+      }
+    }
 
     return NextResponse.json({
       success: true,
