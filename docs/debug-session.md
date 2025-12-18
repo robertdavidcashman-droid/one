@@ -24,33 +24,31 @@ Branch: `cursor/blog-generator-deep-fix-d9d8`
   - Publishing should store the featured image and the blog list/detail pages should render it.
 
 - Actual (from code inspection; runtime reproduction still pending):
-  - `POST /api/admin/generate-blog` currently **does not call any image generation API**; it only handles uploaded images and external URLs.
-  - Frontend blog rendering currently **ignores the stored `blog_posts.image` column**, and instead derives `post.image` from the **first `<img>` tag in `content`**.
+  - `POST /api/admin/generate-blog` previously **did not call any image generation API**; it only handled uploaded images and external URLs.
+  - Frontend blog rendering previously **ignored the stored `blog_posts.image` column**, and instead derived `post.image` from the **first `<img>` tag in `content`**.
 
 ## Observed code-level issues (evidence)
 
-### 1) AI image generation path is missing
+### 1) AI image generation path was missing
 
 - UI offers `imageSource: 'ai'` and explicitly says “AI Generated (DALL-E 3)”.
-  - File: `components/BlogGeneratorClient.tsx` (dropdown includes `ai` option).
-- Server handler `app/api/admin/generate-blog/route.ts`:
-  - Uses `OPENAI_API_KEY` for text generation via `https://api.openai.com/v1/chat/completions`.
-  - **No call** to `https://api.openai.com/v1/images/generations` (or any image provider).
-  - The returned response payload also does not include a truthful `aiImageGenerated` flag.
+  - File: `components/BlogGeneratorClient.tsx`.
+- Server handler `app/api/admin/generate-blog/route.ts` previously:
+  - Used `OPENAI_API_KEY` for text generation via `https://api.openai.com/v1/chat/completions`.
+  - Had **no call** to `https://api.openai.com/v1/images/generations`.
 
-### 2) Stored featured image is not used by blog pages
+### 2) Stored featured image was not used by blog pages
 
 - Posts are stored with an `image` column in DB via `app/api/admin/posts/route.ts`.
-- But `lib/blog.ts:getPublishedBlogPosts()` does not SELECT `image` and instead sets `image: extractFirstImage(post.content)`.
-- `lib/blog.ts:getPostBySlug()` SELECTs `image` but then overwrites it with `image: extractFirstImage(post.content)`.
-- Result: even if publish stores `image`, the UI will show placeholder images unless the HTML content contains `<img ...>`.
+- But `lib/blog.ts:getPublishedBlogPosts()` did not select `image` and instead set `image: extractFirstImage(post.content)`.
+- `lib/blog.ts:getPostBySlug()` selected `image` but then overwrote it with `image: extractFirstImage(post.content)`.
 
 ## Fix instrumentation added (evidence)
 
 - Correlation ID:
-  - `POST /api/admin/generate-blog` now reads `x-correlation-id` / `x-request-id` or generates a UUID and returns it in the JSON response as `correlationId` and response header `x-correlation-id`.
+  - `POST /api/admin/generate-blog` reads `x-correlation-id` / `x-request-id` or generates an ID, returns it in JSON as `correlationId` and response header `x-correlation-id`.
 - Structured logs:
-  - `app/api/admin/generate-blog/route.ts` now emits JSON logs for stages: `received`, `validating_request`, `generating_text`, `generating_images`, `done`, `failed`.
+  - `app/api/admin/generate-blog/route.ts` emits JSON logs for stages: `received`, `validating_request`, `generating_text`, `generating_images`, `done`, `failed`.
 - DB “generation run” record:
   - New table `blog_generation_runs` is created by `lib/db.ts` init.
   - The generator endpoint creates/updates a row per correlationId.
@@ -63,35 +61,19 @@ Branch: `cursor/blog-generator-deep-fix-d9d8`
   - Used by both `lib/blog.ts` (read path) and `lib/db.ts` (read/write path).
   - Enables repeatable tests using a temp DB.
 
-## Reproduction plan (pending execution)
+## Manual “test data” seeding (ready to use)
 
-### Local run
+I seeded a published post into a disposable DB for manual UI testing:
 
-1. Install deps: `npm install`
-2. Start dev server: `npm run dev`
-3. Visit `/admin/login` and authenticate.
-4. Visit `/admin/blog-generator`.
-5. Generate with:
-   - Topic: `Test blog generator`
-   - Primary keyword: `test keyword`
-   - Image Source: `AI Generated (DALL-E 3)`
-6. Capture:
-   - Browser console logs
-   - Network request/response for `POST /api/admin/generate-blog`
-   - Server logs for the same request
-7. Publish, then verify:
-   - `POST /api/admin/posts` response
-   - DB row in `data/web44ai.db`
-   - `/blog/<slug>` returns 200 and shows featured image
+- DB: `/tmp/web44ai-manual.db`
+- Slug: `manual-test-1766066910310`
 
-### Correlation IDs / request IDs
+To see it render as a real page, start the dev server with the same DB:
 
-- To be added once instrumentation is in place.
+- `BLOG_DB_PATH=/tmp/web44ai-manual.db npm run dev`
+- Then open: `http://localhost:3000/blog/manual-test-1766066910310`
 
-### Notes
-
-- This repo uses SQLite (`data/web44ai.db`) and writes images to `public/blog-images/`.
-- In serverless environments (e.g. Vercel), runtime writes to the repo filesystem are not durable; this may be a production-only failure class for both DB writes and image writes.
+(You can also run `BLOG_DB_PATH=/tmp/web44ai-manual.db node scripts/seed-test-blog-post.js` to seed a new one.)
 
 ## How to inspect a specific generation run
 
