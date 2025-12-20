@@ -25,7 +25,7 @@ export default function AdminLoginPage() {
       const data = await res.json();
 
       if (res.ok) {
-        router.push('/admin/blog-generator');
+        router.push('/admin/wordpress-import');
       } else {
         setError(data.error || 'Login failed');
       }

@@ -27,8 +27,10 @@ interface Service {
   description: string | null;
 }
 
-export default function AdminDashboard() {
-  const [activeTab, setActiveTab] = useState<'posts' | 'stations' | 'services' | 'import' | 'enhance' | 'seo' | 'links' | 'sitemap'>('posts');
+type AdminTab = 'posts' | 'stations' | 'services' | 'import' | 'enhance' | 'seo' | 'links' | 'sitemap';
+
+export default function AdminDashboard({ initialTab = 'posts' }: { initialTab?: AdminTab }) {
+  const [activeTab, setActiveTab] = useState<AdminTab>(initialTab);
   const [posts, setPosts] = useState<Post[]>([]);
   const [stations, setStations] = useState<Station[]>([]);
   const [services, setServices] = useState<Service[]>([]);
