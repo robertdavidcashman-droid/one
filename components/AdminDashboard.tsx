@@ -138,6 +138,9 @@ export default function AdminDashboard() {
   };
 
   const handleLogout = () => {
+    // admin-token is httpOnly, so clear it via the logout endpoint
+    fetch('/api/admin/logout', { method: 'POST' }).catch(() => {});
+    // Also clear any legacy non-httpOnly token if present
     document.cookie = 'auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
     window.location.href = '/admin/login';
   };
