@@ -1,10 +1,9 @@
 import { jwtVerify } from 'jose';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { getJWTSecretBytes, isJWTSecretConfigured as isJWTSecretConfiguredFromEnv } from '@/lib/jwt-secret';
 
-const secret = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'fallback-secret-change-in-production'
-);
+const secret = getJWTSecretBytes();
 
 export interface AdminSession {
   role: string;
@@ -15,8 +14,7 @@ export interface AdminSession {
  * Check if JWT_SECRET is properly configured
  */
 export function isJWTSecretConfigured(): boolean {
-  const jwtSecret = process.env.JWT_SECRET;
-  return !!(jwtSecret && jwtSecret !== 'fallback-secret-change-in-production' && jwtSecret.length > 10);
+  return isJWTSecretConfiguredFromEnv();
 }
 
 /**
