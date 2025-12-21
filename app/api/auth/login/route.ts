@@ -2,10 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyUser } from '@/lib/auth';
 import { SignJWT } from 'jose';
 import bcrypt from 'bcryptjs';
+import { getJWTSecretBytes } from '@/lib/jwt-secret';
 
-const secret = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'your-secret-key-change-in-production'
-);
+const secret = getJWTSecretBytes();
 
 // Hardcoded admin user as fallback (for initial setup or if database unavailable)
 const HARDCODED_ADMIN = {

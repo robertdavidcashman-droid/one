@@ -2,11 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { SignJWT } from 'jose';
 import { cookies } from 'next/headers';
 import { verifyUser } from '@/lib/auth';
+import { getJWTSecretBytes } from '@/lib/jwt-secret';
 
 // JWT secret for signing tokens
-const secret = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'fallback-secret-change-in-production'
-);
+const secret = getJWTSecretBytes();
 
 export async function POST(request: NextRequest) {
   try {
