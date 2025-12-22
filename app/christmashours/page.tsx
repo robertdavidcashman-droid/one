@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Christmas & Bank Holiday Opening Hours | Police Station Agent",
   description: "We are OPEN extended hours throughout Christmas, Boxing Day, and New Year. Expert legal advice for police station interviews in Kent. Call 01732 247427.",
   alternates: {
-    canonical: "https://policestationagent.com/christmashours",
+    canonical: "https://criminaldefencekent.co.uk/christmashours",
   },
   openGraph: {
     title: "Christmas & Bank Holiday Opening Hours | Police Station Agent",
     description: "We are OPEN extended hours throughout Christmas, Boxing Day, and New Year. Expert legal advice for police station interviews in Kent. Call 01732 247427.",
-    url: "https://policestationagent.com/christmashours",
+    url: "https://criminaldefencekent.co.uk/christmashours",
     siteName: 'Police Station Agent',
     type: 'website',
   },

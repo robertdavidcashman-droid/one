@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Areas Covered - Coverage | Police Station Agent",
   description: "Criminal defence representation across Kent areas including Medway, East Kent, West Kent, North Kent, and Mid Kent. Information about police station coverage by area.",
   alternates: {
-    canonical: "https://policestationagent.com/coverage/areas",
+    canonical: "https://criminaldefencekent.co.uk/coverage/areas",
   },
 };
 
@@ -23,7 +23,7 @@ const AREAS = [
 ];
 
 export default function AreasPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   const breadcrumbItems = [
     { name: 'Home', url: siteUrl },
     { name: 'Coverage', url: `${siteUrl}/coverage` },

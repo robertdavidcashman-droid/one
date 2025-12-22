@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights",
   description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available during extended hours. Call 01732 247427.",
   alternates: {
-    canonical: "https://policestationagent.com/kent-police-stations",
+    canonical: "https://criminaldefencekent.co.uk/kent-police-stations",
   },
   openGraph: {
     title: "Kent Police Stations Guide 2025 | All Custody Suites & Your Rights",
     description: "Complete guide to all Kent police custody suites. Addresses, opening hours, areas covered. Know your rights when detained. FREE legal advice available during extended hours. Call 01732 247427.",
-    url: "https://policestationagent.com/kent-police-stations",
+    url: "https://criminaldefencekent.co.uk/kent-police-stations",
     siteName: 'Police Station Agent',
     type: 'website',
   },

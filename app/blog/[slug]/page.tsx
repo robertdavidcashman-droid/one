@@ -100,7 +100,7 @@ export default function BlogPostPage({ params }: PageProps) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'PoliceStationAgent.com',
+      name: 'CriminalDefenceKent.co.uk',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`,

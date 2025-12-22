@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: 'Booking In Procedure in Kent | What Happens at the Police Station',
   description: 'Understanding the booking in procedure at Kent police stations. Learn what happens when you arrive, your rights, and what to expect during the custody process.',
   alternates: {
-    canonical: 'https://policestationagent.com/booking-in-procedure-in-kent',
+    canonical: 'https://criminaldefencekent.co.uk/booking-in-procedure-in-kent',
   },
   openGraph: {
     title: 'Booking In Procedure in Kent | What Happens at the Police Station',
     description: 'Understanding the booking in procedure at Kent police stations. Learn what happens when you arrive and your rights.',
-    url: 'https://policestationagent.com/booking-in-procedure-in-kent',
+    url: 'https://criminaldefencekent.co.uk/booking-in-procedure-in-kent',
     siteName: 'Police Station Agent',
     type: 'website',
   },

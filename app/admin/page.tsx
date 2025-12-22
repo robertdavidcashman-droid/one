@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Admin | Police Station Agent",
   description: "Police Station Agent services and information",
   alternates: {
-    canonical: "https://policestationagent.com/admin",
+    canonical: "https://criminaldefencekent.co.uk/admin",
   },
   openGraph: {
     title: "Admin | Police Station Agent",
     description: "Police Station Agent services and information",
     type: 'website',
-    url: "https://policestationagent.com/admin",
+    url: "https://criminaldefencekent.co.uk/admin",
   },
   robots: {
     index: false,

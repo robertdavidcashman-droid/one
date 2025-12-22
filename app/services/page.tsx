@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Police Station Representation Services Kent | Free Legal Aid | 24/7",
     description: "Expert police station representation across Kent. Free legal aid advice for suspects, reliable agent cover for solicitors. Available 24/7 including weekends.",
-    url: "https://policestationagent.com/services",
+    url: "https://criminaldefencekent.co.uk/services",
     siteName: 'Police Station Agent',
     type: 'website',
   },

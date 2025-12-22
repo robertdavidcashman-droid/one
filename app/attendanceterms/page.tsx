@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Comprehensive terms and conditions for solicitor agency instructions.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/attendanceterms",
+    canonical: "https://criminaldefencekent.co.uk/attendanceterms",
   },
   openGraph: {
     title: "Agency Terms of Attendance | Police Station Agent",
     description: "Comprehensive terms and conditions for solicitor agency instructions.",
     type: 'website',
-    url: "https://policestationagent.com/attendanceterms",
+    url: "https://criminaldefencekent.co.uk/attendanceterms",
   },
 };
 

@@ -22,9 +22,7 @@ export const revalidate = 0;
 export async function GET() {
   try {
     const posts = getPostSummaries();
-    
-    console.log(`[API /api/blog/posts] Returning ${posts.length} posts`);
-    
+
     return NextResponse.json({ 
       posts,
       total: posts.length,

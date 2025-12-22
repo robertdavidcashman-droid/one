@@ -191,7 +191,7 @@ export async function POST(request: NextRequest) {
       // Don't fail - database save succeeded
     }
   } else {
-    console.log('[posts/route] GitHub not configured, skipping GitHub save');
+    // GitHub persistence is optional; avoid noisy logs in production.
   }
 
   // 5. Return success

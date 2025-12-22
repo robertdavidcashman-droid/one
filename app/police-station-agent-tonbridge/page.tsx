@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Police Station Duty Solicitor Tonbridge | Duty Solicitor Representation Kent | FREE Legal Advice",
     description: "Police Station Duty Solicitor Tonbridge - Expert police station representation by qualified solicitor. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Call 01732 247427.",
-    url: "https://policestationagent.com/police-station-agent-tonbridge",
+    url: "https://criminaldefencekent.co.uk/police-station-agent-tonbridge",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

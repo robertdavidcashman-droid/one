@@ -100,7 +100,7 @@ async function generateAIContent(formData: {
   // Build content prompt
   const contentPrompt = `You are an expert legal content writer specialising in UK criminal law, specifically police station representation and PACE 1984 rights.
 
-Write a comprehensive, SEO-optimized blog article for PoliceStationAgent.com about:
+Write a comprehensive, SEO-optimized blog article for CriminalDefenceKent.co.uk about:
 
 **Topic:** ${topic}
 **Primary Keyword:** ${primaryKeyword}
@@ -357,7 +357,7 @@ function generateAdvertBlock(): string {
   return `
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
   <h3 class="text-xl font-bold text-slate-900 mb-4">
-    PoliceStationAgent.com - Expert Police Station Representation
+    CriminalDefenceKent.co.uk - Expert Police Station Representation
   </h3>
   
   <p class="text-slate-700 mb-4">

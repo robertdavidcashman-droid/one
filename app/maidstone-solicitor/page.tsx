@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Maidstone Police Station Solicitor | ME15 | FREE Legal Aid | Call 01732 247427",
   description: "Arrested in Maidstone? Police station solicitor 25 minutes away. FREE legal aid representation at Maidstone Police Station (ME15). Available during extended hours - call now.",
   alternates: {
-    canonical: "https://policestationagent.com/maidstone-solicitor",
+    canonical: "https://criminaldefencekent.co.uk/maidstone-solicitor",
   },
   openGraph: {
     title: "Maidstone Police Station Solicitor | ME15 | FREE Legal Aid | Call 01732 247427",
     description: "Arrested in Maidstone? Police station solicitor 25 minutes away. FREE legal aid representation at Maidstone Police Station (ME15). Available during extended hours - call now.",
-    url: "https://policestationagent.com/maidstone-solicitor",
+    url: "https://criminaldefencekent.co.uk/maidstone-solicitor",
     siteName: 'Police Station Agent',
     type: 'website',
   },
