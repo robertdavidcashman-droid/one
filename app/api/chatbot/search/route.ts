@@ -345,7 +345,7 @@ export async function POST(request: NextRequest) {
               ).join('\n')
             : '';
 
-          const systemPrompt = `You are a helpful legal assistant for Police Station Agent (policestationagent.com), a Kent police station duty solicitor service.
+          const systemPrompt = `You are a helpful legal assistant for Police Station Agent (criminaldefencekent.co.uk), a Kent police station duty solicitor service.
 
 CRITICAL RULES:
 1. Answer questions based STRICTLY on the provided context from our website ONLY

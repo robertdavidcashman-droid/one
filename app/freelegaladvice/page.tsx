@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Did you know police station advice is 100% free? Legal Aid covers representation for all suspects interviewed by police. No means testing.",
   keywords: undefined,
   alternates: {
-    canonical: "https://policestationagent.com/freelegaladvice",
+    canonical: "https://criminaldefencekent.co.uk/freelegaladvice",
   },
   openGraph: {
     title: "Free Legal Advice at Police Station | Legal Aid Explained",
     description: "Did you know police station advice is 100% free? Legal Aid covers representation for all suspects interviewed by police. No means testing.",
     type: 'website',
-    url: "https://policestationagent.com/freelegaladvice",
+    url: "https://criminaldefencekent.co.uk/freelegaladvice",
   },
 };
 

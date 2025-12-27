@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Extended Hours Police Station Representation | Police Station Agent",
   description: "Professional legal representation available when others aren't - evenings, weekends, and bank holidays. Available during extended hours across Kent.",
   alternates: {
-    canonical: "https://policestationagent.com/extendedhours",
+    canonical: "https://criminaldefencekent.co.uk/extendedhours",
   },
   openGraph: {
     title: "Extended Hours Police Station Representation | Police Station Agent",
     description: "Professional legal representation available when others aren't - evenings, weekends, and bank holidays. Available during extended hours across Kent.",
     type: 'website',
-    url: "https://policestationagent.com/extendedhours",
+    url: "https://criminaldefencekent.co.uk/extendedhours",
     siteName: 'Police Station Agent',
   },
 };

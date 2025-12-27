@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Police Stations - Coverage | Police Station Agent",
   description: "Information about police stations covered across Kent and Medway, including 24-hour custody suites and voluntary interview stations.",
   alternates: {
-    canonical: "https://policestationagent.com/coverage/police-stations",
+    canonical: "https://criminaldefencekent.co.uk/coverage/police-stations",
   },
 };
 
@@ -30,7 +30,7 @@ const STATIONS = [
 ];
 
 export default function PoliceStationsPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   const breadcrumbItems = [
     { name: 'Home', url: siteUrl },
     { name: 'Coverage', url: `${siteUrl}/coverage` },

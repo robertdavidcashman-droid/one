@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Duty Solicitor Kent extended hours | 01732 247427 | FREE Police Station Advice",
   description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 21,000+ cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available during extended hours.",
   alternates: {
-    canonical: "https://policestationagent.com",
+    canonical: "https://criminaldefencekent.co.uk",
   },
   openGraph: {
     title: "Duty Solicitor Kent extended hours | 01732 247427 | FREE Police Station Advice",
     description: "Police interview? Voluntary attendance? Call Robert Cashman - Accredited Duty Solicitor, 35 years experience & 21,000+ cases. FREE legal advice at Medway, Canterbury, Maidstone, Gravesend. Available during extended hours.",
     type: 'website',
-    url: "https://policestationagent.com",
+    url: "https://criminaldefencekent.co.uk",
   },
 };
 

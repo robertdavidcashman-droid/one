@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Voluntary Police Interview Solicitor | Police Station Agent",
   description: "Invited for a voluntary interview? It is not an informal chat. You need a solicitor. We provide free, expert representation for voluntary interviews in Kent.",
   alternates: {
-    canonical: "https://policestationagent.com/servicesvoluntaryinterviews",
+    canonical: "https://criminaldefencekent.co.uk/servicesvoluntaryinterviews",
   },
   openGraph: {
     title: "Voluntary Police Interview Solicitor | Police Station Agent",
     description: "Invited for a voluntary interview? It is not an informal chat. You need a solicitor. We provide free, expert representation for voluntary interviews in Kent.",
-    url: "https://policestationagent.com/servicesvoluntaryinterviews",
+    url: "https://criminaldefencekent.co.uk/servicesvoluntaryinterviews",
     siteName: 'Police Station Agent',
     type: 'website',
   },

@@ -231,7 +231,7 @@ export default function BlogGeneratorClient() {
           <div>
             <h1 className="text-3xl font-bold text-gray-900">Blog Generator</h1>
             <p className="mt-1 text-sm text-gray-600">
-              Create SEO-optimized blog posts for PoliceStationAgent.com
+              Create SEO-optimized blog posts for CriminalDefenceKent.co.uk
             </p>
           </div>
           <button

@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "FAQ - Frequently Asked Questions | Police Station Agent",
   description: "Comprehensive answers about police station representation in Kent. What we do and don't do, legal aid information, and how to get urgent help. Available during extended hours.",
   alternates: {
-    canonical: "https://policestationagent.com/faq",
+    canonical: "https://criminaldefencekent.co.uk/faq",
   },
   openGraph: {
     title: "FAQ - Frequently Asked Questions | Police Station Agent",
     description: "Comprehensive answers about police station representation in Kent. What we do and don't do, legal aid information, and how to get urgent help. Available during extended hours.",
     type: 'website',
-    url: "https://policestationagent.com/faq",
+    url: "https://criminaldefencekent.co.uk/faq",
   },
 };
 

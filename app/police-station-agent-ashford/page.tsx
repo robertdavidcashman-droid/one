@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Police Station Duty Solicitor Ashford | Duty Solicitor Representation Kent | FREE Legal Advice",
     description: "Police Station Duty Solicitor Ashford - Expert police station representation by qualified solicitor. FREE legal advice under Legal Aid. Accredited Duty Solicitor & Higher Court Advocate. Call 01732 247427.",
-    url: "https://policestationagent.com/police-station-agent-ashford",
+    url: "https://criminaldefencekent.co.uk/police-station-agent-ashford",
     siteName: 'Criminal Defence Kent',
     type: 'website',
   },

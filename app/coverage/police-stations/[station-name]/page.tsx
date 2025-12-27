@@ -132,7 +132,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   
   const custodyDescription = station.custodyType === '24-hour Custody' 
     ? '24-hour custody facility' 
@@ -189,7 +189,7 @@ export default function PoliceStationPage({ params }: PageProps) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
   const custodyExplanation = getCustodyExplanation(station.custodyType);
   const areaLink = getAreaLink(station.areaCovered);
 

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "What Is A Police Station Rep? | Kent | FREE extended hours",
   description: "Learn about police station rep (police station representative) services in Kent. FREE legal advice extended hours at all Kent custody suites. Accredited duty solicitor Robert Cashman.",
   alternates: {
-    canonical: "https://policestationagent.com/what-is-a-police-station-rep",
+    canonical: "https://criminaldefencekent.co.uk/what-is-a-police-station-rep",
   },
   openGraph: {
     title: "What Is A Police Station Rep? | Police Station Agent",
     description: "Learn about police station representatives and their crucial role in protecting your rights during police interviews in Kent.",
-    url: "https://policestationagent.com/what-is-a-police-station-rep",
+    url: "https://criminaldefencekent.co.uk/what-is-a-police-station-rep",
     siteName: 'Police Station Agent',
     type: 'website',
   },

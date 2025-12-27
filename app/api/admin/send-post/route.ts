@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Post not found' }, { status: 404 });
     }
     
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://policestationagent.com';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://criminaldefencekent.co.uk';
     const postUrl = `${siteUrl}/blog/${post.slug}`;
     
     // Generate shareable content
@@ -75,7 +75,7 @@ ${shareContent.description}
 Read the full article: ${postUrl}
 
 ---
-PoliceStationAgent.com
+CriminalDefenceKent.co.uk
 Qualified Duty Solicitor & Higher Court Advocate
 Expert Police Station Representation in Kent
       `.trim();

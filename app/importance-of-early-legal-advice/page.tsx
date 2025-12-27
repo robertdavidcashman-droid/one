@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: 'Importance of Early Legal Advice | Why You Need a Solicitor Immediately',
   description: 'Why early legal advice is crucial when dealing with the police. Learn how getting a solicitor immediately can protect your rights and improve your case outcome.',
   alternates: {
-    canonical: 'https://policestationagent.com/importance-of-early-legal-advice',
+    canonical: 'https://criminaldefencekent.co.uk/importance-of-early-legal-advice',
   },
   openGraph: {
     title: 'Importance of Early Legal Advice | Why You Need a Solicitor Immediately',
     description: 'Why early legal advice is crucial when dealing with the police. Learn how getting a solicitor immediately can protect your rights.',
-    url: 'https://policestationagent.com/importance-of-early-legal-advice',
+    url: 'https://criminaldefencekent.co.uk/importance-of-early-legal-advice',
     siteName: 'Police Station Agent',
     type: 'website',
   },

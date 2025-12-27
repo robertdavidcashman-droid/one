@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: "Opening Hours | Police Station Representation Kent | extended hours Available",
   description: "Police station representation available during extended hours across Kent. Extended hours service for arrests and interviews. Weekdays 9am-late, weekends and bank holidays on call. See Christmas hours for holiday availability.",
   alternates: {
-    canonical: "https://policestationagent.com/hours",
+    canonical: "https://criminaldefencekent.co.uk/hours",
   },
   openGraph: {
     title: "Opening Hours | Police Station Representation Kent | extended hours Available",
     description: "Police station representation available during extended hours across Kent. Extended hours service for arrests and interviews.",
     type: 'website',
-    url: "https://policestationagent.com/hours",
+    url: "https://criminaldefencekent.co.uk/hours",
     siteName: 'Police Station Agent',
   },
 };
