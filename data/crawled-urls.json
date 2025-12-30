@@ -1,7 +1,7 @@
 {
   "startUrl": "https://policestationrepukdirectory.com/",
-  "crawledAt": "2025-12-30T13:31:32.912Z",
-  "totalUniqueUrls": 22,
+  "crawledAt": "2025-12-30T15:33:31.312Z",
+  "totalUniqueUrls": 103,
   "urls": [
     {
       "url": "https://policestationrepukdirectory.com/",
@@ -26,9 +26,139 @@
       "h1": "Find Local Businesses Near You!"
     },
     {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/avon-and-somerset-constabulary",
+      "title": "Avon and Somerset Constabulary",
+      "h1": "Avon and Somerset Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/bedfordshire-police",
+      "title": "Bedfordshire Police",
+      "h1": "Bedfordshire Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/cambridgeshire-constabulary",
+      "title": "Cambridgeshire Constabulary",
+      "h1": "Cambridgeshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/cheshire-constabulary",
+      "title": "Cheshire Constabulary",
+      "h1": "Cheshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/city-of-london-police",
+      "title": "City of London Police",
+      "h1": "City of London Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/cleveland-police",
+      "title": "Cleveland Police",
+      "h1": "Cleveland Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/cumbria-constabulary",
+      "title": "Cumbria Constabulary",
+      "h1": "Cumbria Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/derbyshire-constabulary",
+      "title": "Derbyshire Constabulary",
+      "h1": "Derbyshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/devon-cornwall-police",
+      "title": "Devon & Cornwall Police",
+      "h1": "Devon & Cornwall Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/dorset-police",
+      "title": "Dorset Police",
+      "h1": "Dorset Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/durham-constabulary",
+      "title": "Durham Constabulary",
+      "h1": "Durham Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/dyfed-powys-police",
+      "title": "Dyfed-Powys Police",
+      "h1": "Dyfed-Powys Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/chamber-solicitor-adverts/search",
+      "title": "Search Chamber/Solicitor Adverts",
+      "h1": "Browse By Category"
+    },
+    {
       "url": "https://policestationrepukdirectory.com/classified",
       "title": "Classified",
       "h1": "Find Local Businesses Near You!"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/avon-and-somerset-constabulary",
+      "title": "Avon and Somerset Constabulary",
+      "h1": "Avon and Somerset Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/bedfordshire-police",
+      "title": "Bedfordshire Police",
+      "h1": "Bedfordshire Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/cambridgeshire-constabulary",
+      "title": "Cambridgeshire Constabulary",
+      "h1": "Cambridgeshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/cheshire-constabulary",
+      "title": "Cheshire Constabulary",
+      "h1": "Cheshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/city-of-london-police",
+      "title": "City of London Police",
+      "h1": "City of London Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/cleveland-police",
+      "title": "Cleveland Police",
+      "h1": "Cleveland Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/cumbria-constabulary",
+      "title": "Cumbria Constabulary",
+      "h1": "Cumbria Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/derbyshire-constabulary",
+      "title": "Derbyshire Constabulary",
+      "h1": "Derbyshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/devon-cornwall-police",
+      "title": "Devon & Cornwall Police",
+      "h1": "Devon & Cornwall Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/dorset-police",
+      "title": "Dorset Police",
+      "h1": "Dorset Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/durham-constabulary",
+      "title": "Durham Constabulary",
+      "h1": "Durham Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/dyfed-powys-police",
+      "title": "Dyfed-Powys Police",
+      "h1": "Dyfed-Powys Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/classified/search",
+      "title": "Search Classified",
+      "h1": "Browse By Category"
     },
     {
       "url": "https://policestationrepukdirectory.com/contact",
@@ -38,6 +168,71 @@
       "url": "https://policestationrepukdirectory.com/job-adverts",
       "title": "Job Adverts",
       "h1": "Find Local Businesses Near You!"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/avon-and-somerset-constabulary",
+      "title": "Avon and Somerset Constabulary",
+      "h1": "Avon and Somerset Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/bedfordshire-police",
+      "title": "Bedfordshire Police",
+      "h1": "Bedfordshire Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/cambridgeshire-constabulary",
+      "title": "Cambridgeshire Constabulary",
+      "h1": "Cambridgeshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/cheshire-constabulary",
+      "title": "Cheshire Constabulary",
+      "h1": "Cheshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/city-of-london-police",
+      "title": "City of London Police",
+      "h1": "City of London Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/cleveland-police",
+      "title": "Cleveland Police",
+      "h1": "Cleveland Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/cumbria-constabulary",
+      "title": "Cumbria Constabulary",
+      "h1": "Cumbria Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/derbyshire-constabulary",
+      "title": "Derbyshire Constabulary",
+      "h1": "Derbyshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/devon-cornwall-police",
+      "title": "Devon & Cornwall Police",
+      "h1": "Devon & Cornwall Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/dorset-police",
+      "title": "Dorset Police",
+      "h1": "Dorset Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/durham-constabulary",
+      "title": "Durham Constabulary",
+      "h1": "Durham Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/dyfed-powys-police",
+      "title": "Dyfed-Powys Police",
+      "h1": "Dyfed-Powys Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/job-adverts/search",
+      "title": "Search Job Adverts",
+      "h1": "Browse By Category"
     },
     {
       "url": "https://policestationrepukdirectory.com/legal-adverts",
@@ -60,6 +255,56 @@
       "h1": "Cambridgeshire Constabulary"
     },
     {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/cheshire-constabulary",
+      "title": "Cheshire Constabulary",
+      "h1": "Cheshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/city-of-london-police",
+      "title": "City of London Police",
+      "h1": "City of London Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/cleveland-police",
+      "title": "Cleveland Police",
+      "h1": "Cleveland Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/cumbria-constabulary",
+      "title": "Cumbria Constabulary",
+      "h1": "Cumbria Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/derbyshire-constabulary",
+      "title": "Derbyshire Constabulary",
+      "h1": "Derbyshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/devon-cornwall-police",
+      "title": "Devon & Cornwall Police",
+      "h1": "Devon & Cornwall Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/dorset-police",
+      "title": "Dorset Police",
+      "h1": "Dorset Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/durham-constabulary",
+      "title": "Durham Constabulary",
+      "h1": "Durham Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/dyfed-powys-police",
+      "title": "Dyfed-Powys Police",
+      "h1": "Dyfed-Powys Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/legal-adverts/search",
+      "title": "Search Legal Adverts",
+      "h1": "Browse By Category"
+    },
+    {
       "url": "https://policestationrepukdirectory.com/magistrates-court-advocates",
       "title": "Magistrates Court Advocates",
       "h1": "Find Local Businesses Near You!"
@@ -80,9 +325,79 @@
       "h1": "Ms"
     },
     {
+      "url": "https://policestationrepukdirectory.com/magistrates-court-advocates/search",
+      "title": "Search Magistrates Court Advocates",
+      "h1": "Browse By Category"
+    },
+    {
       "url": "https://policestationrepukdirectory.com/personal-pages",
       "title": "Personal Pages",
       "h1": "Find Local Businesses Near You!"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/avon-and-somerset-constabulary",
+      "title": "Avon and Somerset Constabulary",
+      "h1": "Avon and Somerset Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/bedfordshire-police",
+      "title": "Bedfordshire Police",
+      "h1": "Bedfordshire Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/cambridgeshire-constabulary",
+      "title": "Cambridgeshire Constabulary",
+      "h1": "Cambridgeshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/cheshire-constabulary",
+      "title": "Cheshire Constabulary",
+      "h1": "Cheshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/city-of-london-police",
+      "title": "City of London Police",
+      "h1": "City of London Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/cleveland-police",
+      "title": "Cleveland Police",
+      "h1": "Cleveland Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/cumbria-constabulary",
+      "title": "Cumbria Constabulary",
+      "h1": "Cumbria Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/derbyshire-constabulary",
+      "title": "Derbyshire Constabulary",
+      "h1": "Derbyshire Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/devon-cornwall-police",
+      "title": "Devon & Cornwall Police",
+      "h1": "Devon & Cornwall Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/dorset-police",
+      "title": "Dorset Police",
+      "h1": "Dorset Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/durham-constabulary",
+      "title": "Durham Constabulary",
+      "h1": "Durham Constabulary"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/dyfed-powys-police",
+      "title": "Dyfed-Powys Police",
+      "h1": "Dyfed-Powys Police"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/personal-pages/search",
+      "title": "Search Personal Pages",
+      "h1": "Browse By Category"
     },
     {
       "url": "https://policestationrepukdirectory.com/police-station-representatives",
@@ -95,9 +410,79 @@
       "h1": "Aaron Steel"
     },
     {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/afia",
+      "title": "Afia",
+      "h1": "Afia"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/ankush",
+      "title": "Ankush",
+      "h1": "Ankush"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/benjamin-schiller",
+      "title": "Benjamin Schiller",
+      "h1": "Benjamin Schiller"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/callum-starr",
+      "title": "Callum Starr",
+      "h1": "Callum Starr"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/caroline-downs",
+      "title": "Caroline Downs",
+      "h1": "Caroline Downs"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/chelsea-leonard",
+      "title": "Chelsea Leonard",
+      "h1": "Chelsea Leonard"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/dennise-denton",
+      "title": "Dennise Denton",
+      "h1": "Dennise Denton"
+    },
+    {
       "url": "https://policestationrepukdirectory.com/police-station-representatives/jonathan-salter",
       "title": "Jonathan Salter",
       "h1": "Jonathan Salter"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/khan",
+      "title": "Sadia Khan",
+      "h1": "Sadia Khan"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/m-charana-sanjeewa",
+      "title": "M Charana Sanjeewa",
+      "h1": "M Charana Sanjeewa"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/michael-jones",
+      "title": "Michael Jones",
+      "h1": "Michael Jones"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/mohammad-islam",
+      "title": "Mohammad Islam",
+      "h1": "Mohammad Islam"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/mohammed-qasim",
+      "title": "Mohammed Qasim",
+      "h1": "Mohammed Qasim"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/mr-chinyere-inyama",
+      "title": "Mr Chinyere Inyama",
+      "h1": "Mr Chinyere Inyama"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/muhammed-ahmed",
+      "title": "Muhammed Ahmed",
+      "h1": "Muhammed Ahmed"
     },
     {
       "url": "https://policestationrepukdirectory.com/police-station-representatives/police-station-representatives",
@@ -105,9 +490,29 @@
       "h1": "Police Station Representatives"
     },
     {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/qasimm97",
+      "title": "Mohammed Qasim",
+      "h1": "Mohammed Qasim"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/robert-cashman",
+      "title": "Robert Cashman",
+      "h1": "Robert Cashman"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/search",
+      "title": "Search Police Station Representatives",
+      "h1": "Browse By Category"
+    },
+    {
       "url": "https://policestationrepukdirectory.com/police-station-representatives/usman-iqbal",
       "title": "Usman iqbal",
       "h1": "Usman iqbal"
+    },
+    {
+      "url": "https://policestationrepukdirectory.com/police-station-representatives/victoria-kopczak",
+      "title": "Victoria Kopczak",
+      "h1": "Victoria Kopczak"
     }
   ]
 }
