@@ -205,7 +205,7 @@ async function crawl() {
   const workers = Array.from({ length: args.concurrency }, () => worker());
   await Promise.all(workers);
 
-  if (args.maxPages > 0) {
+  if (args.maxPages > 0 && visited.size >= args.maxPages) {
     console.log(`Stopped after reaching max-pages=${args.maxPages}`);
   }
 

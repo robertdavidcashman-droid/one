@@ -241,8 +241,7 @@ async function crawl(): Promise<void> {
   const workers = Array.from({ length: args.concurrency }, (_, i) => worker(i + 1));
   await Promise.all(workers);
 
-  // Drain any remaining queued items if workers ended due to maxPages
-  if (args.maxPages > 0) {
+  if (args.maxPages > 0 && visited.size >= args.maxPages) {
     console.log(`Stopped after reaching max-pages=${args.maxPages}`);
   }
 
