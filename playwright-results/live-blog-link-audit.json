@@ -1,250 +1,210 @@
 {
   "siteOrigin": "https://policestationagent.com",
-  "crawledAt": "2025-12-30T12:01:17.645Z",
+  "crawledAt": "2025-12-30T12:09:52.494Z",
   "blogApi": "https://policestationagent.com/api/blog/posts",
   "postsFromApi": 68,
   "slugsCrawled": 68,
   "pageStatusCounts": {
     "200": 68
   },
-  "internalTargetsValidated": 186,
-  "brokenInternal": {
-    "http_404:/criminaldefencekent": 1,
-    "http_404:/duty-solicitor": 1,
-    "http_404:/voluntary-interview": 1,
-    "http_404:/voluntary-police-interview-solicitor": 1
-  },
+  "internalTargetsValidated": 182,
+  "brokenInternal": {},
   "redirectsInternal": {
     "/ -> https://www.policestationagent.com/": 1,
+    "/accessibility -> https://www.policestationagent.com/accessibility": 1,
+    "/adverse-inference -> https://www.policestationagent.com/adverse-inference": 1,
     "/about -> https://www.policestationagent.com/about": 1,
     "/accreditedpolicerep -> https://www.policestationagent.com/accreditedpolicerep": 1,
-    "/adverse-inference -> https://www.policestationagent.com/adverse-inference": 1,
-    "/accessibility -> https://www.policestationagent.com/accessibility": 1,
-    "/after-a-police-interview -> https://www.policestationagent.com/after-a-police-interview": 1,
     "/admin -> https://www.policestationagent.com/admin/login": 1,
+    "/arrested-at-police-station -> https://www.policestationagent.com/arrested-at-police-station": 1,
+    "/areas -> https://www.policestationagent.com/areas": 1,
     "/appropriate-adult -> https://www.policestationagent.com/appropriate-adult": 1,
     "/afterapoliceinterview -> https://www.policestationagent.com/after-a-police-interview": 1,
-    "/areas -> https://www.policestationagent.com/areas": 1,
-    "/arrested-at-police-station -> https://www.policestationagent.com/arrested-at-police-station": 1,
-    "/arrestednow -> https://www.policestationagent.com/arrestednow": 1,
+    "/after-a-police-interview -> https://www.policestationagent.com/after-a-police-interview": 1,
     "/arrested-what-to-do -> https://www.policestationagent.com/arrested-what-to-do": 1,
     "/arrival-times-delays -> https://www.policestationagent.com/arrival-times-delays": 1,
-    "/article-interview-under-caution -> https://www.policestationagent.com/article-interview-under-caution": 1,
-    "/article-loved-one-arrested-kent -> https://www.policestationagent.com/article-loved-one-arrested-kent": 1,
     "/article-police-caution-before-interview -> https://www.policestationagent.com/article-police-caution-before-interview": 1,
-    "/ashford-police-station -> https://www.policestationagent.com/ashford-police-station": 1,
+    "/article-interview-under-caution -> https://www.policestationagent.com/article-interview-under-caution": 1,
     "/article-rights-kent-police-station-2025 -> https://www.policestationagent.com/article-rights-kent-police-station-2025": 1,
+    "/article-loved-one-arrested-kent -> https://www.policestationagent.com/article-loved-one-arrested-kent": 1,
+    "/ashford-police-station -> https://www.policestationagent.com/ashford-police-station": 1,
+    "/blog -> https://www.policestationagent.com/blog": 1,
     "/ashford-psa-station -> https://www.policestationagent.com/ashford-psa-station": 1,
     "/ashford-solicitor -> https://www.policestationagent.com/ashford-solicitor": 1,
+    "/arrestednow -> https://www.policestationagent.com/arrestednow": 1,
     "/attendanceterms -> https://www.policestationagent.com/attendanceterms": 1,
-    "/blog -> https://www.policestationagent.com/blog": 1,
-    "/blog/have-to-attend-a-police-station-part-2-1 -> https://www.policestationagent.com/blog/have-to-attend-a-police-station-part-2-1": 1,
     "/blog/help-the-police-have-contacted-me-1 -> https://www.policestationagent.com/blog/help-the-police-have-contacted-me-1": 1,
-    "/bluewater-police-station -> https://www.policestationagent.com/bluewater-police-station": 1,
-    "/blog/police-station-rep-disclosure-1 -> https://www.policestationagent.com/blog/police-station-rep-disclosure-1": 1,
-    "/bluewater-psa-station -> https://www.policestationagent.com/bluewater-psa-station": 1,
     "/blog/welcome-to-our-blog -> https://www.policestationagent.com/blog/welcome-to-our-blog": 1,
+    "/blog/police-station-rep-disclosure-1 -> https://www.policestationagent.com/blog/police-station-rep-disclosure-1": 1,
+    "/blog/have-to-attend-a-police-station-part-2-1 -> https://www.policestationagent.com/blog/have-to-attend-a-police-station-part-2-1": 1,
+    "/bluewater-police-station -> https://www.policestationagent.com/bluewater-police-station": 1,
+    "/bluewater-psa-station -> https://www.policestationagent.com/bluewater-psa-station": 1,
     "/bluewater-solicitor -> https://www.policestationagent.com/bluewater-solicitor": 1,
-    "/booking-in-procedure-in-kent -> https://www.policestationagent.com/booking-in-procedure-in-kent": 1,
     "/bromley-solicitor -> https://www.policestationagent.com/bromley-solicitor": 1,
-    "/can-police-take-my-phone -> https://www.policestationagent.com/can-police-take-my-phone": 1,
-    "/can-we-help -> https://www.policestationagent.com/canwehelp": 1,
+    "/booking-in-procedure-in-kent -> https://www.policestationagent.com/booking-in-procedure-in-kent": 1,
     "/canterbury-police-station -> https://www.policestationagent.com/canterbury-police-station": 1,
-    "/canterbury-solicitor -> https://www.policestationagent.com/canterbury-solicitor": 1,
+    "/can-police-take-my-phone -> https://www.policestationagent.com/can-police-take-my-phone": 1,
     "/canterbury-psa-station -> https://www.policestationagent.com/canterbury-psa-station": 1,
     "/canwehelp -> https://www.policestationagent.com/canwehelp": 1,
-    "/case-status -> https://www.policestationagent.com/case-status": 1,
-    "/chatham-solicitor -> https://www.policestationagent.com/chatham-solicitor": 1,
-    "/christmashours -> https://www.policestationagent.com/christmashours": 1,
+    "/can-we-help -> https://www.policestationagent.com/canwehelp": 1,
+    "/canterbury-solicitor -> https://www.policestationagent.com/canterbury-solicitor": 1,
     "/contact -> https://www.policestationagent.com/contact": 1,
+    "/christmashours -> https://www.policestationagent.com/christmashours": 1,
+    "/chatham-solicitor -> https://www.policestationagent.com/chatham-solicitor": 1,
+    "/case-status -> https://www.policestationagent.com/case-status": 1,
+    "/coldharbour-police-station -> https://www.policestationagent.com/coldharbour-police-station": 1,
     "/complaints -> https://www.policestationagent.com/complaints": 1,
     "/cookies -> https://www.policestationagent.com/cookies": 1,
-    "/coldharbour-police-station -> https://www.policestationagent.com/coldharbour-police-station": 1,
     "/courtrepresentation -> https://www.policestationagent.com/courtrepresentation": 1,
-    "/coverage -> https://www.policestationagent.com/coverage": 1,
     "/court-representation -> https://www.policestationagent.com/courtrepresentation": 1,
-    "/deal-solicitor -> https://www.policestationagent.com/deal-solicitor": 1,
     "/custody-time-limits -> https://www.policestationagent.com/custody-time-limits": 1,
+    "/coverage -> https://www.policestationagent.com/coverage": 1,
     "/dartford-solicitor -> https://www.policestationagent.com/dartford-solicitor": 1,
+    "/deal-solicitor -> https://www.policestationagent.com/deal-solicitor": 1,
     "/dna-fingerprints-police-station -> https://www.policestationagent.com/dna-fingerprints-police-station": 1,
     "/dover-police-station -> https://www.policestationagent.com/dover-police-station": 1,
     "/dover-psa-station -> https://www.policestationagent.com/dover-psa-station": 1,
-    "/dover-solicitor -> https://www.policestationagent.com/dover-solicitor": 1,
     "/emergency-police-station-representation -> https://www.policestationagent.com/emergency-police-station-representation": 1,
-    "/extendedhours -> https://www.policestationagent.com/extendedhours": 1,
     "/faq -> https://www.policestationagent.com/faq": 1,
     "/f-a-q -> https://www.policestationagent.com/faq": 1,
-    "/faversham-solicitor -> https://www.policestationagent.com/faversham-solicitor": 1,
-    "/fees -> https://www.policestationagent.com/fees": 1,
-    "/folkestone-police-station -> https://www.policestationagent.com/folkestone-police-station": 1,
-    "/folkestone-psa-station -> https://www.policestationagent.com/folkestone-psa-station": 1,
+    "/dover-solicitor -> https://www.policestationagent.com/dover-solicitor": 1,
+    "/extendedhours -> https://www.policestationagent.com/extendedhours": 1,
     "/folkestone-solicitor -> https://www.policestationagent.com/folkestone-solicitor": 1,
+    "/fees -> https://www.policestationagent.com/fees": 1,
+    "/folkestone-psa-station -> https://www.policestationagent.com/folkestone-psa-station": 1,
+    "/faversham-solicitor -> https://www.policestationagent.com/faversham-solicitor": 1,
     "/for-clients -> https://www.policestationagent.com/for-clients": 1,
-    "/forsolicitors -> https://www.policestationagent.com/for-solicitors": 1,
+    "/folkestone-police-station -> https://www.policestationagent.com/folkestone-police-station": 1,
     "/freelegaladvice -> https://www.policestationagent.com/freelegaladvice": 1,
-    "/gdpr -> https://www.policestationagent.com/gdpr": 1,
-    "/gillingham-solicitor -> https://www.policestationagent.com/gillingham-solicitor": 1,
-    "/g-d-p-r -> https://www.policestationagent.com/gdpr": 1,
-    "/gravesend-police-station -> https://www.policestationagent.com/gravesend-police-station": 1,
-    "/gravesend-solicitor -> https://www.policestationagent.com/gravesend-solicitor": 1,
-    "/guided-assistant -> https://www.policestationagent.com/guided-assistant": 1,
+    "/forsolicitors -> https://www.policestationagent.com/for-solicitors": 1,
     "/for-solicitors -> https://www.policestationagent.com/for-solicitors": 1,
-    "/home -> https://www.policestationagent.com/home": 1,
+    "/g-d-p-r -> https://www.policestationagent.com/gdpr": 1,
+    "/gdpr -> https://www.policestationagent.com/gdpr": 1,
+    "/guided-assistant -> https://www.policestationagent.com/guided-assistant": 1,
+    "/gravesend-solicitor -> https://www.policestationagent.com/gravesend-solicitor": 1,
     "/herne-bay-solicitor -> https://www.policestationagent.com/herne-bay-solicitor": 1,
-    "/hours -> https://www.policestationagent.com/hours": 1,
+    "/gillingham-solicitor -> https://www.policestationagent.com/gillingham-solicitor": 1,
+    "/gravesend-police-station -> https://www.policestationagent.com/gravesend-police-station": 1,
+    "/home -> https://www.policestationagent.com/home": 1,
     "/importance-of-early-legal-advice -> https://www.policestationagent.com/importance-of-early-legal-advice": 1,
     "/kent-police-station-reps -> https://www.policestationagent.com/kent-police-station-reps": 1,
+    "/join -> https://www.policestationagent.com/join": 1,
+    "/hours -> https://www.policestationagent.com/hours": 1,
     "/kent-police-stations -> https://www.policestationagent.com/kent-police-stations": 1,
     "/locations -> https://www.policestationagent.com/locations": 1,
-    "/maidstone-psa-station -> https://www.policestationagent.com/maidstone-psa-station": 1,
-    "/join -> https://www.policestationagent.com/join": 1,
     "/maidstone-police-station -> https://www.policestationagent.com/maidstone-police-station": 1,
     "/maidstone-solicitor -> https://www.policestationagent.com/maidstone-solicitor": 1,
-    "/margate-police-station -> https://www.policestationagent.com/margate-police-station": 1,
+    "/maidstone-psa-station -> https://www.policestationagent.com/maidstone-psa-station": 1,
     "/margate-solicitor -> https://www.policestationagent.com/margate-solicitor": 1,
     "/medway-police-station -> https://www.policestationagent.com/medway-police-station": 1,
-    "/medway-psa-station -> https://www.policestationagent.com/medway-psa-station": 1,
+    "/margate-police-station -> https://www.policestationagent.com/margate-police-station": 1,
     "/margate-psa-station -> https://www.policestationagent.com/margate-psa-station": 1,
-    "/medway-solicitor -> https://www.policestationagent.com/medway-solicitor": 1,
+    "/medway-psa-station -> https://www.policestationagent.com/medway-psa-station": 1,
     "/no-comment-interview -> https://www.policestationagent.com/no-comment-interview": 1,
-    "/north-kent-gravesend-police-station -> https://www.policestationagent.com/north-kent-gravesend-police-station": 1,
-    "/north-kent-gravesend-psa-station -> https://www.policestationagent.com/north-kent-gravesend-psa-station": 1,
+    "/medway-solicitor -> https://www.policestationagent.com/medway-solicitor": 1,
     "/nofurtheractionafterpoliceinterview -> https://www.policestationagent.com/nofurtheractionafterpoliceinterview": 1,
+    "/north-kent-gravesend-psa-station -> https://www.policestationagent.com/north-kent-gravesend-psa-station": 1,
+    "/north-kent-gravesend-police-station -> https://www.policestationagent.com/north-kent-gravesend-police-station": 1,
+    "/pace-code-c -> https://www.policestationagent.com/pace-code-c": 1,
     "/outofarea -> https://www.policestationagent.com/outofarea": 1,
     "/out-of-area -> https://www.policestationagent.com/outofarea": 1,
-    "/pace-code-c -> https://www.policestationagent.com/pace-code-c": 1,
+    "/police-bail-explained -> https://www.policestationagent.com/police-bail-explained": 1,
     "/police-custody-rights -> https://www.policestationagent.com/police-custody-rights": 1,
     "/police-interview-rights -> https://www.policestationagent.com/police-interview-rights": 1,
-    "/police-bail-explained -> https://www.policestationagent.com/police-bail-explained": 1,
-    "/police-station-agent-ashford -> https://www.policestationagent.com/police-station-agent-ashford": 1,
     "/police-station-agent-dartford -> https://www.policestationagent.com/police-station-agent-dartford": 1,
+    "/police-station-agent-ashford -> https://www.policestationagent.com/police-station-agent-ashford": 1,
     "/police-station-agent-canterbury -> https://www.policestationagent.com/police-station-agent-canterbury": 1,
-    "/police-station-agent-gravesend -> https://www.policestationagent.com/police-station-agent-gravesend": 1,
     "/police-station-agent-folkestone -> https://www.policestationagent.com/police-station-agent-folkestone": 1,
+    "/police-station-agent-gravesend -> https://www.policestationagent.com/police-station-agent-gravesend": 1,
     "/police-station-agent-kent -> https://www.policestationagent.com/police-station-agent-kent": 1,
-    "/police-station-agent-maidstone -> https://www.policestationagent.com/police-station-agent-maidstone": 1,
     "/police-station-agent-sevenoaks -> https://www.policestationagent.com/police-station-agent-sevenoaks": 1,
     "/police-station-agent-medway -> https://www.policestationagent.com/police-station-agent-medway": 1,
     "/police-station-agent-sittingbourne -> https://www.policestationagent.com/police-station-agent-sittingbourne": 1,
-    "/police-station-interviews-kent-rights -> https://www.policestationagent.com/police-station-interviews-kent-rights": 1,
     "/police-station-agent-tonbridge -> https://www.policestationagent.com/police-station-agent-tonbridge": 1,
+    "/police-station-agent-maidstone -> https://www.policestationagent.com/police-station-agent-maidstone": 1,
+    "/police-station-interviews-kent-rights -> https://www.policestationagent.com/police-station-interviews-kent-rights": 1,
     "/police-station-rep-ashford -> https://www.policestationagent.com/police-station-rep-ashford": 1,
-    "/police-station-rep-canterbury -> https://www.policestationagent.com/police-station-rep-canterbury": 1,
-    "/police-station-rep-bluewater -> https://www.policestationagent.com/police-station-rep-bluewater": 1,
     "/police-station-rep-dartford -> https://www.policestationagent.com/police-station-rep-dartford": 1,
+    "/police-station-rep-bluewater -> https://www.policestationagent.com/police-station-rep-bluewater": 1,
+    "/police-station-rep-canterbury -> https://www.policestationagent.com/police-station-rep-canterbury": 1,
     "/police-station-rep-dover -> https://www.policestationagent.com/police-station-rep-dover": 1,
     "/police-station-rep-folkestone -> https://www.policestationagent.com/police-station-rep-folkestone": 1,
-    "/police-station-rep-margate -> https://www.policestationagent.com/police-station-rep-margate": 1,
+    "/police-station-rep-gravesend -> https://www.policestationagent.com/police-station-rep-gravesend": 1,
     "/police-station-rep-maidstone -> https://www.policestationagent.com/police-station-rep-maidstone": 1,
-    "/police-station-rep-sittingbourne -> https://www.policestationagent.com/police-station-rep-sittingbourne": 1,
+    "/police-station-rep-margate -> https://www.policestationagent.com/police-station-rep-margate": 1,
     "/police-station-rep-medway -> https://www.policestationagent.com/police-station-rep-medway": 1,
     "/police-station-rep-sevenoaks -> https://www.policestationagent.com/police-station-rep-sevenoaks": 1,
+    "/police-station-rep-sittingbourne -> https://www.policestationagent.com/police-station-rep-sittingbourne": 1,
     "/police-station-rep-swanley -> https://www.policestationagent.com/police-station-rep-swanley": 1,
-    "/police-station-rep-tonbridge -> https://www.policestationagent.com/police-station-rep-tonbridge": 1,
-    "/police-station-rep-gravesend -> https://www.policestationagent.com/police-station-rep-gravesend": 1,
-    "/policeinterviewhelp -> https://www.policestationagent.com/policeinterviewhelp": 1,
     "/police-station-rep-tunbridge-wells -> https://www.policestationagent.com/police-station-rep-tunbridge-wells": 1,
+    "/police-station-rep-tonbridge -> https://www.policestationagent.com/police-station-rep-tonbridge": 1,
+    "/policeinterviewhelp -> https://www.policestationagent.com/policeinterviewhelp": 1,
     "/police-stations -> https://www.policestationagent.com/police-stations": 1,
-    "/policestationreps -> https://www.policestationagent.com/policestationreps": 1,
-    "/prepared-statements -> https://www.policestationagent.com/prepared-statements": 1,
     "/preparing-for-police-interview -> https://www.policestationagent.com/preparing-for-police-interview": 1,
+    "/policestationreps -> https://www.policestationagent.com/policestationreps": 1,
     "/privacy -> https://www.policestationagent.com/privacy": 1,
-    "/private-crime -> https://www.policestationagent.com/privatecrime": 1,
+    "/prepared-statements -> https://www.policestationagent.com/prepared-statements": 1,
     "/privateclientfaq -> https://www.policestationagent.com/privateclientfaq": 1,
+    "/private-crime -> https://www.policestationagent.com/privatecrime": 1,
     "/privatecrime -> https://www.policestationagent.com/privatecrime": 1,
     "/psastations -> https://www.policestationagent.com/police-stations": 1,
     "/ramsgate-solicitor -> https://www.policestationagent.com/ramsgate-solicitor": 1,
     "/refusingpoliceinterview -> https://www.policestationagent.com/refusingpoliceinterview": 1,
-    "/released-under-investigation -> https://www.policestationagent.com/released-under-investigation": 1,
     "/repcover -> https://www.policestationagent.com/repcover": 1,
     "/rochester-solicitor -> https://www.policestationagent.com/rochester-solicitor": 1,
+    "/released-under-investigation -> https://www.policestationagent.com/released-under-investigation": 1,
     "/sandwich-solicitor -> https://www.policestationagent.com/sandwich-solicitor": 1,
-    "/servicerates -> https://www.policestationagent.com/servicerates": 1,
-    "/services -> https://www.policestationagent.com/services": 1,
     "/services/police-station-representation -> https://www.policestationagent.com/services/police-station-representation": 1,
+    "/servicerates -> https://www.policestationagent.com/servicerates": 1,
     "/servicesvoluntaryinterviews -> https://www.policestationagent.com/servicesvoluntaryinterviews": 1,
     "/sevenoaks-police-station -> https://www.policestationagent.com/sevenoaks-police-station": 1,
-    "/sevenoaks-psa-station -> https://www.policestationagent.com/sevenoaks-psa-station": 1,
     "/sevenoaks-solicitor -> https://www.policestationagent.com/sevenoaks-solicitor": 1,
-    "/sittingbourne-psa-station -> https://www.policestationagent.com/sittingbourne-psa-station": 1,
+    "/services -> https://www.policestationagent.com/services": 1,
+    "/sevenoaks-psa-station -> https://www.policestationagent.com/sevenoaks-psa-station": 1,
     "/sittingbourne-police-station -> https://www.policestationagent.com/sittingbourne-police-station": 1,
     "/sittingbourne-solicitor -> https://www.policestationagent.com/sittingbourne-solicitor": 1,
     "/swanley-police-station -> https://www.policestationagent.com/swanley-police-station": 1,
+    "/sittingbourne-psa-station -> https://www.policestationagent.com/sittingbourne-psa-station": 1,
     "/swanley-psa-station -> https://www.policestationagent.com/swanley-psa-station": 1,
     "/swanley-solicitor -> https://www.policestationagent.com/swanley-solicitor": 1,
+    "/termsandconditions -> https://www.policestationagent.com/terms-and-conditions": 1,
+    "/terms-and-conditions -> https://www.policestationagent.com/terms-and-conditions": 1,
     "/testimonials -> https://www.policestationagent.com/testimonials": 1,
     "/tonbridge-police-station -> https://www.policestationagent.com/tonbridge-police-station": 1,
-    "/termsandconditions -> https://www.policestationagent.com/terms-and-conditions": 1,
-    "/tonbridge-solicitor -> https://www.policestationagent.com/tonbridge-solicitor": 1,
     "/tonbridge-psa-station -> https://www.policestationagent.com/tonbridge-psa-station": 1,
-    "/terms-and-conditions -> https://www.policestationagent.com/terms-and-conditions": 1,
+    "/tonbridge-solicitor -> https://www.policestationagent.com/tonbridge-solicitor": 1,
     "/tunbridge-wells-police-station -> https://www.policestationagent.com/tunbridge-wells-police-station": 1,
-    "/tunbridge-wells-psa-station -> https://www.policestationagent.com/tunbridge-wells-psa-station": 1,
     "/tunbridge-wells-solicitor -> https://www.policestationagent.com/tunbridge-wells-solicitor": 1,
+    "/tunbridge-wells-psa-station -> https://www.policestationagent.com/tunbridge-wells-psa-station": 1,
     "/voluntary-interviews -> https://www.policestationagent.com/voluntary-interviews": 1,
-    "/voluntary-police-interview -> https://www.policestationagent.com/voluntary-police-interview": 1,
-    "/voluntary-police-interview-risks -> https://www.policestationagent.com/voluntary-police-interview-risks": 1,
     "/voluntaryinterviews -> https://www.policestationagent.com/voluntary-interviews": 1,
-    "/vulnerable-adults-in-custody -> https://www.policestationagent.com/vulnerable-adults-in-custody": 1,
     "/what-happens-if-ignore-police-interview -> https://www.policestationagent.com/what-happens-if-ignore-police-interview": 1,
+    "/voluntary-police-interview-risks -> https://www.policestationagent.com/voluntary-police-interview-risks": 1,
+    "/vulnerable-adults-in-custody -> https://www.policestationagent.com/vulnerable-adults-in-custody": 1,
     "/what-is-a-criminal-solicitor -> https://www.policestationagent.com/what-is-a-criminal-solicitor": 1,
     "/what-is-a-police-station-rep -> https://www.policestationagent.com/what-is-a-police-station-rep": 1,
-    "/what-to-do-if-a-loved-one-is-arrested -> https://www.policestationagent.com/what-to-do-if-a-loved-one-is-arrested": 1,
-    "/what-to-expect-at-a-police-interview-in-kent -> https://www.policestationagent.com/what-to-expect-at-a-police-interview-in-kent": 1,
+    "/whatisapolicestationrep -> https://www.policestationagent.com/what-is-a-police-station-rep": 1,
+    "/voluntary-police-interview -> https://www.policestationagent.com/voluntary-police-interview": 1,
     "/what-we-do -> https://www.policestationagent.com/what-we-do": 1,
+    "/what-to-expect-at-a-police-interview-in-kent -> https://www.policestationagent.com/what-to-expect-at-a-police-interview-in-kent": 1,
+    "/what-to-do-if-a-loved-one-is-arrested -> https://www.policestationagent.com/what-to-do-if-a-loved-one-is-arrested": 1,
     "/whitstable-solicitor -> https://www.policestationagent.com/whitstable-solicitor": 1,
     "/why-use-us -> https://www.policestationagent.com/why-use-us": 1,
     "/your-rights-in-custody -> https://www.policestationagent.com/your-rights-in-custody": 1,
-    "/whatisapolicestationrep -> https://www.policestationagent.com/what-is-a-police-station-rep": 1,
     "/youth-custody-rights -> https://www.policestationagent.com/youth-custody-rights": 1
   },
   "externalTargetsUnique": 85,
   "externalTargetsChecked": 85,
   "brokenExternal": {
+    "http_401:https://web44ai-c88cig57u-robert-cashmans-projects.vercel.app": 1,
+    "http_401:https://web44ai-c88cig57u-robert-cashmans-projects.vercel.app/feed.xml": 1,
+    "http_401:https://web44ai-c88cig57u-robert-cashmans-projects.vercel.app/feed/recent": 1,
     "network_error:https://wixstatic.com": 1,
-    "http_401:https://web44ai-o0ryupmda-robert-cashmans-projects.vercel.app/feed/recent": 1,
-    "http_401:https://web44ai-o0ryupmda-robert-cashmans-projects.vercel.app/feed.xml": 1,
-    "http_401:https://web44ai-o0ryupmda-robert-cashmans-projects.vercel.app/og-image.jpg": 1,
     "http_403:https://static.wixstatic.com": 1,
-    "http_401:https://web44ai-o0ryupmda-robert-cashmans-projects.vercel.app": 1,
+    "http_401:https://web44ai-c88cig57u-robert-cashmans-projects.vercel.app/og-image.jpg": 1,
     "http_400:https://www.facebook.com/policestationagent": 1
   },
   "pageSummaries": [
-    {
-      "slug": "what-happens-at-a-police-station-interview-in-kent",
-      "url": "https://policestationagent.com/blog/what-happens-at-a-police-station-interview-in-kent",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "what-is-police-station-representation",
-      "url": "https://policestationagent.com/blog/what-is-police-station-representation",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "understanding-community-resolutions-and-their-impact-on-dbs-checks-and-employment",
-      "url": "https://policestationagent.com/blog/understanding-community-resolutions-and-their-impact-on-dbs-checks-and-employment",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "how-police-station-reps-safeguard-your-rights",
-      "url": "https://policestationagent.com/blog/how-police-station-reps-safeguard-your-rights",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "the-role-of-higher-court-advocates-in-the-uk",
-      "url": "https://policestationagent.com/blog/the-role-of-higher-court-advocates-in-the-uk",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
     {
       "slug": "do-i-need-a-solicitor-at-a-police-station-interview",
       "url": "https://policestationagent.com/blog/do-i-need-a-solicitor-at-a-police-station-interview",
@@ -271,6 +231,48 @@
       "url": "https://policestationagent.com/blog/why-you-need-a-criminal-solicitor-in-the-police-station",
       "ok": true,
       "status": 200,
+      "hrefs": 218
+    },
+    {
+      "slug": "what-happens-at-a-police-station-interview-in-kent",
+      "url": "https://policestationagent.com/blog/what-happens-at-a-police-station-interview-in-kent",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "what-is-police-station-representation",
+      "url": "https://policestationagent.com/blog/what-is-police-station-representation",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "understanding-community-resolutions-and-their-impact-on-dbs-checks-and-employment",
+      "url": "https://policestationagent.com/blog/understanding-community-resolutions-and-their-impact-on-dbs-checks-and-employment",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "the-role-of-higher-court-advocates-in-the-uk",
+      "url": "https://policestationagent.com/blog/the-role-of-higher-court-advocates-in-the-uk",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "how-police-station-reps-safeguard-your-rights",
+      "url": "https://policestationagent.com/blog/how-police-station-reps-safeguard-your-rights",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "complete-guide-to-legal-representation-at-kent-police-stations",
+      "url": "https://policestationagent.com/blog/complete-guide-to-legal-representation-at-kent-police-stations",
+      "ok": true,
+      "status": 200,
       "hrefs": 216
     },
     {
@@ -283,13 +285,6 @@
     {
       "slug": "no-further-action-after-police-interview",
       "url": "https://policestationagent.com/blog/no-further-action-after-police-interview",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "complete-guide-to-legal-representation-at-kent-police-stations",
-      "url": "https://policestationagent.com/blog/complete-guide-to-legal-representation-at-kent-police-stations",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -323,8 +318,8 @@
       "hrefs": 216
     },
     {
-      "slug": "the-unseen-errors-navigating-common-pitfalls-in-police-station-interviews",
-      "url": "https://policestationagent.com/blog/the-unseen-errors-navigating-common-pitfalls-in-police-station-interviews",
+      "slug": "expert-legal-representation-for-police-stations-in-kent",
+      "url": "https://policestationagent.com/blog/expert-legal-representation-for-police-stations-in-kent",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -337,8 +332,8 @@
       "hrefs": 216
     },
     {
-      "slug": "expert-legal-representation-for-police-stations-in-kent",
-      "url": "https://policestationagent.com/blog/expert-legal-representation-for-police-stations-in-kent",
+      "slug": "the-unseen-errors-navigating-common-pitfalls-in-police-station-interviews",
+      "url": "https://policestationagent.com/blog/the-unseen-errors-navigating-common-pitfalls-in-police-station-interviews",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -351,36 +346,8 @@
       "hrefs": 216
     },
     {
-      "slug": "what-is-the-sex-offender-register",
-      "url": "https://policestationagent.com/blog/what-is-the-sex-offender-register",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
       "slug": "understanding-the-role-of-a-duty-solicitor-everything-you-need-to-know",
       "url": "https://policestationagent.com/blog/understanding-the-role-of-a-duty-solicitor-everything-you-need-to-know",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "released-under-investigation-versus-bail",
-      "url": "https://policestationagent.com/blog/released-under-investigation-versus-bail",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "what-does-a-criminal-solicitor-do-part-one-police-station-representation-the-initial-job",
-      "url": "https://policestationagent.com/blog/what-does-a-criminal-solicitor-do-part-one-police-station-representation-the-initial-job",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "voluntary-interview-no-further-action",
-      "url": "https://policestationagent.com/blog/voluntary-interview-no-further-action",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -393,8 +360,22 @@
       "hrefs": 216
     },
     {
-      "slug": "what-is-common-assault-in-english-law",
-      "url": "https://policestationagent.com/blog/what-is-common-assault-in-english-law",
+      "slug": "what-is-the-sex-offender-register",
+      "url": "https://policestationagent.com/blog/what-is-the-sex-offender-register",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "released-under-investigation-versus-bail",
+      "url": "https://policestationagent.com/blog/released-under-investigation-versus-bail",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "voluntary-interview-no-further-action",
+      "url": "https://policestationagent.com/blog/voluntary-interview-no-further-action",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -407,6 +388,20 @@
       "hrefs": 216
     },
     {
+      "slug": "what-does-a-criminal-solicitor-do-part-one-police-station-representation-the-initial-job",
+      "url": "https://policestationagent.com/blog/what-does-a-criminal-solicitor-do-part-one-police-station-representation-the-initial-job",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "what-is-common-assault-in-english-law",
+      "url": "https://policestationagent.com/blog/what-is-common-assault-in-english-law",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
       "slug": "inside-a-voluntary-police-interview-what-to-expect-part-2",
       "url": "https://policestationagent.com/blog/inside-a-voluntary-police-interview-what-to-expect-part-2",
       "ok": true,
@@ -414,15 +409,15 @@
       "hrefs": 216
     },
     {
-      "slug": "i-think-i-may-be-arrested-by-the-police-what-should-i-do",
-      "url": "https://policestationagent.com/blog/i-think-i-may-be-arrested-by-the-police-what-should-i-do",
+      "slug": "voluntary-interview-at-swanley-police-station",
+      "url": "https://policestationagent.com/blog/voluntary-interview-at-swanley-police-station",
       "ok": true,
       "status": 200,
       "hrefs": 216
     },
     {
-      "slug": "voluntary-interview-at-swanley-police-station",
-      "url": "https://policestationagent.com/blog/voluntary-interview-at-swanley-police-station",
+      "slug": "i-think-i-may-be-arrested-by-the-police-what-should-i-do",
+      "url": "https://policestationagent.com/blog/i-think-i-may-be-arrested-by-the-police-what-should-i-do",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -456,13 +451,6 @@
       "hrefs": 216
     },
     {
-      "slug": "police-station-disclosure-by-police-station-agent",
-      "url": "https://policestationagent.com/blog/police-station-disclosure-by-police-station-agent",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
       "slug": "the-police-caution-means-police-station-agent",
       "url": "https://policestationagent.com/blog/the-police-caution-means-police-station-agent",
       "ok": true,
@@ -477,8 +465,8 @@
       "hrefs": 216
     },
     {
-      "slug": "police-station-representation",
-      "url": "https://policestationagent.com/blog/police-station-representation",
+      "slug": "police-station-disclosure-by-police-station-agent",
+      "url": "https://policestationagent.com/blog/police-station-disclosure-by-police-station-agent",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -491,29 +479,15 @@
       "hrefs": 216
     },
     {
+      "slug": "police-station-representation",
+      "url": "https://policestationagent.com/blog/police-station-representation",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
       "slug": "the-hidden-risks-of-voluntary-police-interviews-in-the-uk-you-need-to-know",
       "url": "https://policestationagent.com/blog/the-hidden-risks-of-voluntary-police-interviews-in-the-uk-you-need-to-know",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "police-caution-difference",
-      "url": "https://policestationagent.com/blog/police-caution-difference",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "police-station-representation-do-i-need-it-i-don-t-do-i",
-      "url": "https://policestationagent.com/blog/police-station-representation-do-i-need-it-i-don-t-do-i",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "whats-happens-at-a-police-station-voluntary-interview-part-2",
-      "url": "https://policestationagent.com/blog/whats-happens-at-a-police-station-voluntary-interview-part-2",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -526,15 +500,22 @@
       "hrefs": 219
     },
     {
-      "slug": "police-station-reps-and-agents-for-swanley-police-station",
-      "url": "https://policestationagent.com/blog/police-station-reps-and-agents-for-swanley-police-station",
+      "slug": "police-station-representation-do-i-need-it-i-don-t-do-i",
+      "url": "https://policestationagent.com/blog/police-station-representation-do-i-need-it-i-don-t-do-i",
       "ok": true,
       "status": 200,
       "hrefs": 216
     },
     {
-      "slug": "voluntaryinterviewwithpolice",
-      "url": "https://policestationagent.com/blog/voluntaryinterviewwithpolice",
+      "slug": "police-caution-difference",
+      "url": "https://policestationagent.com/blog/police-caution-difference",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "whats-happens-at-a-police-station-voluntary-interview-part-2",
+      "url": "https://policestationagent.com/blog/whats-happens-at-a-police-station-voluntary-interview-part-2",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -547,8 +528,29 @@
       "hrefs": 216
     },
     {
+      "slug": "police-station-reps-and-agents-for-swanley-police-station",
+      "url": "https://policestationagent.com/blog/police-station-reps-and-agents-for-swanley-police-station",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
       "slug": "what-happens-at-a-police-station-voluntary-interview-page-4",
       "url": "https://policestationagent.com/blog/what-happens-at-a-police-station-voluntary-interview-page-4",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "voluntaryinterviewwithpolice",
+      "url": "https://policestationagent.com/blog/voluntaryinterviewwithpolice",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "navigating-the-legal-system-understanding-the-impact-of-police-cautions-on-employment-criminal-rec",
+      "url": "https://policestationagent.com/blog/navigating-the-legal-system-understanding-the-impact-of-police-cautions-on-employment-criminal-rec",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -561,8 +563,8 @@
       "hrefs": 216
     },
     {
-      "slug": "navigating-the-legal-system-understanding-the-impact-of-police-cautions-on-employment-criminal-rec",
-      "url": "https://policestationagent.com/blog/navigating-the-legal-system-understanding-the-impact-of-police-cautions-on-employment-criminal-rec",
+      "slug": "is-legal-advice-free-at-the-police-station",
+      "url": "https://policestationagent.com/blog/is-legal-advice-free-at-the-police-station",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -589,22 +591,8 @@
       "hrefs": 216
     },
     {
-      "slug": "is-legal-advice-free-at-the-police-station",
-      "url": "https://policestationagent.com/blog/is-legal-advice-free-at-the-police-station",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
       "slug": "police-voluntary-interview-questions-4",
       "url": "https://policestationagent.com/blog/police-voluntary-interview-questions-4",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "criminal-law-faq-kent-police-station-rights",
-      "url": "https://policestationagent.com/blog/criminal-law-faq-kent-police-station-rights",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -617,8 +605,8 @@
       "hrefs": 216
     },
     {
-      "slug": "arrested-or-have-a-policewarrant-in-kent-here-s-what-you-need-to-know0",
-      "url": "https://policestationagent.com/blog/arrested-or-have-a-policewarrant-in-kent-here-s-what-you-need-to-know0",
+      "slug": "criminal-law-faq-kent-police-station-rights",
+      "url": "https://policestationagent.com/blog/criminal-law-faq-kent-police-station-rights",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -626,6 +614,20 @@
     {
       "slug": "whats-a-duty-solicitor",
       "url": "https://policestationagent.com/blog/whats-a-duty-solicitor",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "arrested-or-have-a-policewarrant-in-kent-here-s-what-you-need-to-know0",
+      "url": "https://policestationagent.com/blog/arrested-or-have-a-policewarrant-in-kent-here-s-what-you-need-to-know0",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "what-happens-if-you-don-t-attend-a-voluntary-police-interview-inengland",
+      "url": "https://policestationagent.com/blog/what-happens-if-you-don-t-attend-a-voluntary-police-interview-inengland",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -645,22 +647,8 @@
       "hrefs": 216
     },
     {
-      "slug": "what-happens-if-you-don-t-attend-a-voluntary-police-interview-inengland",
-      "url": "https://policestationagent.com/blog/what-happens-if-you-don-t-attend-a-voluntary-police-interview-inengland",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
       "slug": "what-is-a-duty-solicitor-4",
       "url": "https://policestationagent.com/blog/what-is-a-duty-solicitor-4",
-      "ok": true,
-      "status": 200,
-      "hrefs": 216
-    },
-    {
-      "slug": "have-to-attend-a-police-station-part-2-1",
-      "url": "https://policestationagent.com/blog/have-to-attend-a-police-station-part-2-1",
       "ok": true,
       "status": 200,
       "hrefs": 216
@@ -675,6 +663,13 @@
     {
       "slug": "help-the-police-have-contacted-me-1",
       "url": "https://policestationagent.com/blog/help-the-police-have-contacted-me-1",
+      "ok": true,
+      "status": 200,
+      "hrefs": 216
+    },
+    {
+      "slug": "have-to-attend-a-police-station-part-2-1",
+      "url": "https://policestationagent.com/blog/have-to-attend-a-police-station-part-2-1",
       "ok": true,
       "status": 200,
       "hrefs": 216
