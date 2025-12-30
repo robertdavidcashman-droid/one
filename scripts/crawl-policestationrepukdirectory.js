@@ -6,11 +6,14 @@
  *   node scripts/crawl-policestationrepukdirectory.js
  *   node scripts/crawl-policestationrepukdirectory.js --delay-ms=1000 --concurrency=1 --max-pages=200
  *   node scripts/crawl-policestationrepukdirectory.js --start=https://policestationrepukdirectory.com/ --out=./data/crawled-urls.json
+ *   node scripts/crawl-policestationrepukdirectory.js --from-sitemap
+ *   node scripts/crawl-policestationrepukdirectory.js --from-sitemap --follow-links=false
  */
 
 const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
+const { parseStringPromise } = require('xml2js');
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -69,12 +72,17 @@ function parseArgs(argv) {
     return hit ? hit.slice(prefix.length) : undefined;
   };
 
+  const hasFlag = (flag) => argv.includes(`--${flag}`);
+
   const startUrl = get('start') || 'https://policestationrepukdirectory.com/';
   const outFile = get('out') || path.join(__dirname, '..', 'data', 'crawled-urls.json');
   const delayMs = Number(get('delay-ms') || process.env.CRAWL_DELAY_MS || '750');
   const concurrency = Number(get('concurrency') || process.env.CRAWL_CONCURRENCY || '2');
   const maxPages = Number(get('max-pages') || process.env.CRAWL_MAX_PAGES || '0'); // 0 = unlimited
   const timeoutMs = Number(get('timeout-ms') || process.env.CRAWL_TIMEOUT_MS || '15000');
+  const fromSitemap = hasFlag('from-sitemap') || process.env.CRAWL_FROM_SITEMAP === 'true';
+  const followLinksRaw = get('follow-links') || process.env.CRAWL_FOLLOW_LINKS || 'true';
+  const followLinks = String(followLinksRaw).toLowerCase() !== 'false';
 
   return {
     startUrl,
@@ -83,7 +91,29 @@ function parseArgs(argv) {
     concurrency: Number.isFinite(concurrency) && concurrency >= 1 ? Math.floor(concurrency) : 2,
     maxPages: Number.isFinite(maxPages) && maxPages >= 0 ? Math.floor(maxPages) : 0,
     timeoutMs: Number.isFinite(timeoutMs) && timeoutMs >= 1000 ? Math.floor(timeoutMs) : 15000,
+    fromSitemap,
+    followLinks,
   };
+}
+
+async function fetchText(url, timeoutMs) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, {
+      redirect: 'follow',
+      signal: controller.signal,
+      headers: {
+        'user-agent': 'polite-crawler/1.0 (+https://policestationrepukdirectory.com)',
+        accept: 'text/plain,text/xml,application/xml;q=0.9,*/*;q=0.8',
+      },
+    });
+    return { finalUrl: res.url || url, status: res.status, text: await res.text() };
+  } catch {
+    return { finalUrl: url, status: 0, text: '' };
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 async function fetchHtml(url, timeoutMs) {
@@ -129,6 +159,83 @@ function extractTitleH1AndLinks(html) {
   return { title, h1, links };
 }
 
+function extractSitemapLocs(xmlObj) {
+  const locs = [];
+
+  // urlset: { url: [ { loc: ["..."] } ] }
+  const urlset = xmlObj && xmlObj.urlset;
+  if (urlset && Array.isArray(urlset.url)) {
+    for (const u of urlset.url) {
+      const loc = u && u.loc && u.loc[0];
+      if (typeof loc === 'string') locs.push(loc.trim());
+    }
+  }
+
+  // sitemapindex: { sitemap: [ { loc: ["..."] } ] }
+  const sitemapindex = xmlObj && xmlObj.sitemapindex;
+  if (sitemapindex && Array.isArray(sitemapindex.sitemap)) {
+    for (const sm of sitemapindex.sitemap) {
+      const loc = sm && sm.loc && sm.loc[0];
+      if (typeof loc === 'string') locs.push(loc.trim());
+    }
+  }
+
+  return locs;
+}
+
+async function getSitemapUrlsFromRobots(startUrl, timeoutMs) {
+  const origin = new URL(startUrl).origin;
+  const robotsUrl = `${origin}/robots.txt`;
+  const { text } = await fetchText(robotsUrl, timeoutMs);
+  const lines = String(text || '').split(/\r?\n/);
+  const sitemapUrls = [];
+  for (const line of lines) {
+    const m = line.match(/^\s*Sitemap:\s*(\S+)\s*$/i);
+    if (m && m[1]) sitemapUrls.push(m[1].trim());
+  }
+  return sitemapUrls;
+}
+
+async function collectAllSitemapLocs(startUrl, timeoutMs) {
+  const seedSitemaps = await getSitemapUrlsFromRobots(startUrl, timeoutMs);
+  if (seedSitemaps.length === 0) return { sitemapUrls: [], pageUrls: [] };
+
+  const sitemapQueue = [...seedSitemaps];
+  const seenSitemaps = new Set();
+  const pageUrls = new Set();
+
+  while (sitemapQueue.length) {
+    const nextSitemap = sitemapQueue.shift();
+    if (!nextSitemap) continue;
+    const normalizedSitemap = normalizeUrl(nextSitemap);
+    const sitemapKey = normalizedSitemap || nextSitemap;
+    if (seenSitemaps.has(sitemapKey)) continue;
+    seenSitemaps.add(sitemapKey);
+
+    const { text } = await fetchText(nextSitemap, timeoutMs);
+    if (!text) continue;
+
+    let parsed;
+    try {
+      parsed = await parseStringPromise(text);
+    } catch {
+      continue;
+    }
+
+    const locs = extractSitemapLocs(parsed);
+    for (const loc of locs) {
+      // Heuristic: sitemap indexes will contain more *.xml entries; urlsets contain page URLs.
+      if (loc.toLowerCase().includes('.xml')) {
+        if (!seenSitemaps.has(loc)) sitemapQueue.push(loc);
+      } else {
+        pageUrls.add(loc);
+      }
+    }
+  }
+
+  return { sitemapUrls: Array.from(seenSitemaps), pageUrls: Array.from(pageUrls) };
+}
+
 async function crawl() {
   const args = parseArgs(process.argv.slice(2));
 
@@ -143,10 +250,30 @@ async function crawl() {
   const outDir = path.dirname(outAbs);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  const queue = [normalizedStart];
-  const enqueued = new Set([normalizedStart]);
+  const queue = [];
+  const enqueued = new Set();
   const visited = new Set();
   const records = new Map(); // url -> {url,title?,h1?}
+
+  if (args.fromSitemap) {
+    console.log('Seeding crawl from sitemap(s) listed in robots.txt ...');
+    const { sitemapUrls, pageUrls } = await collectAllSitemapLocs(normalizedStart, args.timeoutMs);
+    console.log(`Found ${sitemapUrls.length} sitemap file(s), ${pageUrls.length} URL(s) in sitemap(s).`);
+
+    for (const raw of pageUrls) {
+      const normalized = normalizeUrl(raw);
+      if (!normalized) continue;
+      if (!isInternalUrl(normalized, normalizedStart)) continue;
+      if (stripWww(new URL(normalized).hostname) !== startHost) continue;
+      if (!enqueued.has(normalized)) {
+        enqueued.add(normalized);
+        queue.push(normalized);
+      }
+    }
+  } else {
+    queue.push(normalizedStart);
+    enqueued.add(normalizedStart);
+  }
 
   async function worker() {
     while (true) {
@@ -174,6 +301,8 @@ async function crawl() {
         if (title && !existing.title) existing.title = title;
         if (h1 && !existing.h1) existing.h1 = h1;
 
+        if (!args.followLinks) continue;
+
         for (const href of links) {
           const hrefTrimmed = String(href).trim();
           if (!hrefTrimmed) continue;
@@ -199,6 +328,7 @@ async function crawl() {
 
   console.log(`Starting crawl from: ${normalizedStart}`);
   console.log(`Internal host: ${startHost}`);
+  console.log(`Seed mode: ${args.fromSitemap ? 'sitemap' : 'homepage'}, Follow links: ${args.followLinks ? 'yes' : 'no'}`);
   console.log(`Concurrency: ${args.concurrency}, Delay: ${args.delayMs}ms, Max pages: ${args.maxPages || 'unlimited'}`);
   console.log(`Output: ${outAbs}\n`);
 
