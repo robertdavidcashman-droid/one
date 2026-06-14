@@ -21,6 +21,7 @@ const posts = JSON.parse(fs.readFileSync(bufferPath, "utf8"));
 const token = apiKey || legacyToken;
 
 if (!token && !dryRun) {
+  const inCi = process.env.CI === "true" || process.env.GITHUB_ACTIONS === "true";
   console.log("No Buffer credentials found. Set BUFFER_API_KEY (preferred) or BUFFER_ACCESS_TOKEN.");
   console.log("  Generate a key: Buffer → Settings → API → Personal Keys");
   console.log("  For GitHub Actions: add BUFFER_API_KEY as a repository secret");
@@ -28,6 +29,10 @@ if (!token && !dryRun) {
   console.log("  seo-growth-police-station-agent/buffer/buffer-posts.csv");
   console.log("  seo-growth-police-station-agent/buffer/buffer-posts.json");
   console.log(`\n${posts.length} posts ready. Upload at https://publish.buffer.com`);
+  if (inCi) {
+    console.log("\nSkipping schedule in CI until BUFFER_API_KEY or BUFFER_ACCESS_TOKEN is configured.");
+    process.exit(0);
+  }
   process.exit(1);
 }
 
