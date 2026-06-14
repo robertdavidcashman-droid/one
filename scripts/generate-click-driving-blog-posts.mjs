@@ -4,6 +4,8 @@
  */
 import fs from "fs";
 import path from "path";
+import { EXPANSIONS } from "./blog-post-expansions.mjs";
+import { EXPANSIONS_EXTRA, EXPANSIONS_FINAL } from "./blog-post-expansions-extra.mjs";
 
 const OUT = path.join(process.cwd(), "data", "blog-posts");
 const DATE = "2026-06-14";
@@ -120,12 +122,13 @@ ${sources(sourceExternal, sourceInternal)}
 }
 
 function buildPost(def) {
+  const body = def.body + (EXPANSIONS[def.slug] || "") + (EXPANSIONS_EXTRA[def.slug] || "") + (EXPANSIONS_FINAL[def.slug] || "");
   const contentHtml = wrap(
     def.intro,
     def.image,
     def.imageAlt,
     takeaways(def.takeaways),
-    def.body,
+    body,
     def.conclusion,
     def.external || BASE_EXTERNAL,
     def.internal,
