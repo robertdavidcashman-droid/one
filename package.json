@@ -70,6 +70,8 @@
     "publish:first-12": "node scripts/publish-first-12-articles.mjs",
     "publish:first-12:dry-run": "node scripts/publish-first-12-articles.mjs --dry-run",
     "publish:first-12:buffer": "node scripts/publish-first-12-articles.mjs --write-psa-buffer --skip-repuk-ci",
+    "update:workspaces": "node scripts/update-all-workspaces.mjs --apply",
+    "update:workspaces:dry-run": "node scripts/update-all-workspaces.mjs",
     "count:outreach-today": "tsx scripts/count-outreach-today.ts",
     "outreach:queue-health": "tsx scripts/breakdown-by-campaign.ts",
     "test:first-12": "vitest run __tests__/seo-first-12.test.ts",

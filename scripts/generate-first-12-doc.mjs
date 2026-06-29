@@ -6,17 +6,21 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { repoPaths } from './lib/workspaces-home.mjs';
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PSA_ROOT = path.dirname(SCRIPT_DIR);
-const HOME = path.dirname(PSA_ROOT);
+const REPOS = repoPaths(PSA_ROOT);
 
 const REPO_DOCS = [
-  path.join(PSA_ROOT, 'docs'),
-  path.join(HOME, 'Policestationrepuk/docs'),
-  path.join(HOME, 'pstrain-rebuild/docs'),
-  path.join(HOME, 'custody-note-website/docs'),
-];
+  path.join(REPOS.psa, 'docs'),
+  path.join(REPOS.repuk, 'docs'),
+  path.join(REPOS.psrtrain, 'docs'),
+  path.join(REPOS.custodynote, 'docs'),
+].filter((docsDir) => {
+  const repoRoot = path.dirname(docsDir);
+  return repoRoot === REPOS.psa || fs.existsSync(repoRoot);
+});
 
 const data = JSON.parse(
   fs.readFileSync(path.join(PSA_ROOT, 'docs/seo-first-12-articles.json'), 'utf-8'),
@@ -80,9 +84,12 @@ const md = `# Four-Site SEO — First 12 Articles (Phase 4 Drafts)
 ${data.articles.map(renderArticle).join('\n---\n\n')}
 `;
 
+let written = 0;
 for (const docs of REPO_DOCS) {
+  if (!fs.existsSync(path.dirname(docs))) continue;
   fs.mkdirSync(docs, { recursive: true });
   fs.writeFileSync(path.join(docs, 'seo-first-12-articles.md'), md);
+  written += 1;
 }
 
-console.log(`Wrote first-12 brief to ${REPO_DOCS.length} repos (${data.articles.length} articles).`);
+console.log(`Wrote first-12 brief to ${written} repo(s) (${data.articles.length} articles).`);
