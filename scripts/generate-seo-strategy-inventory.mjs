@@ -161,11 +161,13 @@ if (fs.existsSync(existingInventoryPath)) {
 function mergeInventory(key, fresh) {
   if (fresh.length > 0) return fresh;
   const cached = previousInventory?.[key];
-  if (Array.isArray(cached) && cached.length > 0) {
-    console.warn(
-      `preserving cached ${key} inventory (${cached.length} posts) — repo unavailable or unscannable`,
-    );
-    return cached;
+  if (!repoExists(REPOS[key])) {
+    if (Array.isArray(cached) && cached.length > 0) {
+      console.warn(
+        `preserving cached ${key} inventory (${cached.length} posts) — repo unavailable or unscannable`,
+      );
+      return cached;
+    }
   }
   return fresh;
 }

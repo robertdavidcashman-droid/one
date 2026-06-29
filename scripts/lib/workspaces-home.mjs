@@ -7,11 +7,15 @@ export function resolveWorkspacesHome(psaRoot) {
   if (process.env.WORKSPACES_HOME?.trim()) {
     return path.resolve(process.env.WORKSPACES_HOME.trim());
   }
+  const psaParent = path.dirname(psaRoot);
   const candidates = [
+    psaParent,
     path.join('/home/ubuntu'),
-    path.dirname(psaRoot),
   ];
   for (const home of candidates) {
+    if (home === '/home/ubuntu' && psaParent !== '/' && psaParent !== '/home/ubuntu') {
+      continue;
+    }
     if (
       fs.existsSync(path.join(home, 'Policestationrepuk')) ||
       fs.existsSync(path.join(home, 'custody-note-website')) ||
@@ -20,7 +24,7 @@ export function resolveWorkspacesHome(psaRoot) {
       return home;
     }
   }
-  return path.dirname(psaRoot);
+  return psaParent;
 }
 
 export const WORKSPACE_REPOS = {

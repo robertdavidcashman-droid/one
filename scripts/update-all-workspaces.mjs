@@ -122,11 +122,16 @@ function main() {
     execSync(`${node} scripts/generate-seo-strategy-inventory.mjs`, { cwd: PSA_ROOT, stdio: 'inherit' });
   }
 
-  const touched = summary.filter((s) => s.changes > 0 || s.status === 'missing');
-  if (!APPLY && touched.some((s) => s.changes > 0)) {
+  const hasChanges = summary.some((s) => s.changes > 0);
+  const hasMissing = summary.some((s) => s.status === 'missing');
+  if (!APPLY && hasChanges) {
     console.log('\nRe-run with --apply to copy files and rebuild firm-outreach-core packages.');
   } else if (APPLY) {
     console.log('\nDone. Review diffs in each repo and commit.');
+  } else if (hasMissing) {
+    console.log(
+      '\nNo shared-file changes detected in the repos that were found, but one or more workspaces were missing (skipped).',
+    );
   } else {
     console.log('\nAll workspaces already in sync for shared files.');
   }
