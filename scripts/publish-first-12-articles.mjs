@@ -11,17 +11,11 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { repoPaths } from './lib/workspaces-home.mjs';
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PSA_ROOT = path.dirname(SCRIPT_DIR);
-const HOME = path.dirname(PSA_ROOT);
-
-const REPOS = {
-  psa: PSA_ROOT,
-  psrtrain: path.join(HOME, 'pstrain-rebuild'),
-  custodynote: path.join(HOME, 'custody-note-website'),
-  repuk: path.join(HOME, 'Policestationrepuk'),
-};
+const REPOS = repoPaths(PSA_ROOT);
 
 const data = JSON.parse(
   fs.readFileSync(path.join(PSA_ROOT, 'docs/seo-first-12-articles.json'), 'utf-8'),

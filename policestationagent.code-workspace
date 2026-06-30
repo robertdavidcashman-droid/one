@@ -1,7 +1,20 @@
 {
 	"folders": [
 		{
+			"name": "policestationagent.com",
 			"path": "."
+		},
+		{
+			"name": "policestationrepuk.org",
+			"path": "../Policestationrepuk"
+		},
+		{
+			"name": "psrtrain.com",
+			"path": "../pstrain-rebuild"
+		},
+		{
+			"name": "custodynote.com",
+			"path": "../custody-note-website"
 		}
 	],
 	"settings": {}
